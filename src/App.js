@@ -26,7 +26,6 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      <CocktailFilter />
       <CocktailList
         cocktails={cocktails.sort((a, b) => (a.name > b.name ? 1 : -1))}
       />
