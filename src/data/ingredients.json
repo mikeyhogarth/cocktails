@@ -1,0 +1,210 @@
+{
+  "Absinthe": {
+    "abv": 40,
+    "taste": null
+  },
+  "Aperol": {
+    "abv": 11,
+    "taste": "bitter"
+  },
+  "Apricot brandy": {
+    "abv": 40,
+    "taste": null
+  },
+  "Blackberry liqueur": {
+    "abv": 40,
+    "taste": null
+  },
+  "Cachaca": {
+    "abv": 40,
+    "taste": null
+  },
+  "Calvados": {
+    "abv": 40,
+    "taste": null
+  },
+  "Campari": {
+    "abv": 25,
+    "taste": null
+  },
+  "Champagne": {
+    "abv": 12,
+    "taste": null
+  },
+  "Cherry liqueur": {
+    "abv": 30,
+    "taste": null
+  },
+  "Coconut milk": {
+    "abv": 0,
+    "taste": "sweet"
+  },
+  "Coffee liqueur": {
+    "abv": 20,
+    "taste": "bitter"
+  },
+  "Cognac": {
+    "abv": 40,
+    "taste": null
+  },
+  "Cola": {
+    "abv": 0,
+    "taste": "bitter"
+  },
+  "Cranberry juice": {
+    "abv": 0,
+    "taste": "sour"
+  },
+  "Cream": {
+    "abv": 0,
+    "taste": "sweet"
+  },
+  "Cream liqueur": {
+    "abv": 20,
+    "taste": null
+  },
+  "Créme liqueur": {
+    "abv": 20,
+    "taste": null
+  },
+  "Dark rum": {
+    "abv": 40,
+    "taste": null
+  },
+  "DiSaronno": {
+    "abv": 28,
+    "taste": null
+  },
+  "DOM Bénédictine": {
+    "abv": 40,
+    "taste": null
+  },
+  "Drambuie": {
+    "abv": 40,
+    "taste": null
+  },
+  "Dry White Wine": {
+    "abv": 12,
+    "taste": null
+  },
+  "Egg yolk": {
+    "abv": 0,
+    "taste": null
+  },
+  "Galliano": {
+    "abv": 30,
+    "taste": "sweet"
+  },
+  "Gin": {
+    "abv": 40,
+    "taste": null
+  },
+  "Ginger Ale": {
+    "abv": 0,
+    "taste": null
+  },
+  "Ginger beer": {
+    "abv": 5,
+    "taste": "sweet"
+  },
+  "Grapefruit juice": {
+    "abv": 0,
+    "taste": "sour"
+  },
+  "Hot coffee": {
+    "abv": 0,
+    "taste": "bitter"
+  },
+  "Kirsch": {
+    "abv": 40,
+    "taste": null
+  },
+  "Lemon juice": {
+    "abv": 0,
+    "taste": "sour"
+  },
+  "Lillet Blonde": {
+    "abv": 15,
+    "taste": null
+  },
+  "Lime juice": {
+    "abv": 0,
+    "taste": "sour"
+  },
+  "Olive juice": {
+    "abv": 0,
+    "taste": "sour"
+  },
+  "Orange Bitters": {
+    "abv": 40,
+    "taste": null
+  },
+  "Orange juice": {
+    "abv": 0,
+    "taste": "sweet"
+  },
+  "Peach puree": {
+    "abv": 0,
+    "taste": "sweet"
+  },
+  "Peach schnapps": {
+    "abv": 40,
+    "taste": "sweet"
+  },
+  "Pineapple juice": {
+    "abv": 0,
+    "taste": "sweet"
+  },
+  "Pisco": {
+    "abv": 40,
+    "taste": null
+  },
+  "Prosecco": {
+    "abv": 12,
+    "taste": null
+  },
+  "Raspberry liqueur": {
+    "abv": 20,
+    "taste": "sweet"
+  },
+  "Red Port": {
+    "abv": 20,
+    "taste": null
+  },
+  "Soda water": {
+    "abv": 0,
+    "taste": null
+  },
+  "Syrup": {
+    "abv": 0,
+    "taste": "sweet"
+  },
+  "Tequila": {
+    "abv": 40,
+    "taste": null
+  },
+  "Tomato juice": {
+    "abv": 0,
+    "taste": "salty"
+  },
+  "Triple Sec": {
+    "abv": 40,
+    "taste": "sweet"
+  },
+  "Vermouth": {
+    "abv": 17,
+    "taste": null
+  },
+  "Vodka": {
+    "abv": 40,
+    "taste": null
+  },
+  "Whiskey": {
+    "abv": 40,
+    "taste": null
+  },
+  "White rum": {
+    "abv": 40,
+    "taste": null
+  }
+}

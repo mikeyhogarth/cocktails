@@ -6,7 +6,9 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import LocalBar from "@material-ui/icons/LocalBar";
 import CocktailList from "./components/CocktailList";
-import cocktails from "./cocktails.json";
+import CocktailFilter from "./components/CocktailFilter";
+import cocktails from "./data/cocktails.json";
+import ingredients from "./data/ingredients.json";
 
 // A theme with custom primary and secondary color.
 // It's optional.
@@ -25,6 +27,8 @@ function App() {
           </Typography>
         </Toolbar>
       </AppBar>
+
+      <CocktailFilter allIngredients={ingredients} />
 
       <CocktailList
         cocktails={cocktails.sort((a, b) => (a.name > b.name ? 1 : -1))}

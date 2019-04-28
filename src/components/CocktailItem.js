@@ -7,7 +7,7 @@ import LocalBar from "@material-ui/icons/LocalBar";
 import Typography from "@material-ui/core/Typography";
 
 import { withStyles } from "@material-ui/core/styles";
-import Ingredient from "./Ingredient";
+import Ingredient from "./IngredientDetail";
 
 const styles = {
   card: {
