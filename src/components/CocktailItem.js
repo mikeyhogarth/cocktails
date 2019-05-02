@@ -3,6 +3,7 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import LocalBar from "@material-ui/icons/LocalBar";
+import Redo from "@material-ui/icons/Redo";
 
 import Typography from "@material-ui/core/Typography";
 
@@ -44,19 +45,23 @@ const CocktailItem = ({ cocktail, classes }) => {
             </li>
           ))}
         </ul>
-
         <br />
-
         <Typography component="p" className={classes.prep}>
           {cocktail.preparation}
         </Typography>
-
         <br />
-
         {cocktail.glass && (
           <Typography component="p" color="textSecondary">
             <LocalBar fontSize="inherit" />
+            &nbsp;
             {cocktail.glass}
+          </Typography>
+        )}
+        {cocktail.garnish && (
+          <Typography component="p" color="textSecondary">
+            <Redo fontSize="inherit" />
+            &nbsp;
+            {cocktail.garnish}
           </Typography>
         )}
       </CardContent>
