@@ -1,4 +1,4 @@
-export function filterCocktails(cocktailList, filter) {
+export async function filterCocktails(cocktailList, filter) {
   const { selectedIngredients, conjunction } = filter;
   if (!selectedIngredients.length) return cocktailList;
 
