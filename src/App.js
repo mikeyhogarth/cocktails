@@ -11,8 +11,6 @@ import ingredients from "./data/ingredients.json";
 import useFilter from "./hooks/useFilter";
 
 function App() {
-  //const [selectedIngredients, setIngredients] = useState([]);
-  //const [conjunction, setConjunction] = useState("and");
   const [filter, setFilter] = useFilter({});
 
   return (
