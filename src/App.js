@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
@@ -9,6 +9,7 @@ import CocktailList from "./components/CocktailList";
 import CocktailFilter from "./components/CocktailFilter";
 import cocktails from "./data/cocktails.json";
 import ingredients from "./data/ingredients.json";
+import useFilter from "./hooks/useFilter";
 
 // A theme with custom primary and secondary color.
 // It's optional.
@@ -19,8 +20,9 @@ const theme = createMuiTheme({
 });
 
 function App() {
-  const [selectedIngredients, setIngredients] = useState([]);
-  const [conjunction, setConjunction] = useState("and");
+  //const [selectedIngredients, setIngredients] = useState([]);
+  //const [conjunction, setConjunction] = useState("and");
+  const [filter, setFilter] = useFilter({});
 
   return (
     <MuiThemeProvider theme={theme}>
@@ -35,15 +37,12 @@ function App() {
 
       <CocktailFilter
         allIngredients={ingredients}
-        conjunction={conjunction}
-        setConjunction={setConjunction}
-        setIngredients={setIngredients}
-        selectedIngredients={selectedIngredients}
+        filter={filter}
+        setFilter={setFilter}
       />
 
       <CocktailList
-        selectedIngredients={selectedIngredients}
-        conjunction={conjunction}
+        filter={filter}
         cocktails={cocktails.sort((a, b) => (a.name > b.name ? 1 : -1))}
       />
     </MuiThemeProvider>

@@ -28,10 +28,8 @@ const styles = theme => ({
 });
 
 const CocktailFilter = ({
-  setConjunction,
-  setIngredients,
-  selectedIngredients,
-  conjunction,
+  setFilter,
+  filter: { conjunction, selectedIngredients },
   allIngredients,
   classes
 }) => {
@@ -44,13 +42,13 @@ const CocktailFilter = ({
             value="and"
             control={<Radio />}
             label="Must Include all of the following..."
-            onClick={e => setConjunction("and")}
+            onClick={e => setFilter({ conjunction: "and" })}
           />
           <FormControlLabel
             value="or"
             control={<Radio />}
             label="Can Include any of the following..."
-            onClick={e => setConjunction("or")}
+            onClick={e => setFilter({ conjunction: "or" })}
           />
         </RadioGroup>
       </FormControl>
@@ -67,9 +65,16 @@ const CocktailFilter = ({
               onClick={e => {
                 if (selectedIngredients.includes(ingredientName)) {
                   remove(selectedIngredients, i => i === ingredientName);
-                  setIngredients([...selectedIngredients]);
+                  setFilter({
+                    selectedIngredients: [...selectedIngredients]
+                  });
                 } else {
-                  setIngredients([...selectedIngredients, ingredientName]);
+                  setFilter({
+                    selectedIngredients: [
+                      ...selectedIngredients,
+                      ingredientName
+                    ]
+                  });
                 }
               }}
               label={ingredientName}

@@ -13,17 +13,8 @@ const styles = theme => ({
   }
 });
 
-const CocktailList = ({
-  conjunction,
-  selectedIngredients,
-  classes,
-  cocktails = []
-}) => {
-  let filteredCocktails = filterCocktails(
-    cocktails,
-    conjunction,
-    selectedIngredients
-  );
+const CocktailList = ({ filter, classes, cocktails = [] }) => {
+  let filteredCocktails = filterCocktails(cocktails, filter);
 
   return (
     <div className={classes.root}>

@@ -1,8 +1,5 @@
-export function filterCocktails(
-  cocktailList,
-  conjunction = "and",
-  selectedIngredients
-) {
+export function filterCocktails(cocktailList, filter) {
+  const { selectedIngredients, conjunction } = filter;
   if (!selectedIngredients.length) return cocktailList;
 
   return cocktailList.filter(cocktail => {
