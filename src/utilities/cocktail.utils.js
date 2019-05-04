@@ -21,6 +21,8 @@ export function filterCocktails(
         return selectedIngredients.includes(i);
       });
     }
+
+    return true;
   });
 }
 
