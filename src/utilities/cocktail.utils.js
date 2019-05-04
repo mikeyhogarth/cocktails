@@ -1,12 +1,20 @@
+import compact from "lodash/compact";
+
 export async function filterCocktails(cocktailList, filter) {
+  return filterCocktailsSync(cocktailList, filter);
+}
+
+export function filterCocktailsSync(cocktailList, filter) {
   const { selectedIngredients, conjunction } = filter;
   if (!selectedIngredients.length) return cocktailList;
 
   return cocktailList.filter(cocktail => {
-    const cocktailIngredients = cocktail.ingredients.map(i => i.ingredient);
+    const cocktailIngredients = compact(
+      cocktail.ingredients.map(i => i.ingredient)
+    );
 
     // cocktails should only be returned if ALL of the selected
-    // ingredients appear in the list.
+    // ingredients appear in its ingredients.
     if (conjunction === "and") {
       return arrayContainsArray(cocktailIngredients, selectedIngredients);
     }
@@ -17,6 +25,12 @@ export async function filterCocktails(cocktailList, filter) {
       return cocktailIngredients.some(i => {
         return selectedIngredients.includes(i);
       });
+    }
+
+    // cocktails should only be returned if ALL of the selected
+    // ingredients appear in its ingredients and NOTHING ELSE.
+    if (conjunction === "makeable") {
+      return arrayContainsArray(selectedIngredients, cocktailIngredients);
     }
 
     return true;

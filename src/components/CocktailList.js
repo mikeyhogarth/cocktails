@@ -9,7 +9,7 @@ import Paper from "@material-ui/core/Paper";
 
 const styles = theme => ({
   root: {
-    backgroundColor: theme.palette.indigo[50]
+    backgroundColor: theme.palette.grey[200]
   },
   content: {
     paddingTop: "1em",

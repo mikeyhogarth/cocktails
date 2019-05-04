@@ -1,26 +1,26 @@
 import React from "react";
-import Chip from "@material-ui/core/Chip";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
+import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Switch from "@material-ui/core/Switch";
+import IngredientPicker from "./IngredientPicker";
+
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
-import remove from "lodash/remove";
+
+import Paper from "@material-ui/core/Paper";
 
 import { withStyles } from "@material-ui/core/styles";
-import map from "lodash/map";
 
 const styles = theme => ({
   filter: {
     ...theme.mixins.gutters,
     justifyContent: "center",
-    padding: "2em 4em"
+    padding: "1em 2em"
   },
   heading: {
     fontSize: 16
-  },
-  chip: {
-    margin: theme.spacing.unit / 2
   },
   radioGroup: {
     display: "inline-block"
@@ -29,13 +29,26 @@ const styles = theme => ({
 
 const CocktailFilter = ({
   setFilter,
-  filter: { conjunction, selectedIngredients },
+  filter: { conjunction, selectedIngredients, barOnly },
   allIngredients,
   classes
 }) => {
   return (
-    <div className={classes.filter}>
+    <Paper square={true} elevation={24} className={classes.filter}>
       <FormControl component="fieldset" className={classes.formControl}>
+        <FormGroup row>
+          <FormControlLabel
+            control={
+              <Switch
+                checked={barOnly}
+                onChange={e => setFilter({ barOnly: !barOnly })}
+                value={barOnly}
+              />
+            }
+            label="Only include things I can make from my bar"
+          />
+        </FormGroup>
+
         <FormLabel component="legend">Ingredients</FormLabel>
         <RadioGroup value={conjunction} className={classes.radioGroup}>
           <FormControlLabel
@@ -52,38 +65,15 @@ const CocktailFilter = ({
           />
         </RadioGroup>
       </FormControl>
-      <div>
-        {map(allIngredients, (ingredientDetail, ingredientName) => {
-          return (
-            <Chip
-              key={ingredientName}
-              color={
-                selectedIngredients.includes(ingredientName)
-                  ? "primary"
-                  : "default"
-              }
-              onClick={e => {
-                if (selectedIngredients.includes(ingredientName)) {
-                  remove(selectedIngredients, i => i === ingredientName);
-                  setFilter({
-                    selectedIngredients: [...selectedIngredients]
-                  });
-                } else {
-                  setFilter({
-                    selectedIngredients: [
-                      ...selectedIngredients,
-                      ingredientName
-                    ]
-                  });
-                }
-              }}
-              label={ingredientName}
-              className={classes.chip}
-            />
-          );
-        })}
-      </div>
-    </div>
+
+      <IngredientPicker
+        selectedIngredients={selectedIngredients}
+        allIngredients={allIngredients}
+        onIngredientsChange={selectedIngredients => {
+          setFilter({ selectedIngredients });
+        }}
+      />
+    </Paper>
   );
 };
 
