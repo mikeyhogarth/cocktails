@@ -5,10 +5,8 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
 import IngredientPicker from "./IngredientPicker";
-
+import { Link } from "react-router-dom";
 import FormControl from "@material-ui/core/FormControl";
-import FormLabel from "@material-ui/core/FormLabel";
-
 import Paper from "@material-ui/core/Paper";
 
 import { withStyles } from "@material-ui/core/styles";
@@ -45,11 +43,15 @@ const CocktailFilter = ({
                 value={barOnly}
               />
             }
-            label="Only include things I can make from my bar"
+            label={
+              <span>
+                Only include things I can make from{" "}
+                <Link to="/my-bar">my bar</Link>
+              </span>
+            }
           />
         </FormGroup>
 
-        <FormLabel component="legend">Ingredients</FormLabel>
         <RadioGroup value={conjunction} className={classes.radioGroup}>
           <FormControlLabel
             value="and"

@@ -20,6 +20,11 @@ const styles = {
   },
   grow: {
     flexGrow: 1
+  },
+  title: {
+    margin: ".3em",
+    color: "white",
+    fontSize: "1.5em"
   }
 };
 
@@ -43,18 +48,15 @@ function App({ classes }) {
           <Toolbar>
             <LocalBar />
             <Typography className={classes.grow} color="inherit">
-              Cocktails
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <h1 className={classes.title}>Cocktail Browser</h1>
+              </Link>
             </Typography>
             <Button component={Link} to="/" color="inherit">
-              Home
-            </Button>{" "}
-            <Button
-              component={Link}
-              to="/my-bar"
-              color="secondary"
-              variant="contained"
-            >
-              My Bar
+              Browse
+            </Button>
+            <Button component={Link} to="/my-bar" color="inherit">
+              Bar
             </Button>
           </Toolbar>
         </AppBar>
