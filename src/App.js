@@ -61,7 +61,7 @@ function App({ classes }) {
 
         <Route
           exact
-          path="/"
+          path={["/", "/cocktails"]}
           render={props => (
             <CocktailBrowser
               allCocktails={relevantCocktails}
