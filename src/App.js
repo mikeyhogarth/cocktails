@@ -33,7 +33,6 @@ function App({ classes }) {
   const [bar, setBar] = useState([]);
 
   let relevantCocktails = cocktails.sort((a, b) => (a.name > b.name ? 1 : -1));
-
   if (filter.barOnly) {
     relevantCocktails = filterCocktailsSync(relevantCocktails, {
       selectedIngredients: bar,
@@ -47,7 +46,7 @@ function App({ classes }) {
         <AppBar position="static">
           <Toolbar>
             <LocalBar />
-            <Typography className={classes.grow} color="inherit">
+            <Typography component="h1" className={classes.grow} color="inherit">
               <Link to="/cocktails" style={{ textDecoration: "none" }}>
                 <h1 className={classes.title}>Cocktail Browser</h1>
               </Link>

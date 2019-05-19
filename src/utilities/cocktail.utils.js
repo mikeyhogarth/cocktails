@@ -6,7 +6,9 @@ export async function filterCocktails(cocktailList, filter) {
 
 export function filterCocktailsSync(cocktailList, filter) {
   const { selectedIngredients, conjunction } = filter;
-  if (!selectedIngredients.length) return cocktailList;
+
+  if (!selectedIngredients.length && !conjunction === "makeable")
+    return cocktailList;
 
   return cocktailList.filter(cocktail => {
     const cocktailIngredients = compact(
@@ -29,8 +31,10 @@ export function filterCocktailsSync(cocktailList, filter) {
 
     // cocktails should only be returned if ALL of the selected
     // ingredients appear in its ingredients and NOTHING ELSE.
+
     if (conjunction === "makeable") {
-      return arrayContainsArray(selectedIngredients, cocktailIngredients);
+      if (!selectedIngredients.length) return false;
+      else return arrayContainsArray(selectedIngredients, cocktailIngredients);
     }
 
     return true;
