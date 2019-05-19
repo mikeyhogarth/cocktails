@@ -50,7 +50,12 @@ const EditBar = ({ classes, allIngredients, bar, setBar }) => {
           }}
         />
         <br />
-        <Button component={Link} to="/" color="secondary" variant="contained">
+        <Button
+          component={Link}
+          to="/cocktails"
+          color="secondary"
+          variant="contained"
+        >
           Take me back to the cocktails!
         </Button>
       </Paper>

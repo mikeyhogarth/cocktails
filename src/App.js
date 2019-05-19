@@ -48,11 +48,11 @@ function App({ classes }) {
           <Toolbar>
             <LocalBar />
             <Typography className={classes.grow} color="inherit">
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/cocktails" style={{ textDecoration: "none" }}>
                 <h1 className={classes.title}>Cocktail Browser</h1>
               </Link>
             </Typography>
-            <Button component={Link} to="/" color="inherit">
+            <Button component={Link} to="/cocktails" color="inherit">
               Browse
             </Button>
             <Button component={Link} to="/my-bar" color="inherit">
