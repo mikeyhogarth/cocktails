@@ -13,7 +13,7 @@ it("renders special ingredients correctly", () => {
 it("renders normal ingredients correctly", () => {
   const item = {
     name: "Vodka",
-    amount: 1,
+    amount: 1000,
     unit: "cl"
   };
   const tree = renderer.create(<IngredientDetail item={item} />);
