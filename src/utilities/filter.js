@@ -33,7 +33,7 @@ export function applyFilter(cocktails, filter) {
   });
 }
 
-export function applyFilters(cocktails, filters = []) {
+export async function applyFilters(cocktails, filters = []) {
   if (!filters.length) filters = [filters];
 
   let results = [...cocktails];

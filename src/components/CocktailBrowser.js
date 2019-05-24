@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CocktailList from "./CocktailList";
 import CocktailFilter from "./CocktailFilter";
 import { applyFilters } from "../utilities/filter";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
 export default function({
   allCocktails,
@@ -10,10 +11,26 @@ export default function({
   bar,
   setFilter
 }) {
-  const filteredCocktails = applyFilters(allCocktails, [
-    filter.barOnly ? { rule: "makeableFrom", ingredients: bar } : null,
-    filter
-  ]).sort((a, b) => (a.name > b.name ? 1 : -1));
+  const [filteredCocktails, setFilteredCocktails] = useState(allCocktails);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    applyFilters(allCocktails, [
+      filter.barOnly ? { rule: "makeableFrom", ingredients: bar } : null,
+      filter
+    ])
+      .then(cocktails => {
+        return cocktails.sort((a, b) => (a.name > b.name ? 1 : -1));
+      })
+      .then(cocktails => {
+        setTimeout(() => {
+          setFilteredCocktails(cocktails);
+          setLoading(false);
+        }, 500);
+      });
+  }, [filter, bar, allCocktails]);
 
   return (
     <div>
@@ -23,7 +40,10 @@ export default function({
         setFilter={setFilter}
       />
 
-      <CocktailList filter={filter} cocktails={filteredCocktails} />
+      {loading && <LinearProgress />}
+      {!loading && (
+        <CocktailList filter={filter} cocktails={filteredCocktails} />
+      )}
     </div>
   );
 }
