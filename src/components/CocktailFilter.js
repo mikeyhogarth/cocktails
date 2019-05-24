@@ -8,6 +8,7 @@ import IngredientPicker from "./IngredientPicker";
 import { Link } from "react-router-dom";
 import FormControl from "@material-ui/core/FormControl";
 import Paper from "@material-ui/core/Paper";
+import Button from "@material-ui/core/Button";
 
 import { withStyles } from "@material-ui/core/styles";
 
@@ -45,7 +46,7 @@ const CocktailFilter = ({
             }
             label={
               <span>
-                Only include things I can make from{" "}
+                Only include drinks I can make from{" "}
                 <Link to="/my-bar">my bar</Link>
               </span>
             }
@@ -75,6 +76,14 @@ const CocktailFilter = ({
           setFilter({ selectedIngredients });
         }}
       />
+      <Button
+        color="secondary"
+        onClick={() => {
+          setFilter({ selectedIngredients: [] });
+        }}
+      >
+        Clear Ingredients
+      </Button>
     </Paper>
   );
 };
