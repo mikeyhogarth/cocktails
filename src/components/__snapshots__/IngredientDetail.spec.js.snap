@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders normal ingredients correctly 1`] = `
+<span>
+  1
+   
+  cl
+   
+  <strong />
+</span>
+`;
+
+exports[`renders special ingredients correctly 1`] = `
+<span>
+  1 cup of sugar
+</span>
+`;
+
+exports[`uses label instead of name if provided 1`] = `
+<span>
+  1
+   
+  cl
+   
+  <strong>
+    Smirnoff
+  </strong>
+</span>
+`;
