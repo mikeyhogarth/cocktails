@@ -1,4 +1,5 @@
 import compact from "lodash/compact";
+import { arrayContainsArray } from "./util";
 
 export function applyFilter(cocktails, filter) {
   return cocktails.filter(cocktail => {
@@ -41,10 +42,4 @@ export async function applyFilters(cocktails, filters = []) {
     results = [...applyFilter(results, filter)];
   });
   return results;
-}
-
-function arrayContainsArray(superset, subset) {
-  return subset.every(function(value) {
-    return superset.indexOf(value) >= 0;
-  });
 }
