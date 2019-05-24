@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 
 it("renders special ingredients correctly", () => {
   const item = {
-    special: "1 cup of sugarz"
+    special: "1 cup of sugar"
   };
   const tree = renderer.create(<IngredientDetail item={item} />);
   expect(tree).toMatchSnapshot();
