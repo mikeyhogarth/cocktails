@@ -12,7 +12,6 @@ import useFilter from "./hooks/useFilter";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { filterCocktailsSync } from "./utilities/cocktail.utils";
 
 const styles = {
   root: {
@@ -31,14 +30,6 @@ const styles = {
 function App({ classes }) {
   const [filter, setFilter] = useFilter({});
   const [bar, setBar] = useState([]);
-
-  let relevantCocktails = cocktails.sort((a, b) => (a.name > b.name ? 1 : -1));
-  if (filter.barOnly) {
-    relevantCocktails = filterCocktailsSync(relevantCocktails, {
-      selectedIngredients: bar,
-      conjunction: "makeable"
-    });
-  }
 
   return (
     <Theme>
@@ -65,7 +56,8 @@ function App({ classes }) {
           path={["/", "/cocktails"]}
           render={props => (
             <CocktailBrowser
-              allCocktails={relevantCocktails}
+              bar={bar}
+              allCocktails={cocktails}
               allIngredients={ingredients}
               filter={filter}
               setFilter={setFilter}

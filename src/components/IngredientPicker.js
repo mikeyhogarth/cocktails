@@ -31,18 +31,8 @@ const IngredientPicker = ({
               if (selectedIngredients.includes(ingredientName)) {
                 remove(selectedIngredients, i => i === ingredientName);
                 onIngredientsChange([...selectedIngredients]);
-                /**
-                  setFilter({
-                  selectedIngredients: [...selectedIngredients]
-                });
-                */
               } else {
                 onIngredientsChange([...selectedIngredients, ingredientName]);
-                /**
-                 * setFilter({
-                  selectedIngredients: [...selectedIngredients, ingredientName]
-                });
-                 */
               }
             }}
             label={ingredientName}
