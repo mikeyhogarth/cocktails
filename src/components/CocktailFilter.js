@@ -58,13 +58,17 @@ const CocktailFilter = ({
             value="mustInclude"
             control={<Radio />}
             label="Must Include all of the following..."
-            onClick={e => setFilter({ rule: "mustInclude" })}
+            onClick={e =>
+              rule !== "mustInclude" && setFilter({ rule: "mustInclude" })
+            }
           />
           <FormControlLabel
             value="canInclude"
             control={<Radio />}
             label="Can Include any of the following..."
-            onClick={e => setFilter({ rule: "canInclude" })}
+            onClick={e =>
+              rule !== "canInclude" && setFilter({ rule: "canInclude" })
+            }
           />
         </RadioGroup>
       </FormControl>
