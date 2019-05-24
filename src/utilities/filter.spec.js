@@ -75,7 +75,7 @@ describe("canInclude rule", () => {
 });
 
 describe("combining filters", () => {
-  it("allows you to combine filters", () => {
+  it("allows you to combine filters", async () => {
     // this one should return 5 results.
     const filter1 = {
       rule: "makeableFrom",
@@ -93,6 +93,7 @@ describe("combining filters", () => {
     // if you combine them though, you should only get 4 results
     // which will be everything from filter 1 that contains vermouth -
     // so that excludes the "Derby" which does not have vermouth in it.
-    expect(applyFilters(cocktails, [filter1, filter2]).length).toEqual(4);
+    const combinedResults = await applyFilters(cocktails, [filter1, filter2]);
+    expect(combinedResults.length).toEqual(4);
   });
 });
