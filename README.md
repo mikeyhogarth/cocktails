@@ -4,6 +4,8 @@
 
 Cocktail list and ingredient data taken from https://github.com/teijo/iba-cocktails
 
+Hosted over at netlify: https://elated-shockley-96a155.netlify.com
+
 ## Usage
 
 ```
