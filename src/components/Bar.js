@@ -2,8 +2,10 @@ import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import Grid from "@material-ui/core/Grid";
+import PopularIngredients from "./Bar/PopularIngredients";
+import CocktailGauge from "./Bar/CocktailGauge";
+
 import IngredientPicker from "./IngredientPicker";
 import { bindActionCreators } from "redux";
 import { setBar } from "../actions";
@@ -51,14 +53,15 @@ const EditBar = ({ classes, bar, setBar }) => {
           }}
         />
         <br />
-        <Button
-          component={Link}
-          to="/cocktails"
-          color="secondary"
-          variant="contained"
-        >
-          Take me back to the cocktails!
-        </Button>
+
+        <Grid container className={classes.root} spacing={2}>
+          <Grid item md={6} xs={12}>
+            <CocktailGauge />
+          </Grid>
+          <Grid item md={6} xs={12}>
+            <PopularIngredients />
+          </Grid>
+        </Grid>
       </Paper>
     </div>
   );

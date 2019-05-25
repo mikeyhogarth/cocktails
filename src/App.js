@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import LocalBar from "@material-ui/icons/LocalBar";
 import CocktailBrowser from "./components/CocktailBrowser";
-import EditBar from "./components/EditBar";
+import EditBar from "./components/Bar";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
