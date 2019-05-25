@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Theme from "./theme";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -11,9 +11,6 @@ import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const styles = {
-  root: {
-    flexGrow: 1
-  },
   grow: {
     flexGrow: 1
   },
@@ -44,7 +41,6 @@ function App({ classes }) {
             </Button>
           </Toolbar>
         </AppBar>
-
         {
           // Routes
         }
