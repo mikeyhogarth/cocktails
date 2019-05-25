@@ -5,7 +5,7 @@ import { applyFilters } from "../utilities/filter";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { connect } from "react-redux";
 
-const CocktailBrowser = ({ filter, bar, setFilter, allCocktails }) => {
+const CocktailBrowser = ({ filter, bar, allCocktails }) => {
   const [filteredCocktails, setFilteredCocktails] = useState(allCocktails);
   const [loading, setLoading] = useState(false);
 
@@ -20,6 +20,8 @@ const CocktailBrowser = ({ filter, bar, setFilter, allCocktails }) => {
         return cocktails.sort((a, b) => (a.name > b.name ? 1 : -1));
       })
       .then(cocktails => {
+        // an artificial delay helps avoid animation janking
+        // and provides a less jarring user experience.
         setTimeout(() => {
           setFilteredCocktails(cocktails);
           setLoading(false);
@@ -29,7 +31,7 @@ const CocktailBrowser = ({ filter, bar, setFilter, allCocktails }) => {
 
   return (
     <div>
-      <CocktailFilter filter={filter} setFilter={setFilter} />
+      <CocktailFilter filter={filter} />
 
       {loading && <LinearProgress />}
       {!loading && (
@@ -40,7 +42,8 @@ const CocktailBrowser = ({ filter, bar, setFilter, allCocktails }) => {
 };
 
 const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails
+  allCocktails: state.db.cocktails,
+  filter: state.filter
 });
 
 export default connect(mapStateToProps)(CocktailBrowser);

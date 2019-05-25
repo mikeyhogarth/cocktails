@@ -6,7 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import LocalBar from "@material-ui/icons/LocalBar";
 import CocktailBrowser from "./components/CocktailBrowser";
 import EditBar from "./components/EditBar";
-import useFilter from "./hooks/useFilter";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -26,7 +25,6 @@ const styles = {
 };
 
 function App({ classes }) {
-  const [filter, setFilter] = useFilter({});
   const [bar, setBar] = useState([]);
 
   return (
@@ -52,9 +50,7 @@ function App({ classes }) {
         <Route
           exact
           path={["/", "/cocktails"]}
-          render={props => (
-            <CocktailBrowser bar={bar} filter={filter} setFilter={setFilter} />
-          )}
+          render={props => <CocktailBrowser bar={bar} />}
         />
 
         <Route
