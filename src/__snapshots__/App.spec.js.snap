@@ -1,0 +1,1054 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does not explode when rendered 1`] = `
+Array [
+  <header
+    className="MuiPaper-root-12 MuiPaper-elevation4-18 MuiAppBar-root-3 MuiAppBar-positionStatic-7 MuiAppBar-colorPrimary-10"
+  >
+    <div
+      className="MuiToolbar-root-39 MuiToolbar-regular-41 MuiToolbar-gutters-40"
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-43"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21 5V3H3v2l8 9v5H6v2h12v-2h-5v-5l8-9zM7.43 7L5.66 5h12.69l-1.78 2H7.43z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <h1
+        className="MuiTypography-root-52 MuiTypography-body2-60 MuiTypography-colorInherit-81 App-grow-1"
+      >
+        <a
+          href="/cocktails"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <h1
+            className="App-title-2"
+          >
+            Cocktail Browser
+          </h1>
+        </a>
+      </h1>
+      <a
+        className="MuiButtonBase-root-114 MuiButton-root-88 MuiButton-text-90 MuiButton-flat-93 MuiButton-colorInherit-109"
+        href="/cocktails"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiButton-label-89"
+        >
+          Browse
+        </span>
+        <span
+          className="MuiTouchRipple-root-201"
+        />
+      </a>
+      <a
+        className="MuiButtonBase-root-114 MuiButton-root-88 MuiButton-text-90 MuiButton-flat-93 MuiButton-colorInherit-109"
+        href="/my-bar"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiButton-label-89"
+        >
+          Bar
+        </span>
+        <span
+          className="MuiTouchRipple-root-201"
+        />
+      </a>
+    </div>
+  </header>,
+  <div>
+    <div
+      className="MuiPaper-root-12 MuiPaper-elevation24-38 CocktailFilter-filter-117"
+    >
+      <fieldset
+        className="MuiFormControl-root-120"
+      >
+        <div
+          className="MuiFormGroup-root-124 MuiFormGroup-row-125"
+        >
+          <label
+            className="MuiFormControlLabel-root-126"
+          >
+            <span
+              className="MuiSwitch-root-132"
+            >
+              <span
+                className="MuiButtonBase-root-114 MuiIconButton-root-145 MuiPrivateSwitchBase-root-141 MuiSwitch-switchBase-135 MuiSwitch-colorSecondary-138"
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label-150"
+                >
+                  <span
+                    className="MuiSwitch-icon-133"
+                  />
+                  <input
+                    checked={false}
+                    className="MuiPrivateSwitchBase-input-144"
+                    disabled={false}
+                    onChange={[Function]}
+                    type="checkbox"
+                    value={false}
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root-201"
+                />
+              </span>
+              <span
+                className="MuiSwitch-bar-140"
+              />
+            </span>
+            <span
+              className="MuiTypography-root-52 MuiTypography-body2-60 MuiFormControlLabel-label-131"
+            >
+              <span>
+                Only include drinks I can make from
+                 
+                <a
+                  href="/my-bar"
+                  onClick={[Function]}
+                >
+                  my bar
+                </a>
+              </span>
+            </span>
+          </label>
+        </div>
+        <div
+          className="MuiFormGroup-root-124 CocktailFilter-radioGroup-119"
+          role="radiogroup"
+        >
+          <label
+            className="MuiFormControlLabel-root-126"
+            onClick={[Function]}
+          >
+            <span
+              className="MuiButtonBase-root-114 MuiIconButton-root-145 MuiPrivateSwitchBase-root-141 MuiRadio-root-151 MuiRadio-colorSecondary-155 MuiPrivateSwitchBase-checked-142 MuiRadio-checked-152"
+              onBlur={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={null}
+            >
+              <span
+                className="MuiIconButton-label-150"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root-43"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <input
+                  checked={true}
+                  className="MuiPrivateSwitchBase-input-144"
+                  disabled={false}
+                  onChange={[Function]}
+                  type="radio"
+                  value="mustInclude"
+                />
+              </span>
+              <span
+                className="MuiTouchRipple-root-201"
+              />
+            </span>
+            <span
+              className="MuiTypography-root-52 MuiTypography-body2-60 MuiFormControlLabel-label-131"
+            >
+              Must Include all of the following...
+            </span>
+          </label>
+          <label
+            className="MuiFormControlLabel-root-126"
+            onClick={[Function]}
+          >
+            <span
+              className="MuiButtonBase-root-114 MuiIconButton-root-145 MuiPrivateSwitchBase-root-141 MuiRadio-root-151 MuiRadio-colorSecondary-155"
+              onBlur={[Function]}
+              onContextMenu={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={null}
+            >
+              <span
+                className="MuiIconButton-label-150"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root-43"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <input
+                  checked={false}
+                  className="MuiPrivateSwitchBase-input-144"
+                  disabled={false}
+                  onChange={[Function]}
+                  type="radio"
+                  value="canInclude"
+                />
+              </span>
+              <span
+                className="MuiTouchRipple-root-201"
+              />
+            </span>
+            <span
+              className="MuiTypography-root-52 MuiTypography-body2-60 MuiFormControlLabel-label-131"
+            >
+              Can Include any of the following...
+            </span>
+          </label>
+        </div>
+      </fieldset>
+      <div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Absinthe
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Aperol
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Apricot brandy
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Blackberry liqueur
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Cachaca
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Calvados
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Campari
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Champagne
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Cherry liqueur
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Coconut milk
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Coffee liqueur
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Cognac
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Cola
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Cranberry juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Cream
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Cream liqueur
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Créme liqueur
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Dark rum
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            DiSaronno
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            DOM Bénédictine
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Drambuie
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Dry White Wine
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Egg yolk
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Galliano
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Gin
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Ginger Ale
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Ginger beer
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Grapefruit juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Hot coffee
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Kirsch
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Lemon juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Lillet Blonde
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Lime juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Olive juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Orange Bitters
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Orange juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Peach puree
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Peach schnapps
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Pineapple juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Pisco
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Prosecco
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Raspberry liqueur
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Red Port
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Soda water
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Syrup
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Tequila
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Tomato juice
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Triple Sec
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Vermouth
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Vodka
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            Whiskey
+          </span>
+        </div>
+        <div
+          className="MuiChip-root-157 MuiChip-clickable-160 IngredientPicker-chip-156"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            className="MuiChip-label-176"
+          >
+            White rum
+          </span>
+        </div>
+      </div>
+      <button
+        className="MuiButtonBase-root-114 MuiButton-root-88 MuiButton-text-90 MuiButton-textSecondary-92 MuiButton-flat-93 MuiButton-flatSecondary-95"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-89"
+        >
+          Clear Ingredients
+        </span>
+        <span
+          className="MuiTouchRipple-root-201"
+        />
+      </button>
+    </div>
+    <div
+      className="MuiLinearProgress-root-208 MuiLinearProgress-colorPrimary-209 MuiLinearProgress-indeterminate-212"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar-218 MuiLinearProgress-barColorPrimary-219 MuiLinearProgress-bar1Indeterminate-221"
+        style={Object {}}
+      />
+      <div
+        className="MuiLinearProgress-bar-218 MuiLinearProgress-barColorPrimary-219 MuiLinearProgress-bar2Indeterminate-224"
+        style={Object {}}
+      />
+    </div>
+  </div>,
+]
+`;

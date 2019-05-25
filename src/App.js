@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Theme from "./theme";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -6,15 +6,11 @@ import Typography from "@material-ui/core/Typography";
 import LocalBar from "@material-ui/icons/LocalBar";
 import CocktailBrowser from "./components/CocktailBrowser";
 import EditBar from "./components/EditBar";
-import useFilter from "./hooks/useFilter";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const styles = {
-  root: {
-    flexGrow: 1
-  },
   grow: {
     flexGrow: 1
   },
@@ -26,9 +22,6 @@ const styles = {
 };
 
 function App({ classes }) {
-  const [filter, setFilter] = useFilter({});
-  const [bar, setBar] = useState([]);
-
   return (
     <Theme>
       <Router>
@@ -48,19 +41,11 @@ function App({ classes }) {
             </Button>
           </Toolbar>
         </AppBar>
-
-        <Route
-          exact
-          path={["/", "/cocktails"]}
-          render={props => (
-            <CocktailBrowser bar={bar} filter={filter} setFilter={setFilter} />
-          )}
-        />
-
-        <Route
-          path="/my-bar"
-          render={props => <EditBar bar={bar} setBar={setBar} />}
-        />
+        {
+          // Routes
+        }
+        <Route exact path={["/", "/cocktails"]} component={CocktailBrowser} />
+        <Route path="/my-bar" component={EditBar} />
       </Router>
     </Theme>
   );
