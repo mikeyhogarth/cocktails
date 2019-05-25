@@ -11,7 +11,7 @@ import AddIcon from "@material-ui/icons/Add";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import { withStyles } from "@material-ui/core/styles";
-import { bindActionCreators } from "../../../../../Library/Caches/typescript/3.4.5/node_modules/redux";
+import { bindActionCreators } from "redux";
 import { addToBar } from "../../actions";
 
 const styles = theme => ({
