@@ -25,8 +25,6 @@ const styles = {
 };
 
 function App({ classes }) {
-  const [bar, setBar] = useState([]);
-
   return (
     <Theme>
       <Router>
@@ -47,16 +45,11 @@ function App({ classes }) {
           </Toolbar>
         </AppBar>
 
-        <Route
-          exact
-          path={["/", "/cocktails"]}
-          render={props => <CocktailBrowser bar={bar} />}
-        />
-
-        <Route
-          path="/my-bar"
-          render={props => <EditBar bar={bar} setBar={setBar} />}
-        />
+        {
+          // Routes
+        }
+        <Route exact path={["/", "/cocktails"]} component={CocktailBrowser} />
+        <Route path="/my-bar" component={EditBar} />
       </Router>
     </Theme>
   );

@@ -9,3 +9,7 @@ export function loadIngredients(payload) {
 export function updateFilter(payload) {
   return { type: "UPDATE_FILTER", payload };
 }
+
+export function setBar(payload) {
+  return { type: "SET_BAR", payload };
+}

@@ -7,7 +7,8 @@ const initialState = {
     ingredients: [],
     rule: "mustInclude",
     barOnly: false
-  }
+  },
+  bar: []
 };
 
 export default function(state = initialState, action) {
@@ -26,6 +27,8 @@ export default function(state = initialState, action) {
           ...action.payload
         }
       };
+    case "SET_BAR":
+      return { ...state, bar: action.payload };
     default:
       return state;
   }

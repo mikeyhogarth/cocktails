@@ -31,18 +31,16 @@ const CocktailBrowser = ({ filter, bar, allCocktails }) => {
 
   return (
     <div>
-      <CocktailFilter filter={filter} />
-
+      <CocktailFilter />
       {loading && <LinearProgress />}
-      {!loading && (
-        <CocktailList filter={filter} cocktails={filteredCocktails} />
-      )}
+      {!loading && <CocktailList cocktails={filteredCocktails} />}
     </div>
   );
 };
 
 const mapStateToProps = state => ({
   allCocktails: state.db.cocktails,
+  bar: state.bar,
   filter: state.filter
 });
 

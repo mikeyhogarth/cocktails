@@ -4,8 +4,10 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-
 import IngredientPicker from "./IngredientPicker";
+import { bindActionCreators } from "redux";
+import { setBar } from "../actions";
+import { connect } from "react-redux";
 
 const styles = theme => ({
   explanation: {
@@ -62,4 +64,15 @@ const EditBar = ({ classes, bar, setBar }) => {
   );
 };
 
-export default withStyles(styles)(EditBar);
+const mapStateToProps = state => ({
+  bar: state.bar
+});
+
+const mapDispatchToProps = dispatch => ({
+  setBar: bindActionCreators(setBar, dispatch)
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withStyles(styles)(EditBar));
