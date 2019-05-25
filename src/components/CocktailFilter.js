@@ -10,6 +10,9 @@ import FormControl from "@material-ui/core/FormControl";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { updateFilter } from "../actions";
 
 const styles = theme => ({
   filter: {
@@ -26,7 +29,7 @@ const styles = theme => ({
 });
 
 const CocktailFilter = ({
-  setFilter,
+  updateFilter,
   filter: { rule, ingredients: selectedIngredients, barOnly },
   classes
 }) => {
@@ -38,7 +41,7 @@ const CocktailFilter = ({
             control={
               <Switch
                 checked={barOnly}
-                onChange={e => setFilter({ barOnly: !barOnly })}
+                onChange={e => updateFilter({ barOnly: !barOnly })}
                 value={barOnly}
               />
             }
@@ -57,7 +60,7 @@ const CocktailFilter = ({
             control={<Radio />}
             label="Must Include all of the following..."
             onClick={e =>
-              rule !== "mustInclude" && setFilter({ rule: "mustInclude" })
+              rule !== "mustInclude" && updateFilter({ rule: "mustInclude" })
             }
           />
           <FormControlLabel
@@ -65,7 +68,7 @@ const CocktailFilter = ({
             control={<Radio />}
             label="Can Include any of the following..."
             onClick={e =>
-              rule !== "canInclude" && setFilter({ rule: "canInclude" })
+              rule !== "canInclude" && updateFilter({ rule: "canInclude" })
             }
           />
         </RadioGroup>
@@ -74,13 +77,13 @@ const CocktailFilter = ({
       <IngredientPicker
         selectedIngredients={selectedIngredients}
         onIngredientsChange={selectedIngredients => {
-          setFilter({ ingredients: selectedIngredients });
+          updateFilter({ ingredients: selectedIngredients });
         }}
       />
       <Button
         color="secondary"
         onClick={() => {
-          setFilter({ ingredients: [] });
+          updateFilter({ ingredients: [] });
         }}
       >
         Clear Ingredients
@@ -89,4 +92,15 @@ const CocktailFilter = ({
   );
 };
 
-export default withStyles(styles)(CocktailFilter);
+const mapStateToProps = state => ({
+  filter: state.filter
+});
+
+const mapDispatchToProps = dispatch => ({
+  updateFilter: bindActionCreators(updateFilter, dispatch)
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withStyles(styles)(CocktailFilter));

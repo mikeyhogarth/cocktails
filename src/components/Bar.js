@@ -5,7 +5,11 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import PopularIngredients from "./Bar/PopularIngredients";
 import CocktailGauge from "./Bar/CocktailGauge";
+
 import IngredientPicker from "./IngredientPicker";
+import { bindActionCreators } from "redux";
+import { setBar } from "../actions";
+import { connect } from "react-redux";
 
 const styles = theme => ({
   explanation: {
@@ -63,4 +67,15 @@ const EditBar = ({ classes, bar, setBar }) => {
   );
 };
 
-export default withStyles(styles)(EditBar);
+const mapStateToProps = state => ({
+  bar: state.bar
+});
+
+const mapDispatchToProps = dispatch => ({
+  setBar: bindActionCreators(setBar, dispatch)
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withStyles(styles)(EditBar));
