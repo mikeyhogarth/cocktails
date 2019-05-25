@@ -3,6 +3,7 @@ import Chip from "@material-ui/core/Chip";
 import remove from "lodash/remove";
 import map from "lodash/map";
 import { withStyles } from "@material-ui/core/styles";
+import { connect } from "react-redux";
 
 const styles = theme => ({
   chip: {
@@ -44,4 +45,8 @@ const IngredientPicker = ({
   );
 };
 
-export default withStyles(styles)(IngredientPicker);
+const mapStateToProps = state => ({
+  allIngredients: state.db.ingredients
+});
+
+export default connect(mapStateToProps)(withStyles(styles)(IngredientPicker));

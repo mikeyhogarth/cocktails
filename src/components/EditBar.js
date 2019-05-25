@@ -19,7 +19,7 @@ const styles = theme => ({
   }
 });
 
-const EditBar = ({ classes, allIngredients, bar, setBar }) => {
+const EditBar = ({ classes, bar, setBar }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
@@ -43,7 +43,6 @@ const EditBar = ({ classes, allIngredients, bar, setBar }) => {
         </Typography>
 
         <IngredientPicker
-          allIngredients={allIngredients}
           selectedIngredients={bar}
           onIngredientsChange={selectedIngredients => {
             setBar(selectedIngredients);

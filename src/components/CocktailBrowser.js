@@ -3,14 +3,9 @@ import CocktailList from "./CocktailList";
 import CocktailFilter from "./CocktailFilter";
 import { applyFilters } from "../utilities/filter";
 import LinearProgress from "@material-ui/core/LinearProgress";
+import { connect } from "react-redux";
 
-export default function({
-  allCocktails,
-  allIngredients,
-  filter,
-  bar,
-  setFilter
-}) {
+const CocktailBrowser = ({ filter, bar, setFilter, allCocktails }) => {
   const [filteredCocktails, setFilteredCocktails] = useState(allCocktails);
   const [loading, setLoading] = useState(false);
 
@@ -34,11 +29,7 @@ export default function({
 
   return (
     <div>
-      <CocktailFilter
-        allIngredients={allIngredients}
-        filter={filter}
-        setFilter={setFilter}
-      />
+      <CocktailFilter filter={filter} setFilter={setFilter} />
 
       {loading && <LinearProgress />}
       {!loading && (
@@ -46,4 +37,10 @@ export default function({
       )}
     </div>
   );
-}
+};
+
+const mapStateToProps = state => ({
+  allCocktails: state.db.cocktails
+});
+
+export default connect(mapStateToProps)(CocktailBrowser);

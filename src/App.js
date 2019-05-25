@@ -6,8 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import LocalBar from "@material-ui/icons/LocalBar";
 import CocktailBrowser from "./components/CocktailBrowser";
 import EditBar from "./components/EditBar";
-import cocktails from "./data/cocktails.json";
-import ingredients from "./data/ingredients.json";
 import useFilter from "./hooks/useFilter";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
@@ -55,21 +53,13 @@ function App({ classes }) {
           exact
           path={["/", "/cocktails"]}
           render={props => (
-            <CocktailBrowser
-              bar={bar}
-              allCocktails={cocktails}
-              allIngredients={ingredients}
-              filter={filter}
-              setFilter={setFilter}
-            />
+            <CocktailBrowser bar={bar} filter={filter} setFilter={setFilter} />
           )}
         />
 
         <Route
           path="/my-bar"
-          render={props => (
-            <EditBar allIngredients={ingredients} bar={bar} setBar={setBar} />
-          )}
+          render={props => <EditBar bar={bar} setBar={setBar} />}
         />
       </Router>
     </Theme>
