@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import FormControl from "@material-ui/core/FormControl";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
-
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
@@ -29,7 +28,6 @@ const styles = theme => ({
 const CocktailFilter = ({
   setFilter,
   filter: { rule, ingredients: selectedIngredients, barOnly },
-  allIngredients,
   classes
 }) => {
   return (
@@ -75,7 +73,6 @@ const CocktailFilter = ({
 
       <IngredientPicker
         selectedIngredients={selectedIngredients}
-        allIngredients={allIngredients}
         onIngredientsChange={selectedIngredients => {
           setFilter({ ingredients: selectedIngredients });
         }}
