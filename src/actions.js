@@ -13,3 +13,7 @@ export function updateFilter(payload) {
 export function setBar(payload) {
   return { type: "SET_BAR", payload };
 }
+
+export function addToBar(payload) {
+  return { type: "ADD_TO_BAR", payload };
+}

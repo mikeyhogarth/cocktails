@@ -5,17 +5,27 @@ import { countIngredients } from "../../utilities/cocktail.utils";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
+import IconButton from "@material-ui/core/IconButton";
+import AddIcon from "@material-ui/icons/Add";
+
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import { withStyles } from "@material-ui/core/styles";
+import { bindActionCreators } from "../../../../../Library/Caches/typescript/3.4.5/node_modules/redux";
+import { addToBar } from "../../actions";
 
-const styles = {};
+const styles = theme => ({
+  button: {
+    marginLeft: theme.spacing.unit
+  }
+});
 
-const PopularIngredients = ({ allCocktails, bar, classes }) => {
-  debugger;
-  const counts = countIngredients(allCocktails).filter(i => {
-    return bar.includes(i) === false;
-  });
+const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
+  const counts = countIngredients(allCocktails)
+    .filter(i => {
+      return bar.includes(i.name) === false;
+    })
+    .slice(0, 5);
 
   return (
     <div>
@@ -37,6 +47,14 @@ const PopularIngredients = ({ allCocktails, bar, classes }) => {
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
                 {row.name}
+                <IconButton
+                  className={classes.button}
+                  onClick={() => addToBar(row.name)}
+                  color="primary"
+                  aria-label="Add"
+                >
+                  <AddIcon />
+                </IconButton>
               </TableCell>
               <TableCell align="right">{row.count}</TableCell>
             </TableRow>
@@ -52,4 +70,11 @@ const mapStateToProps = state => ({
   allCocktails: state.db.cocktails
 });
 
-export default connect(mapStateToProps)(withStyles(styles)(PopularIngredients));
+const mapDispatchToProps = dispatch => ({
+  addToBar: bindActionCreators(addToBar, dispatch)
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withStyles(styles)(PopularIngredients));

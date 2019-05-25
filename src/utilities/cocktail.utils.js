@@ -3,6 +3,7 @@ import map from "lodash/map";
 export function countIngredients(cocktails = []) {
   const counts = cocktails.reduce((acc, cocktail) => {
     cocktail.ingredients.forEach(({ ingredient }) => {
+      if (!ingredient) return;
       acc[ingredient]
         ? (acc[ingredient] = acc[ingredient] + 1)
         : (acc[ingredient] = 1);
@@ -12,5 +13,5 @@ export function countIngredients(cocktails = []) {
 
   return map(counts, (count, name) => {
     return { count, name };
-  }).sort((a, b) => a.count < b.count);
+  }).sort((a, b) => (a.count < b.count ? 1 : -1));
 }

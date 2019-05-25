@@ -1,3 +1,5 @@
+import uniq from "lodash/uniq";
+
 const initialState = {
   db: {
     cocktails: [],
@@ -29,6 +31,8 @@ export default function(state = initialState, action) {
       };
     case "SET_BAR":
       return { ...state, bar: action.payload };
+    case "ADD_TO_BAR":
+      return { ...state, bar: uniq([...state.bar, action.payload]) };
     default:
       return state;
   }

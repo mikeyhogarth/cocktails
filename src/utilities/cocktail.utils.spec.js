@@ -18,7 +18,17 @@ describe("countIngredients", () => {
       ingredients: [{ ingredient: "Campari" }, { ingredient: "Vermouth" }]
     };
 
-    const cocktails = [americano, derby, martini, monkeyGland];
+    const somethingSpecial = {
+      ingredients: [{ special: "I dunno, some mint or something" }]
+    };
+
+    const cocktails = [
+      americano,
+      derby,
+      somethingSpecial,
+      martini,
+      monkeyGland
+    ];
     expect(countIngredients(cocktails)).toEqual([
       { name: "Gin", count: 3 },
       { name: "Vermouth", count: 2 },
