@@ -5,6 +5,8 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import PopularIngredients from "./Bar/PopularIngredients";
 import CocktailGauge from "./Bar/CocktailGauge";
+import MakeableCocktails from "./Bar/MakeableCocktails";
+import { applyFilter } from "../utilities/filter";
 
 import IngredientPicker from "./IngredientPicker";
 import { bindActionCreators } from "redux";
@@ -22,7 +24,12 @@ const styles = theme => ({
   }
 });
 
-const EditBar = ({ classes, bar, setBar }) => {
+const EditBar = ({ classes, allCocktails, bar, setBar }) => {
+  const makeableCocktails = applyFilter(allCocktails, {
+    rule: "makeableFrom",
+    ingredients: bar
+  });
+
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
@@ -50,10 +57,13 @@ const EditBar = ({ classes, bar, setBar }) => {
         <br />
 
         <Grid container className={classes.root}>
-          <Grid item md={4} xs={12}>
-            <CocktailGauge />
+          <Grid item md={3} xs={12}>
+            <MakeableCocktails makeableCocktails={makeableCocktails} />
           </Grid>
-          <Grid item md={8} xs={12}>
+          <Grid item md={3} xs={12}>
+            <CocktailGauge makeableCocktails={makeableCocktails} />
+          </Grid>
+          <Grid item md={6} xs={12}>
             <PopularIngredients />
           </Grid>
         </Grid>
@@ -63,7 +73,8 @@ const EditBar = ({ classes, bar, setBar }) => {
 };
 
 const mapStateToProps = state => ({
-  bar: state.bar
+  bar: state.bar,
+  allCocktails: state.db.cocktails
 });
 
 const mapDispatchToProps = dispatch => ({

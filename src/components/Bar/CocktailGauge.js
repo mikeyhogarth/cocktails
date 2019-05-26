@@ -18,7 +18,7 @@ const styles = theme => ({
   }
 });
 
-const CocktailGauge = ({ allCocktails, bar, classes, theme }) => {
+const CocktailGauge = ({ allCocktails, makeableCocktails, classes, theme }) => {
   const progressBarStyles = {
     path: {
       // Path color
@@ -33,10 +33,7 @@ const CocktailGauge = ({ allCocktails, bar, classes, theme }) => {
   };
 
   const totalCocktailCount = allCocktails.length;
-  const makeableCocktailCount = applyFilter(allCocktails, {
-    rule: "makeableFrom",
-    ingredients: bar
-  }).length;
+  const makeableCocktailCount = makeableCocktails.length;
 
   return (
     <div>

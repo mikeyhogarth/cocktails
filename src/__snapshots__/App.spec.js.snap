@@ -35,11 +35,11 @@ Array [
             }
           }
         >
-          <h1
+          <span
             className="App-title-2"
           >
             Cocktail Browser
-          </h1>
+          </span>
         </a>
       </h1>
       <a
