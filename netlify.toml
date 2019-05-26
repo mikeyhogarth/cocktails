@@ -1,0 +1,5 @@
+# This enables page refreshes when deployed
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
