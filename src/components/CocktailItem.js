@@ -11,6 +11,13 @@ import { withStyles } from "@material-ui/core/styles";
 import Ingredient from "./IngredientDetail";
 
 const styles = {
+  circle: {
+    width: ".8em",
+    height: ".8em",
+    borderRadius: "50%",
+    display: "inline-block",
+    float: "right"
+  },
   card: {
     width: "20em",
     margin: ".5em"
@@ -30,11 +37,20 @@ const styles = {
 const CocktailItem = ({ cocktail, classes }) => {
   return (
     <Card className={classes.card}>
-      <CardHeader title={cocktail.name} subheader={cocktail.category}>
-        <Typography className={classes.title} gutterBottom>
-          {cocktail.name}
-        </Typography>
-      </CardHeader>
+      <CardHeader
+        title={
+          <span>
+            {cocktail.name}
+            {cocktail.color && (
+              <span
+                className={classes.circle}
+                style={{ background: cocktail.color }}
+              />
+            )}
+          </span>
+        }
+        subheader={cocktail.category}
+      />
       <CardContent>
         <ul>
           {cocktail.ingredients.map((item, idx) => (
