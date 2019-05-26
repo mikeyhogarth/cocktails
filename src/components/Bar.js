@@ -5,6 +5,8 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import PopularIngredients from "./Bar/PopularIngredients";
 import CocktailGauge from "./Bar/CocktailGauge";
+import MakeableCocktails from "./Bar/MakeableCocktails";
+import { applyFilter } from "../utilities/filter";
 
 import IngredientPicker from "./IngredientPicker";
 import { bindActionCreators } from "redux";
@@ -18,32 +20,32 @@ const styles = theme => ({
   },
   root: {
     ...theme.mixins.gutters,
-    justifyContent: "center",
-    padding: "2em 4em"
+    justifyContent: "center"
   }
 });
 
-const EditBar = ({ classes, bar, setBar }) => {
+const EditBar = ({ classes, allCocktails, bar, setBar }) => {
+  const makeableCocktails = applyFilter(allCocktails, {
+    rule: "makeableFrom",
+    ingredients: bar
+  });
+
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
-        <Typography color="inherit">
-          <h2>Your Bar</h2>
+        <Typography variant="h2" color="inherit" gutterBottom>
+          Your Bar
         </Typography>
-        <Typography color="inherit">
-          <p>
-            Currently these selections are not persisted (so if you refresh your
-            page or leave and come back, you'll need to set them up again). What
-            this gives you is the ability to say what you have in, then back on
-            the cocktail browser you can set the filter to only show you things
-            you can make.
-          </p>
+        <Typography component="p" color="inherit" paragraph>
+          Currently these selections are not persisted (so if you refresh your
+          page or leave and come back, you'll need to set them up again). What
+          this gives you is the ability to say what you have in, then back on
+          the cocktail browser you can set the filter to only show you things
+          you can make.
         </Typography>
 
-        <Typography color="inherit">
-          <p>
-            <strong>Select the ingredients you have in your bar...</strong>
-          </p>
+        <Typography color="inherit" component="p" paragraph>
+          <strong>Select the ingredients you have in your bar...</strong>
         </Typography>
 
         <IngredientPicker
@@ -54,9 +56,12 @@ const EditBar = ({ classes, bar, setBar }) => {
         />
         <br />
 
-        <Grid container className={classes.root} spacing={2}>
-          <Grid item md={6} xs={12}>
-            <CocktailGauge />
+        <Grid container className={classes.root}>
+          <Grid item md={3} xs={12}>
+            <MakeableCocktails makeableCocktails={makeableCocktails} />
+          </Grid>
+          <Grid item md={3} xs={12}>
+            <CocktailGauge makeableCocktails={makeableCocktails} />
           </Grid>
           <Grid item md={6} xs={12}>
             <PopularIngredients />
@@ -68,7 +73,8 @@ const EditBar = ({ classes, bar, setBar }) => {
 };
 
 const mapStateToProps = state => ({
-  bar: state.bar
+  bar: state.bar,
+  allCocktails: state.db.cocktails
 });
 
 const mapDispatchToProps = dispatch => ({

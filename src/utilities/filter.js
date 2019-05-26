@@ -1,4 +1,5 @@
 import compact from "lodash/compact";
+import isArray from "lodash/isArray";
 import { canInclude, mustInclude, makeableFrom } from "./filterRules";
 
 const rules = {
@@ -27,15 +28,10 @@ export function applyFilter(cocktails, filter) {
  * @param {*} filters
  */
 export async function applyFilters(cocktails, filters = []) {
-  if (!filters.length) filters = [filters];
+  if (!isArray(filters)) filters = [filters];
 
-  let results = [...cocktails];
-
-  // TODO: can probably use reduce here.
-  compact(filters).forEach(filter => {
-    // the results of each filter are passed in as the
-    // things to fitler in the next one.
-    results = [...applyFilter(results, filter)];
-  });
-  return results;
+  return compact(filters).reduce(
+    (acc, filter) => [...applyFilter(acc, filter)],
+    [...cocktails]
+  );
 }

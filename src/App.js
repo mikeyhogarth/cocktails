@@ -17,7 +17,7 @@ const styles = {
   title: {
     margin: ".3em",
     color: "white",
-    fontSize: "1.5em"
+    fontSize: 20
   }
 };
 
@@ -30,7 +30,7 @@ function App({ classes }) {
             <LocalBar />
             <Typography component="h1" className={classes.grow} color="inherit">
               <Link to="/cocktails" style={{ textDecoration: "none" }}>
-                <h1 className={classes.title}>Cocktail Browser</h1>
+                <span className={classes.title}>Cocktail Browser</span>
               </Link>
             </Typography>
             <Button component={Link} to="/cocktails" color="inherit">

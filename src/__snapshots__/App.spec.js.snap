@@ -35,11 +35,11 @@ Array [
             }
           }
         >
-          <h1
+          <span
             className="App-title-2"
           >
             Cocktail Browser
-          </h1>
+          </span>
         </a>
       </h1>
       <a
@@ -66,7 +66,7 @@ Array [
           Browse
         </span>
         <span
-          className="MuiTouchRipple-root-201"
+          className="MuiTouchRipple-root-203"
         />
       </a>
       <a
@@ -93,7 +93,7 @@ Array [
           Bar
         </span>
         <span
-          className="MuiTouchRipple-root-201"
+          className="MuiTouchRipple-root-203"
         />
       </a>
     </div>
@@ -145,7 +145,7 @@ Array [
                   />
                 </span>
                 <span
-                  className="MuiTouchRipple-root-201"
+                  className="MuiTouchRipple-root-203"
                 />
               </span>
               <span
@@ -215,7 +215,7 @@ Array [
                 />
               </span>
               <span
-                className="MuiTouchRipple-root-201"
+                className="MuiTouchRipple-root-203"
               />
             </span>
             <span
@@ -267,7 +267,7 @@ Array [
                 />
               </span>
               <span
-                className="MuiTouchRipple-root-201"
+                className="MuiTouchRipple-root-203"
               />
             </span>
             <span
@@ -1032,20 +1032,20 @@ Array [
           Clear Ingredients
         </span>
         <span
-          className="MuiTouchRipple-root-201"
+          className="MuiTouchRipple-root-203"
         />
       </button>
     </div>
     <div
-      className="MuiLinearProgress-root-208 MuiLinearProgress-colorPrimary-209 MuiLinearProgress-indeterminate-212"
+      className="MuiLinearProgress-root-210 MuiLinearProgress-colorPrimary-211 MuiLinearProgress-indeterminate-214"
       role="progressbar"
     >
       <div
-        className="MuiLinearProgress-bar-218 MuiLinearProgress-barColorPrimary-219 MuiLinearProgress-bar1Indeterminate-221"
+        className="MuiLinearProgress-bar-220 MuiLinearProgress-barColorPrimary-221 MuiLinearProgress-bar1Indeterminate-223"
         style={Object {}}
       />
       <div
-        className="MuiLinearProgress-bar-218 MuiLinearProgress-barColorPrimary-219 MuiLinearProgress-bar2Indeterminate-224"
+        className="MuiLinearProgress-bar-220 MuiLinearProgress-barColorPrimary-221 MuiLinearProgress-bar2Indeterminate-226"
         style={Object {}}
       />
     </div>

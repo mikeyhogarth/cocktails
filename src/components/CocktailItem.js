@@ -4,7 +4,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import LocalBar from "@material-ui/icons/LocalBar";
 import Redo from "@material-ui/icons/Redo";
-
+import isArray from "lodash/isArray";
 import Typography from "@material-ui/core/Typography";
 
 import { withStyles } from "@material-ui/core/styles";
@@ -14,7 +14,6 @@ const styles = {
   circle: {
     width: ".8em",
     height: ".8em",
-    borderRadius: "50%",
     display: "inline-block",
     float: "right"
   },
@@ -23,7 +22,13 @@ const styles = {
     margin: ".5em"
   },
   title: {
-    fontSize: 16
+    fontSize: 20,
+    marginTop: 0,
+    marginBottom: 0
+  },
+  subHeader: {
+    fontSize: 14,
+    fontStyle: "italic"
   },
   category: {
     fontSize: 12
@@ -35,21 +40,26 @@ const styles = {
 };
 
 const CocktailItem = ({ cocktail, classes }) => {
+  const colors = isArray(cocktail.colors) ? cocktail.colors : [cocktail.colors];
+
   return (
     <Card className={classes.card}>
       <CardHeader
         title={
-          <span>
+          <h1 className={classes.title}>
             {cocktail.name}
-            {cocktail.color && (
-              <span
+            {colors.map(color => (
+              <i
+                key={color}
                 className={classes.circle}
-                style={{ background: cocktail.color }}
+                style={{ background: color }}
               />
-            )}
-          </span>
+            ))}
+          </h1>
         }
-        subheader={cocktail.category}
+        subheader={
+          <span className={classes.subHeader}>{cocktail.category}</span>
+        }
       />
       <CardContent>
         <ul>
