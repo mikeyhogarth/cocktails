@@ -1,7 +1,7 @@
 [
   {
     "name": "Vesper",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -14,7 +14,7 @@
   },
   {
     "name": "Bacardi",
-    "color": ["#fc6262", "#F80304", "#bc0000"],
+    "colors": ["#fc6262", "#F80304", "#bc0000"],
     "glass": "martini",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -31,7 +31,7 @@
   },
   {
     "name": "Negroni",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -49,7 +49,7 @@
   },
   {
     "name": "Rose",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "ingredients": [
       { "unit": "cl", "amount": 2, "ingredient": "Kirsch" },
@@ -65,7 +65,7 @@
   },
   {
     "name": "Old Fashioned",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -84,7 +84,7 @@
   },
   {
     "name": "Tuxedo",
-    "color": "#FDC78B",
+    "colors": "#FDC78B",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -109,7 +109,7 @@
   },
   {
     "name": "Mojito",
-    "color": "",
+    "colors": "",
     "glass": "collins",
     "category": "Longdrink",
     "ingredients": [
@@ -129,7 +129,7 @@
   },
   {
     "name": "Horse's Neck",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -142,7 +142,7 @@
   },
   {
     "name": "Planter's Punch",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -169,7 +169,7 @@
   },
   {
     "name": "Sea Breeze",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -182,7 +182,7 @@
   },
   {
     "name": "Pisco Sour",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -200,7 +200,7 @@
   },
   {
     "name": "Long Island Iced Tea",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -223,7 +223,7 @@
   },
   {
     "name": "Clover Club",
-    "color": ["#B1061D", "#E65259", "#f4edee"],
+    "colors": ["#B1061D", "#E65259", "#f4edee"],
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -241,7 +241,7 @@
   },
   {
     "name": "Angel Face",
-    "color": ["#ffda77", "#f7aa67", "#CA6D2A"],
+    "colors": ["#ffda77", "#f7aa67", "#CA6D2A"],
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -253,7 +253,7 @@
   },
   {
     "name": "Mimosa",
-    "color": "",
+    "colors": "",
     "glass": "champagne-flute",
     "category": "Sparkling Cocktail",
     "ingredients": [
@@ -265,7 +265,7 @@
   },
   {
     "name": "Whiskey Sour",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -288,7 +288,7 @@
   },
   {
     "name": "Screwdriver",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -300,7 +300,7 @@
   },
   {
     "name": "Cuba Libre",
-    "color": ["#440D06", "#983F27", "#EDDC7C"],
+    "colors": ["#440D06", "#983F27", "#EDDC7C"],
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -313,7 +313,7 @@
   },
   {
     "name": "Manhattan",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "Before Dinner cocktail",
     "ingredients": [
@@ -336,7 +336,7 @@
   },
   {
     "name": "Porto Flip",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -348,7 +348,7 @@
   },
   {
     "name": "Gin Fizz",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -367,7 +367,7 @@
   },
   {
     "name": "Espresso Martini",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -387,7 +387,7 @@
   },
   {
     "name": "Margarita",
-    "color": "",
+    "colors": "",
     "glass": "margarita",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -404,7 +404,7 @@
   },
   {
     "name": "French 75",
-    "color": "",
+    "colors": "",
     "glass": "champagne-tulip",
     "category": "Sparkling Cocktail",
     "ingredients": [
@@ -417,7 +417,7 @@
   },
   {
     "name": "Yellow Bird",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -430,7 +430,7 @@
   },
   {
     "name": "Pina Colada",
-    "color": "",
+    "colors": "",
     "glass": "hurricane",
     "category": "Longdrink",
     "ingredients": [
@@ -443,7 +443,7 @@
   },
   {
     "name": "Aviation",
-    "color": "#f9f7e8",
+    "colors": "#f9f7e8",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -460,7 +460,7 @@
   },
   {
     "name": "Bellini",
-    "color": ["#ed753d", "#F89E64", "#fcc69c"],
+    "colors": ["#ed753d", "#F89E64", "#fcc69c"],
     "glass": "champagne-flute",
     "category": "Sparkling Cocktail",
     "ingredients": [
@@ -471,7 +471,7 @@
   },
   {
     "name": "Grasshopper",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -493,7 +493,7 @@
   },
   {
     "name": "Tequila Sunrise",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -511,7 +511,7 @@
   },
   {
     "name": "Daiquiri",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -528,7 +528,7 @@
   },
   {
     "name": "Rusty Nail",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -545,7 +545,7 @@
   },
   {
     "name": "B52",
-    "color": ["#F39F00", "#E7D3B3", "#401110"],
+    "colors": ["#F39F00", "#E7D3B3", "#401110"],
     "glass": "shot",
     "category": "After Dinner",
     "ingredients": [
@@ -572,7 +572,7 @@
   },
   {
     "name": "Stinger",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -588,7 +588,7 @@
   },
   {
     "name": "Golden Dream",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -601,7 +601,7 @@
   },
   {
     "name": "God Mother",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "ingredients": [
       { "unit": "cl", "amount": 3.5, "ingredient": "Vodka" },
@@ -611,7 +611,7 @@
   },
   {
     "name": "Spritz Veneziano",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "category": "Sparkling Cocktail",
     "ingredients": [
@@ -624,7 +624,7 @@
   },
   {
     "name": "Bramble",
-    "color": ["#3B0005", "#C00834", "#eaafb5"],
+    "colors": ["#3B0005", "#C00834", "#eaafb5"],
     "glass": "old-fashioned",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -643,7 +643,7 @@
   },
   {
     "name": "Alexander",
-    "color": ["#f8f2e4", "#F1E1C6", "#E8BF8E"],
+    "colors": ["#f8f2e4", "#F1E1C6", "#E8BF8E"],
     "glass": "martini",
     "ingredients": [
       { "unit": "cl", "amount": 3, "ingredient": "Cognac" },
@@ -659,7 +659,7 @@
   },
   {
     "name": "Lemon Drop Martini",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -677,7 +677,7 @@
   },
   {
     "name": "French Martini",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -689,7 +689,7 @@
   },
   {
     "name": "Black Russian",
-    "color": ["#EDE4DB", "#BA4D00", "#52180F"],
+    "colors": ["#EDE4DB", "#BA4D00", "#52180F"],
     "glass": "old-fashioned",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -700,7 +700,7 @@
   },
   {
     "name": "Bloody Mary",
-    "color": ["#ff4b38", "#F10103", "#c10000"],
+    "colors": ["#ff4b38", "#F10103", "#c10000"],
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -717,7 +717,7 @@
   },
   {
     "name": "Mai-tai",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -742,7 +742,7 @@
   },
   {
     "name": "Barracuda",
-    "color": ["#f4c829", "#f2dd21", "#f9ef95"],
+    "colors": ["#f4c829", "#f2dd21", "#f9ef95"],
     "glass": "margarita",
     "category": "Sparkling Cocktail",
     "ingredients": [
@@ -760,7 +760,7 @@
   },
   {
     "name": "Sex on the Beach",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -774,7 +774,7 @@
   },
   {
     "name": "Monkey Gland",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -787,7 +787,7 @@
   },
   {
     "name": "Derby",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -800,7 +800,7 @@
   },
   {
     "name": "Sidecar",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -812,7 +812,7 @@
   },
   {
     "name": "Irish Coffee",
-    "color": "",
+    "colors": "",
     "glass": "hot-drink",
     "category": "Hot Drink",
     "ingredients": [
@@ -830,7 +830,7 @@
   },
   {
     "name": "Sazerac",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "category": "After Dinner Cocktail",
     "ingredients": [
@@ -844,7 +844,7 @@
   },
   {
     "name": "Americano",
-    "color": ["#F2DFE1", "#ED120A", "#890f0b"],
+    "colors": ["#F2DFE1", "#ED120A", "#890f0b"],
     "glass": "old-fashioned",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -862,7 +862,7 @@
   },
   {
     "name": "Singapore Sling",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -890,7 +890,7 @@
   },
   {
     "name": "French Connection",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "ingredients": [
       { "unit": "cl", "amount": 3.5, "ingredient": "Cognac" },
@@ -900,7 +900,7 @@
   },
   {
     "name": "Moscow Mule",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -914,7 +914,7 @@
   },
   {
     "name": "John Collins",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -933,7 +933,7 @@
   },
   {
     "name": "Kir",
-    "color": "",
+    "colors": "",
     "glass": "white-wine",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -949,7 +949,7 @@
   },
   {
     "name": "Mint Julep",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -968,7 +968,7 @@
   },
   {
     "name": "Tommy's Margarita",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -980,7 +980,7 @@
   },
   {
     "name": "Paradise",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -992,7 +992,7 @@
   },
   {
     "name": "Dirty Martini",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -1010,7 +1010,7 @@
   },
   {
     "name": "Champagne Cocktail",
-    "color": ["#f9efbb", "#efde8b", "#e5ce5b"],
+    "colors": ["#f9efbb", "#efde8b", "#e5ce5b"],
     "glass": "champagne-flute",
     "category": "Sparkling Cocktail",
     "ingredients": [
@@ -1024,7 +1024,7 @@
   },
   {
     "name": "Mary Pickford",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1042,7 +1042,7 @@
   },
   {
     "name": "Hemingway Special",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1060,7 +1060,7 @@
   },
   {
     "name": "Dark 'n' Stormy",
-    "color": ["#CF612A", "#860F00", "#D1C112"],
+    "colors": ["#CF612A", "#860F00", "#D1C112"],
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -1072,7 +1072,7 @@
   },
   {
     "name": "Ramos Fizz",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Longdrink",
     "ingredients": [
@@ -1095,7 +1095,7 @@
   },
   {
     "name": "Russian Spring Punch",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "Sparkling Cocktail",
     "ingredients": [
@@ -1119,7 +1119,7 @@
   },
   {
     "name": "God Father",
-    "color": "",
+    "colors": "",
     "glass": "old-fashioned",
     "ingredients": [
       {
@@ -1134,7 +1134,7 @@
   },
   {
     "name": "Cosmopolitan",
-    "color": ["#ea202a", "#EC464F", "#f7626a"],
+    "colors": ["#ea202a", "#EC464F", "#f7626a"],
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1158,7 +1158,7 @@
   },
   {
     "name": "Dry Martini",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "Before Dinner Cocktail",
     "ingredients": [
@@ -1174,7 +1174,7 @@
   },
   {
     "name": "Between the Sheets",
-    "color": ["#FFAA4C", "#ffe066", "#fff0bc"],
+    "colors": ["#FFAA4C", "#ffe066", "#fff0bc"],
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1187,7 +1187,7 @@
   },
   {
     "name": "Casino",
-    "color": ["#eff2f0", "#f9f4e3", "#f7efea"],
+    "colors": ["#eff2f0", "#f9f4e3", "#f7efea"],
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1211,7 +1211,7 @@
   },
   {
     "name": "Caipirinha",
-    "color": ["#4A8C03", "#e7ea96", "#f3f9ed"],
+    "colors": ["#4A8C03", "#e7ea96", "#f3f9ed"],
     "glass": "old-fashioned",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1223,7 +1223,7 @@
   },
   {
     "name": "Vampiro",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "ingredients": [
       {
@@ -1246,7 +1246,7 @@
   },
   {
     "name": "Kamikaze",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1258,7 +1258,7 @@
   },
   {
     "name": "White Lady",
-    "color": "",
+    "colors": "",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -1270,7 +1270,7 @@
   },
   {
     "name": "Harvey Wallbanger",
-    "color": "",
+    "colors": "",
     "glass": "highball",
     "category": "All Day Cocktail",
     "ingredients": [

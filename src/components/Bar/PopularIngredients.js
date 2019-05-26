@@ -15,6 +15,10 @@ import { bindActionCreators } from "redux";
 import { addToBar } from "../../actions";
 
 const styles = theme => ({
+  title: {
+    fontSize: "1.5rem",
+    margin: "1rem 0"
+  },
   button: {
     marginLeft: theme.spacing.unit
   },
@@ -33,11 +37,11 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
 
   return (
     <div>
-      <Typography color="inherit">
-        <h4>Popular Ingredients</h4>
+      <Typography variant="h3" className={classes.title} gutterBottom>
+        Popular Ingredients
       </Typography>
-      <Typography color="inherit">
-        <p>These are popular ingredients not currently in your bar.</p>
+      <Typography color="inherit" component="p" paragraph>
+        These are popular ingredients not currently in your bar.
       </Typography>
       <Table className={classes.table}>
         <TableHead>

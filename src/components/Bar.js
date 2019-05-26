@@ -26,23 +26,19 @@ const EditBar = ({ classes, bar, setBar }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
-        <Typography color="inherit">
-          <h2>Your Bar</h2>
+        <Typography variant="h2" color="inherit" gutterBottom>
+          Your Bar
         </Typography>
-        <Typography color="inherit">
-          <p>
-            Currently these selections are not persisted (so if you refresh your
-            page or leave and come back, you'll need to set them up again). What
-            this gives you is the ability to say what you have in, then back on
-            the cocktail browser you can set the filter to only show you things
-            you can make.
-          </p>
+        <Typography component="p" color="inherit" paragraph>
+          Currently these selections are not persisted (so if you refresh your
+          page or leave and come back, you'll need to set them up again). What
+          this gives you is the ability to say what you have in, then back on
+          the cocktail browser you can set the filter to only show you things
+          you can make.
         </Typography>
 
-        <Typography color="inherit">
-          <p>
-            <strong>Select the ingredients you have in your bar...</strong>
-          </p>
+        <Typography color="inherit" component="p" paragraph>
+          <strong>Select the ingredients you have in your bar...</strong>
         </Typography>
 
         <IngredientPicker
@@ -53,11 +49,11 @@ const EditBar = ({ classes, bar, setBar }) => {
         />
         <br />
 
-        <Grid container className={classes.root} spacing={2}>
-          <Grid item md={6} xs={12}>
+        <Grid container className={classes.root}>
+          <Grid item md={4} xs={12}>
             <CocktailGauge />
           </Grid>
-          <Grid item md={6} xs={12}>
+          <Grid item md={8} xs={12}>
             <PopularIngredients />
           </Grid>
         </Grid>

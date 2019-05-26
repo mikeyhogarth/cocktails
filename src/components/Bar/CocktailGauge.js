@@ -8,6 +8,10 @@ import "react-circular-progressbar/dist/styles.css";
 import { withTheme } from "@material-ui/core/styles";
 
 const styles = theme => ({
+  title: {
+    fontSize: "1.5rem",
+    margin: "1rem 0"
+  },
   progressBar: {
     padding: "0 2em",
     fontFamily: "Roboto"
@@ -36,12 +40,13 @@ const CocktailGauge = ({ allCocktails, bar, classes, theme }) => {
 
   return (
     <div>
-      <Typography color="inherit">
-        <h4>Cocktail Gauge</h4>
+      <Typography variant="h3" className={classes.title} gutterBottom>
+        Cocktail Gauge
       </Typography>
-      <Typography color="inherit">
-        <p>How many cocktails can you make with what's in your bar?</p>
+      <Typography color="inherit" component="p" paragraph>
+        How many cocktails can you make with what's in your bar?
       </Typography>
+
       <CircularProgressbar
         styles={progressBarStyles}
         className={classes.progressBar}

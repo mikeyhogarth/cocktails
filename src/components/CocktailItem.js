@@ -22,9 +22,13 @@ const styles = {
     margin: ".5em"
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     marginTop: 0,
     marginBottom: 0
+  },
+  subHeader: {
+    fontSize: 14,
+    fontStyle: "italic"
   },
   category: {
     fontSize: 12
@@ -36,7 +40,7 @@ const styles = {
 };
 
 const CocktailItem = ({ cocktail, classes }) => {
-  const colors = isArray(cocktail.color) ? cocktail.color : [cocktail.color];
+  const colors = isArray(cocktail.colors) ? cocktail.colors : [cocktail.colors];
 
   return (
     <Card className={classes.card}>
@@ -44,9 +48,8 @@ const CocktailItem = ({ cocktail, classes }) => {
         title={
           <h1 className={classes.title}>
             {cocktail.name}
-
             {colors.map(color => (
-              <span
+              <i
                 key={color}
                 className={classes.circle}
                 style={{ background: color }}
@@ -54,7 +57,9 @@ const CocktailItem = ({ cocktail, classes }) => {
             ))}
           </h1>
         }
-        subheader={cocktail.category}
+        subheader={
+          <span className={classes.subHeader}>{cocktail.category}</span>
+        }
       />
       <CardContent>
         <ul>
