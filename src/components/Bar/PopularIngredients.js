@@ -17,6 +17,10 @@ import { addToBar } from "../../actions";
 const styles = theme => ({
   button: {
     marginLeft: theme.spacing.unit
+  },
+
+  cocktailNameContainer: {
+    display: "flex"
   }
 });
 
@@ -45,16 +49,22 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
         <TableBody>
           {counts.map(row => (
             <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.name}
-                <IconButton
-                  className={classes.button}
-                  onClick={() => addToBar(row.name)}
-                  color="primary"
-                  aria-label="Add"
-                >
-                  <AddIcon />
-                </IconButton>
+              <TableCell
+                className={classes.cocktailNameContainer}
+                component="th"
+                scope="row"
+              >
+                <div>
+                  <span>{row.name}</span>
+                  <IconButton
+                    className={classes.button}
+                    onClick={() => addToBar(row.name)}
+                    color="primary"
+                    aria-label="Add"
+                  >
+                    <AddIcon />
+                  </IconButton>
+                </div>
               </TableCell>
               <TableCell align="right">{row.count}</TableCell>
             </TableRow>

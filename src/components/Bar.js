@@ -18,8 +18,7 @@ const styles = theme => ({
   },
   root: {
     ...theme.mixins.gutters,
-    justifyContent: "center",
-    padding: "2em 4em"
+    justifyContent: "center"
   }
 });
 

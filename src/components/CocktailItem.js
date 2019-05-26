@@ -22,7 +22,9 @@ const styles = {
     margin: ".5em"
   },
   title: {
-    fontSize: 16
+    fontSize: 24,
+    marginTop: 0,
+    marginBottom: 0
   },
   category: {
     fontSize: 12
@@ -40,13 +42,17 @@ const CocktailItem = ({ cocktail, classes }) => {
     <Card className={classes.card}>
       <CardHeader
         title={
-          <span>
+          <h1 className={classes.title}>
             {cocktail.name}
 
             {colors.map(color => (
-              <span className={classes.circle} style={{ background: color }} />
+              <span
+                key={color}
+                className={classes.circle}
+                style={{ background: color }}
+              />
             ))}
-          </span>
+          </h1>
         }
         subheader={cocktail.category}
       />

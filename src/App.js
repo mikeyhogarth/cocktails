@@ -17,7 +17,7 @@ const styles = {
   title: {
     margin: ".3em",
     color: "white",
-    fontSize: "1.5em"
+    fontSize: 20
   }
 };
 
