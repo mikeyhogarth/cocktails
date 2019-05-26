@@ -1066,6 +1066,7 @@
   },
   {
     "name": "Cosmopolitan",
+    "color": "#DE3545",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
