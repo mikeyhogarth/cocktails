@@ -1,12 +1,12 @@
 import compact from "lodash/compact";
 import isArray from "lodash/isArray";
-import { canInclude, mustInclude, makeableFrom } from "./filterRules";
-
-const rules = {
-  makeableFrom,
+import {
   canInclude,
-  mustInclude
-};
+  mustInclude,
+  makeableFrom,
+  inGlass,
+  inCategory
+} from "./filterRules";
 
 /**
  * Apply a single filter to a set of cocktails
@@ -18,7 +18,21 @@ export function applyFilter(cocktails, filter) {
     const cocktailIngredients = compact(
       cocktail.ingredients.map(i => i.ingredient)
     );
-    return rules[filter.rule](filter.ingredients, cocktailIngredients);
+
+    switch (filter.rule) {
+      case "makeableFrom":
+        return makeableFrom(filter.ingredients, cocktailIngredients);
+      case "canInclude":
+        return canInclude(filter.ingredients, cocktailIngredients);
+      case "mustInclude":
+        return mustInclude(filter.ingredients, cocktailIngredients);
+      case "inGlass":
+        return inGlass(filter.glasses, cocktail);
+      case "inCategory":
+        return inCategory(filter.categories, cocktail);
+      default:
+        return true;
+    }
   });
 }
 
@@ -48,6 +62,20 @@ export function filtersFromUserOptions(userFilterOptions, bar) {
   // the option as to whether to only show stuff that is makeable from the bar
   if (userFilterOptions.barOnly)
     filters.push({ rule: "makeableFrom", ingredients: bar });
+
+  // the category option
+  if (userFilterOptions.categories.length)
+    filters.push({
+      rule: "inCategory",
+      categories: userFilterOptions.categories
+    });
+
+  // the glasses option
+  if (userFilterOptions.glasses.length)
+    filters.push({
+      rule: "inGlass",
+      glasses: userFilterOptions.glasses
+    });
 
   return filters;
 }

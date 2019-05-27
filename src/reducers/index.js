@@ -8,7 +8,9 @@ const initialState = {
   filterOptions: {
     ingredients: [],
     ingredientsRule: "mustInclude",
-    barOnly: false
+    barOnly: false,
+    categories: [],
+    glasses: []
   },
   bar: []
 };
