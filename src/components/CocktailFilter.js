@@ -110,8 +110,8 @@ const CocktailFilter = ({
         </Button>
       </FormControl>
 
-      <Grid container className={classes.checkboxOptionContainer}>
-        <Grid item md={6} xs={12}>
+      <Grid container>
+        <Grid item md={6} xs={12} className={classes.checkboxOptionContainer}>
           <FormControl component="fieldset" className={classes.formControl}>
             <FormLabel component="legend">Category</FormLabel>
             <FormGroup row>
@@ -141,7 +141,7 @@ const CocktailFilter = ({
             </FormGroup>
           </FormControl>
         </Grid>
-        <Grid item md={6} xs={12}>
+        <Grid item md={6} xs={12} className={classes.checkboxOptionContainer}>
           <FormControl component="fieldset" className={classes.formControl}>
             <FormLabel component="legend">Glass</FormLabel>
             <FormGroup row>
