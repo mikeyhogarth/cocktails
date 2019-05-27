@@ -1,6 +1,5 @@
 import React from "react";
 import Chip from "@material-ui/core/Chip";
-import remove from "lodash/remove";
 import { removeOrAddItemFromArray } from "../utilities/util";
 import map from "lodash/map";
 import { withStyles } from "@material-ui/core/styles";

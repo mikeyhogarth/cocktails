@@ -315,7 +315,7 @@
     "name": "Manhattan",
     "colors": "",
     "glass": "martini",
-    "category": "Before Dinner cocktail",
+    "category": "Before Dinner Cocktail",
     "ingredients": [
       {
         "unit": "cl",
@@ -547,7 +547,7 @@
     "name": "B52",
     "colors": ["#F39F00", "#E7D3B3", "#401110"],
     "glass": "shot",
-    "category": "After Dinner",
+    "category": "After Dinner Cocktail",
     "ingredients": [
       {
         "unit": "cl",
