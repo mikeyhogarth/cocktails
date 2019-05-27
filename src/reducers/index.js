@@ -5,9 +5,9 @@ const initialState = {
     cocktails: [],
     ingredients: []
   },
-  filter: {
+  filterOptions: {
     ingredients: [],
-    rule: "mustInclude",
+    ingredientsRule: "mustInclude",
     barOnly: false
   },
   bar: []
@@ -24,8 +24,8 @@ export default function(state = initialState, action) {
     case "UPDATE_FILTER":
       return {
         ...state,
-        filter: {
-          ...state.filter,
+        filterOptions: {
+          ...state.filterOptions,
           ...action.payload
         }
       };

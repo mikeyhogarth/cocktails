@@ -35,3 +35,19 @@ export async function applyFilters(cocktails, filters = []) {
     [...cocktails]
   );
 }
+// builds an array of filters based on the users current filter options.
+export function filtersFromUserOptions(userFilterOptions, bar) {
+  const filters = [];
+
+  // the option about whether to include all/some ingredients
+  filters.push({
+    rule: userFilterOptions.ingredientsRule,
+    ingredients: userFilterOptions.ingredients
+  });
+
+  // the option as to whether to only show stuff that is makeable from the bar
+  if (userFilterOptions.barOnly)
+    filters.push({ rule: "makeableFrom", ingredients: bar });
+
+  return filters;
+}
