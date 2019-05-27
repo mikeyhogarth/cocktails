@@ -30,7 +30,7 @@ const styles = theme => ({
 
 const CocktailFilter = ({
   updateFilter,
-  filter: { rule, ingredients: selectedIngredients, barOnly },
+  filterOptions: { ingredientsRule, ingredients: selectedIngredients, barOnly },
   classes
 }) => {
   return (
@@ -54,13 +54,14 @@ const CocktailFilter = ({
           />
         </FormGroup>
 
-        <RadioGroup value={rule} className={classes.radioGroup}>
+        <RadioGroup value={ingredientsRule} className={classes.radioGroup}>
           <FormControlLabel
             value="mustInclude"
             control={<Radio />}
             label="Must Include all of the following..."
             onClick={e =>
-              rule !== "mustInclude" && updateFilter({ rule: "mustInclude" })
+              ingredientsRule !== "mustInclude" &&
+              updateFilter({ ingredientsRule: "mustInclude" })
             }
           />
           <FormControlLabel
@@ -68,7 +69,8 @@ const CocktailFilter = ({
             control={<Radio />}
             label="Can Include any of the following..."
             onClick={e =>
-              rule !== "canInclude" && updateFilter({ rule: "canInclude" })
+              ingredientsRule !== "canInclude" &&
+              updateFilter({ ingredientsRule: "canInclude" })
             }
           />
         </RadioGroup>
@@ -93,7 +95,7 @@ const CocktailFilter = ({
 };
 
 const mapStateToProps = state => ({
-  filter: state.filter
+  filterOptions: state.filterOptions
 });
 
 const mapDispatchToProps = dispatch => ({

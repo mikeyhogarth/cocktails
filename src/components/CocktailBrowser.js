@@ -1,21 +1,18 @@
 import React, { useState, useEffect } from "react";
 import CocktailList from "./CocktailList";
 import CocktailFilter from "./CocktailFilter";
-import { applyFilters } from "../utilities/filter";
+import { applyFilters, filtersFromUserOptions } from "../utilities/filter";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { connect } from "react-redux";
 
-const CocktailBrowser = ({ filter, bar, allCocktails }) => {
+const CocktailBrowser = ({ filterOptions, bar, allCocktails }) => {
   const [filteredCocktails, setFilteredCocktails] = useState(allCocktails);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
 
-    applyFilters(allCocktails, [
-      filter.barOnly ? { rule: "makeableFrom", ingredients: bar } : null,
-      filter
-    ])
+    applyFilters(allCocktails, filtersFromUserOptions(filterOptions, bar))
       .then(cocktails => {
         return cocktails.sort((a, b) => (a.name > b.name ? 1 : -1));
       })
@@ -27,7 +24,7 @@ const CocktailBrowser = ({ filter, bar, allCocktails }) => {
           setLoading(false);
         }, 500);
       });
-  }, [filter, bar, allCocktails]);
+  }, [filterOptions, bar, allCocktails]);
 
   return (
     <div>
@@ -41,7 +38,7 @@ const CocktailBrowser = ({ filter, bar, allCocktails }) => {
 const mapStateToProps = state => ({
   allCocktails: state.db.cocktails,
   bar: state.bar,
-  filter: state.filter
+  filterOptions: state.filterOptions
 });
 
 export default connect(mapStateToProps)(CocktailBrowser);

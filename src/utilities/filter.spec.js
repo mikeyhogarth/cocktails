@@ -1,5 +1,5 @@
 import cocktails from "../data/cocktails.json";
-import { applyFilter, applyFilters } from "./filter";
+import { applyFilter, applyFilters, filtersFromUserOptions } from "./filter";
 
 describe("makeableFrom rule", () => {
   it("returns cocktails makeable from the passed-in ingredients", () => {
@@ -95,5 +95,22 @@ describe("combining filters", () => {
     // so that excludes the "Derby" which does not have vermouth in it.
     const combinedResults = await applyFilters(cocktails, [filter1, filter2]);
     expect(combinedResults.length).toEqual(4);
+  });
+});
+
+describe("filtersFromUserOptions", () => {
+  it("builds an array of filters based on the users current options", () => {
+    const filterOptions = {
+      ingredients: ["whiskey"],
+      ingredientsRule: "mustInclude",
+      barOnly: true
+    };
+
+    const bar = ["gin", "vodka"];
+
+    expect(filtersFromUserOptions(filterOptions, bar)).toEqual([
+      { ingredients: ["whiskey"], rule: "mustInclude" },
+      { ingredients: ["gin", "vodka"], rule: "makeableFrom" }
+    ]);
   });
 });
