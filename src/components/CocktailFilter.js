@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import FormControl from "@material-ui/core/FormControl";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
-import remove from "lodash/remove";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
