@@ -11,7 +11,7 @@ export function arrayContainsArray(superset, subset) {
 export function removeOrAddItemFromArray(item, array) {
   if (array.includes(item)) {
     remove(array, i => i === item);
-    return array;
+    return [...array];
   } else {
     return uniq([...array, item]);
   }
