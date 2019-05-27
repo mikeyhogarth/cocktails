@@ -1041,10 +1041,10 @@ Array [
         </button>
       </fieldset>
       <div
-        className="MuiGrid-container-183 CocktailFilter-checkboxOptionContainer-120"
+        className="MuiGrid-container-183"
       >
         <div
-          className="MuiGrid-item-184 MuiGrid-grid-xs-12-223 MuiGrid-grid-md-6-245"
+          className="MuiGrid-item-184 MuiGrid-grid-xs-12-223 MuiGrid-grid-md-6-245 CocktailFilter-checkboxOptionContainer-120"
         >
           <fieldset
             className="MuiFormControl-root-121"
@@ -1373,7 +1373,7 @@ Array [
           </fieldset>
         </div>
         <div
-          className="MuiGrid-item-184 MuiGrid-grid-xs-12-223 MuiGrid-grid-md-6-245"
+          className="MuiGrid-item-184 MuiGrid-grid-xs-12-223 MuiGrid-grid-md-6-245 CocktailFilter-checkboxOptionContainer-120"
         >
           <fieldset
             className="MuiFormControl-root-121"
