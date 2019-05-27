@@ -103,7 +103,9 @@ describe("filtersFromUserOptions", () => {
     const filterOptions = {
       ingredients: ["whiskey"],
       ingredientsRule: "mustInclude",
-      barOnly: true
+      barOnly: true,
+      categories: [],
+      glasses: []
     };
 
     const bar = ["gin", "vodka"];

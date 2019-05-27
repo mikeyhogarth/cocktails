@@ -1,5 +1,13 @@
 import { arrayContainsArray } from "./util";
 
+/**
+ * Cocktail filtering rules
+ *
+ * each rule basically needs to return 'true' if the cocktail should
+ * be returned.
+ *
+ */
+
 // cocktail will be returned if it includes all of the ingredients
 // in the filter - NONE can be missing.
 export function makeableFrom(filterIngredients, cocktailIngredients) {
@@ -21,4 +29,12 @@ export function canInclude(filterIngredients, cocktailIngredients) {
   return cocktailIngredients.some(i => {
     return filterIngredients.includes(i);
   });
+}
+
+export function inGlass(glasses, cocktail) {
+  return glasses.includes(cocktail.glass);
+}
+
+export function inCategory(categories, cocktail) {
+  return categories.includes(cocktail.category);
 }
