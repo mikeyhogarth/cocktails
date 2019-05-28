@@ -7,6 +7,7 @@ const styles = theme => ({
 });
 
 const Definition = ({ title, description, classes }) => {
+  if (!description) return null;
   return (
     <>
       <dt className={classes.dt}>{title}</dt>
