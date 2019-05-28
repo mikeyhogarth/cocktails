@@ -2,6 +2,7 @@ import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
 import { connect } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
+import compact from "lodash/compact";
 
 const styles = {
   tooltip: {
@@ -11,29 +12,25 @@ const styles = {
 
 const IngredientDetail = function({ item, allIngredients, classes }) {
   if (item.special) return <span>{item.special}</span>;
-  else {
-    const { taste, abv } = allIngredients[item.ingredient] || {};
-    const toolTipContent = [];
-    if (abv > 0) {
-      toolTipContent.push(abv + "% abv");
-    } else {
-      toolTipContent.push("Non-alcoholic");
-    }
-    if (taste) toolTipContent.push(taste);
 
-    return (
-      <span>
-        {item.amount} {item.unit}{" "}
-        <Tooltip
-          className={classes.tooltip}
-          title={toolTipContent.join(", ")}
-          placement="top"
-        >
-          <strong>{item.label || item.ingredient}</strong>
-        </Tooltip>
-      </span>
-    );
-  }
+  const { taste, abv } = allIngredients[item.ingredient] || {};
+
+  const toolTipContent = [];
+  toolTipContent.push(abv > 0 ? abv + "% abv" : "Non-alcoholic");
+  toolTipContent.push(taste);
+
+  return (
+    <span>
+      {item.amount} {item.unit}{" "}
+      <Tooltip
+        className={classes.tooltip}
+        title={compact(toolTipContent).join(", ")}
+        placement="top"
+      >
+        <strong>{item.label || item.ingredient}</strong>
+      </Tooltip>
+    </span>
+  );
 };
 
 const mapStateToProps = state => ({
