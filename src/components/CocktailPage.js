@@ -17,8 +17,14 @@ const styles = theme => ({
     padding: "1em 2em",
     marginBottom: "1em"
   },
+  innerContainer: {
+    padding: "0 2.7em"
+  },
   root: {
     ...theme.mixins.gutters,
+    justifyContent: "center"
+  },
+  gridList: {
     justifyContent: "center"
   },
   definitions: {
@@ -30,7 +36,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
   const cocktail = allCocktails.find(c => c.slug === match.params.slug);
   if (!cocktail) return null;
 
-  if (!cocktail.enriching && !cocktail.enriched) enrichCocktail(cocktail.name);
+  if (!cocktail.enriching && !cocktail.enriched) enrichCocktail(cocktail);
 
   const {
     name,
@@ -46,7 +52,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper} square>
-        <Grid container className={classes.root}>
+        <Grid container className={classes.innerContainer} spacing={2}>
           <Grid item md={8} xs={12}>
             <Typography variant="h2" color="inherit" gutterBottom>
               {name}
@@ -91,12 +97,25 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
           </Grid>
         </Grid>
         <br />
-        {enriched && enrichment.variants && (
-          <GridList className={classes.gridList}>
-            {enrichment.variants.map(variant => {
-              return <CocktailVariant key={variant.name} cocktail={variant} />;
-            })}
-          </GridList>
+        {enriched && enrichment.variants && enrichment.variants.length > 0 && (
+          <>
+            <Typography
+              style={{ paddingLeft: "0.7em" }}
+              variant="h2"
+              color="inherit"
+              gutterBottom
+            >
+              Variants
+            </Typography>
+
+            <GridList className={classes.gridList}>
+              {enrichment.variants.map(variant => {
+                return (
+                  <CocktailVariant key={variant.name} cocktail={variant} />
+                );
+              })}
+            </GridList>
+          </>
         )}
       </Paper>
     </div>

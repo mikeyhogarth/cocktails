@@ -367,6 +367,7 @@
   },
   {
     "name": "Espresso Martini",
+    "searchTerm": "martini",
     "colors": "",
     "glass": "martini",
     "category": "After Dinner Cocktail",
@@ -914,6 +915,7 @@
   },
   {
     "name": "John Collins",
+    "searchTerm": "collins",
     "colors": "",
     "glass": "highball",
     "category": "Longdrink",
@@ -992,6 +994,7 @@
   },
   {
     "name": "Dirty Martini",
+    "searchTerm": "martini",
     "colors": "",
     "glass": "martini",
     "category": "Before Dinner Cocktail",
@@ -1158,6 +1161,7 @@
   },
   {
     "name": "Dry Martini",
+    "searchTerm": "martini",
     "colors": "",
     "glass": "martini",
     "category": "Before Dinner Cocktail",

@@ -1,9 +1,11 @@
 import compact from "lodash/compact";
 import trim from "lodash/trim";
 
-export async function fetchCocktailEnrichment(cocktailName) {
+export async function fetchCocktailEnrichment(cocktail) {
+  const cocktailName = cocktail.name;
   return fetch(
-    `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailName}`
+    `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail.searchTerm ||
+      cocktailName}`
   )
     .then(response => response.json())
     .then(({ drinks }) => {
@@ -23,7 +25,7 @@ export async function fetchCocktailEnrichment(cocktailName) {
             ingredients.push(trim(measure + name));
           }
           return {
-            name: `Variant: ${d.strDrink}`,
+            name: `${d.strDrink}`,
             image: d.strDrinkThumb,
             category: d.strDrinkCategory,
             glass: d.strDrinkGlass,

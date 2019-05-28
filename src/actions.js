@@ -34,11 +34,11 @@ function finishEnrichCocktail(cocktailName, enrichment) {
   };
 }
 
-export function enrichCocktail(cocktailName) {
+export function enrichCocktail(cocktail) {
   return (dispatch, getState) => {
-    dispatch(startEnrichCocktail(cocktailName));
-    fetchCocktailEnrichment(cocktailName).then(enrichment => {
-      dispatch(finishEnrichCocktail(cocktailName, enrichment));
+    dispatch(startEnrichCocktail(cocktail.name));
+    fetchCocktailEnrichment(cocktail).then(enrichment => {
+      dispatch(finishEnrichCocktail(cocktail.name, enrichment));
     });
   };
 }
