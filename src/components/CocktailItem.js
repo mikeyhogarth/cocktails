@@ -2,6 +2,8 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
+import CardActions from "@material-ui/core/CardActions";
+import Button from "@material-ui/core/Button";
 import LocalBar from "@material-ui/icons/LocalBar";
 import Redo from "@material-ui/icons/Redo";
 import isArray from "lodash/isArray";
@@ -9,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 
 import { withStyles } from "@material-ui/core/styles";
 import Ingredient from "./IngredientDetail";
+import { Link } from "react-router-dom";
 
 const styles = {
   circle: {
@@ -20,6 +23,12 @@ const styles = {
   card: {
     width: "20em",
     margin: ".5em"
+  },
+  cardContent: {
+    padding: "1em"
+  },
+  button: {
+    padding: "0.5em 1em"
   },
   title: {
     fontSize: 20,
@@ -61,7 +70,7 @@ const CocktailItem = ({ cocktail, classes }) => {
           <span className={classes.subHeader}>{cocktail.category}</span>
         }
       />
-      <CardContent>
+      <CardContent className={classes.cardContent}>
         <ul>
           {cocktail.ingredients.map((item, idx) => (
             <li key={idx}>
@@ -91,6 +100,17 @@ const CocktailItem = ({ cocktail, classes }) => {
           </Typography>
         )}
       </CardContent>
+      <CardActions className={classes.actions}>
+        <Button
+          component={Link}
+          to={`/cocktails/${cocktail.slug}`}
+          className={classes.button}
+          size="large"
+          color="primary"
+        >
+          Learn More
+        </Button>
+      </CardActions>
     </Card>
   );
 };

@@ -66,7 +66,7 @@ Array [
           Browse
         </span>
         <span
-          className="MuiTouchRipple-root-314"
+          className="MuiTouchRipple-root-328"
         />
       </a>
       <a
@@ -93,7 +93,7 @@ Array [
           Bar
         </span>
         <span
-          className="MuiTouchRipple-root-314"
+          className="MuiTouchRipple-root-328"
         />
       </a>
     </div>
@@ -145,7 +145,7 @@ Array [
                   />
                 </span>
                 <span
-                  className="MuiTouchRipple-root-314"
+                  className="MuiTouchRipple-root-328"
                 />
               </span>
               <span
@@ -215,7 +215,7 @@ Array [
                 />
               </span>
               <span
-                className="MuiTouchRipple-root-314"
+                className="MuiTouchRipple-root-328"
               />
             </span>
             <span
@@ -267,7 +267,7 @@ Array [
                 />
               </span>
               <span
-                className="MuiTouchRipple-root-314"
+                className="MuiTouchRipple-root-328"
               />
             </span>
             <span
@@ -1036,7 +1036,7 @@ Array [
             Clear Ingredients
           </span>
           <span
-            className="MuiTouchRipple-root-314"
+            className="MuiTouchRipple-root-328"
           />
         </button>
       </fieldset>
@@ -1100,7 +1100,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1152,7 +1152,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1204,7 +1204,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1256,7 +1256,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1308,7 +1308,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1360,7 +1360,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1429,7 +1429,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1481,7 +1481,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1533,7 +1533,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1585,7 +1585,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1637,7 +1637,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1689,7 +1689,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1741,7 +1741,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1793,7 +1793,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1845,7 +1845,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1897,7 +1897,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1949,7 +1949,7 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-314"
+                    className="MuiTouchRipple-root-328"
                   />
                 </span>
                 <span
@@ -1964,15 +1964,15 @@ Array [
       </div>
     </div>
     <div
-      className="MuiLinearProgress-root-321 MuiLinearProgress-colorPrimary-322 MuiLinearProgress-indeterminate-325"
+      className="MuiLinearProgress-root-335 MuiLinearProgress-colorPrimary-336 MuiLinearProgress-indeterminate-339"
       role="progressbar"
     >
       <div
-        className="MuiLinearProgress-bar-331 MuiLinearProgress-barColorPrimary-332 MuiLinearProgress-bar1Indeterminate-334"
+        className="MuiLinearProgress-bar-345 MuiLinearProgress-barColorPrimary-346 MuiLinearProgress-bar1Indeterminate-348"
         style={Object {}}
       />
       <div
-        className="MuiLinearProgress-bar-331 MuiLinearProgress-barColorPrimary-332 MuiLinearProgress-bar2Indeterminate-337"
+        className="MuiLinearProgress-bar-345 MuiLinearProgress-barColorPrimary-346 MuiLinearProgress-bar2Indeterminate-351"
         style={Object {}}
       />
     </div>
