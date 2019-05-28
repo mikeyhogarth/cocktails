@@ -14,12 +14,14 @@ import CocktailVariant from "./CocktailPage/CocktailVariant";
 import CocktailImage from "./CocktailPage/CocktailImage";
 const styles = theme => ({
   paper: {
-    marginBottom: "1em",
+    margin: ".5em",
     padding: "1em 2em"
   },
   root: {
     ...theme.mixins.gutters,
-    justifyContent: "center"
+    justifyContent: "center",
+    marginLeft: "2em",
+    marginRight: "2em"
   },
   definitions: {
     marginTop: "1.5em"
@@ -50,7 +52,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
         </Typography>
 
         <Grid container className={classes.root}>
-          <Grid item md={9} xs={12}>
+          <Grid item md={8} xs={12}>
             <Typography variant="h2" color="inherit" gutterBottom>
               {name}
             </Typography>
@@ -84,9 +86,11 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
               </>
             </Typography>
           </Grid>
-          <Grid item md={3} xs={12}>
+          <Grid item md={4} xs={12}>
             {enriched && enrichment.image && (
-              <CocktailImage image={enrichment.image} name={name} />
+              <div style={{ marginRight: "1em" }}>
+                <CocktailImage image={enrichment.image} name={name} />
+              </div>
             )}
           </Grid>
         </Grid>

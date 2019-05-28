@@ -51,7 +51,7 @@ const CocktailVariant = ({
   classes
 }) => {
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} elevation={5}>
       <CardHeader
         title={<h1 className={classes.title}>{name}</h1>}
         subheader={<span className={classes.subHeader}>{category}</span>}
