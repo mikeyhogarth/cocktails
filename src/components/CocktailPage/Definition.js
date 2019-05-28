@@ -3,10 +3,11 @@ import { withStyles } from "@material-ui/core";
 
 const styles = theme => ({
   dt: { fontWeight: "bold" },
-  dd: { marginLeft: 0, marginBottom: ".5em" }
+  dd: { marginLeft: 0, marginBottom: ".5em", marginRight: "1em" }
 });
 
 const Definition = ({ title, description, classes }) => {
+  if (!description) return null;
   return (
     <>
       <dt className={classes.dt}>{title}</dt>

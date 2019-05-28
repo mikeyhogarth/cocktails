@@ -1,7 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import Definition from "./CocktailPage/Definition";
@@ -14,14 +13,19 @@ import CocktailVariant from "./CocktailPage/CocktailVariant";
 import CocktailImage from "./CocktailPage/CocktailImage";
 const styles = theme => ({
   paper: {
-    margin: ".5em",
-    padding: "1em 2em"
+    margin: 0,
+    padding: "1em 2em",
+    marginBottom: "1em"
+  },
+  innerContainer: {
+    padding: "0 2.7em"
   },
   root: {
     ...theme.mixins.gutters,
-    justifyContent: "center",
-    marginLeft: "2em",
-    marginRight: "2em"
+    justifyContent: "center"
+  },
+  gridList: {
+    justifyContent: "center"
   },
   definitions: {
     marginTop: "1.5em"
@@ -32,7 +36,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
   const cocktail = allCocktails.find(c => c.slug === match.params.slug);
   if (!cocktail) return null;
 
-  if (!cocktail.enriching && !cocktail.enriched) enrichCocktail(cocktail.name);
+  if (!cocktail.enriching && !cocktail.enriched) enrichCocktail(cocktail);
 
   const {
     name,
@@ -40,18 +44,15 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
     preparation,
     category,
     glass,
+    garnish,
     enriched,
     enrichment
   } = cocktail;
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <Typography component="p" color="inherit" gutterBottom>
-          <Link to="/cocktails">Cocktails</Link> / {name}
-        </Typography>
-
-        <Grid container className={classes.root}>
+      <Paper className={classes.paper} square>
+        <Grid container className={classes.innerContainer} spacing={2}>
           <Grid item md={8} xs={12}>
             <Typography variant="h2" color="inherit" gutterBottom>
               {name}
@@ -77,6 +78,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
                 <Definition title="Category" description={category} />
                 <Definition title="Glass" description={glass} />
                 <Definition title="Preparation" description={preparation} />
+                <Definition title="Garnish" description={garnish} />
                 {enriched && enrichment.ibaCategory && (
                   <Definition
                     title="IBA Category"
@@ -95,14 +97,27 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
           </Grid>
         </Grid>
         <br />
+        {enriched && enrichment.variants && enrichment.variants.length > 0 && (
+          <>
+            <Typography
+              style={{ paddingLeft: "0.7em" }}
+              variant="h2"
+              color="inherit"
+              gutterBottom
+            >
+              Variants
+            </Typography>
+
+            <GridList className={classes.gridList}>
+              {enrichment.variants.map(variant => {
+                return (
+                  <CocktailVariant key={variant.name} cocktail={variant} />
+                );
+              })}
+            </GridList>
+          </>
+        )}
       </Paper>
-      {enriched && enrichment.variants && (
-        <GridList className={classes.gridList}>
-          {enrichment.variants.map(variant => {
-            return <CocktailVariant key={variant.name} cocktail={variant} />;
-          })}
-        </GridList>
-      )}
     </div>
   );
 };

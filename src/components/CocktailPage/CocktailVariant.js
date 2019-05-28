@@ -15,7 +15,7 @@ const styles = {
     float: "right"
   },
   card: {
-    width: "20em",
+    width: "30%",
     margin: ".5em"
   },
   cardContent: {
@@ -51,7 +51,7 @@ const CocktailVariant = ({
   classes
 }) => {
   return (
-    <Card className={classes.card} elevation={5}>
+    <Card className={classes.card}>
       <CardHeader
         title={<h1 className={classes.title}>{name}</h1>}
         subheader={<span className={classes.subHeader}>{category}</span>}
