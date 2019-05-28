@@ -5,6 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import LocalBar from "@material-ui/icons/LocalBar";
 import CocktailBrowser from "./components/CocktailBrowser";
+import CocktailPage from "./components/CocktailPage";
 import EditBar from "./components/Bar";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
@@ -46,6 +47,7 @@ function App({ classes }) {
         }
         <Route exact path={["/", "/cocktails"]} component={CocktailBrowser} />
         <Route path="/my-bar" component={EditBar} />
+        <Route path={"/cocktails/:slug"} component={CocktailPage} />
       </Router>
     </Theme>
   );
