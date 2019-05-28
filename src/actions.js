@@ -1,3 +1,5 @@
+import { fetchCocktailEnrichment } from "./services/cocktailDBAPI.service";
+
 export function loadCocktails(payload) {
   return { type: "LOAD_COCKTAILS", payload };
 }
@@ -16,4 +18,27 @@ export function setBar(payload) {
 
 export function addToBar(payload) {
   return { type: "ADD_TO_BAR", payload };
+}
+
+function startEnrichCocktail(cocktailName) {
+  return { type: "START_ENRICH_COCKTAIL", payload: cocktailName };
+}
+
+function finishEnrichCocktail(cocktailName, enrichment) {
+  return {
+    type: "FINISH_ENRICH_COCKTAIL",
+    payload: {
+      cocktailName,
+      enrichment
+    }
+  };
+}
+
+export function enrichCocktail(cocktailName) {
+  return (dispatch, getState) => {
+    dispatch(startEnrichCocktail(cocktailName));
+    fetchCocktailEnrichment(cocktailName).then(enrichment => {
+      dispatch(finishEnrichCocktail(cocktailName, enrichment));
+    });
+  };
 }
