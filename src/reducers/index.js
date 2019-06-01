@@ -1,5 +1,16 @@
 import uniq from "lodash/uniq";
 
+// return a new cocktailDB with the named cocktail updated. This is a
+// convinience method for several of the reducer functions below.
+function updateCocktailInDB(cocktailDb, cocktailName, newAttributes) {
+  return cocktailDb.map(cocktail => {
+    if (cocktail.name === cocktailName) {
+      return { ...cocktail, ...newAttributes };
+    }
+    return cocktail;
+  });
+}
+
 const initialState = {
   db: {
     cocktails: [],
@@ -15,6 +26,9 @@ const initialState = {
   bar: []
 };
 
+/**
+ * Main reducer
+ */
 export default function(state = initialState, action) {
   switch (action.type) {
     case "LOAD_COCKTAILS":
@@ -83,14 +97,4 @@ export default function(state = initialState, action) {
     default:
       return state;
   }
-}
-
-// return a new cocktailDB with the named cocktail updated
-function updateCocktailInDB(cocktailDb, cocktailName, newAttributes) {
-  return cocktailDb.map(cocktail => {
-    if (cocktail.name === cocktailName) {
-      return { ...cocktail, ...newAttributes };
-    }
-    return cocktail;
-  });
 }
