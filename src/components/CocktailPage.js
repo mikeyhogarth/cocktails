@@ -7,6 +7,7 @@ import Definition from "./CocktailPage/Definition";
 import IngredientDetail from "./IngredientDetail";
 import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import Grid from "@material-ui/core/Grid";
 import GridList from "@material-ui/core/GridList";
 import CocktailVariant from "./CocktailPage/CocktailVariant";
@@ -29,6 +30,9 @@ const styles = theme => ({
   },
   definitions: {
     marginTop: "1.5em"
+  },
+  progress: {
+    width: "100%"
   }
 });
 
@@ -36,7 +40,9 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
   const cocktail = allCocktails.find(c => c.slug === match.params.slug);
   if (!cocktail) return null;
 
-  if (!cocktail.enriching && !cocktail.enriched) enrichCocktail(cocktail);
+  const { enriched, enriching, enrichmentFailed } = cocktail;
+
+  if (!enriching && !enriched && !enrichmentFailed) enrichCocktail(cocktail);
 
   const {
     name,
@@ -45,23 +51,22 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
     category,
     glass,
     garnish,
-    enriched,
     enrichment
   } = cocktail;
 
   return (
     <div className={classes.root}>
       <Paper className={classes.paper} square>
-        <Grid container className={classes.innerContainer} spacing={2}>
+        <Grid container className={classes.innerContainer} spacing={16}>
           <Grid item md={8} xs={12}>
             <Typography variant="h2" color="inherit" gutterBottom>
               {name}
             </Typography>
             <Typography component="ul" color="inherit" gutterBottom>
               <>
-                {ingredients.map(ingredient => {
+                {ingredients.map((ingredient, idx) => {
                   return (
-                    <li>
+                    <li key={`ingredient-${idx}`}>
                       <IngredientDetail item={ingredient} />
                     </li>
                   );
@@ -89,18 +94,24 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
             </Typography>
           </Grid>
           <Grid item md={4} xs={12}>
-            {enriched && enrichment.image && (
-              <div style={{ marginRight: "1em" }}>
-                <CocktailImage image={enrichment.image} name={name} />
-              </div>
-            )}
+            <div style={{ textAlign: "center" }}>
+              {enriching && (
+                <CircularProgress size="50%" className={classes.progress} />
+              )}
+              {enriched && enrichment.image && (
+                <div style={{ marginRight: "1em" }}>
+                  <CocktailImage image={enrichment.image} name={name} />
+                </div>
+              )}
+            </div>
           </Grid>
         </Grid>
         <br />
+
         {enriched && enrichment.variants && enrichment.variants.length > 0 && (
           <>
             <Typography
-              style={{ paddingLeft: "0.7em" }}
+              style={{ marginTop: "1em", paddingLeft: "0.7em" }}
               variant="h2"
               color="inherit"
               gutterBottom

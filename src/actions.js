@@ -24,6 +24,10 @@ function startEnrichCocktail(cocktailName) {
   return { type: "START_ENRICH_COCKTAIL", payload: cocktailName };
 }
 
+function failEnrichCocktail(cocktailName, error) {
+  return { type: "FAIL_ENRICH_COCKTAIL", payload: { cocktailName, error } };
+}
+
 function finishEnrichCocktail(cocktailName, enrichment) {
   return {
     type: "FINISH_ENRICH_COCKTAIL",
@@ -37,8 +41,12 @@ function finishEnrichCocktail(cocktailName, enrichment) {
 export function enrichCocktail(cocktail) {
   return (dispatch, getState) => {
     dispatch(startEnrichCocktail(cocktail.name));
-    fetchCocktailEnrichment(cocktail).then(enrichment => {
-      dispatch(finishEnrichCocktail(cocktail.name, enrichment));
-    });
+    fetchCocktailEnrichment(cocktail)
+      .then(enrichment => {
+        dispatch(finishEnrichCocktail(cocktail.name, enrichment));
+      })
+      .catch(err => {
+        dispatch(failEnrichCocktail(cocktail.name, err));
+      });
   };
 }

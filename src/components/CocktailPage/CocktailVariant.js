@@ -8,14 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = {
-  circle: {
-    width: ".8em",
-    height: ".8em",
-    display: "inline-block",
-    float: "right"
-  },
   card: {
-    width: "30%",
+    width: "20em",
     margin: ".5em"
   },
   cardContent: {

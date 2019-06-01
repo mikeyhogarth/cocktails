@@ -1,5 +1,16 @@
 import uniq from "lodash/uniq";
 
+// return a new cocktailDB with the named cocktail updated. This is a
+// convinience method for several of the reducer functions below.
+function updateCocktailInDB(cocktailDb, cocktailName, newAttributes) {
+  return cocktailDb.map(cocktail => {
+    if (cocktail.name === cocktailName) {
+      return { ...cocktail, ...newAttributes };
+    }
+    return cocktail;
+  });
+}
+
 const initialState = {
   db: {
     cocktails: [],
@@ -15,9 +26,10 @@ const initialState = {
   bar: []
 };
 
+/**
+ * Main reducer
+ */
 export default function(state = initialState, action) {
-  let cocktailDb;
-
   switch (action.type) {
     case "LOAD_COCKTAILS":
       return { ...state, db: { ...state.db, cocktails: action.payload } };
@@ -38,26 +50,50 @@ export default function(state = initialState, action) {
     case "ADD_TO_BAR":
       return { ...state, bar: uniq([...state.bar, action.payload]) };
     case "START_ENRICH_COCKTAIL":
-      cocktailDb = state.db.cocktails.map(cocktail => {
-        if (cocktail.name === action.payload) {
-          cocktail.enriching = true;
-          return { ...cocktail };
+      return {
+        ...state,
+        db: {
+          ...state.db,
+          cocktails: updateCocktailInDB(state.db.cocktails, action.payload, {
+            enriching: true
+          })
         }
-        return cocktail;
-      });
-      return { ...state, db: { ...state.db, cocktails: cocktailDb } };
+      };
+
+    case "FAIL_ENRICH_COCKTAIL":
+      return {
+        ...state,
+        db: {
+          ...state.db,
+          cocktails: updateCocktailInDB(
+            state.db.cocktails,
+            action.payload.cocktailName,
+            {
+              enriching: false,
+              enrichmentFailed: true,
+              enrichmentFailedError: action.payload.error.message
+            }
+          )
+        }
+      };
 
     case "FINISH_ENRICH_COCKTAIL":
-      cocktailDb = state.db.cocktails.map(cocktail => {
-        if (cocktail.name === action.payload.cocktailName) {
-          cocktail.enriching = false;
-          cocktail.enriched = true;
-          cocktail.enrichment = action.payload.enrichment;
-          return { ...cocktail };
+      return {
+        ...state,
+        db: {
+          ...state.db,
+          cocktails: updateCocktailInDB(
+            state.db.cocktails,
+            action.payload.cocktailName,
+            {
+              enriching: false,
+              enriched: true,
+              enrichment: action.payload.enrichment
+            }
+          )
         }
-        return cocktail;
-      });
-      return { ...state, db: { ...state.db, cocktails: cocktailDb } };
+      };
+
     default:
       return state;
   }

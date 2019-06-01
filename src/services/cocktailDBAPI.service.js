@@ -3,6 +3,7 @@ import trim from "lodash/trim";
 
 export async function fetchCocktailEnrichment(cocktail) {
   const cocktailName = cocktail.name;
+
   return fetch(
     `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail.searchTerm ||
       cocktailName}`
