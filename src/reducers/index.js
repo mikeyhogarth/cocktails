@@ -23,7 +23,10 @@ const initialState = {
     categories: [],
     glasses: []
   },
-  bar: []
+  bar: [],
+  settings: {
+    theme: "indigo"
+  }
 };
 
 /**
@@ -47,6 +50,14 @@ export default function(state = initialState, action) {
       };
     case "SET_BAR":
       return { ...state, bar: [...action.payload] };
+    case "UPDATE_SETTINGS":
+      return {
+        ...state,
+        settings: {
+          ...state.settings,
+          ...action.payload
+        }
+      };
     case "ADD_TO_BAR":
       return { ...state, bar: uniq([...state.bar, action.payload]) };
     case "START_ENRICH_COCKTAIL":
