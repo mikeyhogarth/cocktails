@@ -20,6 +20,10 @@ export function addToBar(payload) {
   return { type: "ADD_TO_BAR", payload };
 }
 
+export function updateSettings(payload) {
+  return { type: "UPDATE_SETTINGS", payload };
+}
+
 function startEnrichCocktail(cocktailName) {
   return { type: "START_ENRICH_COCKTAIL", payload: cocktailName };
 }
