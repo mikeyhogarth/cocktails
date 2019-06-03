@@ -26,7 +26,8 @@ const initialState = {
   bar: [],
   settings: {
     theme: "light",
-    color: "indigo"
+    color: "indigo",
+    pride: false
   }
 };
 
@@ -51,6 +52,14 @@ export default function(state = initialState, action) {
       };
     case "SET_BAR":
       return { ...state, bar: [...action.payload] };
+    case "TOGGLE_PRIDE":
+      return {
+        ...state,
+        settings: {
+          ...state.settings,
+          pride: !state.settings.pride
+        }
+      };
     case "UPDATE_SETTINGS":
       return {
         ...state,

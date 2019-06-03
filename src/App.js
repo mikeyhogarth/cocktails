@@ -13,23 +13,47 @@ import Settings from "./components/Settings";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 const styles = {
   grow: {
     flexGrow: 1
   },
   title: {
-    margin: ".3em",
     color: "white",
+    margin: ".3em",
     fontSize: 20
+  },
+  prideTitle: {
+    color: "white",
+    margin: ".3em",
+    fontSize: 20
+  },
+  prideBackground: {
+    background: `linear-gradient(to bottom,
+        #e70000 0,
+        #e70000 16%,
+        #ff8c00 16%,
+        #ff8c00 32%,
+        #ffd400 32%,
+        #ffd400 48%,
+        #00811f 48%,
+        #00811f 66%,
+        #0044ff 66%,
+        #0044ff 86%,
+        #760089 86%) no-repeat`
   }
 };
 
-function App({ classes }) {
+function App({ pride, classes }) {
+  const textClass = pride ? classes.prideText : null;
   return (
     <Theme>
       <Router>
-        <AppBar position="static">
+        <AppBar
+          position="static"
+          className={pride ? classes.prideBackground : null}
+        >
           <Toolbar>
             <Button component={Link} to="/cocktails" color="inherit">
               <CocktailIcon />
@@ -38,7 +62,9 @@ function App({ classes }) {
             <Typography component="h1" className={classes.grow}>
               <Link to="/cocktails" style={{ textDecoration: "none" }}>
                 <Hidden xsDown>
-                  <span className={classes.title}>Cocktail Browser</span>
+                  <span className={pride ? classes.title : classes.prideTitle}>
+                    Cocktail Browser
+                  </span>
                 </Hidden>
               </Link>
             </Typography>
@@ -66,4 +92,8 @@ function App({ classes }) {
   );
 }
 
-export default withStyles(styles)(App);
+const mapStateToProps = state => ({
+  pride: state.settings.pride
+});
+
+export default connect(mapStateToProps)(withStyles(styles)(App));

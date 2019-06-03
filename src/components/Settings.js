@@ -7,9 +7,10 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
+import Switch from "@material-ui/core/Switch";
 
 import { bindActionCreators } from "redux";
-import { updateSettings } from "../actions";
+import { updateSettings, togglePride } from "../actions";
 import { connect } from "react-redux";
 import { colors } from "../theme";
 import capitalize from "lodash/capitalize";
@@ -26,7 +27,7 @@ const styles = theme => ({
   }
 });
 
-const Settings = ({ classes, settings, updateSettings }) => {
+const Settings = ({ classes, settings, updateSettings, togglePride }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.content}>
@@ -83,6 +84,23 @@ const Settings = ({ classes, settings, updateSettings }) => {
             })}
           </RadioGroup>
         </FormControl>
+
+        <FormControl>
+          <FormLabel component="legend">Pride!</FormLabel>
+
+          <FormControlLabel
+            control={
+              <Switch
+                checked={settings.pride}
+                onChange={e => {
+                  togglePride();
+                }}
+                value={settings.pride}
+              />
+            }
+            label={<Typography component="span">Fly the colours</Typography>}
+          />
+        </FormControl>
       </Paper>
     </div>
   );
@@ -93,7 +111,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateSettings: bindActionCreators(updateSettings, dispatch)
+  updateSettings: bindActionCreators(updateSettings, dispatch),
+  togglePride: bindActionCreators(togglePride, dispatch)
 });
 
 export default connect(

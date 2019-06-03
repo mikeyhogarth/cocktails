@@ -24,6 +24,10 @@ export function updateSettings(payload) {
   return { type: "UPDATE_SETTINGS", payload };
 }
 
+export function togglePride() {
+  return { type: "TOGGLE_PRIDE" };
+}
+
 function startEnrichCocktail(cocktailName) {
   return { type: "START_ENRICH_COCKTAIL", payload: cocktailName };
 }
