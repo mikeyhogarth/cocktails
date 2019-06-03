@@ -207,8 +207,22 @@ Array [
                 <a
                   href="/my-bar"
                   onClick={[Function]}
+                  style={
+                    Object {
+                      "textDecoration": "none",
+                    }
+                  }
                 >
-                  my bar
+                  <span
+                    className="MuiTypography-root-52 MuiTypography-body2-60 MuiTypography-colorSecondary-83"
+                    style={
+                      Object {
+                        "display": "inline",
+                      }
+                    }
+                  >
+                    my bar
+                  </span>
                 </a>
               </span>
             </span>
