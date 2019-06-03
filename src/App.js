@@ -5,6 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import CocktailIcon from "@material-ui/icons/LocalBar";
 import SettingsIcon from "@material-ui/icons/Settings";
+import Hidden from "@material-ui/core/Hidden";
 import CocktailBrowser from "./components/CocktailBrowser";
 import CocktailPage from "./components/CocktailPage";
 import Bar from "./components/Bar";
@@ -33,7 +34,9 @@ function App({ classes }) {
             <CocktailIcon />
             <Typography component="h1" className={classes.grow} color="inherit">
               <Link to="/cocktails" style={{ textDecoration: "none" }}>
-                <span className={classes.title}>Cocktail Browser</span>
+                <Hidden xsDown>
+                  <span className={classes.title}>Cocktail Browser</span>
+                </Hidden>
               </Link>
             </Typography>
             <Button component={Link} to="/cocktails" color="inherit">
