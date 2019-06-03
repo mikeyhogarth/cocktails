@@ -23,7 +23,7 @@ const MakeableCocktails = ({ makeableCocktails, classes }) => {
       <Typography variant="h3" className={classes.title} gutterBottom>
         Makeable Cocktails
       </Typography>
-      <Typography color="inherit" component="p" paragraph>
+      <Typography component="p" paragraph>
         These are the cocktails you can make...
       </Typography>
       <List className={classes.list}>

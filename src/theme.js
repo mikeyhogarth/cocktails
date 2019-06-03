@@ -10,7 +10,7 @@ import pink from "@material-ui/core/colors/pink";
 
 import { connect } from "react-redux";
 
-export const colorThemes = {
+export const colors = {
   indigo,
   red,
   teal,
@@ -21,10 +21,11 @@ export const colorThemes = {
 /**
  * override theme defaults here.
  */
-function createTheme(primaryColor) {
+function createTheme(color, theme) {
   return createMuiTheme({
     palette: {
-      primary: colorThemes[primaryColor]
+      primary: colors[color],
+      type: theme
     },
     typography: {
       useNextVariants: true
@@ -33,11 +34,12 @@ function createTheme(primaryColor) {
 }
 
 const mapStateToProps = state => ({
-  primaryColor: state.settings.theme
+  color: state.settings.color,
+  theme: state.settings.theme
 });
 
-const Theme = ({ primaryColor, children }) => (
-  <MuiThemeProvider theme={createTheme(primaryColor)}>
+const Theme = ({ color, theme, children }) => (
+  <MuiThemeProvider theme={createTheme(color, theme)}>
     <CssBaseline />
     {children}
   </MuiThemeProvider>

@@ -31,8 +31,11 @@ function App({ classes }) {
       <Router>
         <AppBar position="static">
           <Toolbar>
-            <CocktailIcon />
-            <Typography component="h1" className={classes.grow} color="inherit">
+            <Button component={Link} to="/cocktails" color="inherit">
+              <CocktailIcon />
+            </Button>
+
+            <Typography component="h1" className={classes.grow}>
               <Link to="/cocktails" style={{ textDecoration: "none" }}>
                 <Hidden xsDown>
                   <span className={classes.title}>Cocktail Browser</span>

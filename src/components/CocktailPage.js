@@ -59,10 +59,10 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
       <Paper className={classes.paper} square>
         <Grid container className={classes.innerContainer} spacing={16}>
           <Grid item md={8} xs={12}>
-            <Typography variant="h2" color="inherit" gutterBottom>
+            <Typography variant="h2" gutterBottom>
               {name}
             </Typography>
-            <Typography component="ul" color="inherit" gutterBottom>
+            <Typography component="ul" gutterBottom>
               <>
                 {ingredients.map((ingredient, idx) => {
                   return (
@@ -76,7 +76,6 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
             <Typography
               className={classes.definitions}
               component="dl"
-              color="inherit"
               gutterBottom
             >
               <>
@@ -113,7 +112,6 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
             <Typography
               style={{ marginTop: "1em", paddingLeft: "0.7em" }}
               variant="h2"
-              color="inherit"
               gutterBottom
             >
               Variants

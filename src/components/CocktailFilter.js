@@ -18,6 +18,7 @@ import IngredientPicker from "./IngredientPicker";
 import { updateFilter } from "../actions";
 import { getCategories, getGlasses } from "../utilities/cocktail.utils";
 import { removeOrAddItemFromArray } from "../utilities/util";
+import Typography from "@material-ui/core/Typography";
 
 const styles = theme => ({
   filter: {
@@ -64,10 +65,18 @@ const CocktailFilter = ({
               />
             }
             label={
-              <span>
+              <Typography component="span">
                 Only include drinks I can make from{" "}
-                <Link to="/my-bar">my bar</Link>
-              </span>
+                <Link to="/my-bar" style={{ textDecoration: "none" }}>
+                  <Typography
+                    component="span"
+                    color="secondary"
+                    style={{ display: "inline" }}
+                  >
+                    my bar
+                  </Typography>
+                </Link>
+              </Typography>
             }
           />
         </FormGroup>

@@ -33,10 +33,10 @@ const EditBar = ({ classes, allCocktails, bar, setBar }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
-        <Typography variant="h2" color="inherit" gutterBottom>
+        <Typography variant="h2" gutterBottom>
           Your Bar
         </Typography>
-        <Typography component="p" color="inherit" paragraph>
+        <Typography component="p" paragraph>
           Currently these selections are not persisted (so if you refresh your
           page or leave and come back, you'll need to set them up again). What
           this gives you is the ability to say what you have in, then back on
@@ -44,7 +44,7 @@ const EditBar = ({ classes, allCocktails, bar, setBar }) => {
           you can make.
         </Typography>
 
-        <Typography color="inherit" component="p" paragraph>
+        <Typography component="p" paragraph>
           <strong>Select the ingredients you have in your bar...</strong>
         </Typography>
 

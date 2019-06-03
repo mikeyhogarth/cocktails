@@ -25,7 +25,8 @@ const initialState = {
   },
   bar: [],
   settings: {
-    theme: "indigo"
+    theme: "light",
+    color: "indigo"
   }
 };
 
