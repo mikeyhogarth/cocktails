@@ -24,11 +24,6 @@ const styles = {
     margin: ".3em",
     fontSize: 20
   },
-  prideTitle: {
-    color: "white",
-    margin: ".3em",
-    fontSize: 20
-  },
   prideBackground: {
     background: `linear-gradient(to bottom,
         #e70000 0,
@@ -46,7 +41,6 @@ const styles = {
 };
 
 function App({ pride, classes }) {
-  const textClass = pride ? classes.prideText : null;
   return (
     <Theme>
       <Router>
@@ -62,9 +56,7 @@ function App({ pride, classes }) {
             <Typography component="h1" className={classes.grow}>
               <Link to="/cocktails" style={{ textDecoration: "none" }}>
                 <Hidden xsDown>
-                  <span className={pride ? classes.title : classes.prideTitle}>
-                    Cocktail Browser
-                  </span>
+                  <span className={classes.title}>Cocktail Browser</span>
                 </Hidden>
               </Link>
             </Typography>
