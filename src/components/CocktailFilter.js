@@ -67,7 +67,15 @@ const CocktailFilter = ({
             label={
               <Typography component="span">
                 Only include drinks I can make from{" "}
-                <Link to="/my-bar">my bar</Link>
+                <Link to="/my-bar" style={{ textDecoration: "none" }}>
+                  <Typography
+                    component="span"
+                    color="secondary"
+                    style={{ display: "inline" }}
+                  >
+                    my bar
+                  </Typography>
+                </Link>
               </Typography>
             }
           />
