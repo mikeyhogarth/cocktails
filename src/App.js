@@ -32,7 +32,7 @@ function App({ classes }) {
         <AppBar position="static">
           <Toolbar>
             <CocktailIcon />
-            <Typography component="h1" className={classes.grow} color="inherit">
+            <Typography component="h1" className={classes.grow}>
               <Link to="/cocktails" style={{ textDecoration: "none" }}>
                 <Hidden xsDown>
                   <span className={classes.title}>Cocktail Browser</span>

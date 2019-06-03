@@ -39,7 +39,7 @@ const CocktailGauge = ({ allCocktails, makeableCocktails, classes, theme }) => {
       <Typography variant="h3" className={classes.title} gutterBottom>
         Cocktail Gauge
       </Typography>
-      <Typography color="inherit" component="p" paragraph>
+      <Typography component="p" paragraph>
         How many cocktails can you make with what's in your bar?
       </Typography>
 

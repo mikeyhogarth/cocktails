@@ -6,9 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 
 const styles = theme => ({
-  root: {
-    backgroundColor: theme.palette.grey[200]
-  },
   content: {
     paddingTop: "1em",
     paddingBottom: "1em"

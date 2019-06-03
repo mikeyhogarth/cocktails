@@ -11,7 +11,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 import { bindActionCreators } from "redux";
 import { updateSettings } from "../actions";
 import { connect } from "react-redux";
-import { colorThemes } from "../theme";
+import { colors } from "../theme";
 import capitalize from "lodash/capitalize";
 import keys from "lodash/keys";
 
@@ -27,18 +27,39 @@ const styles = theme => ({
 });
 
 const Settings = ({ classes, settings, updateSettings }) => {
-  const themes = keys(colorThemes);
-
   return (
     <div className={classes.root}>
       <Paper className={classes.content}>
-        <Typography variant="h2" color="inherit" gutterBottom>
+        <Typography variant="h2" gutterBottom>
           Settings
         </Typography>
-        <Typography component="p" color="inherit" paragraph>
+        <Typography component="p" paragraph>
           Currently these will not persist between page refreshes but it's just
           because I've not done that part yet (they will eventually).
         </Typography>
+
+        <FormControl component="fieldset">
+          <FormLabel component="legend">Color</FormLabel>
+          <RadioGroup
+            aria-label="Color"
+            name="color"
+            value={settings.color}
+            onChange={event => {
+              updateSettings({ color: event.target.value });
+            }}
+          >
+            {keys(colors).map(color => {
+              return (
+                <FormControlLabel
+                  value={color}
+                  key={color}
+                  control={<Radio />}
+                  label={capitalize(color)}
+                />
+              );
+            })}
+          </RadioGroup>
+        </FormControl>
 
         <FormControl component="fieldset">
           <FormLabel component="legend">Theme</FormLabel>
@@ -50,7 +71,7 @@ const Settings = ({ classes, settings, updateSettings }) => {
               updateSettings({ theme: event.target.value });
             }}
           >
-            {themes.map(theme => {
+            {["light", "dark"].map(theme => {
               return (
                 <FormControlLabel
                   value={theme}

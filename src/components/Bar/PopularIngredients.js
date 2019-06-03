@@ -40,7 +40,7 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
       <Typography variant="h3" className={classes.title} gutterBottom>
         Popular Ingredients
       </Typography>
-      <Typography color="inherit" component="p" paragraph>
+      <Typography component="p" paragraph>
         These are popular ingredients not currently in your bar.
       </Typography>
       <Table className={classes.table}>
