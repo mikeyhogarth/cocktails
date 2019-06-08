@@ -34,10 +34,6 @@ const Settings = ({ classes, settings, updateSettings, togglePride }) => {
         <Typography variant="h2" gutterBottom>
           Settings
         </Typography>
-        <Typography component="p" paragraph>
-          Currently these will not persist between page refreshes but it's just
-          because I've not done that part yet (they will eventually).
-        </Typography>
 
         <FormControl component="fieldset">
           <FormLabel component="legend">Color</FormLabel>
