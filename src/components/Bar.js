@@ -36,16 +36,9 @@ const EditBar = ({ classes, allCocktails, bar, setBar }) => {
         <Typography variant="h2" gutterBottom>
           Your Bar
         </Typography>
-        <Typography component="p" paragraph>
-          Currently these selections are not persisted (so if you refresh your
-          page or leave and come back, you'll need to set them up again). What
-          this gives you is the ability to say what you have in, then back on
-          the cocktail browser you can set the filter to only show you things
-          you can make.
-        </Typography>
 
         <Typography component="p" paragraph>
-          <strong>Select the ingredients you have in your bar...</strong>
+          Select the ingredients you have in your bar...
         </Typography>
 
         <IngredientPicker
