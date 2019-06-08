@@ -12,7 +12,7 @@ export const persistCurrentState = (currentState, saveables) => {
   if (!supportsPersistence()) return;
 
   const saveableState = saveables.reduce((acc, saveable) => {
-    acc[saveable] = currentState[saveable];
+    acc[saveable.toString()] = currentState[saveable.toString()];
     return acc;
   }, {});
 
@@ -24,8 +24,5 @@ export const loadPersistedState = () => {
   if (!supportsPersistence()) return {};
 
   const serializedState = localStorage.getItem("state");
-  if (serializedState === null) {
-    return undefined;
-  }
-  return JSON.parse(serializedState);
+  if (serializedState) return JSON.parse(serializedState);
 };

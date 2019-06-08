@@ -32,15 +32,14 @@ const defaultState = {
   }
 };
 
+// Parts of the initial state will be from our persistence layer.
 const persistedState = loadPersistedState();
+const initialState = { ...defaultState, ...persistedState };
 
 /**
  * Main reducer
  */
-export default function(
-  state = { ...defaultState, ...persistedState },
-  action
-) {
+export default function(state = initialState, action) {
   switch (action.type) {
     case "LOAD_COCKTAILS":
       return { ...state, db: { ...state.db, cocktails: action.payload } };
