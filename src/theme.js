@@ -7,6 +7,8 @@ import red from "@material-ui/core/colors/red";
 import teal from "@material-ui/core/colors/teal";
 import brown from "@material-ui/core/colors/brown";
 import pink from "@material-ui/core/colors/pink";
+import cyan from "@material-ui/core/colors/cyan";
+import deepPurple from "@material-ui/core/colors/deepPurple";
 
 import { connect } from "react-redux";
 
@@ -15,7 +17,8 @@ export const colors = {
   red,
   teal,
   brown,
-  pink
+  pink,
+  purple: deepPurple
 };
 
 /**
@@ -25,6 +28,7 @@ function createTheme(color, theme) {
   return createMuiTheme({
     palette: {
       primary: colors[color],
+      secondary: theme === "light" ? pink : cyan,
       type: theme
     },
     typography: {
