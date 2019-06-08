@@ -31,33 +31,48 @@ const styles = {
     margin: ".3em",
     fontSize: 18
   },
+  textBackground: {
+    marginLeft: "0.2em"
+  },
+  /** Pride specific styles */
   prideBackground: {
     background: `linear-gradient(to bottom,
         #e70000 0,
         #e70000 16%,
         #ff8c00 16%,
         #ff8c00 32%,
-        #ffd400 32%,
-        #ffd400 48%,
+        #ffef00 32%,
+        #ffef00 48%,
         #00811f 48%,
         #00811f 66%,
         #0044ff 66%,
         #0044ff 86%,
         #760089 86%) no-repeat`
+  },
+  prideTextBackground: {
+    backgroundColor: "rgba(0, 0, 0, 0.25)",
+    marginLeft: "0.2em"
   }
 };
 
 function App({ pride, classes }) {
+  const backgroundClass = pride ? classes.prideBackground : null;
+  const textBackgroundClass = pride
+    ? classes.prideTextBackground
+    : classes.textBackground;
+
   return (
     <Theme>
       <Router>
-        <AppBar
-          position="sticky"
-          className={pride ? classes.prideBackground : null}
-        >
+        <AppBar position="sticky" className={backgroundClass}>
           <Toolbar>
             <div className={classes.grow}>
-              <Button component={Link} to="/cocktails" color="inherit">
+              <Button
+                className={textBackgroundClass}
+                component={Link}
+                to="/cocktails"
+                color="inherit"
+              >
                 <CocktailIcon />
                 <Typography component="h1">
                   <Hidden xsDown>
@@ -66,7 +81,12 @@ function App({ pride, classes }) {
                 </Typography>
               </Button>
             </div>
-            <Button component={Link} to="/cocktails" color="inherit">
+            <Button
+              className={textBackgroundClass}
+              component={Link}
+              to="/cocktails"
+              color="inherit"
+            >
               <SearchIcon />
               <Hidden xsDown>
                 <Typography>
@@ -74,7 +94,12 @@ function App({ pride, classes }) {
                 </Typography>
               </Hidden>
             </Button>
-            <Button component={Link} to="/my-bar" color="inherit">
+            <Button
+              className={textBackgroundClass}
+              component={Link}
+              to="/my-bar"
+              color="inherit"
+            >
               <DrinkIcon />
               <Hidden xsDown>
                 <Typography>
@@ -82,7 +107,12 @@ function App({ pride, classes }) {
                 </Typography>
               </Hidden>
             </Button>
-            <Button component={Link} to="/settings" color="inherit">
+            <Button
+              className={textBackgroundClass}
+              component={Link}
+              to="/settings"
+              color="inherit"
+            >
               <SettingsIcon />
               <Hidden xsDown>
                 <Typography>
