@@ -1,4 +1,5 @@
 import uniq from "lodash/uniq";
+import { loadPersistedState } from "../utilities/persistence";
 
 // return a new cocktailDB with the named cocktail updated. This is a
 // convinience method for several of the reducer functions below.
@@ -11,7 +12,7 @@ function updateCocktailInDB(cocktailDb, cocktailName, newAttributes) {
   });
 }
 
-const initialState = {
+const defaultState = {
   db: {
     cocktails: [],
     ingredients: []
@@ -31,10 +32,15 @@ const initialState = {
   }
 };
 
+const persistedState = loadPersistedState();
+
 /**
  * Main reducer
  */
-export default function(state = initialState, action) {
+export default function(
+  state = { ...defaultState, ...persistedState },
+  action
+) {
   switch (action.type) {
     case "LOAD_COCKTAILS":
       return { ...state, db: { ...state.db, cocktails: action.payload } };
