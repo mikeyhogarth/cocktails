@@ -4,6 +4,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import CocktailIcon from "@material-ui/icons/LocalBar";
+import DrinkIcon from "@material-ui/icons/LocalDrink";
+import SearchIcon from "@material-ui/icons/Search";
 import SettingsIcon from "@material-ui/icons/Settings";
 import Hidden from "@material-ui/core/Hidden";
 import CocktailBrowser from "./components/CocktailBrowser";
@@ -19,10 +21,15 @@ const styles = {
   grow: {
     flexGrow: 1
   },
-  title: {
+  heading: {
     color: "white",
     margin: ".3em",
     fontSize: 20
+  },
+  title: {
+    color: "white",
+    margin: ".3em",
+    fontSize: 18
   },
   prideBackground: {
     background: `linear-gradient(to bottom,
@@ -45,30 +52,43 @@ function App({ pride, classes }) {
     <Theme>
       <Router>
         <AppBar
-          position="static"
+          position="sticky"
           className={pride ? classes.prideBackground : null}
         >
           <Toolbar>
+            <div className={classes.grow}>
+              <Button component={Link} to="/cocktails" color="inherit">
+                <CocktailIcon />
+                <Typography component="h1">
+                  <Hidden xsDown>
+                    <span className={classes.heading}>Cocktail Browser</span>
+                  </Hidden>
+                </Typography>
+              </Button>
+            </div>
             <Button component={Link} to="/cocktails" color="inherit">
-              <CocktailIcon />
-            </Button>
-
-            <Typography component="h1" className={classes.grow}>
-              <Link to="/cocktails" style={{ textDecoration: "none" }}>
-                <Hidden xsDown>
-                  <span className={classes.title}>Cocktail Browser</span>
-                </Hidden>
-              </Link>
-            </Typography>
-            <Button component={Link} to="/cocktails" color="inherit">
-              Browse
+              <SearchIcon />
+              <Hidden xsDown>
+                <Typography>
+                  <span className={classes.title}>Browse</span>
+                </Typography>
+              </Hidden>
             </Button>
             <Button component={Link} to="/my-bar" color="inherit">
-              Bar
+              <DrinkIcon />
+              <Hidden xsDown>
+                <Typography>
+                  <span className={classes.title}>Bar</span>
+                </Typography>
+              </Hidden>
             </Button>
             <Button component={Link} to="/settings" color="inherit">
               <SettingsIcon />
-              Settings
+              <Hidden xsDown>
+                <Typography>
+                  <span className={classes.title}>Settings</span>
+                </Typography>
+              </Hidden>
             </Button>
           </Toolbar>
         </AppBar>

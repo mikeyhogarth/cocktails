@@ -3,13 +3,67 @@
 exports[`does not explode when rendered 1`] = `
 Array [
   <header
-    className="MuiPaper-root-13 MuiPaper-elevation4-19 MuiAppBar-root-4 MuiAppBar-positionStatic-8 MuiAppBar-colorPrimary-11"
+    className="MuiPaper-root-14 MuiPaper-elevation4-20 MuiAppBar-root-5 MuiAppBar-positionSticky-8 MuiAppBar-colorPrimary-12"
   >
     <div
-      className="MuiToolbar-root-40 MuiToolbar-regular-42 MuiToolbar-gutters-41"
+      className="MuiToolbar-root-41 MuiToolbar-regular-43 MuiToolbar-gutters-42"
     >
+      <div
+        className="App-grow-1"
+      >
+        <a
+          className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-text-47 MuiButton-flat-50 MuiButton-colorInherit-66"
+          href="/cocktails"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <span
+            className="MuiButton-label-46"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-74"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21 5V3H3v2l8 9v5H6v2h12v-2h-5v-5l8-9zM7.43 7L5.66 5h12.69l-1.78 2H7.43z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <h1
+              className="MuiTypography-root-83 MuiTypography-body2-91"
+            >
+              <span
+                className="App-heading-2"
+              >
+                Cocktail Browser
+              </span>
+            </h1>
+          </span>
+          <span
+            className="MuiTouchRipple-root-329"
+          />
+        </a>
+      </div>
       <a
-        className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-text-46 MuiButton-flat-49 MuiButton-colorInherit-65"
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-text-47 MuiButton-flat-50 MuiButton-colorInherit-66"
         href="/cocktails"
         onBlur={[Function]}
         onClick={[Function]}
@@ -27,76 +81,39 @@ Array [
         tabIndex="0"
       >
         <span
-          className="MuiButton-label-45"
+          className="MuiButton-label-46"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-73"
+            className="MuiSvgIcon-root-74"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
           >
             <path
-              d="M21 5V3H3v2l8 9v5H6v2h12v-2h-5v-5l8-9zM7.43 7L5.66 5h12.69l-1.78 2H7.43z"
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
             />
             <path
               d="M0 0h24v24H0z"
               fill="none"
             />
           </svg>
-        </span>
-        <span
-          className="MuiTouchRipple-root-328"
-        />
-      </a>
-      <h1
-        className="MuiTypography-root-82 MuiTypography-body2-90 App-grow-1"
-      >
-        <a
-          href="/cocktails"
-          onClick={[Function]}
-          style={
-            Object {
-              "textDecoration": "none",
-            }
-          }
-        >
-          <span
-            className="App-title-2"
+          <p
+            className="MuiTypography-root-83 MuiTypography-body2-91"
           >
-            Cocktail Browser
-          </span>
-        </a>
-      </h1>
-      <a
-        className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-text-46 MuiButton-flat-49 MuiButton-colorInherit-65"
-        href="/cocktails"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onContextMenu={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        role="button"
-        tabIndex="0"
-      >
-        <span
-          className="MuiButton-label-45"
-        >
-          Browse
+            <span
+              className="App-title-3"
+            >
+              Browse
+            </span>
+          </p>
         </span>
         <span
-          className="MuiTouchRipple-root-328"
+          className="MuiTouchRipple-root-329"
         />
       </a>
       <a
-        className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-text-46 MuiButton-flat-49 MuiButton-colorInherit-65"
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-text-47 MuiButton-flat-50 MuiButton-colorInherit-66"
         href="/my-bar"
         onBlur={[Function]}
         onClick={[Function]}
@@ -114,16 +131,39 @@ Array [
         tabIndex="0"
       >
         <span
-          className="MuiButton-label-45"
+          className="MuiButton-label-46"
         >
-          Bar
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-74"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M3 2l2.01 18.23C5.13 21.23 5.97 22 7 22h10c1.03 0 1.87-.77 1.99-1.77L21 2H3zm9 17c-1.66 0-3-1.34-3-3 0-2 3-5.4 3-5.4s3 3.4 3 5.4c0 1.66-1.34 3-3 3zm6.33-11H5.67l-.44-4h13.53l-.43 4z"
+            />
+          </svg>
+          <p
+            className="MuiTypography-root-83 MuiTypography-body2-91"
+          >
+            <span
+              className="App-title-3"
+            >
+              Bar
+            </span>
+          </p>
         </span>
         <span
-          className="MuiTouchRipple-root-328"
+          className="MuiTouchRipple-root-329"
         />
       </a>
       <a
-        className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-text-46 MuiButton-flat-49 MuiButton-colorInherit-65"
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-text-47 MuiButton-flat-50 MuiButton-colorInherit-66"
         href="/settings"
         onBlur={[Function]}
         onClick={[Function]}
@@ -141,11 +181,11 @@ Array [
         tabIndex="0"
       >
         <span
-          className="MuiButton-label-45"
+          className="MuiButton-label-46"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-73"
+            className="MuiSvgIcon-root-74"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -160,32 +200,40 @@ Array [
               transform="scale(1.2, 1.2)"
             />
           </svg>
-          Settings
+          <p
+            className="MuiTypography-root-83 MuiTypography-body2-91"
+          >
+            <span
+              className="App-title-3"
+            >
+              Settings
+            </span>
+          </p>
         </span>
         <span
-          className="MuiTouchRipple-root-328"
+          className="MuiTouchRipple-root-329"
         />
       </a>
     </div>
   </header>,
   <div>
     <div
-      className="MuiPaper-root-13 MuiPaper-elevation24-39 CocktailFilter-filter-118"
+      className="MuiPaper-root-14 MuiPaper-elevation24-40 CocktailFilter-filter-119"
     >
       <fieldset
-        className="MuiFormControl-root-122"
+        className="MuiFormControl-root-123"
       >
         <div
-          className="MuiFormGroup-root-126 MuiFormGroup-row-127"
+          className="MuiFormGroup-root-127 MuiFormGroup-row-128"
         >
           <label
-            className="MuiFormControlLabel-root-128"
+            className="MuiFormControlLabel-root-129"
           >
             <span
-              className="MuiSwitch-root-134"
+              className="MuiSwitch-root-135"
             >
               <span
-                className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiSwitch-switchBase-137 MuiSwitch-colorSecondary-140"
+                className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiSwitch-switchBase-138 MuiSwitch-colorSecondary-141"
                 onBlur={[Function]}
                 onContextMenu={[Function]}
                 onFocus={[Function]}
@@ -200,14 +248,14 @@ Array [
                 tabIndex={null}
               >
                 <span
-                  className="MuiIconButton-label-152"
+                  className="MuiIconButton-label-153"
                 >
                   <span
-                    className="MuiSwitch-icon-135"
+                    className="MuiSwitch-icon-136"
                   />
                   <input
                     checked={false}
-                    className="MuiPrivateSwitchBase-input-146"
+                    className="MuiPrivateSwitchBase-input-147"
                     disabled={false}
                     onChange={[Function]}
                     type="checkbox"
@@ -215,18 +263,18 @@ Array [
                   />
                 </span>
                 <span
-                  className="MuiTouchRipple-root-328"
+                  className="MuiTouchRipple-root-329"
                 />
               </span>
               <span
-                className="MuiSwitch-bar-142"
+                className="MuiSwitch-bar-143"
               />
             </span>
             <span
-              className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+              className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
             >
               <span
-                className="MuiTypography-root-82 MuiTypography-body2-90"
+                className="MuiTypography-root-83 MuiTypography-body2-91"
               >
                 Only include drinks I can make from
                  
@@ -240,7 +288,7 @@ Array [
                   }
                 >
                   <span
-                    className="MuiTypography-root-82 MuiTypography-body2-90 MuiTypography-colorSecondary-113"
+                    className="MuiTypography-root-83 MuiTypography-body2-91 MuiTypography-colorSecondary-114"
                     style={
                       Object {
                         "display": "inline",
@@ -255,15 +303,15 @@ Array [
           </label>
         </div>
         <div
-          className="MuiFormGroup-root-126 CocktailFilter-radioGroup-120"
+          className="MuiFormGroup-root-127 CocktailFilter-radioGroup-121"
           role="radiogroup"
         >
           <label
-            className="MuiFormControlLabel-root-128"
+            className="MuiFormControlLabel-root-129"
             onClick={[Function]}
           >
             <span
-              className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiRadio-root-153 MuiRadio-colorSecondary-157 MuiPrivateSwitchBase-checked-144 MuiRadio-checked-154"
+              className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiRadio-root-154 MuiRadio-colorSecondary-158 MuiPrivateSwitchBase-checked-145 MuiRadio-checked-155"
               onBlur={[Function]}
               onContextMenu={[Function]}
               onFocus={[Function]}
@@ -278,11 +326,11 @@ Array [
               tabIndex={null}
             >
               <span
-                className="MuiIconButton-label-152"
+                className="MuiIconButton-label-153"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root-73"
+                  className="MuiSvgIcon-root-74"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -293,7 +341,7 @@ Array [
                 </svg>
                 <input
                   checked={true}
-                  className="MuiPrivateSwitchBase-input-146"
+                  className="MuiPrivateSwitchBase-input-147"
                   disabled={false}
                   onChange={[Function]}
                   type="radio"
@@ -301,21 +349,21 @@ Array [
                 />
               </span>
               <span
-                className="MuiTouchRipple-root-328"
+                className="MuiTouchRipple-root-329"
               />
             </span>
             <span
-              className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+              className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
             >
               Must Include all of the following...
             </span>
           </label>
           <label
-            className="MuiFormControlLabel-root-128"
+            className="MuiFormControlLabel-root-129"
             onClick={[Function]}
           >
             <span
-              className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiRadio-root-153 MuiRadio-colorSecondary-157"
+              className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiRadio-root-154 MuiRadio-colorSecondary-158"
               onBlur={[Function]}
               onContextMenu={[Function]}
               onFocus={[Function]}
@@ -330,11 +378,11 @@ Array [
               tabIndex={null}
             >
               <span
-                className="MuiIconButton-label-152"
+                className="MuiIconButton-label-153"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root-73"
+                  className="MuiSvgIcon-root-74"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -345,7 +393,7 @@ Array [
                 </svg>
                 <input
                   checked={false}
-                  className="MuiPrivateSwitchBase-input-146"
+                  className="MuiPrivateSwitchBase-input-147"
                   disabled={false}
                   onChange={[Function]}
                   type="radio"
@@ -353,11 +401,11 @@ Array [
                 />
               </span>
               <span
-                className="MuiTouchRipple-root-328"
+                className="MuiTouchRipple-root-329"
               />
             </span>
             <span
-              className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+              className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
             >
               Can Include any of the following...
             </span>
@@ -365,11 +413,11 @@ Array [
         </div>
       </fieldset>
       <fieldset
-        className="MuiFormControl-root-122"
+        className="MuiFormControl-root-123"
       >
         <div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -377,13 +425,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Absinthe
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -391,13 +439,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Aperol
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -405,13 +453,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Apricot brandy
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -419,13 +467,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Blackberry liqueur
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -433,13 +481,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Cachaca
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -447,13 +495,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Calvados
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -461,13 +509,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Campari
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -475,13 +523,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Champagne
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -489,13 +537,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Cherry liqueur
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -503,13 +551,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Coconut milk
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -517,13 +565,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Coffee liqueur
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -531,13 +579,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Cognac
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -545,13 +593,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Cola
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -559,13 +607,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Cranberry juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -573,13 +621,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Cream
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -587,13 +635,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Cream liqueur
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -601,13 +649,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Créme liqueur
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -615,13 +663,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Dark rum
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -629,13 +677,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               DiSaronno
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -643,13 +691,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               DOM Bénédictine
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -657,13 +705,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Drambuie
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -671,13 +719,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Dry White Wine
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -685,13 +733,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Egg yolk
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -699,13 +747,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Galliano
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -713,13 +761,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Gin
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -727,13 +775,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Ginger Ale
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -741,13 +789,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Ginger beer
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -755,13 +803,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Grapefruit juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -769,13 +817,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Hot coffee
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -783,13 +831,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Kirsch
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -797,13 +845,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Lemon juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -811,13 +859,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Lillet Blonde
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -825,13 +873,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Lime juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -839,13 +887,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Olive juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -853,13 +901,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Orange Bitters
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -867,13 +915,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Orange juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -881,13 +929,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Peach puree
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -895,13 +943,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Peach schnapps
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -909,13 +957,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Pineapple juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -923,13 +971,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Pisco
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -937,13 +985,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Prosecco
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -951,13 +999,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Raspberry liqueur
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -965,13 +1013,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Red Port
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -979,13 +1027,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Soda water
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -993,13 +1041,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Syrup
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -1007,13 +1055,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Tequila
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -1021,13 +1069,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Tomato juice
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -1035,13 +1083,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Triple Sec
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -1049,13 +1097,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Vermouth
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -1063,13 +1111,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Vodka
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -1077,13 +1125,13 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               Whiskey
             </span>
           </div>
           <div
-            className="MuiChip-root-159 MuiChip-clickable-162 IngredientPicker-chip-158"
+            className="MuiChip-root-160 MuiChip-clickable-163 IngredientPicker-chip-159"
             onClick={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -1091,7 +1139,7 @@ Array [
             tabIndex={0}
           >
             <span
-              className="MuiChip-label-178"
+              className="MuiChip-label-179"
             >
               White rum
             </span>
@@ -1099,7 +1147,7 @@ Array [
         </div>
          
         <button
-          className="MuiButtonBase-root-70 MuiButton-root-44 MuiButton-text-46 MuiButton-textSecondary-48 MuiButton-flat-49 MuiButton-flatSecondary-51"
+          className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-text-47 MuiButton-textSecondary-49 MuiButton-flat-50 MuiButton-flatSecondary-52"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -1117,37 +1165,37 @@ Array [
           type="button"
         >
           <span
-            className="MuiButton-label-45"
+            className="MuiButton-label-46"
           >
             Clear Ingredients
           </span>
           <span
-            className="MuiTouchRipple-root-328"
+            className="MuiTouchRipple-root-329"
           />
         </button>
       </fieldset>
       <div
-        className="MuiGrid-container-184"
+        className="MuiGrid-container-185"
       >
         <div
-          className="MuiGrid-item-185 MuiGrid-grid-xs-12-224 MuiGrid-grid-md-6-246 CocktailFilter-checkboxOptionContainer-121"
+          className="MuiGrid-item-186 MuiGrid-grid-xs-12-225 MuiGrid-grid-md-6-247 CocktailFilter-checkboxOptionContainer-122"
         >
           <fieldset
-            className="MuiFormControl-root-122"
+            className="MuiFormControl-root-123"
           >
             <legend
-              className="MuiFormLabel-root-281"
+              className="MuiFormLabel-root-282"
             >
               Category
             </legend>
             <div
-              className="MuiFormGroup-root-126 MuiFormGroup-row-127"
+              className="MuiFormGroup-root-127 MuiFormGroup-row-128"
             >
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1162,11 +1210,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1177,7 +1225,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1186,20 +1234,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   Before Dinner Cocktail
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1214,11 +1262,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1229,7 +1277,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1238,20 +1286,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   All Day Cocktail
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1266,11 +1314,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1281,7 +1329,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1290,20 +1338,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   Longdrink
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1318,11 +1366,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1333,7 +1381,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1342,20 +1390,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   Sparkling Cocktail
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1370,11 +1418,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1385,7 +1433,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1394,20 +1442,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   After Dinner Cocktail
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1422,11 +1470,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1437,7 +1485,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1446,11 +1494,11 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   Hot Drink
                 </span>
@@ -1459,24 +1507,24 @@ Array [
           </fieldset>
         </div>
         <div
-          className="MuiGrid-item-185 MuiGrid-grid-xs-12-224 MuiGrid-grid-md-6-246 CocktailFilter-checkboxOptionContainer-121"
+          className="MuiGrid-item-186 MuiGrid-grid-xs-12-225 MuiGrid-grid-md-6-247 CocktailFilter-checkboxOptionContainer-122"
         >
           <fieldset
-            className="MuiFormControl-root-122"
+            className="MuiFormControl-root-123"
           >
             <legend
-              className="MuiFormLabel-root-281"
+              className="MuiFormLabel-root-282"
             >
               Glass
             </legend>
             <div
-              className="MuiFormGroup-root-126 MuiFormGroup-row-127"
+              className="MuiFormGroup-root-127 MuiFormGroup-row-128"
             >
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1491,11 +1539,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1506,7 +1554,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1515,20 +1563,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   martini
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1543,11 +1591,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1558,7 +1606,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1567,20 +1615,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   old-fashioned
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1595,11 +1643,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1610,7 +1658,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1619,20 +1667,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   collins
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1647,11 +1695,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1662,7 +1710,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1671,20 +1719,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   highball
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1699,11 +1747,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1714,7 +1762,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1723,20 +1771,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   champagne-flute
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1751,11 +1799,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1766,7 +1814,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1775,20 +1823,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   margarita
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1803,11 +1851,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1818,7 +1866,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1827,20 +1875,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   champagne-tulip
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1855,11 +1903,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1870,7 +1918,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1879,20 +1927,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   hurricane
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1907,11 +1955,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1922,7 +1970,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1931,20 +1979,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   shot
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -1959,11 +2007,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1974,7 +2022,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -1983,20 +2031,20 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   hot-drink
                 </span>
               </label>
               <label
-                className="MuiFormControlLabel-root-128"
+                className="MuiFormControlLabel-root-129"
               >
                 <span
-                  className="MuiButtonBase-root-70 MuiIconButton-root-147 MuiPrivateSwitchBase-root-143 MuiCheckbox-root-288 MuiCheckbox-colorPrimary-292"
+                  className="MuiButtonBase-root-71 MuiIconButton-root-148 MuiPrivateSwitchBase-root-144 MuiCheckbox-root-289 MuiCheckbox-colorPrimary-293"
                   onBlur={[Function]}
                   onContextMenu={[Function]}
                   onFocus={[Function]}
@@ -2011,11 +2059,11 @@ Array [
                   tabIndex={null}
                 >
                   <span
-                    className="MuiIconButton-label-152"
+                    className="MuiIconButton-label-153"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-73"
+                      className="MuiSvgIcon-root-74"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -2026,7 +2074,7 @@ Array [
                     </svg>
                     <input
                       checked={false}
-                      className="MuiPrivateSwitchBase-input-146"
+                      className="MuiPrivateSwitchBase-input-147"
                       data-indeterminate={false}
                       disabled={false}
                       onChange={[Function]}
@@ -2035,11 +2083,11 @@ Array [
                     />
                   </span>
                   <span
-                    className="MuiTouchRipple-root-328"
+                    className="MuiTouchRipple-root-329"
                   />
                 </span>
                 <span
-                  className="MuiTypography-root-82 MuiTypography-body2-90 MuiFormControlLabel-label-133"
+                  className="MuiTypography-root-83 MuiTypography-body2-91 MuiFormControlLabel-label-134"
                 >
                   white-wine
                 </span>
@@ -2050,15 +2098,15 @@ Array [
       </div>
     </div>
     <div
-      className="MuiLinearProgress-root-335 MuiLinearProgress-colorPrimary-336 MuiLinearProgress-indeterminate-339"
+      className="MuiLinearProgress-root-336 MuiLinearProgress-colorPrimary-337 MuiLinearProgress-indeterminate-340"
       role="progressbar"
     >
       <div
-        className="MuiLinearProgress-bar-345 MuiLinearProgress-barColorPrimary-346 MuiLinearProgress-bar1Indeterminate-348"
+        className="MuiLinearProgress-bar-346 MuiLinearProgress-barColorPrimary-347 MuiLinearProgress-bar1Indeterminate-349"
         style={Object {}}
       />
       <div
-        className="MuiLinearProgress-bar-345 MuiLinearProgress-barColorPrimary-346 MuiLinearProgress-bar2Indeterminate-351"
+        className="MuiLinearProgress-bar-346 MuiLinearProgress-barColorPrimary-347 MuiLinearProgress-bar2Indeterminate-352"
         style={Object {}}
       />
     </div>
