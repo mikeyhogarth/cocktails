@@ -2,7 +2,12 @@ import appReducer from "./reducers";
 import { createStore, applyMiddleware, compose } from "redux";
 import { fetchCocktails, fetchIngredients } from "./services/cocktail.service";
 import { loadCocktails, loadIngredients } from "./actions";
-import { persistStore } from "./utilities/persistence";
+import {
+  persistCurrentState,
+  supportsPersistence
+} from "./utilities/persistence";
+import throttle from "lodash/throttle";
+
 import thunk from "redux-thunk";
 
 const devtools =
@@ -16,7 +21,13 @@ const middlewares = compose(
 const store = createStore(appReducer, middlewares);
 
 // persist parts of the store whenever it changes.
-persistStore(store, ["bar", "settings"]);
+if (supportsPersistence()) {
+  store.subscribe(
+    throttle(() => {
+      persistCurrentState(store.getState(), ["bar", "settings"]);
+    })
+  );
+}
 
 fetchCocktails().then(function(response) {
   store.dispatch(loadCocktails(response));

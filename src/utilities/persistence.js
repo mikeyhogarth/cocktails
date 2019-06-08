@@ -1,6 +1,4 @@
-import throttle from "lodash/throttle";
-
-function supportsLocalStorage() {
+export const supportsPersistence = () => {
   try {
     localStorage.setItem("test", "test");
     localStorage.removeItem("test");
@@ -8,26 +6,22 @@ function supportsLocalStorage() {
   } catch (exception) {
     return false;
   }
-}
+};
 
-export const persistStore = (store, saveables) => {
-  if (!supportsLocalStorage()) return false;
+export const persistCurrentState = (currentState, saveables) => {
+  if (!supportsPersistence()) return;
 
-  store.subscribe(
-    throttle(() => {
-      const saveableState = saveables.reduce((acc, saveable) => {
-        acc[saveable] = store.getState()[saveable];
-        return acc;
-      }, {});
+  const saveableState = saveables.reduce((acc, saveable) => {
+    acc[saveable] = currentState[saveable];
+    return acc;
+  }, {});
 
-      const serializedState = JSON.stringify(saveableState);
-      localStorage.setItem("state", serializedState);
-    })
-  );
+  const serializedState = JSON.stringify(saveableState);
+  localStorage.setItem("state", serializedState);
 };
 
 export const loadPersistedState = () => {
-  if (!supportsLocalStorage()) return {};
+  if (!supportsPersistence()) return {};
 
   const serializedState = localStorage.getItem("state");
   if (serializedState === null) {
