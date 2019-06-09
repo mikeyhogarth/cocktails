@@ -59,6 +59,8 @@ const CocktailFilter = ({
   return (
     <Paper square={true} elevation={24} className={classes.filter}>
       <FormControl component="fieldset" className={classes.formControl}>
+        <FormLabel component="legend">Ingredients</FormLabel>
+
         <FormGroup row>
           <FormControlLabel
             control={
@@ -112,7 +114,7 @@ const CocktailFilter = ({
           onIngredientsChange={selectedIngredients => {
             updateFilter({ ingredients: selectedIngredients });
           }}
-        />{" "}
+        />
         <Button
           color="secondary"
           onClick={() => {
