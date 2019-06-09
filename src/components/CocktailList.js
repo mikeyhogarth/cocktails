@@ -12,37 +12,26 @@ const styles = theme => ({
   },
   gridList: {
     justifyContent: "center"
-  },
-  messageContainer: {
-    textAlign: "center"
-  },
-  message: {
-    width: "50%",
-    display: "inline-block",
-    justifyContent: "center",
-    padding: "2em"
   }
 });
 
 const CocktailList = ({ classes, cocktails = [] }) => {
   return (
-    <div className={classes.root}>
+    <div>
       <div className={classes.content}>
         {cocktails.length > 0 && (
-          <GridList className={classes.gridList}>
+          <GridList spacing={0} className={classes.gridList}>
             {cocktails.map(cocktail => (
               <CocktailItem key={cocktail.name} cocktail={cocktail} />
             ))}
           </GridList>
         )}
         {!cocktails.length && (
-          <div className={classes.messageContainer}>
-            <Paper className={classes.message}>
-              <Typography gutterBottom>
-                <span>No results</span>
-              </Typography>
-            </Paper>
-          </div>
+          <Paper>
+            <Typography gutterBottom>
+              <span>No results</span>
+            </Typography>
+          </Paper>
         )}
       </div>
     </div>
