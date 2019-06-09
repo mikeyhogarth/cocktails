@@ -14,12 +14,7 @@ import CocktailVariant from "./CocktailPage/CocktailVariant";
 import CocktailImage from "./CocktailPage/CocktailImage";
 const styles = theme => ({
   paper: {
-    margin: 0,
-    padding: "1em 2em",
-    marginBottom: "1em"
-  },
-  innerContainer: {
-    padding: "0 2.7em"
+    padding: "1em"
   },
   root: {
     ...theme.mixins.gutters,
@@ -29,7 +24,7 @@ const styles = theme => ({
     justifyContent: "center"
   },
   definitions: {
-    marginTop: "1.5em"
+    marginTop: "1em"
   },
   progress: {
     width: "100%"
@@ -59,7 +54,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
       <Paper className={classes.paper} square>
         <Grid container className={classes.innerContainer} spacing={16}>
           <Grid item md={8} xs={12}>
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h3" gutterBottom>
               {name}
             </Typography>
             <Typography component="ul" gutterBottom>
@@ -109,11 +104,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
 
         {enriched && enrichment.variants && enrichment.variants.length > 0 && (
           <>
-            <Typography
-              style={{ marginTop: "1em", paddingLeft: "0.7em" }}
-              variant="h2"
-              gutterBottom
-            >
+            <Typography variant="h4" gutterBottom>
               Variants
             </Typography>
 
