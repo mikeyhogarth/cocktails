@@ -5,33 +5,33 @@ exports[`does not explode when rendered 1`] = `
   className="Settings-root-2"
 >
   <div
-    className="MuiPaper-root-3 MuiPaper-elevation2-7 MuiPaper-rounded-4 Settings-content-1"
+    className="MuiPaper-root MuiPaper-elevation1 Settings-content-1 MuiPaper-rounded"
   >
     <h2
-      className="MuiTypography-root-30 MuiTypography-h2-43 MuiTypography-gutterBottom-57"
+      className="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
     >
       Settings
     </h2>
     <fieldset
-      className="MuiFormControl-root-66"
+      className="MuiFormControl-root"
     >
       <legend
-        className="MuiFormLabel-root-70"
+        className="MuiFormLabel-root"
       >
         Color
       </legend>
       <div
         aria-label="Color"
-        className="MuiFormGroup-root-77"
+        className="MuiFormGroup-root"
         role="radiogroup"
       >
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89 MuiPrivateSwitchBase-checked-91 MuiRadio-checked-86"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-85 Mui-checked MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -44,22 +44,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100 PrivateRadioButtonIcon-checked-102"
               >
-                <path
-                  d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={true}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="color"
                 onChange={[Function]}
@@ -67,23 +82,20 @@ exports[`does not explode when rendered 1`] = `
                 value="indigo"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Indigo
           </span>
         </label>
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -96,22 +108,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100"
               >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={false}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="color"
                 onChange={[Function]}
@@ -119,23 +146,20 @@ exports[`does not explode when rendered 1`] = `
                 value="red"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Red
           </span>
         </label>
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -148,22 +172,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100"
               >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={false}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="color"
                 onChange={[Function]}
@@ -171,23 +210,20 @@ exports[`does not explode when rendered 1`] = `
                 value="teal"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Teal
           </span>
         </label>
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -200,22 +236,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100"
               >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={false}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="color"
                 onChange={[Function]}
@@ -223,23 +274,20 @@ exports[`does not explode when rendered 1`] = `
                 value="brown"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Brown
           </span>
         </label>
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -252,22 +300,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100"
               >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={false}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="color"
                 onChange={[Function]}
@@ -275,23 +338,20 @@ exports[`does not explode when rendered 1`] = `
                 value="pink"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Pink
           </span>
         </label>
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -304,22 +364,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100"
               >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={false}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="color"
                 onChange={[Function]}
@@ -327,12 +402,9 @@ exports[`does not explode when rendered 1`] = `
                 value="purple"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Purple
           </span>
@@ -340,25 +412,25 @@ exports[`does not explode when rendered 1`] = `
       </div>
     </fieldset>
     <fieldset
-      className="MuiFormControl-root-66"
+      className="MuiFormControl-root"
     >
       <legend
-        className="MuiFormLabel-root-70"
+        className="MuiFormLabel-root"
       >
         Theme
       </legend>
       <div
         aria-label="Theme"
-        className="MuiFormGroup-root-77"
+        className="MuiFormGroup-root"
         role="radiogroup"
       >
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89 MuiPrivateSwitchBase-checked-91 MuiRadio-checked-86"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-85 Mui-checked MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -371,22 +443,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100 PrivateRadioButtonIcon-checked-102"
               >
-                <path
-                  d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={true}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="theme"
                 onChange={[Function]}
@@ -394,23 +481,20 @@ exports[`does not explode when rendered 1`] = `
                 value="light"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Light
           </span>
         </label>
         <label
-          className="MuiFormControlLabel-root-79"
+          className="MuiFormControlLabel-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiRadio-root-85 MuiRadio-colorSecondary-89"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -423,22 +507,37 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-103"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
+              <div
+                className="PrivateRadioButtonIcon-root-100"
               >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-101"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
               <input
                 checked={false}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87"
                 disabled={false}
                 name="theme"
                 onChange={[Function]}
@@ -446,12 +545,9 @@ exports[`does not explode when rendered 1`] = `
                 value="dark"
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+            className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
           >
             Dark
           </span>
@@ -459,23 +555,23 @@ exports[`does not explode when rendered 1`] = `
       </div>
     </fieldset>
     <div
-      className="MuiFormControl-root-66"
+      className="MuiFormControl-root"
     >
       <legend
-        className="MuiFormLabel-root-70"
+        className="MuiFormLabel-root"
       >
         Pride!
       </legend>
       <label
-        className="MuiFormControlLabel-root-79"
+        className="MuiFormControlLabel-root"
       >
         <span
-          className="MuiSwitch-root-112"
+          className="MuiSwitch-root"
         >
           <span
-            className="MuiButtonBase-root-100 MuiIconButton-root-94 MuiPrivateSwitchBase-root-90 MuiSwitch-switchBase-115 MuiSwitch-colorSecondary-118"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-84 MuiSwitch-switchBase MuiSwitch-colorSecondary"
             onBlur={[Function]}
-            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -488,33 +584,30 @@ exports[`does not explode when rendered 1`] = `
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-99"
+              className="MuiIconButton-label"
             >
               <span
-                className="MuiSwitch-icon-113"
+                className="MuiSwitch-thumb"
               />
               <input
                 checked={false}
-                className="MuiPrivateSwitchBase-input-93"
+                className="PrivateSwitchBase-input-87 MuiSwitch-input"
                 disabled={false}
                 onChange={[Function]}
                 type="checkbox"
                 value={false}
               />
             </span>
-            <span
-              className="MuiTouchRipple-root-121"
-            />
           </span>
           <span
-            className="MuiSwitch-bar-120"
+            className="MuiSwitch-track"
           />
         </span>
         <span
-          className="MuiTypography-root-30 MuiTypography-body1-39 MuiFormControlLabel-label-84"
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
         >
           <span
-            className="MuiTypography-root-30 MuiTypography-body1-39"
+            className="MuiTypography-root MuiTypography-body1"
           >
             Fly the colours
           </span>

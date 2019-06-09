@@ -19,9 +19,6 @@ const styles = theme => ({
     fontSize: "1.5rem",
     margin: "1rem 0"
   },
-  button: {
-    marginLeft: theme.spacing.unit
-  },
 
   cocktailNameContainer: {
     display: "flex"
@@ -61,7 +58,6 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
                 <div>
                   <span>{row.name}</span>
                   <IconButton
-                    className={classes.button}
                     onClick={() => addToBar(row.name)}
                     color="primary"
                     aria-label="Add"
