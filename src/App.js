@@ -65,7 +65,7 @@ function App({ pride, classes }) {
   const textBackgroundClass = [
     classes.textBackground,
     pride ? classes.prideTextBackground : null
-  ];
+  ].join(" ");
 
   return (
     <Theme>
