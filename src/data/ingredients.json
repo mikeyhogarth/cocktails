@@ -63,6 +63,26 @@
     "abv": 20,
     "taste": null
   },
+  "Créme de Cacao (Brown)": {
+    "abv": 20,
+    "taste": null
+  },
+  "Créme de Cacao (White)": {
+    "abv": 20,
+    "taste": null
+  },
+  "Créme de Menthe (Green)": {
+    "abv": 25,
+    "taste": null
+  },
+  "Créme de Menthe (White)": {
+    "abv": 25,
+    "taste": null
+  },
+  "Créme de Cassis": {
+    "abv": 15,
+    "taste": null
+  },
   "Créme liqueur": {
     "abv": 20,
     "taste": null
