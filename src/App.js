@@ -18,21 +18,27 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 const styles = {
-  grow: {
+  root: {
     flexGrow: 1
   },
-  heading: {
-    color: "white",
-    margin: ".3em",
-    fontSize: 20
-  },
   title: {
+    flexGrow: 1
+  },
+  mainTitle: {
     color: "white",
-    margin: ".3em",
-    fontSize: 18
+    fontSize: 20,
+    textTransform: "capitalize",
+    marginLeft: ".5em"
+  },
+  menuButtonText: {
+    color: "white",
+    fontSize: 14,
+    marginLeft: ".5em"
   },
   textBackground: {
-    marginLeft: "0.2em"
+    marginLeft: "0.2em",
+    paddingTop: ".3em",
+    paddingBottom: ".3em"
   },
   /** Pride specific styles */
   prideBackground: {
@@ -41,8 +47,8 @@ const styles = {
         #e70000 16%,
         #ff8c00 16%,
         #ff8c00 32%,
-        #ffef00 32%,
-        #ffef00 48%,
+        #ffd400 32%,
+        #ffd400 48%,
         #00811f 48%,
         #00811f 66%,
         #0044ff 66%,
@@ -50,23 +56,23 @@ const styles = {
         #760089 86%) no-repeat`
   },
   prideTextBackground: {
-    backgroundColor: "rgba(0, 0, 0, 0.25)",
-    marginLeft: "0.2em"
+    backgroundColor: "rgba(0, 0, 0, 0.25)"
   }
 };
 
 function App({ pride, classes }) {
   const backgroundClass = pride ? classes.prideBackground : null;
-  const textBackgroundClass = pride
-    ? classes.prideTextBackground
-    : classes.textBackground;
+  const textBackgroundClass = [
+    classes.textBackground,
+    pride ? classes.prideTextBackground : null
+  ].join(" ");
 
   return (
     <Theme>
       <Router>
         <AppBar position="sticky" className={backgroundClass}>
           <Toolbar>
-            <div className={classes.grow}>
+            <div className={classes.root}>
               <Button
                 className={textBackgroundClass}
                 component={Link}
@@ -74,10 +80,8 @@ function App({ pride, classes }) {
                 color="inherit"
               >
                 <CocktailIcon />
-                <Typography component="h1">
-                  <Hidden xsDown>
-                    <span className={classes.heading}>Cocktail Browser</span>
-                  </Hidden>
+                <Typography className={classes.mainTitle} component="h1">
+                  <Hidden xsDown>Cocktail Browser</Hidden>
                 </Typography>
               </Button>
             </div>
@@ -89,8 +93,8 @@ function App({ pride, classes }) {
             >
               <SearchIcon />
               <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Browse</span>
+                <Typography className={classes.menuButtonText}>
+                  Browse
                 </Typography>
               </Hidden>
             </Button>
@@ -102,9 +106,7 @@ function App({ pride, classes }) {
             >
               <DrinkIcon />
               <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Bar</span>
-                </Typography>
+                <Typography className={classes.menuButtonText}>Bar</Typography>
               </Hidden>
             </Button>
             <Button
@@ -115,8 +117,8 @@ function App({ pride, classes }) {
             >
               <SettingsIcon />
               <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Settings</span>
+                <Typography className={classes.menuButtonText}>
+                  Settings
                 </Typography>
               </Hidden>
             </Button>
