@@ -4,6 +4,7 @@ import GridList from "@material-ui/core/GridList";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
+import BadMood from "@material-ui/icons/MoodBad";
 
 const styles = theme => ({
   content: {
@@ -27,10 +28,15 @@ const CocktailList = ({ classes, cocktails = [] }) => {
           </GridList>
         )}
         {!cocktails.length && (
-          <Paper>
-            <Typography gutterBottom>
-              <span>No results</span>
-            </Typography>
+          <Paper
+            style={{
+              textAlign: "center",
+              fontSize: "2em",
+              padding: "1em"
+            }}
+          >
+            <BadMood />
+            <Typography gutterBottom>No results</Typography>
           </Paper>
         )}
       </div>
