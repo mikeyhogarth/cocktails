@@ -18,18 +18,22 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 const styles = {
-  grow: {
+  root: {
     flexGrow: 1
   },
-  heading: {
+  title: {
+    flexGrow: 1
+  },
+  mainTitle: {
     color: "white",
-    margin: ".3em",
     fontSize: 20
   },
-  title: {
+  menuButtonText: {
     color: "white",
-    margin: ".3em",
-    fontSize: 18
+    fontSize: 14
+  },
+  icon: {
+    marginRight: ".3em"
   },
   prideBackground: {
     background: `linear-gradient(to bottom,
@@ -51,47 +55,51 @@ function App({ pride, classes }) {
   return (
     <Theme>
       <Router>
-        <AppBar
-          position="sticky"
-          className={pride ? classes.prideBackground : null}
-        >
-          <Toolbar>
-            <div className={classes.grow}>
+        <div className={classes.grow}>
+          <AppBar
+            position="sticky"
+            className={pride ? classes.prideBackground : null}
+          >
+            <Toolbar>
+              <div className={classes.title}>
+                <Button component={Link} to="/cocktails" color="inherit">
+                  <CocktailIcon className={classes.icon} />
+                  <Typography
+                    style={{ textTransform: "capitalize" }}
+                    className={classes.mainTitle}
+                    variant="h6"
+                  >
+                    <Hidden xsDown>Cocktail Browser</Hidden>
+                  </Typography>
+                </Button>
+              </div>
               <Button component={Link} to="/cocktails" color="inherit">
-                <CocktailIcon />
-                <Typography component="h1">
-                  <Hidden xsDown>
-                    <span className={classes.heading}>Cocktail Browser</span>
-                  </Hidden>
-                </Typography>
+                <SearchIcon className={classes.icon} />
+                <Hidden xsDown>
+                  <Typography className={classes.menuButtonText} variant="h6">
+                    Browse
+                  </Typography>
+                </Hidden>
               </Button>
-            </div>
-            <Button component={Link} to="/cocktails" color="inherit">
-              <SearchIcon />
-              <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Browse</span>
-                </Typography>
-              </Hidden>
-            </Button>
-            <Button component={Link} to="/my-bar" color="inherit">
-              <DrinkIcon />
-              <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Bar</span>
-                </Typography>
-              </Hidden>
-            </Button>
-            <Button component={Link} to="/settings" color="inherit">
-              <SettingsIcon />
-              <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Settings</span>
-                </Typography>
-              </Hidden>
-            </Button>
-          </Toolbar>
-        </AppBar>
+              <Button component={Link} to="/my-bar" color="inherit">
+                <DrinkIcon className={classes.icon} />
+                <Hidden xsDown>
+                  <Typography className={classes.menuButtonText} variant="h6">
+                    Bar
+                  </Typography>
+                </Hidden>
+              </Button>
+              <Button component={Link} to="/settings" color="inherit">
+                <SettingsIcon className={classes.icon} />
+                <Hidden xsDown>
+                  <Typography className={classes.menuButtonText} variant="h6">
+                    Settings
+                  </Typography>
+                </Hidden>
+              </Button>
+            </Toolbar>
+          </AppBar>
+        </div>
         {
           // Routes
         }
