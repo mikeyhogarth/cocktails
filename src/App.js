@@ -26,17 +26,19 @@ const styles = {
   },
   mainTitle: {
     color: "white",
-    fontSize: 20
+    fontSize: 20,
+    textTransform: "capitalize",
+    marginLeft: ".5em"
   },
   menuButtonText: {
     color: "white",
-    fontSize: 14
-  },
-  icon: {
-    marginRight: ".3em"
+    fontSize: 14,
+    marginLeft: ".5em"
   },
   textBackground: {
-    marginLeft: "0.2em"
+    marginLeft: "0.2em",
+    paddingTop: ".6em",
+    paddingBottom: ".6em"
   },
   /** Pride specific styles */
   prideBackground: {
@@ -70,7 +72,7 @@ function App({ pride, classes }) {
       <Router>
         <AppBar position="sticky" className={backgroundClass}>
           <Toolbar>
-            <div className={classes.grow}>
+            <div className={classes.root}>
               <Button
                 className={textBackgroundClass}
                 component={Link}
@@ -78,10 +80,8 @@ function App({ pride, classes }) {
                 color="inherit"
               >
                 <CocktailIcon />
-                <Typography component="h1">
-                  <Hidden xsDown>
-                    <span className={classes.heading}>Cocktail Browser</span>
-                  </Hidden>
+                <Typography className={classes.mainTitle} component="h1">
+                  <Hidden xsDown>Cocktail Browser</Hidden>
                 </Typography>
               </Button>
             </div>
@@ -93,8 +93,8 @@ function App({ pride, classes }) {
             >
               <SearchIcon />
               <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Browse</span>
+                <Typography className={classes.menuButtonText}>
+                  Browse
                 </Typography>
               </Hidden>
             </Button>
@@ -106,9 +106,7 @@ function App({ pride, classes }) {
             >
               <DrinkIcon />
               <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Bar</span>
-                </Typography>
+                <Typography className={classes.menuButtonText}>Bar</Typography>
               </Hidden>
             </Button>
             <Button
@@ -119,8 +117,8 @@ function App({ pride, classes }) {
             >
               <SettingsIcon />
               <Hidden xsDown>
-                <Typography>
-                  <span className={classes.title}>Settings</span>
+                <Typography className={classes.menuButtonText}>
+                  Settings
                 </Typography>
               </Hidden>
             </Button>
