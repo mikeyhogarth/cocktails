@@ -37,8 +37,8 @@ const styles = {
   },
   textBackground: {
     marginLeft: "0.2em",
-    paddingTop: ".6em",
-    paddingBottom: ".6em"
+    paddingTop: ".3em",
+    paddingBottom: ".3em"
   },
   /** Pride specific styles */
   prideBackground: {
@@ -56,16 +56,16 @@ const styles = {
         #760089 86%) no-repeat`
   },
   prideTextBackground: {
-    backgroundColor: "rgba(0, 0, 0, 0.25)",
-    marginLeft: "0.2em"
+    backgroundColor: "rgba(0, 0, 0, 0.25)"
   }
 };
 
 function App({ pride, classes }) {
   const backgroundClass = pride ? classes.prideBackground : null;
-  const textBackgroundClass = pride
-    ? classes.prideTextBackground
-    : classes.textBackground;
+  const textBackgroundClass = [
+    classes.textBackground,
+    pride ? classes.prideTextBackground : null
+  ];
 
   return (
     <Theme>
