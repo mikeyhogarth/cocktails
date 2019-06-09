@@ -1,15 +1,17 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
-import { withStyles } from "@material-ui/core/styles";
-import { connect } from "react-redux";
-import Definition from "./CocktailPage/Definition";
+import {
+  Typography,
+  Paper,
+  CircularProgress,
+  GridList,
+  Grid
+} from "@material-ui/core";
 import IngredientDetail from "./IngredientDetail";
+import Definition from "./CocktailPage/Definition";
+import { connect } from "react-redux";
+import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
-import CircularProgress from "@material-ui/core/CircularProgress";
-import Grid from "@material-ui/core/Grid";
-import GridList from "@material-ui/core/GridList";
 import CocktailVariant from "./CocktailPage/CocktailVariant";
 import CocktailImage from "./CocktailPage/CocktailImage";
 const styles = theme => ({

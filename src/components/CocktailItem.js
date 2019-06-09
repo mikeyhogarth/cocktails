@@ -1,13 +1,16 @@
 import React from "react";
-import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
-import CardContent from "@material-ui/core/CardContent";
-import CardActions from "@material-ui/core/CardActions";
-import Button from "@material-ui/core/Button";
+
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardActions,
+  Button,
+  Typography
+} from "@material-ui/core";
 import LocalBar from "@material-ui/icons/LocalBar";
 import Redo from "@material-ui/icons/Redo";
 import isArray from "lodash/isArray";
-import Typography from "@material-ui/core/Typography";
 
 import { withStyles } from "@material-ui/core/styles";
 import Ingredient from "./IngredientDetail";

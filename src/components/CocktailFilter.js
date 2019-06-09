@@ -1,24 +1,28 @@
 import React from "react";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormGroup from "@material-ui/core/FormGroup";
-import FormLabel from "@material-ui/core/FormLabel";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import Grid from "@material-ui/core/Grid";
-import Switch from "@material-ui/core/Switch";
-import { Link } from "react-router-dom";
-import FormControl from "@material-ui/core/FormControl";
-import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
+
+import {
+  Radio,
+  RadioGroup,
+  FormGroup,
+  FormLabel,
+  FormControlLabel,
+  Checkbox,
+  Grid,
+  Switch,
+  Paper,
+  Button,
+  FormControl,
+  Typography
+} from "@material-ui/core";
+
 import { withStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import IngredientPicker from "./IngredientPicker";
 import { updateFilter } from "../actions";
 import { getCategories, getGlasses } from "../utilities/cocktail.utils";
 import { removeOrAddItemFromArray } from "../utilities/util";
-import Typography from "@material-ui/core/Typography";
 
 const styles = theme => ({
   filter: {

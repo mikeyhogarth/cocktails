@@ -1,8 +1,6 @@
 import React from "react";
 import Theme from "./theme";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 import CocktailIcon from "@material-ui/icons/LocalBar";
 import DrinkIcon from "@material-ui/icons/LocalDrink";
 import SearchIcon from "@material-ui/icons/Search";
@@ -12,7 +10,6 @@ import CocktailBrowser from "./components/CocktailBrowser";
 import CocktailPage from "./components/CocktailPage";
 import Bar from "./components/Bar";
 import Settings from "./components/Settings";
-import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from "react-redux";

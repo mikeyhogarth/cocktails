@@ -1,9 +1,7 @@
 import React from "react";
 import CocktailItem from "./CocktailItem";
-import GridList from "@material-ui/core/GridList";
+import { GridList, Typography, Paper } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
 import BadMood from "@material-ui/icons/MoodBad";
 
 const styles = theme => ({

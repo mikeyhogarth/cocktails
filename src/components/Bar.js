@@ -1,13 +1,10 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+import { Typography, Paper, Grid } from "@material-ui/core";
 import PopularIngredients from "./Bar/PopularIngredients";
 import CocktailGauge from "./Bar/CocktailGauge";
 import MakeableCocktails from "./Bar/MakeableCocktails";
 import { applyFilter } from "../utilities/filter";
-
 import IngredientPicker from "./IngredientPicker";
 import { bindActionCreators } from "redux";
 import { setBar } from "../actions";

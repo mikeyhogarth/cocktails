@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import CocktailList from "./CocktailList";
 import CocktailFilter from "./CocktailFilter";
 import { applyFilters, filtersFromUserOptions } from "../utilities/filter";
-import LinearProgress from "@material-ui/core/LinearProgress";
+import { LinearProgress } from "@material-ui/core";
 import { connect } from "react-redux";
 
 const CocktailBrowser = ({ filterOptions, bar, allCocktails }) => {

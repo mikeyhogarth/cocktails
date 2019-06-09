@@ -1,15 +1,17 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import { connect } from "react-redux";
 import { countIngredients } from "../../utilities/cocktail.utils";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import IconButton from "@material-ui/core/IconButton";
-import AddIcon from "@material-ui/icons/Add";
+import {
+  Typography,
+  Table,
+  TableHead,
+  TableBody,
+  TableRow,
+  TableCell,
+  IconButton
+} from "@material-ui/core";
 
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
+import AddIcon from "@material-ui/icons/Add";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { addToBar } from "../../actions";
