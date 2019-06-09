@@ -5,21 +5,21 @@ exports[`does not explode when rendered 1`] = `
   className="EditBar-root-2"
 >
   <div
-    className="MuiPaper-root-3 MuiPaper-elevation2-7 MuiPaper-rounded-4 EditBar-explanation-1"
+    className="MuiPaper-root MuiPaper-elevation1 EditBar-explanation-1 MuiPaper-rounded"
   >
     <h2
-      className="MuiTypography-root-30 MuiTypography-h2-43 MuiTypography-gutterBottom-57"
+      className="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
     >
       Your Bar
     </h2>
     <p
-      className="MuiTypography-root-30 MuiTypography-body1-39 MuiTypography-paragraph-58"
+      className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
     >
       Select the ingredients you have in your bar...
     </p>
     <div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -27,13 +27,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Absinthe
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -41,13 +41,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Aperol
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -55,13 +55,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Apricot brandy
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -69,13 +69,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Blackberry liqueur
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -83,13 +83,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Cachaca
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -97,13 +97,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Calvados
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -111,13 +111,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Campari
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -125,13 +125,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Champagne
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -139,13 +139,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Cherry liqueur
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -153,13 +153,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Coconut milk
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -167,13 +167,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Coffee liqueur
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -181,13 +181,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Cognac
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -195,13 +195,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Cola
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -209,13 +209,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Cranberry juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -223,13 +223,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Cream
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -237,13 +237,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Cream liqueur
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -251,13 +251,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Créme liqueur
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -265,13 +265,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Dark rum
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -279,13 +279,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           DiSaronno
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -293,13 +293,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           DOM Bénédictine
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -307,13 +307,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Drambuie
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -321,13 +321,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Dry White Wine
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -335,13 +335,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Egg yolk
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -349,13 +349,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Galliano
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -363,13 +363,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Gin
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -377,13 +377,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Ginger Ale
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -391,13 +391,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Ginger beer
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -405,13 +405,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Grapefruit juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -419,13 +419,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Hot coffee
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -433,13 +433,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Kirsch
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -447,13 +447,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Lemon juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -461,13 +461,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Lillet Blonde
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -475,13 +475,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Lime juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -489,13 +489,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Olive juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -503,13 +503,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Orange Bitters
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -517,13 +517,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Orange juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -531,13 +531,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Peach puree
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -545,13 +545,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Peach schnapps
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -559,13 +559,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Pineapple juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -573,13 +573,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Pisco
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -587,13 +587,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Prosecco
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -601,13 +601,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Raspberry liqueur
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -615,13 +615,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Red Port
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -629,13 +629,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Soda water
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -643,13 +643,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Syrup
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -657,13 +657,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Tequila
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -671,13 +671,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Tomato juice
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -685,13 +685,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Triple Sec
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -699,13 +699,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Vermouth
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -713,13 +713,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Vodka
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -727,13 +727,13 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           Whiskey
         </span>
       </div>
       <div
-        className="MuiChip-root-67 MuiChip-clickable-70 IngredientPicker-chip-66"
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
@@ -741,7 +741,7 @@ exports[`does not explode when rendered 1`] = `
         tabIndex={0}
       >
         <span
-          className="MuiChip-label-86"
+          className="MuiChip-label"
         >
           White rum
         </span>
@@ -749,43 +749,43 @@ exports[`does not explode when rendered 1`] = `
     </div>
     <br />
     <div
-      className="MuiGrid-container-92 EditBar-root-2"
+      className="MuiGrid-root EditBar-root-2 MuiGrid-container"
     >
       <div
-        className="MuiGrid-item-93 MuiGrid-grid-xs-12-132 MuiGrid-grid-md-3-151"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3"
       >
         <div>
           <h3
-            className="MuiTypography-root-30 MuiTypography-h3-44 MuiTypography-gutterBottom-57 MakeableCocktails-title-189"
+            className="MuiTypography-root MakeableCocktails-title-194 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Makeable Cocktails
           </h3>
           <p
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiTypography-paragraph-58"
+            className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
           >
             These are the cocktails you can make...
           </p>
           <ul
-            className="MuiList-root-191 MuiList-padding-192 MakeableCocktails-list-190"
+            className="MuiList-root MakeableCocktails-list-195 MuiList-padding"
           />
         </div>
       </div>
       <div
-        className="MuiGrid-item-93 MuiGrid-grid-xs-12-132 MuiGrid-grid-md-3-151"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3"
       >
         <div>
           <h3
-            className="MuiTypography-root-30 MuiTypography-h3-44 MuiTypography-gutterBottom-57 CocktailGauge-title-195"
+            className="MuiTypography-root CocktailGauge-title-200 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Cocktail Gauge
           </h3>
           <p
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiTypography-paragraph-58"
+            className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
           >
             How many cocktails can you make with what's in your bar?
           </p>
           <svg
-            className="CircularProgressbar CocktailGauge-progressBar-196"
+            className="CircularProgressbar CocktailGauge-progressBar-201"
             data-test-id="CircularProgressbar"
             viewBox="0 0 100 100"
           >
@@ -841,38 +841,38 @@ exports[`does not explode when rendered 1`] = `
         </div>
       </div>
       <div
-        className="MuiGrid-item-93 MuiGrid-grid-xs-12-132 MuiGrid-grid-md-6-154"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
       >
         <div>
           <h3
-            className="MuiTypography-root-30 MuiTypography-h3-44 MuiTypography-gutterBottom-57 PopularIngredients-title-197"
+            className="MuiTypography-root PopularIngredients-title-202 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Popular Ingredients
           </h3>
           <p
-            className="MuiTypography-root-30 MuiTypography-body1-39 MuiTypography-paragraph-58"
+            className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
           >
             These are popular ingredients not currently in your bar.
           </p>
           <table
-            className="MuiTable-root-200"
+            className="MuiTable-root"
           >
             <thead
-              className="MuiTableHead-root-201"
+              className="MuiTableHead-root"
             >
               <tr
-                className="MuiTableRow-root-202 MuiTableRow-head-205"
+                className="MuiTableRow-root MuiTableRow-head"
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-head-208"
+                  className="MuiTableCell-root MuiTableCell-head"
                   scope="col"
                 >
                   Ingredient
                 </th>
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-head-208 MuiTableCell-alignRight-217"
+                  className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                   scope="col"
                 >
                   Appearances
@@ -880,14 +880,14 @@ exports[`does not explode when rendered 1`] = `
               </tr>
             </thead>
             <tbody
-              className="MuiTableBody-root-219"
+              className="MuiTableBody-root"
             >
               <tr
-                className="MuiTableRow-root-202"
+                className="MuiTableRow-root"
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 PopularIngredients-cocktailNameContainer-199"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -896,11 +896,10 @@ exports[`does not explode when rendered 1`] = `
                     </span>
                     <button
                       aria-label="Add"
-                      className="MuiButtonBase-root-226 MuiIconButton-root-220 MuiIconButton-colorPrimary-222 PopularIngredients-button-198"
+                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
-                      onContextMenu={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -910,15 +909,15 @@ exports[`does not explode when rendered 1`] = `
                       onTouchEnd={[Function]}
                       onTouchMove={[Function]}
                       onTouchStart={[Function]}
-                      tabIndex="0"
+                      tabIndex={0}
                       type="button"
                     >
                       <span
-                        className="MuiIconButton-label-225"
+                        className="MuiIconButton-label"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root-229"
+                          className="MuiSvgIcon-root"
                           focusable="false"
                           role="presentation"
                           viewBox="0 0 24 24"
@@ -932,25 +931,22 @@ exports[`does not explode when rendered 1`] = `
                           />
                         </svg>
                       </span>
-                      <span
-                        className="MuiTouchRipple-root-238"
-                      />
                     </button>
                   </div>
                 </th>
                 <td
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 MuiTableCell-alignRight-217"
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   19
                 </td>
               </tr>
               <tr
-                className="MuiTableRow-root-202"
+                className="MuiTableRow-root"
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 PopularIngredients-cocktailNameContainer-199"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -959,11 +955,10 @@ exports[`does not explode when rendered 1`] = `
                     </span>
                     <button
                       aria-label="Add"
-                      className="MuiButtonBase-root-226 MuiIconButton-root-220 MuiIconButton-colorPrimary-222 PopularIngredients-button-198"
+                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
-                      onContextMenu={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -973,15 +968,15 @@ exports[`does not explode when rendered 1`] = `
                       onTouchEnd={[Function]}
                       onTouchMove={[Function]}
                       onTouchStart={[Function]}
-                      tabIndex="0"
+                      tabIndex={0}
                       type="button"
                     >
                       <span
-                        className="MuiIconButton-label-225"
+                        className="MuiIconButton-label"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root-229"
+                          className="MuiSvgIcon-root"
                           focusable="false"
                           role="presentation"
                           viewBox="0 0 24 24"
@@ -995,25 +990,22 @@ exports[`does not explode when rendered 1`] = `
                           />
                         </svg>
                       </span>
-                      <span
-                        className="MuiTouchRipple-root-238"
-                      />
                     </button>
                   </div>
                 </th>
                 <td
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 MuiTableCell-alignRight-217"
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   18
                 </td>
               </tr>
               <tr
-                className="MuiTableRow-root-202"
+                className="MuiTableRow-root"
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 PopularIngredients-cocktailNameContainer-199"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1022,11 +1014,10 @@ exports[`does not explode when rendered 1`] = `
                     </span>
                     <button
                       aria-label="Add"
-                      className="MuiButtonBase-root-226 MuiIconButton-root-220 MuiIconButton-colorPrimary-222 PopularIngredients-button-198"
+                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
-                      onContextMenu={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1036,15 +1027,15 @@ exports[`does not explode when rendered 1`] = `
                       onTouchEnd={[Function]}
                       onTouchMove={[Function]}
                       onTouchStart={[Function]}
-                      tabIndex="0"
+                      tabIndex={0}
                       type="button"
                     >
                       <span
-                        className="MuiIconButton-label-225"
+                        className="MuiIconButton-label"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root-229"
+                          className="MuiSvgIcon-root"
                           focusable="false"
                           role="presentation"
                           viewBox="0 0 24 24"
@@ -1058,25 +1049,22 @@ exports[`does not explode when rendered 1`] = `
                           />
                         </svg>
                       </span>
-                      <span
-                        className="MuiTouchRipple-root-238"
-                      />
                     </button>
                   </div>
                 </th>
                 <td
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 MuiTableCell-alignRight-217"
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   17
                 </td>
               </tr>
               <tr
-                className="MuiTableRow-root-202"
+                className="MuiTableRow-root"
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 PopularIngredients-cocktailNameContainer-199"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1085,11 +1073,10 @@ exports[`does not explode when rendered 1`] = `
                     </span>
                     <button
                       aria-label="Add"
-                      className="MuiButtonBase-root-226 MuiIconButton-root-220 MuiIconButton-colorPrimary-222 PopularIngredients-button-198"
+                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
-                      onContextMenu={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1099,15 +1086,15 @@ exports[`does not explode when rendered 1`] = `
                       onTouchEnd={[Function]}
                       onTouchMove={[Function]}
                       onTouchStart={[Function]}
-                      tabIndex="0"
+                      tabIndex={0}
                       type="button"
                     >
                       <span
-                        className="MuiIconButton-label-225"
+                        className="MuiIconButton-label"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root-229"
+                          className="MuiSvgIcon-root"
                           focusable="false"
                           role="presentation"
                           viewBox="0 0 24 24"
@@ -1121,25 +1108,22 @@ exports[`does not explode when rendered 1`] = `
                           />
                         </svg>
                       </span>
-                      <span
-                        className="MuiTouchRipple-root-238"
-                      />
                     </button>
                   </div>
                 </th>
                 <td
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 MuiTableCell-alignRight-217"
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   17
                 </td>
               </tr>
               <tr
-                className="MuiTableRow-root-202"
+                className="MuiTableRow-root"
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 PopularIngredients-cocktailNameContainer-199"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1148,11 +1132,10 @@ exports[`does not explode when rendered 1`] = `
                     </span>
                     <button
                       aria-label="Add"
-                      className="MuiButtonBase-root-226 MuiIconButton-root-220 MuiIconButton-colorPrimary-222 PopularIngredients-button-198"
+                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
-                      onContextMenu={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1162,15 +1145,15 @@ exports[`does not explode when rendered 1`] = `
                       onTouchEnd={[Function]}
                       onTouchMove={[Function]}
                       onTouchStart={[Function]}
-                      tabIndex="0"
+                      tabIndex={0}
                       type="button"
                     >
                       <span
-                        className="MuiIconButton-label-225"
+                        className="MuiIconButton-label"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root-229"
+                          className="MuiSvgIcon-root"
                           focusable="false"
                           role="presentation"
                           viewBox="0 0 24 24"
@@ -1184,15 +1167,12 @@ exports[`does not explode when rendered 1`] = `
                           />
                         </svg>
                       </span>
-                      <span
-                        className="MuiTouchRipple-root-238"
-                      />
                     </button>
                   </div>
                 </th>
                 <td
                   aria-sort={null}
-                  className="MuiTableCell-root-207 MuiTableCell-body-209 MuiTableCell-alignRight-217"
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   15
                 </td>

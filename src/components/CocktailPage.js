@@ -52,7 +52,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper} square>
-        <Grid container className={classes.innerContainer} spacing={16}>
+        <Grid container className={classes.innerContainer} spacing={10}>
           <Grid item md={8} xs={12}>
             <Typography variant="h3" gutterBottom>
               {name}

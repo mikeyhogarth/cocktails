@@ -28,14 +28,14 @@ const MakeableCocktails = ({ makeableCocktails, classes }) => {
       </Typography>
       <List className={classes.list}>
         {makeableCocktails.map(cocktail => (
-          <Link
+          <ListItem
+            button
+            key={cocktail.name}
+            component={Link}
             to={`/cocktails/${cocktail.slug}`}
-            style={{ textDecoration: "none" }}
           >
-            <ListItem button key={cocktail.name}>
-              <ListItemText primary={cocktail.name} />
-            </ListItem>
-          </Link>
+            <ListItemText primary={cocktail.name} />
+          </ListItem>
         ))}
       </List>
     </div>

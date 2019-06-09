@@ -21,7 +21,7 @@ const styles = {
     float: "right"
   },
   card: {
-    width: "20em",
+    width: "25em",
     margin: ".5em"
   },
   cardContent: {

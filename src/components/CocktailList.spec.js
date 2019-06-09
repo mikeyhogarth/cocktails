@@ -1,13 +1,16 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import App from "./App";
-import store from "./store";
+import CocktailList from "./CocktailList";
+import store from "../store";
 import { Provider } from "react-redux";
+import { MemoryRouter } from "react-router";
 
 it("does not explode when rendered", () => {
   const tree = renderer.create(
     <Provider store={store}>
-      <App />
+      <MemoryRouter>
+        <CocktailList />
+      </MemoryRouter>
     </Provider>
   );
   expect(tree).toMatchSnapshot();

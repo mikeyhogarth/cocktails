@@ -60,5 +60,5 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(
-  withTheme()(withStyles(styles)(CocktailGauge))
+  withTheme(withStyles(styles)(CocktailGauge))
 );

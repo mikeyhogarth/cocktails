@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does not explode when rendered 1`] = `
+<div>
+  <div
+    className="CocktailList-content-1"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+      >
+        <span>
+          No results
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

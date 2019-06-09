@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 
 const styles = theme => ({
   chip: {
-    margin: theme.spacing.unit / 2
+    margin: theme.spacing() / 2
   }
 });
 
