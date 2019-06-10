@@ -479,13 +479,13 @@
       {
         "unit": "cl",
         "amount": 3,
-        "ingredient": "Créme de Cacao (White)",
+        "ingredient": "Créme de Cacao",
         "label": "White Créme de Cacao"
       },
       {
         "unit": "cl",
         "amount": 3,
-        "ingredient": "Créme de Menthe (Green)",
+        "ingredient": "Créme de Menthe",
         "label": "Green Créme de Menthe"
       },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" }
@@ -581,7 +581,7 @@
       {
         "unit": "cl",
         "amount": 2,
-        "ingredient": "Créme de Menthe (White)",
+        "ingredient": "Créme de Menthe",
         "label": "White Créme de Menthe"
       }
     ],
@@ -651,7 +651,7 @@
       {
         "unit": "cl",
         "amount": 3,
-        "ingredient": "Créme de Cacao (Brown)",
+        "ingredient": "Créme de Cacao",
         "label": "Brown Créme de Cacao"
       },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" }
