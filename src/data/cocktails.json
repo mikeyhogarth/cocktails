@@ -479,13 +479,13 @@
       {
         "unit": "cl",
         "amount": 3,
-        "ingredient": "Créme liqueur",
+        "ingredient": "Créme de Cacao",
         "label": "White Créme de Cacao"
       },
       {
         "unit": "cl",
         "amount": 3,
-        "ingredient": "Créme liqueur",
+        "ingredient": "Créme de Menthe",
         "label": "Green Créme de Menthe"
       },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" }
@@ -581,7 +581,7 @@
       {
         "unit": "cl",
         "amount": 2,
-        "ingredient": "Créme liqueur",
+        "ingredient": "Créme de Menthe",
         "label": "White Créme de Menthe"
       }
     ],
@@ -651,7 +651,7 @@
       {
         "unit": "cl",
         "amount": 3,
-        "ingredient": "Créme liqueur",
+        "ingredient": "Créme de Cacao",
         "label": "Brown Créme de Cacao"
       },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" }
@@ -943,7 +943,7 @@
       {
         "unit": "cl",
         "amount": 1,
-        "ingredient": "Créme liqueur",
+        "ingredient": "Créme de Cassis",
         "label": "Créme de Cassis"
       }
     ],
@@ -1107,7 +1107,7 @@
       {
         "unit": "cl",
         "amount": 1.5,
-        "ingredient": "Créme liqueur",
+        "ingredient": "Créme de Cassis",
         "label": "Créme de Cassis"
       },
       {
