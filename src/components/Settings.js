@@ -12,9 +12,8 @@ import {
   Switch
 } from "@material-ui/core";
 
-import { bindActionCreators } from "redux";
 import { updateSettings, togglePride } from "../actions";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { colors } from "../theme";
 import capitalize from "lodash/capitalize";
 import keys from "lodash/keys";
@@ -30,7 +29,10 @@ const styles = theme => ({
   }
 });
 
-const Settings = ({ classes, settings, updateSettings, togglePride }) => {
+const Settings = ({ classes }) => {
+  const dispatch = useDispatch();
+  const settings = useSelector(state => state.settings);
+
   return (
     <div className={classes.root}>
       <Paper className={classes.content}>
@@ -45,7 +47,7 @@ const Settings = ({ classes, settings, updateSettings, togglePride }) => {
             name="color"
             value={settings.color}
             onChange={event => {
-              updateSettings({ color: event.target.value });
+              dispatch(updateSettings({ color: event.target.value }));
             }}
           >
             {keys(colors).map(color => {
@@ -68,7 +70,7 @@ const Settings = ({ classes, settings, updateSettings, togglePride }) => {
             name="theme"
             value={settings.theme}
             onChange={event => {
-              updateSettings({ theme: event.target.value });
+              dispatch(updateSettings({ theme: event.target.value }));
             }}
           >
             {["light", "dark"].map(theme => {
@@ -92,7 +94,7 @@ const Settings = ({ classes, settings, updateSettings, togglePride }) => {
               <Switch
                 checked={settings.pride}
                 onChange={e => {
-                  togglePride();
+                  dispatch(togglePride());
                 }}
                 value={settings.pride}
               />
@@ -105,16 +107,4 @@ const Settings = ({ classes, settings, updateSettings, togglePride }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  settings: state.settings
-});
-
-const mapDispatchToProps = dispatch => ({
-  updateSettings: bindActionCreators(updateSettings, dispatch),
-  togglePride: bindActionCreators(togglePride, dispatch)
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(withStyles(styles)(Settings));
+export default withStyles(styles)(Settings);

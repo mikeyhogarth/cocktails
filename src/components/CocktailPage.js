@@ -8,9 +8,8 @@ import {
 } from "@material-ui/core";
 import IngredientDetail from "./IngredientDetail";
 import Definition from "./CocktailPage/Definition";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
-import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
 import CocktailVariant from "./CocktailPage/CocktailVariant";
 import CocktailImage from "./CocktailPage/CocktailImage";
@@ -33,13 +32,17 @@ const styles = theme => ({
   }
 });
 
-const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
+const CocktailPage = ({ classes, match }) => {
+  const dispatch = useDispatch();
+  const allCocktails = useSelector(state => state.db.cocktails);
+
   const cocktail = allCocktails.find(c => c.slug === match.params.slug);
   if (!cocktail) return null;
 
   const { enriched, enriching, enrichmentFailed } = cocktail;
 
-  if (!enriching && !enriched && !enrichmentFailed) enrichCocktail(cocktail);
+  if (!enriching && !enriched && !enrichmentFailed)
+    dispatch(enrichCocktail(cocktail));
 
   const {
     name,
@@ -124,16 +127,4 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails,
-  allIngredients: state.db.ingredients
-});
-
-const mapDispatchToProps = dispatch => ({
-  enrichCocktail: bindActionCreators(enrichCocktail, dispatch)
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(withStyles(styles)(CocktailPage));
+export default withStyles(styles)(CocktailPage);

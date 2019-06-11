@@ -10,7 +10,7 @@ import pink from "@material-ui/core/colors/pink";
 import cyan from "@material-ui/core/colors/cyan";
 import deepPurple from "@material-ui/core/colors/deepPurple";
 
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
 export const colors = {
   indigo,
@@ -37,16 +37,16 @@ function createTheme(color, theme) {
   });
 }
 
-const mapStateToProps = state => ({
-  color: state.settings.color,
-  theme: state.settings.theme
-});
+const Theme = ({ children }) => {
+  const color = useSelector(state => state.settings.color);
+  const theme = useSelector(state => state.settings.theme);
 
-const Theme = ({ color, theme, children }) => (
-  <MuiThemeProvider theme={createTheme(color, theme)}>
-    <CssBaseline />
-    {children}
-  </MuiThemeProvider>
-);
+  return (
+    <MuiThemeProvider theme={createTheme(color, theme)}>
+      <CssBaseline />
+      {children}
+    </MuiThemeProvider>
+  );
+};
 
-export default connect(mapStateToProps)(Theme);
+export default Theme;

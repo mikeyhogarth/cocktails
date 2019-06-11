@@ -6,9 +6,8 @@ import CocktailGauge from "./Bar/CocktailGauge";
 import MakeableCocktails from "./Bar/MakeableCocktails";
 import { applyFilter } from "../utilities/filter";
 import IngredientPicker from "./IngredientPicker";
-import { bindActionCreators } from "redux";
 import { setBar } from "../actions";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 const styles = theme => ({
   explanation: {
@@ -21,7 +20,11 @@ const styles = theme => ({
   }
 });
 
-const EditBar = ({ classes, allCocktails, bar, setBar }) => {
+const EditBar = ({ classes }) => {
+  const dispatch = useDispatch();
+  const bar = useSelector(state => state.bar);
+  const allCocktails = useSelector(state => state.db.cocktails);
+
   const makeableCocktails = applyFilter(allCocktails, {
     rule: "makeableFrom",
     ingredients: bar
@@ -41,7 +44,7 @@ const EditBar = ({ classes, allCocktails, bar, setBar }) => {
         <IngredientPicker
           selectedIngredients={bar}
           onIngredientsChange={selectedIngredients => {
-            setBar(selectedIngredients);
+            dispatch(setBar(selectedIngredients));
           }}
         />
         <br />
@@ -62,16 +65,4 @@ const EditBar = ({ classes, allCocktails, bar, setBar }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  bar: state.bar,
-  allCocktails: state.db.cocktails
-});
-
-const mapDispatchToProps = dispatch => ({
-  setBar: bindActionCreators(setBar, dispatch)
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(withStyles(styles)(EditBar));
+export default withStyles(styles)(EditBar);

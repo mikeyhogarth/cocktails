@@ -3,9 +3,13 @@ import CocktailList from "./CocktailList";
 import CocktailFilter from "./CocktailFilter";
 import { applyFilters, filtersFromUserOptions } from "../utilities/filter";
 import { LinearProgress } from "@material-ui/core";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
-const CocktailBrowser = ({ filterOptions, bar, allCocktails }) => {
+const CocktailBrowser = () => {
+  const allCocktails = useSelector(state => state.db.cocktails);
+  const filterOptions = useSelector(state => state.filterOptions);
+  const bar = useSelector(state => state.bar);
+
   const [filteredCocktails, setFilteredCocktails] = useState(allCocktails);
   const [loading, setLoading] = useState(false);
 
@@ -35,10 +39,4 @@ const CocktailBrowser = ({ filterOptions, bar, allCocktails }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails,
-  bar: state.bar,
-  filterOptions: state.filterOptions
-});
-
-export default connect(mapStateToProps)(CocktailBrowser);
+export default CocktailBrowser;

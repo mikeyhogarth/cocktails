@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { countIngredients } from "../../utilities/cocktail.utils";
 import {
   Typography,
@@ -13,7 +13,6 @@ import {
 
 import AddIcon from "@material-ui/icons/Add";
 import { withStyles } from "@material-ui/core/styles";
-import { bindActionCreators } from "redux";
 import { addToBar } from "../../actions";
 
 const styles = theme => ({
@@ -27,7 +26,11 @@ const styles = theme => ({
   }
 });
 
-const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
+const PopularIngredients = ({ classes }) => {
+  const dispatch = useDispatch();
+  const bar = useSelector(state => state.bar);
+  const allCocktails = useSelector(state => state.db.cocktails);
+
   const counts = countIngredients(allCocktails)
     .filter(i => {
       return bar.includes(i.name) === false;
@@ -60,7 +63,7 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
                 <div>
                   <span>{row.name}</span>
                   <IconButton
-                    onClick={() => addToBar(row.name)}
+                    onClick={() => dispatch(addToBar(row.name))}
                     color="primary"
                     aria-label="Add"
                   >
@@ -77,16 +80,4 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  bar: state.bar,
-  allCocktails: state.db.cocktails
-});
-
-const mapDispatchToProps = dispatch => ({
-  addToBar: bindActionCreators(addToBar, dispatch)
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(withStyles(styles)(PopularIngredients));
+export default withStyles(styles)(PopularIngredients);

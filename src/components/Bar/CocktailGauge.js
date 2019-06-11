@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { withTheme } from "@material-ui/core/styles";
@@ -17,7 +17,9 @@ const styles = theme => ({
   }
 });
 
-const CocktailGauge = ({ allCocktails, makeableCocktails, classes, theme }) => {
+const CocktailGauge = ({ makeableCocktails, classes, theme }) => {
+  const allCocktails = useSelector(state => state.db.cocktails);
+
   const progressBarStyles = {
     path: {
       // Path color
@@ -54,11 +56,4 @@ const CocktailGauge = ({ allCocktails, makeableCocktails, classes, theme }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails,
-  bar: state.bar
-});
-
-export default connect(mapStateToProps)(
-  withTheme(withStyles(styles)(CocktailGauge))
-);
+export default withTheme(withStyles(styles)(CocktailGauge));

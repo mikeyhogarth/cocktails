@@ -17,8 +17,7 @@ import {
 
 import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import IngredientPicker from "./IngredientPicker";
 import { updateFilter } from "../actions";
 import { getCategories, getGlasses } from "../utilities/cocktail.utils";
@@ -41,18 +40,16 @@ const styles = theme => ({
   }
 });
 
-const CocktailFilter = ({
-  allCocktails,
-  updateFilter,
-  filterOptions: {
+const CocktailFilter = ({ classes }) => {
+  const dispatch = useDispatch();
+  const {
     categories,
     glasses,
     ingredientsRule,
     ingredients: selectedIngredients,
     barOnly
-  },
-  classes
-}) => {
+  } = useSelector(state => state.filterOptions);
+  const allCocktails = useSelector(state => state.db.cocktails);
   const allCategories = getCategories(allCocktails);
   const allGlasses = getGlasses(allCocktails);
 
@@ -66,7 +63,7 @@ const CocktailFilter = ({
             control={
               <Switch
                 checked={barOnly}
-                onChange={e => updateFilter({ barOnly: !barOnly })}
+                onChange={e => dispatch(updateFilter({ barOnly: !barOnly }))}
                 value={barOnly}
               />
             }
@@ -94,7 +91,7 @@ const CocktailFilter = ({
             label="Must Include all of the following..."
             onClick={e =>
               ingredientsRule !== "mustInclude" &&
-              updateFilter({ ingredientsRule: "mustInclude" })
+              dispatch(updateFilter({ ingredientsRule: "mustInclude" }))
             }
           />
           <FormControlLabel
@@ -103,7 +100,7 @@ const CocktailFilter = ({
             label="Can Include any of the following..."
             onClick={e =>
               ingredientsRule !== "canInclude" &&
-              updateFilter({ ingredientsRule: "canInclude" })
+              dispatch(updateFilter({ ingredientsRule: "canInclude" }))
             }
           />
         </RadioGroup>
@@ -112,13 +109,13 @@ const CocktailFilter = ({
         <IngredientPicker
           selectedIngredients={selectedIngredients}
           onIngredientsChange={selectedIngredients => {
-            updateFilter({ ingredients: selectedIngredients });
+            dispatch(updateFilter({ ingredients: selectedIngredients }));
           }}
         />
         <Button
           color="secondary"
           onClick={() => {
-            updateFilter({ ingredients: [] });
+            dispatch(updateFilter({ ingredients: [] }));
           }}
         >
           Clear Ingredients
@@ -138,12 +135,14 @@ const CocktailFilter = ({
                       <Checkbox
                         checked={categories.includes(category)}
                         onChange={() =>
-                          updateFilter({
-                            categories: removeOrAddItemFromArray(
-                              category,
-                              categories
-                            )
-                          })
+                          dispatch(
+                            updateFilter({
+                              categories: removeOrAddItemFromArray(
+                                category,
+                                categories
+                              )
+                            })
+                          )
                         }
                         value="checkedB"
                         color="primary"
@@ -168,9 +167,11 @@ const CocktailFilter = ({
                       <Checkbox
                         checked={glasses.includes(glass)}
                         onChange={() =>
-                          updateFilter({
-                            glasses: removeOrAddItemFromArray(glass, glasses)
-                          })
+                          dispatch(
+                            updateFilter({
+                              glasses: removeOrAddItemFromArray(glass, glasses)
+                            })
+                          )
                         }
                         value="checkedB"
                         color="primary"
@@ -188,16 +189,4 @@ const CocktailFilter = ({
   );
 };
 
-const mapStateToProps = state => ({
-  filterOptions: state.filterOptions,
-  allCocktails: state.db.cocktails
-});
-
-const mapDispatchToProps = dispatch => ({
-  updateFilter: bindActionCreators(updateFilter, dispatch)
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(withStyles(styles)(CocktailFilter));
+export default withStyles(styles)(CocktailFilter);

@@ -12,7 +12,7 @@ import Bar from "./components/Bar";
 import Settings from "./components/Settings";
 import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
 const styles = {
   root: {
@@ -57,7 +57,8 @@ const styles = {
   }
 };
 
-function App({ pride, classes }) {
+function App({ classes }) {
+  const pride = useSelector(state => state.settings.pride);
   const backgroundClass = pride ? classes.prideBackground : null;
   const textBackgroundClass = [
     classes.textBackground,
@@ -133,8 +134,4 @@ function App({ pride, classes }) {
   );
 }
 
-const mapStateToProps = state => ({
-  pride: state.settings.pride
-});
-
-export default connect(mapStateToProps)(withStyles(styles)(App));
+export default withStyles(styles)(App);
