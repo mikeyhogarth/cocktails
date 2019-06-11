@@ -125,8 +125,7 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
 };
 
 const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails,
-  allIngredients: state.db.ingredients
+  allCocktails: state.db.cocktails
 });
 
 const mapDispatchToProps = dispatch => ({

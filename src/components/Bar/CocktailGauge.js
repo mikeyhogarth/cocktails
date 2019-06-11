@@ -55,8 +55,7 @@ const CocktailGauge = ({ allCocktails, makeableCocktails, classes, theme }) => {
 };
 
 const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails,
-  bar: state.bar
+  allCocktails: state.db.cocktails
 });
 
 export default connect(mapStateToProps)(
