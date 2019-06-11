@@ -56,4 +56,4 @@ const CocktailGauge = ({ makeableCocktails, classes, theme }) => {
   );
 };
 
-export default withTheme(withStyles(styles)(CocktailGauge));
+export default React.memo(withTheme(withStyles(styles)(CocktailGauge)));

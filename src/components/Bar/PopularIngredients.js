@@ -80,4 +80,4 @@ const PopularIngredients = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(PopularIngredients);
+export default React.memo(withStyles(styles)(PopularIngredients));

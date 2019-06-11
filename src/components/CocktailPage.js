@@ -127,4 +127,4 @@ const CocktailPage = ({ classes, match }) => {
   );
 };
 
-export default withStyles(styles)(CocktailPage);
+export default React.memo(withStyles(styles)(CocktailPage));

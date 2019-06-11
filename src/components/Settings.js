@@ -107,4 +107,4 @@ const Settings = ({ classes }) => {
   );
 };
 
-export default withStyles(styles)(Settings);
+export default React.memo(withStyles(styles)(Settings));

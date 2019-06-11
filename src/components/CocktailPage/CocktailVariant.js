@@ -80,4 +80,4 @@ const CocktailVariant = ({
   );
 };
 
-export default withStyles(styles)(CocktailVariant);
+export default React.memo(withStyles(styles)(CocktailVariant));

@@ -43,4 +43,4 @@ const IngredientPicker = ({
   );
 };
 
-export default withStyles(styles)(IngredientPicker);
+export default React.memo(withStyles(styles)(IngredientPicker));

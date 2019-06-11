@@ -35,4 +35,4 @@ const IngredientDetail = function({ item, classes }) {
   );
 };
 
-export default withStyles(styles)(IngredientDetail);
+export default React.memo(withStyles(styles)(IngredientDetail));

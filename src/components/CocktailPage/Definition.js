@@ -16,4 +16,4 @@ const Definition = ({ title, description, classes }) => {
   );
 };
 
-export default withStyles(styles)(Definition);
+export default React.memo(withStyles(styles)(Definition));

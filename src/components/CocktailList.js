@@ -42,4 +42,4 @@ const CocktailList = ({ classes, cocktails = [] }) => {
   );
 };
 
-export default withStyles(styles)(CocktailList);
+export default React.memo(withStyles(styles)(CocktailList));
