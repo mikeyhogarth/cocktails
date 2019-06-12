@@ -39,4 +39,4 @@ const CocktailBrowser = () => {
   );
 };
 
-export default React.memo(CocktailBrowser);
+export default CocktailBrowser;

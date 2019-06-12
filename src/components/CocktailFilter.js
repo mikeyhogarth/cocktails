@@ -189,4 +189,4 @@ const CocktailFilter = ({ classes }) => {
   );
 };
 
-export default React.memo(withStyles(styles)(CocktailFilter));
+export default withStyles(styles)(CocktailFilter);
