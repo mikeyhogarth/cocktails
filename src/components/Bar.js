@@ -65,4 +65,4 @@ const EditBar = ({ classes }) => {
   );
 };
 
-export default React.memo(withStyles(styles)(EditBar));
+export default withStyles(styles)(EditBar);

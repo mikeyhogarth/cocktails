@@ -13,4 +13,4 @@ const CocktailImage = ({ name, image, classes }) => (
   <img width="100%" className={classes.image} src={image} alt={{ name }} />
 );
 
-export default React.memo(withStyles(styles)(CocktailImage));
+export default withStyles(styles)(CocktailImage);

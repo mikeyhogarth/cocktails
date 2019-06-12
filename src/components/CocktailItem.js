@@ -118,4 +118,4 @@ const CocktailItem = ({ cocktail, classes }) => {
   );
 };
 
-export default React.memo(withStyles(styles)(CocktailItem));
+export default withStyles(styles)(CocktailItem);

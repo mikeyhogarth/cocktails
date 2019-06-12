@@ -134,4 +134,4 @@ function App({ classes }) {
   );
 }
 
-export default React.memo(withStyles(styles)(App));
+export default withStyles(styles)(App);

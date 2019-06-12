@@ -38,4 +38,4 @@ const MakeableCocktails = ({ makeableCocktails, classes }) => {
     </div>
   );
 };
-export default React.memo(withStyles(styles)(MakeableCocktails));
+export default withStyles(styles)(MakeableCocktails);
