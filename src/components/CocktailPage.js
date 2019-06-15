@@ -36,10 +36,7 @@ const styles = theme => ({
 
 const CocktailPage = ({ cocktail, enrichCocktail, classes, match }) => {
   if (!cocktail) return null;
-
-  const { enriched, enriching, enrichmentFailed } = cocktail;
-
-  if (!enriching && !enriched && !enrichmentFailed) enrichCocktail(cocktail);
+  enrichCocktail(cocktail);
 
   const {
     name,
@@ -48,7 +45,9 @@ const CocktailPage = ({ cocktail, enrichCocktail, classes, match }) => {
     category,
     glass,
     garnish,
-    enrichment
+    enrichment,
+    enriching,
+    enriched
   } = cocktail;
 
   return (
