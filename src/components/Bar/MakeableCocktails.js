@@ -1,7 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
 import { Typography, List, ListItem, ListItemText } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { makeableCocktailsSelector } from "../../selectors";
 
 const styles = theme => ({
   title: {
@@ -38,4 +40,9 @@ const MakeableCocktails = ({ makeableCocktails, classes }) => {
     </div>
   );
 };
-export default withStyles(styles)(MakeableCocktails);
+
+const mapStateToProps = state => ({
+  makeableCocktails: makeableCocktailsSelector(state)
+});
+
+export default connect(mapStateToProps)(withStyles(styles)(MakeableCocktails));

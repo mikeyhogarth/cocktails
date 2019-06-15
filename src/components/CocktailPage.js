@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import {
   Typography,
   Paper,
@@ -8,7 +9,7 @@ import {
 } from "@material-ui/core";
 import IngredientDetail from "./IngredientDetail";
 import Definition from "./CocktailPage/Definition";
-import { connect } from "react-redux";
+import { currentCocktailSelector } from "../selectors";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
@@ -33,8 +34,7 @@ const styles = theme => ({
   }
 });
 
-const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
-  const cocktail = allCocktails.find(c => c.slug === match.params.slug);
+const CocktailPage = ({ cocktail, enrichCocktail, classes, match }) => {
   if (!cocktail) return null;
 
   const { enriched, enriching, enrichmentFailed } = cocktail;
@@ -124,8 +124,8 @@ const CocktailPage = ({ allCocktails, enrichCocktail, classes, match }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails
+const mapStateToProps = (state, ownProps) => ({
+  cocktail: currentCocktailSelector(state, ownProps)
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -93,7 +93,7 @@ describe("combining filters", () => {
     // if you combine them though, you should only get 4 results
     // which will be everything from filter 1 that contains vermouth -
     // so that excludes the "Derby" which does not have vermouth in it.
-    const combinedResults = await applyFilters(cocktails, [filter1, filter2]);
+    const combinedResults = applyFilters(cocktails, [filter1, filter2]);
     expect(combinedResults.length).toEqual(4);
   });
 });

@@ -1,10 +1,10 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
+import { withTheme, withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import { CircularProgressbar } from "react-circular-progressbar";
+import { makeableCocktailsSelector } from "../../selectors";
 import "react-circular-progressbar/dist/styles.css";
-import { withTheme } from "@material-ui/core/styles";
 
 const styles = theme => ({
   title: {
@@ -31,9 +31,6 @@ const CocktailGauge = ({ allCocktails, makeableCocktails, classes, theme }) => {
     }
   };
 
-  const totalCocktailCount = allCocktails.length;
-  const makeableCocktailCount = makeableCocktails.length;
-
   return (
     <div>
       <Typography variant="h3" className={classes.title} gutterBottom>
@@ -46,16 +43,17 @@ const CocktailGauge = ({ allCocktails, makeableCocktails, classes, theme }) => {
       <CircularProgressbar
         styles={progressBarStyles}
         className={classes.progressBar}
-        value={makeableCocktailCount}
-        maxValue={totalCocktailCount}
-        text={makeableCocktailCount || "0"}
+        value={makeableCocktails.length}
+        maxValue={allCocktails.length}
+        text={makeableCocktails.length || "0"}
       />
     </div>
   );
 };
 
 const mapStateToProps = state => ({
-  allCocktails: state.db.cocktails
+  allCocktails: state.db.cocktails,
+  makeableCocktails: makeableCocktailsSelector(state)
 });
 
 export default connect(mapStateToProps)(

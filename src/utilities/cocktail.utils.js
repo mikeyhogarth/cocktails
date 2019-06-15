@@ -1,15 +1,7 @@
 import map from "lodash/map";
-import uniq from "lodash/uniq";
-import compact from "lodash/compact";
 
-export function getGlasses(cocktails = []) {
-  return compact(uniq(cocktails.map(c => c.glass)));
-}
-
-export function getCategories(cocktails = []) {
-  return compact(uniq(cocktails.map(c => c.category)));
-}
-
+// Given a list of cocktails, this returns the counts of the ingredients
+// "appearances" in the list (e.g. Gin: 4, Brandy: 2...)
 export function countIngredients(cocktails = []) {
   const counts = cocktails.reduce((acc, cocktail) => {
     cocktail.ingredients.forEach(({ ingredient }) => {

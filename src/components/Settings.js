@@ -30,80 +30,78 @@ const styles = theme => ({
   }
 });
 
-const Settings = ({ classes, settings, updateSettings, togglePride }) => {
-  return (
-    <div className={classes.root}>
-      <Paper className={classes.content}>
-        <Typography variant="h2" gutterBottom>
-          Settings
-        </Typography>
+const Settings = ({ classes, settings, updateSettings, togglePride }) => (
+  <div className={classes.root}>
+    <Paper className={classes.content}>
+      <Typography variant="h2" gutterBottom>
+        Settings
+      </Typography>
 
-        <FormControl component="fieldset">
-          <FormLabel component="legend">Color</FormLabel>
-          <RadioGroup
-            aria-label="Color"
-            name="color"
-            value={settings.color}
-            onChange={event => {
-              updateSettings({ color: event.target.value });
-            }}
-          >
-            {keys(colors).map(color => {
-              return (
-                <FormControlLabel
-                  value={color}
-                  key={color}
-                  control={<Radio />}
-                  label={capitalize(color)}
-                />
-              );
-            })}
-          </RadioGroup>
-        </FormControl>
-
-        <FormControl component="fieldset">
-          <FormLabel component="legend">Theme</FormLabel>
-          <RadioGroup
-            aria-label="Theme"
-            name="theme"
-            value={settings.theme}
-            onChange={event => {
-              updateSettings({ theme: event.target.value });
-            }}
-          >
-            {["light", "dark"].map(theme => {
-              return (
-                <FormControlLabel
-                  value={theme}
-                  key={theme}
-                  control={<Radio />}
-                  label={capitalize(theme)}
-                />
-              );
-            })}
-          </RadioGroup>
-        </FormControl>
-
-        <FormControl>
-          <FormLabel component="legend">Pride!</FormLabel>
-
-          <FormControlLabel
-            control={
-              <Switch
-                checked={settings.pride}
-                onChange={e => {
-                  togglePride();
-                }}
-                value={settings.pride}
+      <FormControl component="fieldset">
+        <FormLabel component="legend">Color</FormLabel>
+        <RadioGroup
+          aria-label="Color"
+          name="color"
+          value={settings.color}
+          onChange={event => {
+            updateSettings({ color: event.target.value });
+          }}
+        >
+          {keys(colors).map(color => {
+            return (
+              <FormControlLabel
+                value={color}
+                key={color}
+                control={<Radio />}
+                label={capitalize(color)}
               />
-            }
-            label={<Typography component="span">Fly the colours</Typography>}
-          />
-        </FormControl>
-      </Paper>
-    </div>
-  );
-};
+            );
+          })}
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl component="fieldset">
+        <FormLabel component="legend">Theme</FormLabel>
+        <RadioGroup
+          aria-label="Theme"
+          name="theme"
+          value={settings.theme}
+          onChange={event => {
+            updateSettings({ theme: event.target.value });
+          }}
+        >
+          {["light", "dark"].map(theme => {
+            return (
+              <FormControlLabel
+                value={theme}
+                key={theme}
+                control={<Radio />}
+                label={capitalize(theme)}
+              />
+            );
+          })}
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl>
+        <FormLabel component="legend">Pride!</FormLabel>
+
+        <FormControlLabel
+          control={
+            <Switch
+              checked={settings.pride}
+              onChange={e => {
+                togglePride();
+              }}
+              value={settings.pride}
+            />
+          }
+          label={<Typography component="span">Fly the colours</Typography>}
+        />
+      </FormControl>
+    </Paper>
+  </div>
+);
 
 const mapStateToProps = state => ({
   settings: state.settings
