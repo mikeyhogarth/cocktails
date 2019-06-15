@@ -3,6 +3,7 @@ import isArray from "lodash/isArray";
 import {
   canInclude,
   mustInclude,
+  mustNotInclude,
   makeableFrom,
   inGlass,
   inCategory
@@ -20,6 +21,8 @@ export function applyFilter(cocktails, filter) {
     );
 
     switch (filter.rule) {
+      case "mustNotInclude":
+        return mustNotInclude(filter.ingredients, cocktailIngredients);
       case "makeableFrom":
         return makeableFrom(filter.ingredients, cocktailIngredients);
       case "canInclude":
@@ -50,7 +53,11 @@ export function applyFilters(cocktails, filters = []) {
   );
 }
 // builds an array of filters based on the users current filter options.
-export function filtersFromUserOptions(userFilterOptions, bar) {
+export function filtersFromUserOptions(
+  userFilterOptions,
+  bar,
+  nonVeganIngredients
+) {
   const filters = [];
 
   // the option about whether to include all/some ingredients
@@ -62,6 +69,10 @@ export function filtersFromUserOptions(userFilterOptions, bar) {
   // the option as to whether to only show stuff that is makeable from the bar
   if (userFilterOptions.barOnly)
     filters.push({ rule: "makeableFrom", ingredients: bar });
+
+  // the option as to whether to only show stuff that is makeable from the bar
+  if (userFilterOptions.veganOnly)
+    filters.push({ ingredients: nonVeganIngredients, rule: "mustNotInclude" });
 
   // the category option
   if (userFilterOptions.categories.length)

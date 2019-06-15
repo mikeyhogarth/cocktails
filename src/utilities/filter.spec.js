@@ -74,6 +74,30 @@ describe("canInclude rule", () => {
   });
 });
 
+describe("mustNotInclude rule", () => {
+  it("returns cocktails that do not include any of the ingredients", () => {
+    const filter = {
+      rule: "mustNotInclude",
+      ingredients: ["Cola", "Whiskey"]
+    };
+
+    const cocktailList = [
+      {
+        name: "Whiskey drink",
+        ingredients: [{ unit: "cl", amount: 1.5, ingredient: "Whiskey" }]
+      },
+      {
+        name: "Vodka drink",
+        ingredients: [{ unit: "cl", amount: 1.5, ingredient: "Vodka" }]
+      }
+    ];
+
+    const results = applyFilter(cocktailList, filter);
+    expect(results.length).toEqual(1);
+    expect(results[0]).toHaveProperty("name", "Vodka drink");
+  });
+});
+
 describe("combining filters", () => {
   it("allows you to combine filters", async () => {
     // this one should return 5 results.

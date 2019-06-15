@@ -1,5 +1,5 @@
 import { createSelector } from "reselect";
-import { uniq, compact } from "lodash";
+import { pickBy, uniq, compact, keys } from "lodash";
 
 import {
   applyFilters,
@@ -10,16 +10,24 @@ import {
 // TODO: Use these in the `mapStateToProps` functions accross application
 // rather than accessing state directly?
 const allCocktailsSelector = state => state.db.cocktails;
+const allIngredientsSelector = state => state.db.ingredients;
 const barSelector = state => state.bar;
 const filterOptionsSelector = state => state.filterOptions;
 const currentSlugSelector = (_, props) => props.match.params.slug;
+
+const nonVeganIngredientsSelector = createSelector(
+  allIngredientsSelector,
+  ingredients => keys(pickBy(ingredients, detail => detail.vegan === false))
+);
 
 // filtersSelector
 // Derives the currently applied filters
 const filtersSelector = createSelector(
   filterOptionsSelector,
   barSelector,
-  (filterOptions, bar) => filtersFromUserOptions(filterOptions, bar)
+  nonVeganIngredientsSelector,
+  (filterOptions, bar, nonVeganIngredientsSelector) =>
+    filtersFromUserOptions(filterOptions, bar, nonVeganIngredientsSelector)
 );
 
 export const currentCocktailSelector = createSelector(

@@ -21,6 +21,7 @@ const defaultState = {
     ingredients: [],
     ingredientsRule: "mustInclude",
     barOnly: false,
+    veganOnly: false,
     categories: [],
     glasses: []
   },
