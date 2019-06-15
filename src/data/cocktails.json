@@ -194,7 +194,11 @@
         "ingredient": "Syrup",
         "label": "Sugar syrup"
       },
-      { "special": "1 raw egg white (small egg)" }
+      {
+        "ingredient": "Egg white",
+        "amount": 1,
+        "label": "Egg white (small egg)"
+      }
     ],
     "preparation": "Shake and strain into a chilled champagne flute. Dash some Angostura bitters on top."
   },
@@ -235,7 +239,10 @@
         "label": "Raspberry syrup"
       },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
-      { "special": "Few drops of Egg White" }
+      {
+        "ingredient": "Egg white",
+        "label": "Few drops of Egg White"
+      }
     ],
     "preparation": "Shake with ice cubes. Strain into cocktail glass."
   },
@@ -276,6 +283,7 @@
         "label": "Bourbon whiskey"
       },
       { "unit": "cl", "amount": 3.0, "ingredient": "Lemon juice" },
+      { "ingredient": "Egg white", "label": "Dash of egg white" },
       {
         "unit": "cl",
         "amount": 1.5,
@@ -284,7 +292,7 @@
       }
     ],
     "garnish": "Half an orange slice and cherry",
-    "preparation": "Dash egg white (Optional: if used shake little harder to foam up the egg white). Pour all ingredients into cocktail shaker filled with ice. Shake. Strain into cocktail glass. If served ‘On the rocks’, strain ingredients into old-fashioned glass filled with ice."
+    "preparation": "(Optional: if used shake little harder to foam up the egg white). Pour all ingredients into cocktail shaker filled with ice. Shake. Strain into cocktail glass. If served ‘On the rocks’, strain ingredients into old-fashioned glass filled with ice."
   },
   {
     "name": "Screwdriver",
@@ -1089,7 +1097,7 @@
         "label": "Sugar syrup"
       },
       { "unit": "cl", "amount": 6, "ingredient": "Cream" },
-      { "special": "1 Egg white" },
+      { "amount": 1, "ingredient": "Egg white" },
       { "special": "3 dashes Orange flower water" },
       { "special": "2 drops Vanilla extract" },
       { "special": "Soda water" }

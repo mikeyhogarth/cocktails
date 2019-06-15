@@ -100,6 +100,11 @@
     "abv": 12,
     "taste": null
   },
+  "Egg white": {
+    "abv": 0,
+    "taste": null,
+    "vegan": false
+  },
   "Egg yolk": {
     "abv": 0,
     "taste": null,
