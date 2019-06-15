@@ -6,7 +6,7 @@ import { filteredCocktailsSelector } from "../selectors";
 
 const CocktailBrowser = ({ filteredCocktails }) => (
   <div>
-    <CocktailFilter />
+    <CocktailFilter filteredCocktails={filteredCocktails} />
     <CocktailList cocktails={filteredCocktails} />
   </div>
 );

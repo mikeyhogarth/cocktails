@@ -4,15 +4,17 @@ import { GridList, Typography, Paper } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import BadMood from "@material-ui/icons/MoodBad";
 
-const styles = theme => ({
-  content: {
-    paddingTop: "1em",
-    paddingBottom: "1em"
-  },
-  gridList: {
-    justifyContent: "center"
-  }
-});
+const styles = theme => {
+  return {
+    content: {
+      paddingTop: "1em",
+      paddingBottom: "1em"
+    },
+    gridList: {
+      justifyContent: "center"
+    }
+  };
+};
 
 const CocktailList = ({ classes, cocktails = [] }) => (
   <div>
