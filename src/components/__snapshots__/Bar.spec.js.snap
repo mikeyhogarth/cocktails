@@ -365,6 +365,20 @@ exports[`does not explode when rendered 1`] = `
         <span
           className="MuiChip-label"
         >
+          Egg white
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
           Egg yolk
         </span>
       </div>
@@ -1038,7 +1052,7 @@ exports[`does not explode when rendered 1`] = `
                 >
                   <div>
                     <span>
-                      Vodka
+                      Syrup
                     </span>
                     <button
                       aria-label="Add"
@@ -1097,7 +1111,7 @@ exports[`does not explode when rendered 1`] = `
                 >
                   <div>
                     <span>
-                      Syrup
+                      Vodka
                     </span>
                     <button
                       aria-label="Add"
