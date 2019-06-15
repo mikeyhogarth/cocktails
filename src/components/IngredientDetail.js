@@ -10,7 +10,7 @@ const styles = {
   }
 };
 
-const IngredientDetail = function({ item, allIngredients, classes }) {
+const IngredientDetail = ({ item, allIngredients, classes }) => {
   if (item.special) return <span>{item.special}</span>;
 
   const { taste, abv } = allIngredients[item.ingredient] || {};

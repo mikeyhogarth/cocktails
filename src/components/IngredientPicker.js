@@ -16,31 +16,27 @@ const IngredientPicker = ({
   selectedIngredients,
   onIngredientsChange,
   classes
-}) => {
-  return (
-    <div>
-      {map(allIngredients, (ingredientDetail, ingredientName) => {
-        return (
-          <Chip
-            key={ingredientName}
-            color={
-              selectedIngredients.includes(ingredientName)
-                ? "primary"
-                : "default"
-            }
-            onClick={e => {
-              onIngredientsChange(
-                removeOrAddItemFromArray(ingredientName, selectedIngredients)
-              );
-            }}
-            label={ingredientName}
-            className={classes.chip}
-          />
-        );
-      })}
-    </div>
-  );
-};
+}) => (
+  <div>
+    {map(allIngredients, (ingredientDetail, ingredientName) => {
+      return (
+        <Chip
+          key={ingredientName}
+          color={
+            selectedIngredients.includes(ingredientName) ? "primary" : "default"
+          }
+          onClick={e => {
+            onIngredientsChange(
+              removeOrAddItemFromArray(ingredientName, selectedIngredients)
+            );
+          }}
+          label={ingredientName}
+          className={classes.chip}
+        />
+      );
+    })}
+  </div>
+);
 
 const mapStateToProps = state => ({
   allIngredients: state.db.ingredients

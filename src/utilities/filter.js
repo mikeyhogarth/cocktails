@@ -41,7 +41,7 @@ export function applyFilter(cocktails, filter) {
  * @param {*} cocktails
  * @param {*} filters
  */
-export async function applyFilters(cocktails, filters = []) {
+export function applyFilters(cocktails, filters = []) {
   if (!isArray(filters)) filters = [filters];
 
   return compact(filters).reduce(

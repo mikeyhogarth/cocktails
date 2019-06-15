@@ -45,39 +45,37 @@ const styles = {
 const CocktailVariant = ({
   cocktail: { name, image, category, glass, preparation, ingredients } = {},
   classes
-}) => {
-  return (
-    <Card className={classes.card}>
-      <CardHeader
-        title={<h1 className={classes.title}>{name}</h1>}
-        subheader={<span className={classes.subHeader}>{category}</span>}
-      />
-      <CardMedia className={classes.media} image={image} title={name} />
+}) => (
+  <Card className={classes.card}>
+    <CardHeader
+      title={<h1 className={classes.title}>{name}</h1>}
+      subheader={<span className={classes.subHeader}>{category}</span>}
+    />
+    <CardMedia className={classes.media} image={image} title={name} />
 
-      <CardContent className={classes.cardContent}>
-        <ul>
-          {ingredients &&
-            ingredients.map((item, idx) => (
-              <li key={idx}>
-                <Typography className={classes.ingredients}>{item}</Typography>
-              </li>
-            ))}
-        </ul>
-        <br />
-        <Typography component="p" className={classes.prep}>
-          {preparation}
+    <CardContent className={classes.cardContent}>
+      <ul>
+        {ingredients &&
+          ingredients.map((item, idx) => (
+            <li key={idx}>
+              <Typography className={classes.ingredients}>{item}</Typography>
+            </li>
+          ))}
+      </ul>
+      <br />
+      <Typography component="p" className={classes.prep}>
+        {preparation}
+      </Typography>
+      <br />
+      {glass && (
+        <Typography component="p" color="textSecondary">
+          <LocalBar fontSize="inherit" />
+          &nbsp;
+          {glass}
         </Typography>
-        <br />
-        {glass && (
-          <Typography component="p" color="textSecondary">
-            <LocalBar fontSize="inherit" />
-            &nbsp;
-            {glass}
-          </Typography>
-        )}
-      </CardContent>
-    </Card>
-  );
-};
+      )}
+    </CardContent>
+  </Card>
+);
 
 export default withStyles(styles)(CocktailVariant);

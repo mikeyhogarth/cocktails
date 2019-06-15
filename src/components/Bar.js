@@ -4,7 +4,6 @@ import { Typography, Paper, Grid } from "@material-ui/core";
 import PopularIngredients from "./Bar/PopularIngredients";
 import CocktailGauge from "./Bar/CocktailGauge";
 import MakeableCocktails from "./Bar/MakeableCocktails";
-import { applyFilter } from "../utilities/filter";
 import IngredientPicker from "./IngredientPicker";
 import { bindActionCreators } from "redux";
 import { setBar } from "../actions";
@@ -21,12 +20,7 @@ const styles = theme => ({
   }
 });
 
-const EditBar = ({ classes, allCocktails, bar, setBar }) => {
-  const makeableCocktails = applyFilter(allCocktails, {
-    rule: "makeableFrom",
-    ingredients: bar
-  });
-
+const EditBar = ({ classes, bar, makeableCocktails, setBar }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
@@ -48,10 +42,10 @@ const EditBar = ({ classes, allCocktails, bar, setBar }) => {
 
         <Grid container className={classes.root}>
           <Grid item md={3} xs={12}>
-            <MakeableCocktails makeableCocktails={makeableCocktails} />
+            <MakeableCocktails />
           </Grid>
           <Grid item md={3} xs={12}>
-            <CocktailGauge makeableCocktails={makeableCocktails} />
+            <CocktailGauge />
           </Grid>
           <Grid item md={6} xs={12}>
             <PopularIngredients />

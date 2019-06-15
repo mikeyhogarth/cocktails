@@ -29,6 +29,7 @@ describe("countIngredients", () => {
       martini,
       monkeyGland
     ];
+
     expect(countIngredients(cocktails)).toEqual([
       { name: "Gin", count: 3 },
       { name: "Vermouth", count: 2 },

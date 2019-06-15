@@ -48,6 +48,11 @@ function finishEnrichCocktail(cocktailName, enrichment) {
 
 export function enrichCocktail(cocktail) {
   return (dispatch, getState) => {
+    // don't re-enrich: this action only does something if a
+    // cocktail has not already been enriched.
+    const { enriched, enriching, enrichmentFailed } = cocktail;
+    if (enriching || enriched || enrichmentFailed) return;
+
     dispatch(startEnrichCocktail(cocktail.name));
     fetchCocktailEnrichment(cocktail)
       .then(enrichment => {
