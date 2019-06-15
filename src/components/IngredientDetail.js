@@ -17,7 +17,7 @@ const IngredientDetail = ({ item, allIngredients, classes }) => {
 
   const toolTipContent = [];
   toolTipContent.push(abv > 0 ? abv + "% abv" : "Non-alcoholic");
-  toolTipContent.push(vegan ? "" : "Non-Vegan");
+  toolTipContent.push(vegan === false ? "Non-Vegan" : "");
   toolTipContent.push(taste);
 
   return (
