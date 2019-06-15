@@ -51,7 +51,8 @@ const CocktailFilter = ({
     glasses,
     ingredientsRule,
     ingredients: selectedIngredients,
-    barOnly
+    barOnly,
+    veganOnly
   },
   classes
 }) => (
@@ -80,6 +81,30 @@ const CocktailFilter = ({
                   my bar
                 </Typography>
               </Link>
+            </Typography>
+          }
+        />
+      </FormGroup>
+
+      <FormGroup row>
+        <FormControlLabel
+          control={
+            <Switch
+              checked={veganOnly}
+              onChange={e => updateFilter({ veganOnly: !veganOnly })}
+              value={veganOnly}
+            />
+          }
+          label={
+            <Typography component="span">
+              Vegan Only
+              {veganOnly && (
+                <em>
+                  {" "}
+                  - always check the label as some alcohol and mixers are not
+                  vegan friendly.
+                </em>
+              )}
             </Typography>
           }
         />

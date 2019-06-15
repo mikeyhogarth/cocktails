@@ -25,7 +25,8 @@
   },
   "Campari": {
     "abv": 25,
-    "taste": null
+    "taste": null,
+    "vegan": false
   },
   "Champagne": {
     "abv": 12,
@@ -57,7 +58,8 @@
   },
   "Cream": {
     "abv": 0,
-    "taste": "sweet"
+    "taste": "sweet",
+    "vegan": false
   },
   "Créme de Cacao": {
     "abv": 20,
@@ -73,7 +75,8 @@
   },
   "Cream liqueur": {
     "abv": 20,
-    "taste": null
+    "taste": null,
+    "vegan": false
   },
   "Dark rum": {
     "abv": 40,
@@ -85,11 +88,13 @@
   },
   "DOM Bénédictine": {
     "abv": 40,
-    "taste": null
+    "taste": null,
+    "vegan": false
   },
   "Drambuie": {
     "abv": 40,
-    "taste": null
+    "taste": null,
+    "vegan": false
   },
   "Dry White Wine": {
     "abv": 12,
@@ -97,7 +102,8 @@
   },
   "Egg yolk": {
     "abv": 0,
-    "taste": null
+    "taste": null,
+    "vegan": false
   },
   "Galliano": {
     "abv": 30,

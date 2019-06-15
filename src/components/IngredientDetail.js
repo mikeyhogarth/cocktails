@@ -13,10 +13,11 @@ const styles = {
 const IngredientDetail = ({ item, allIngredients, classes }) => {
   if (item.special) return <span>{item.special}</span>;
 
-  const { taste, abv } = allIngredients[item.ingredient] || {};
+  const { taste, abv, vegan } = allIngredients[item.ingredient] || {};
 
   const toolTipContent = [];
   toolTipContent.push(abv > 0 ? abv + "% abv" : "Non-alcoholic");
+  toolTipContent.push(vegan ? "" : "Non-Vegan");
   toolTipContent.push(taste);
 
   return (

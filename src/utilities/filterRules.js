@@ -26,9 +26,13 @@ export function mustInclude(filterIngredients, cocktailIngredients) {
 // ingredients from the filter.
 export function canInclude(filterIngredients, cocktailIngredients) {
   if (filterIngredients.length === 0) return true;
-  return cocktailIngredients.some(i => {
-    return filterIngredients.includes(i);
-  });
+  return cocktailIngredients.some(i => filterIngredients.includes(i));
+}
+
+// cocktail will be returned if it contains NONE of the ingredients
+// from the filter.
+export function mustNotInclude(filterIngredients, cocktailIngredients) {
+  return !canInclude(filterIngredients, cocktailIngredients);
 }
 
 export function inGlass(glasses, cocktail) {
