@@ -1,29 +1,21 @@
 import React from "react";
 import { connect } from "react-redux";
-import {
-  Typography,
-  Paper,
-  CircularProgress,
-  GridList,
-  Grid
-} from "@material-ui/core";
+import { Typography, Paper, CircularProgress, Grid } from "@material-ui/core";
 import IngredientDetail from "./IngredientDetail";
 import Definition from "./CocktailPage/Definition";
 import { currentCocktailSelector } from "../selectors";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
-import CocktailVariant from "./CocktailPage/CocktailVariant";
+import CocktailVariantList from "./CocktailPage/CocktailVariantList";
 import CocktailImage from "./CocktailPage/CocktailImage";
+
 const styles = theme => ({
   paper: {
     padding: "1em"
   },
   root: {
     ...theme.mixins.gutters,
-    justifyContent: "center"
-  },
-  gridList: {
     justifyContent: "center"
   },
   definitions: {
@@ -35,7 +27,8 @@ const styles = theme => ({
 });
 
 const CocktailPage = ({ cocktail, enrichCocktail, classes, match }) => {
-  if (!cocktail) return null;
+  if (!cocktail) return <span>Cocktail Not Found</span>;
+
   enrichCocktail(cocktail);
 
   const {
@@ -102,22 +95,7 @@ const CocktailPage = ({ cocktail, enrichCocktail, classes, match }) => {
           </Grid>
         </Grid>
         <br />
-
-        {enriched && enrichment.variants && enrichment.variants.length > 0 && (
-          <>
-            <Typography variant="h4" gutterBottom>
-              Variants
-            </Typography>
-
-            <GridList className={classes.gridList}>
-              {enrichment.variants.map(variant => {
-                return (
-                  <CocktailVariant key={variant.name} cocktail={variant} />
-                );
-              })}
-            </GridList>
-          </>
-        )}
+        <CocktailVariantList cocktail={cocktail} />
       </Paper>
     </div>
   );
