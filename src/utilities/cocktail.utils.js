@@ -6,9 +6,9 @@ export function countIngredients(cocktails = []) {
   const counts = cocktails.reduce((acc, cocktail) => {
     cocktail.ingredients.forEach(({ ingredient }) => {
       if (!ingredient) return;
-      acc[ingredient]
-        ? (acc[ingredient] = acc[ingredient] + 1)
-        : (acc[ingredient] = 1);
+      acc[`${ingredient}`]
+        ? (acc[`${ingredient}`] = acc[`${ingredient}`] + 1)
+        : (acc[`${ingredient}`] = 1);
     });
     return acc;
   }, {});

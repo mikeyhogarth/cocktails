@@ -27,7 +27,7 @@ export const colors = {
 function createTheme(color, theme) {
   return createMuiTheme({
     palette: {
-      primary: colors[color],
+      primary: colors[`${color}`],
       secondary: theme === "light" ? pink : cyan,
       type: theme
     },
