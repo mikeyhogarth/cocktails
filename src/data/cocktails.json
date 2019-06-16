@@ -801,7 +801,7 @@
     "category": "All Day Cocktail",
     "ingredients": [
       { "unit": "cl", "amount": 6, "ingredient": "Gin" },
-      { "special": "2 drops Peach Bitters" },
+      { "unit": "2 drops", "ingredient": "Peach Bitters" },
       { "special": "2 Fresh mint leaves" }
     ],
     "garnish": "Mint leaves",
