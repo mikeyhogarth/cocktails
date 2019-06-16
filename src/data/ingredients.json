@@ -3,7 +3,7 @@
     "abv": 40,
     "taste": null
   },
-  "Angostura Bitters": {
+  "Angostura bitters": {
     "abv": 44,
     "taste": "bitter"
   },
@@ -158,7 +158,7 @@
     "abv": 0,
     "taste": "sour"
   },
-  "Orange Bitters": {
+  "Orange bitters": {
     "abv": 40,
     "taste": null
   },
@@ -166,7 +166,7 @@
     "abv": 0,
     "taste": "sweet"
   },
-  "Peach Bitters": {
+  "Peach bitters": {
     "abv": 0,
     "taste": "fruity"
   },
