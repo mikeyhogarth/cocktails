@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardContent,
   CardActions,
+  CardActionArea,
   Button,
   Typography
 } from "@material-ui/core";
@@ -15,22 +16,31 @@ import { withStyles } from "@material-ui/core/styles";
 import Ingredient from "./IngredientDetail";
 import { Link } from "react-router-dom";
 
-const styles = {
+const styles = theme => ({
   circle: {
-    width: ".8em",
-    height: ".8em",
+    width: theme.spacing(3),
+    height: theme.spacing(3),
     display: "inline-block",
     float: "right"
   },
   card: {
     width: "25em",
-    margin: ".5em"
+    margin: theme.spacing(1),
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end"
   },
-  cardContent: {
-    padding: "1em"
+  cardMain: {
+    flexGrow: 10
   },
+  actions: {
+    alignSelf: "flex-end",
+    flexGrow: 1
+  },
+
+  cardContent: {},
   button: {
-    padding: "0.5em 1em"
+    padding: theme.spacing(0.5, 1)
   },
   title: {
     fontSize: 20,
@@ -46,57 +56,65 @@ const styles = {
   },
   prep: {
     fontStyle: "italic"
-  },
-  glass: {}
-};
+  }
+});
 
 const CocktailItem = ({ cocktail, classes }) => (
   <Card className={classes.card}>
-    <CardHeader
-      title={
-        <h1 className={classes.title}>
-          {cocktail.name}
-          {cocktail.colors.map(color => (
-            <i
-              key={color}
-              className={classes.circle}
-              style={{ background: color }}
-            />
+    <CardActionArea
+      className={classes.cardMain}
+      component={Link}
+      to={`/cocktails/${cocktail.slug}`}
+    >
+      <CardHeader
+        title={
+          <h1 className={classes.title}>
+            {cocktail.name}
+            {cocktail.colors.map(color => (
+              <i
+                key={color}
+                className={classes.circle}
+                style={{ background: color }}
+              />
+            ))}
+          </h1>
+        }
+        subheader={
+          <span className={classes.subHeader}>{cocktail.category}</span>
+        }
+      />
+      <CardContent>
+        <ul>
+          {cocktail.ingredients.map((item, idx) => (
+            <li key={idx}>
+              <Typography className={classes.ingredients}>
+                <Ingredient item={item} />
+              </Typography>
+            </li>
           ))}
-        </h1>
-      }
-      subheader={<span className={classes.subHeader}>{cocktail.category}</span>}
-    />
-    <CardContent className={classes.cardContent}>
-      <ul>
-        {cocktail.ingredients.map((item, idx) => (
-          <li key={idx}>
-            <Typography className={classes.ingredients}>
-              <Ingredient item={item} />
-            </Typography>
-          </li>
-        ))}
-      </ul>
-      <br />
-      <Typography component="p" className={classes.prep}>
-        {cocktail.preparation}
-      </Typography>
-      <br />
-      {cocktail.glass && (
-        <Typography component="p" color="textSecondary">
-          <LocalBar fontSize="inherit" />
-          &nbsp;
-          {cocktail.glass}
+        </ul>
+        <br />
+        <Typography component="p" className={classes.prep}>
+          {cocktail.preparation}
         </Typography>
-      )}
-      {cocktail.garnish && (
-        <Typography component="p" color="textSecondary">
-          <Redo fontSize="inherit" />
-          &nbsp;
-          {cocktail.garnish}
-        </Typography>
-      )}
-    </CardContent>
+        <br />
+        {cocktail.glass && (
+          <Typography component="p" color="textSecondary">
+            <LocalBar fontSize="inherit" />
+            &nbsp;
+            {cocktail.glass}
+          </Typography>
+        )}
+        {cocktail.garnish && (
+          <Typography component="p" color="textSecondary">
+            <Redo fontSize="inherit" />
+            &nbsp;
+            {cocktail.garnish}
+          </Typography>
+        )}
+      </CardContent>
+    </CardActionArea>
+
     <CardActions className={classes.actions}>
       <Button
         component={Link}

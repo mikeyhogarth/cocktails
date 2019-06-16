@@ -7,8 +7,8 @@ import { makeableCocktailsSelector } from "../../selectors";
 
 const styles = theme => ({
   title: {
-    fontSize: "1.5rem",
-    margin: "1rem 0"
+    fontSize: 25,
+    margin: theme.spacing(1, 0)
   },
   list: {
     maxHeight: "20rem",
