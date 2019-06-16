@@ -178,6 +178,10 @@
     "abv": 40,
     "taste": "sweet"
   },
+  "Peychaud’s bitters": {
+    "abv": 35,
+    "taste": "woody"
+  },
   "Pineapple juice": {
     "abv": 0,
     "taste": "sweet"
@@ -236,6 +240,10 @@
   },
   "White rum": {
     "abv": 40,
+    "taste": null
+  },
+  "Worcestershire Sauce": {
+    "abv": 0,
     "taste": null
   }
 }

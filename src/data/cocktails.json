@@ -59,7 +59,11 @@
         "ingredient": "Vermouth",
         "label": "Dry vermouth"
       },
-      { "special": "3 dashes Strawberry syrup" }
+      {
+        "amount": "3 dashes",
+        "ingredient": "Syrup",
+        "label": "Strawberry syrup"
+      }
     ],
     "preparation": "Stir all ingredients with ice and strain into a cocktail glass."
   },
@@ -397,7 +401,9 @@
         "label": "Espresso coffee"
       },
       {
-        "special": "Sugar syrup (according to individual preference of sweetness)"
+        "label": "Sugar syrup",
+        "ingredient": "Syrup",
+        "amount": "Amount-according-to-taste"
       }
     ],
     "preparation": "Shake and strain into a chilled cocktail glass."
@@ -427,7 +433,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 3, "ingredient": "Gin" },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
-      { "special": "2 dashes Sugar syrup" },
+      { "ingredient": "Syrup", "amount": "2 dashes", "label": "Sugar syrup" },
       { "unit": "cl", "amount": 6, "ingredient": "Champagne" }
     ],
     "preparation": "Shake with ice cubes, except for champagne. Strain into a champagne flute. Top up with champagne. Stir gently."
@@ -635,7 +641,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 6, "ingredient": "Prosecco" },
       { "unit": "cl", "amount": 4, "ingredient": "Aperol" },
-      { "special": "Splash of Soda water" }
+      { "amount": "1 Splash", "ingredient": "Soda water" }
     ],
     "garnish": "Half an orange slice",
     "preparation": "Build into an old-fashioned glass filled with ice. Top with a splash of soda water."
@@ -725,7 +731,7 @@
       { "unit": "cl", "amount": 4.5, "ingredient": "Vodka" },
       { "unit": "cl", "amount": 9, "ingredient": "Tomato juice" },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
-      { "special": "2 to 3 dashes of Worcestershire Sauce" },
+      { "amount": "2 to 3 dashes", "ingredient": "Worcestershire Sauce" },
       { "special": "Tabasco" },
       { "special": "Celery salt" },
       { "special": "Pepper" }
@@ -772,8 +778,12 @@
       },
       { "unit": "cl", "amount": 1.5, "ingredient": "Galliano" },
       { "unit": "cl", "amount": 6, "ingredient": "Pineapple juice" },
-      { "special": "1 dash Lime juice" },
-      { "special": "Top with Prosecco" }
+      {
+        "ingredient": "Sparkling Wine",
+        "label": "Prosecco",
+        "amount": "Top up with"
+      },
+      { "special": "1 dash Lime juice" }
     ]
   },
   {
@@ -859,8 +869,8 @@
     "ingredients": [
       { "unit": "cl", "amount": 5, "ingredient": "Cognac" },
       { "unit": "cl", "amount": 1, "ingredient": "Absinthe" },
-      { "special": "1 sugar cube" },
-      { "special": "2 dashes Peychaud’s bitters" }
+      { "amount": "2 dashes", "ingredient": "Peychaud’s bitters" },
+      { "special": "1 sugar cube" }
     ],
     "garnish": "Lemon twist",
     "preparation": "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Note: The original recipe changed after the American Civil War, rye whiskey substituted cognac as it became hard to obtain."
@@ -878,7 +888,7 @@
         "ingredient": "Vermouth",
         "label": "Red vermouth"
       },
-      { "special": "A splash of soda water" }
+      { "amount": "A splash", "ingredient": "Soda water" }
     ],
     "garnish": "Half an orange slice",
     "preparation": "Build into old fashioned glass filled with ice cubes. Add a splash of soda water."
@@ -1263,10 +1273,10 @@
       { "unit": "cl", "amount": 7, "ingredient": "Tomato juice" },
       { "unit": "cl", "amount": 3, "ingredient": "Orange juice" },
       { "unit": "cl", "amount": 1, "ingredient": "Lime juice" },
+      { "amount": "Few drops", "ingredient": "Worcestershire Sauce" },
       { "special": "1 teaspoon clear honey" },
       { "special": "Half slice onion finely chopped" },
       { "special": "Few slices fresh red hot chili peppers" },
-      { "special": "Few drops Worcestershire sauce" },
       { "special": "Salt" }
     ],
     "garnish": "Lime wedge and a green or red chili",
