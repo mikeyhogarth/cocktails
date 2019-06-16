@@ -1,5 +1,6 @@
 import uniq from "lodash/uniq";
 import { loadPersistedState } from "../utilities/persistence";
+import { isEditable } from "../utilities/filter.utils";
 
 // return a new cocktailDB with the named cocktail updated. This is a
 // convinience method for several of the reducer functions below.
@@ -18,10 +19,11 @@ const defaultState = {
     ingredients: []
   },
   filterOptions: {
+    activeFilters: [],
+    editingFilter: null,
     ingredients: [],
     ingredientsRule: "mustInclude",
     barOnly: false,
-    veganOnly: false,
     categories: [],
     glasses: []
   },
@@ -54,6 +56,15 @@ export default function(state = initialState, action) {
         filterOptions: {
           ...state.filterOptions,
           ...action.payload
+        }
+      };
+    case "SET_EDITING_FILTER":
+      return {
+        ...state,
+        filterOptions: {
+          ...state.filterOptions,
+          editingFilter:
+            action.payload && isEditable(action.payload) ? action.payload : null
         }
       };
     case "SET_BAR":
