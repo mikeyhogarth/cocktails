@@ -25,7 +25,7 @@ const GlassFilter = ({
         <FormControlLabel
           value="mustInclude"
           control={<Radio />}
-          label="Must Include all of the following..."
+          label="Each cocktail must Include all of the following..."
           onClick={e =>
             ingredientsRule !== "mustInclude" &&
             updateFilter({ ingredientsRule: "mustInclude" })
@@ -34,7 +34,7 @@ const GlassFilter = ({
         <FormControlLabel
           value="canInclude"
           control={<Radio />}
-          label="Can Include any of the following..."
+          label="Show me cocktails that include any of the following..."
           onClick={e =>
             ingredientsRule !== "canInclude" &&
             updateFilter({ ingredientsRule: "canInclude" })

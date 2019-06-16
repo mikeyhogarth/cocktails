@@ -8,12 +8,12 @@ import {
   Button
 } from "@material-ui/core";
 
-import { GlassFilter, CategoryFilter, IngredientFilter } from "./index";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { updateFilter } from "../../actions";
 import CloseIcon from "@material-ui/icons/Close";
+import { dialogFor, labelFor } from "../../utilities/filter.utils";
 
 const styles = theme => ({
   closeButton: {
@@ -23,16 +23,6 @@ const styles = theme => ({
     color: theme.palette.grey[500]
   }
 });
-
-const filterComponentMap = {
-  byCategory: CategoryFilter,
-  byGlass: GlassFilter,
-  byIngredient: IngredientFilter
-};
-
-function dialogFor(filterRule) {
-  return filterComponentMap[filterRule];
-}
 
 const FilterDialog = ({
   classes,
@@ -59,7 +49,7 @@ const FilterDialog = ({
           >
             <CloseIcon />
           </IconButton>
-          {editingFilter}
+          {labelFor(editingFilter)}
         </DialogTitle>
         {DialogContentComponent && <DialogContentComponent />}
         <DialogActions>

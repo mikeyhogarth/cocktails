@@ -1,6 +1,7 @@
 import React from "react";
 import { Paper, Button, Menu, MenuItem } from "@material-ui/core";
 import { removeOrAddItemFromArray } from "../utilities/util";
+import { labelFor } from "../utilities/filter.utils";
 import { FilterChips, FilterDialog } from "./Filters";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
@@ -25,11 +26,11 @@ const styles = theme => ({
 });
 
 const filterMenuOptions = [
-  { rule: "veganOnly", label: "Vegan only" },
-  { rule: "barOnly", label: "Makeable from bar only" },
-  { rule: "byIngredient", label: "By ingredient..." },
-  { rule: "byCategory", label: "By Category..." },
-  { rule: "byGlass", label: "By Glass..." }
+  { rule: "byIngredient" },
+  { rule: "byCategory" },
+  { rule: "byGlass" },
+  { rule: "veganOnly" },
+  { rule: "barOnly" }
 ];
 
 const CocktailFilter = ({
@@ -76,7 +77,7 @@ const CocktailFilter = ({
         {filterMenuOptions.map((menuOption, idx) => {
           return (
             <MenuItem key={idx} onClick={() => addFilter(menuOption.rule)}>
-              {menuOption.label}
+              {labelFor(menuOption.rule)}
             </MenuItem>
           );
         })}
