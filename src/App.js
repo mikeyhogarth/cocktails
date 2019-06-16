@@ -14,7 +14,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-const styles = {
+const styles = theme => ({
   root: {
     flexGrow: 1
   },
@@ -25,17 +25,15 @@ const styles = {
     color: "white",
     fontSize: 20,
     textTransform: "capitalize",
-    marginLeft: ".5em"
+    marginLeft: theme.spacing(1)
   },
   menuButtonText: {
     color: "white",
-    fontSize: 14,
-    marginLeft: ".5em"
+    fontSize: 14
   },
   textBackground: {
-    marginLeft: "0.2em",
-    paddingTop: ".3em",
-    paddingBottom: ".3em"
+    marginLeft: theme.spacing(0.5),
+    padding: theme.spacing(0.5, 1)
   },
   /** Pride specific styles */
   prideBackground: {
@@ -55,7 +53,7 @@ const styles = {
   prideTextBackground: {
     backgroundColor: "rgba(0, 0, 0, 0.25)"
   }
-};
+});
 
 function App({ pride, classes }) {
   const backgroundClass = pride ? classes.prideBackground : null;

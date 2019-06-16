@@ -11,8 +11,7 @@ import { connect } from "react-redux";
 
 const styles = theme => ({
   explanation: {
-    marginBottom: "1em",
-    padding: "1em 2em"
+    padding: theme.spacing(1, 2)
   },
   root: {
     ...theme.mixins.gutters,

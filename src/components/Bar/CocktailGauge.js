@@ -8,11 +8,11 @@ import "react-circular-progressbar/dist/styles.css";
 
 const styles = theme => ({
   title: {
-    fontSize: "1.5rem",
-    margin: "1rem 0"
+    fontSize: 25,
+    margin: theme.spacing(1, 0)
   },
   progressBar: {
-    padding: "0 2em",
+    padding: theme.spacing(0.5),
     fontFamily: "Roboto"
   }
 });
