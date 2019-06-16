@@ -11,7 +11,7 @@ import {
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { updateFilter } from "../../actions";
+import { updateFilter, setEditingFilter } from "../../actions";
 import CloseIcon from "@material-ui/icons/Close";
 import { dialogFor, labelFor } from "../../utilities/filter.utils";
 
@@ -26,11 +26,11 @@ const styles = theme => ({
 
 const FilterDialog = ({
   classes,
-  updateFilter,
+  setEditingFilter,
   filterOptions: { editingFilter }
 }) => {
   function handleCloseDialog() {
-    updateFilter({ editingFilter: null });
+    setEditingFilter(null);
   }
   const DialogContentComponent = dialogFor(editingFilter);
 
@@ -67,7 +67,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateFilter: bindActionCreators(updateFilter, dispatch)
+  updateFilter: bindActionCreators(updateFilter, dispatch),
+  setEditingFilter: bindActionCreators(setEditingFilter, dispatch)
 });
 
 export default connect(

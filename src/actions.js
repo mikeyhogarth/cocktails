@@ -16,6 +16,10 @@ export function setBar(payload) {
   return { type: "SET_BAR", payload };
 }
 
+export function setEditingFilter(payload) {
+  return { type: "SET_EDITING_FILTER", payload };
+}
+
 export function addToBar(payload) {
   return { type: "ADD_TO_BAR", payload };
 }

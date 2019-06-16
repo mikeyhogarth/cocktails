@@ -129,7 +129,8 @@ describe("filtersFromUserOptions", () => {
       ingredientsRule: "mustInclude",
       barOnly: true,
       categories: [],
-      glasses: []
+      glasses: [],
+      activeFilters: ["byIngredient", "barOnly"]
     };
 
     const bar = ["gin", "vodka"];

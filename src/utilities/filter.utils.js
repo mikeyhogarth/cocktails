@@ -11,7 +11,7 @@ const filterComponentMap = {
 };
 
 const filterLabelLookup = {
-  byIngredient: "By ingredient...",
+  byIngredient: "By Ingredient...",
   byCategory: "By Category...",
   byGlass: "By Glass...",
   veganOnly: "Vegan",
@@ -20,6 +20,10 @@ const filterLabelLookup = {
 
 export function labelFor(filterRule) {
   return filterLabelLookup[filterRule && filterRule.toString()];
+}
+
+export function isEditable(filterRule) {
+  return !!dialogFor(filterRule);
 }
 
 export function dialogFor(filterRule) {

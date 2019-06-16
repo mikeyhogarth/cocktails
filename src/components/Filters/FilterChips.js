@@ -4,8 +4,7 @@ import { connect } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
 import { Chip } from "@material-ui/core";
 import { removeOrAddItemFromArray } from "../../utilities/util";
-import { dialogFor } from "../../utilities/filter.utils";
-import { updateFilter } from "../../actions";
+import { updateFilter, setEditingFilter } from "../../actions";
 
 const styles = theme => ({
   chip: {
@@ -42,7 +41,12 @@ function labelFor(activeFilter, filterOptions) {
   }
 }
 
-const FilterChips = ({ classes, updateFilter, filterOptions }) => {
+const FilterChips = ({
+  classes,
+  setEditingFilter,
+  updateFilter,
+  filterOptions
+}) => {
   const { activeFilters } = filterOptions;
   return (
     <>
@@ -51,11 +55,7 @@ const FilterChips = ({ classes, updateFilter, filterOptions }) => {
           <Chip
             key={activeFilter}
             label={labelFor(activeFilter, filterOptions)}
-            onClick={() =>
-              dialogFor(activeFilter)
-                ? updateFilter({ editingFilter: activeFilter })
-                : null
-            }
+            onClick={() => setEditingFilter(activeFilter)}
             onDelete={() =>
               updateFilter({
                 activeFilters: removeOrAddItemFromArray(
@@ -77,7 +77,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateFilter: bindActionCreators(updateFilter, dispatch)
+  updateFilter: bindActionCreators(updateFilter, dispatch),
+  setEditingFilter: bindActionCreators(setEditingFilter, dispatch)
 });
 
 export default connect(
