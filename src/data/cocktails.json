@@ -59,7 +59,11 @@
         "ingredient": "Vermouth",
         "label": "Dry vermouth"
       },
-      { "special": "3 dashes Strawberry syrup" }
+      {
+        "amount": "3 dashes",
+        "ingredient": "Syrup",
+        "label": "Strawberry syrup"
+      }
     ],
     "preparation": "Stir all ingredients with ice and strain into a cocktail glass."
   },
@@ -75,7 +79,7 @@
         "ingredient": "Whiskey",
         "label": "Bourbon or rye whiskey"
       },
-      { "special": "2 dashes Angostura Bitters" },
+      { "ingredient": "Angostura bitters", "amount": "2 dashes" },
       { "special": "1 sugar cube" },
       { "special": "Few dashes plain water" }
     ],
@@ -100,9 +104,13 @@
         "ingredient": "Vermouth",
         "label": "Dry vermouth"
       },
-      { "special": "1/2 bar spoon Maraschino" },
-      { "special": "1/4 bar spoon Absinthe" },
-      { "special": "3 dashes Orange Bitters" }
+      { "amount": "1/4 bar spoon", "ingredient": "Absinthe" },
+      {
+        "amount": "1/2 bar spoon",
+        "ingredient": "Cherry liqueur",
+        "label": "Maraschino"
+      },
+      { "amount": "3 dashes", "ingredient": "Orange bitters" }
     ],
     "garnish": "Cherry and lemon twist",
     "preparation": "Stir all ingredients with ice and strain into cocktail glass."
@@ -119,10 +127,10 @@
         "ingredient": "White rum",
         "label": "White Cuban Rum"
       },
+      { "ingredient": "Soda water" },
       { "unit": "cl", "amount": 3, "ingredient": "Lime juice" },
       { "special": "6 Mint sprigs" },
-      { "special": "2 teaspoons white sugar" },
-      { "special": "Soda water" }
+      { "special": "2 teaspoons white sugar" }
     ],
     "garnish": "Mint leaves and lemon slice",
     "preparation": "Muddle mint springs with sugar and lime juice. Add splash of soda water and fill glass with cracked ice. Pour rum and top with soda water. Serve with straw."
@@ -162,7 +170,7 @@
         "ingredient": "Syrup",
         "label": "Sugar syrup"
       },
-      { "special": "3 to 4 dashes Angostura bitters" }
+      { "ingredient": "Angostura bitters", "amount": "3 to 4 dashes" }
     ],
     "garnish": "Pineapple slice and a cherry",
     "preparation": "Pour all ingredients, except the bitters, into shaker filled with ice. Shake. Pour into large glass, filled with ice. Add Angostura bitters, “on top”."
@@ -220,7 +228,7 @@
         "ingredient": "Syrup",
         "label": "Gomme syrup"
       },
-      { "special": "1 dash of Cola" }
+      { "ingredient": "Cola", "amount": "1 dash" }
     ],
     "garnish": "Lemon twist",
     "preparation": "Add all ingredients into highball glass filled with ice. Stir gently. Serve with straw."
@@ -337,7 +345,7 @@
         "ingredient": "Vermouth",
         "label": "Red vermouth"
       },
-      { "special": "1 dash Angostura Bitters" }
+      { "ingredient": "Angostura bitters", "amount": "1 dash" }
     ],
     "garnish": "Cherry",
     "preparation": "Stir in mixing glass with ice cubes. Strain into chilled cocktail glass."
@@ -388,9 +396,15 @@
         "label": "Kahlúa"
       },
       {
-        "special": "Sugar syrup (according to individual preference of sweetness)"
+        "ingredient": "Coffee",
+        "amount": "1 shot",
+        "label": "Espresso coffee"
       },
-      { "special": "1 short strong Espresso" }
+      {
+        "label": "Sugar syrup",
+        "ingredient": "Syrup",
+        "amount": "Amount-according-to-taste"
+      }
     ],
     "preparation": "Shake and strain into a chilled cocktail glass."
   },
@@ -419,7 +433,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 3, "ingredient": "Gin" },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
-      { "special": "2 dashes Sugar syrup" },
+      { "ingredient": "Syrup", "amount": "2 dashes", "label": "Sugar syrup" },
       { "unit": "cl", "amount": 6, "ingredient": "Champagne" }
     ],
     "preparation": "Shake with ice cubes, except for champagne. Strain into a champagne flute. Top up with champagne. Stir gently."
@@ -474,7 +488,8 @@
     "category": "Sparkling Cocktail",
     "ingredients": [
       { "unit": "cl", "amount": 10, "ingredient": "Prosecco" },
-      { "unit": "cl", "amount": 5, "ingredient": "Peach puree" }
+      { "unit": "cl", "amount": 5, "ingredient": "Peach puree" },
+      { "ingredient": "Sparkling Wine" }
     ],
     "preparation": "Pour peach puree into chilled glass and add sparkling wine. Stir gently. Variations: Puccini (fresh mandarin juice), Rossini (fresh strawberry puree), Tintoretto (fresh pomegranate juice)"
   },
@@ -626,7 +641,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 6, "ingredient": "Prosecco" },
       { "unit": "cl", "amount": 4, "ingredient": "Aperol" },
-      { "special": "Splash of Soda water" }
+      { "amount": "1 Splash", "ingredient": "Soda water" }
     ],
     "garnish": "Half an orange slice",
     "preparation": "Build into an old-fashioned glass filled with ice. Top with a splash of soda water."
@@ -716,7 +731,7 @@
       { "unit": "cl", "amount": 4.5, "ingredient": "Vodka" },
       { "unit": "cl", "amount": 9, "ingredient": "Tomato juice" },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
-      { "special": "2 to 3 dashes of Worcestershire Sauce" },
+      { "amount": "2 to 3 dashes", "ingredient": "Worcestershire Sauce" },
       { "special": "Tabasco" },
       { "special": "Celery salt" },
       { "special": "Pepper" }
@@ -763,8 +778,12 @@
       },
       { "unit": "cl", "amount": 1.5, "ingredient": "Galliano" },
       { "unit": "cl", "amount": 6, "ingredient": "Pineapple juice" },
-      { "special": "1 dash Lime juice" },
-      { "special": "Top with Prosecco" }
+      {
+        "ingredient": "Sparkling Wine",
+        "label": "Prosecco",
+        "amount": "Top up with"
+      },
+      { "special": "1 dash Lime juice" }
     ]
   },
   {
@@ -789,8 +808,8 @@
     "ingredients": [
       { "unit": "cl", "amount": 5, "ingredient": "Gin" },
       { "unit": "cl", "amount": 3, "ingredient": "Orange juice" },
-      { "special": "2 drops Absinthe" },
-      { "special": "2 drops Grenadine" }
+      { "amount": "2 drops", "ingredient": "Absinthe" },
+      { "amount": "2 drops", "ingredient": "Syrup", "label": "Grenadine" }
     ],
     "preparation": "Shake and strain into a chilled cocktail glass."
   },
@@ -801,7 +820,7 @@
     "category": "All Day Cocktail",
     "ingredients": [
       { "unit": "cl", "amount": 6, "ingredient": "Gin" },
-      { "special": "2 drops Peach Bitters" },
+      { "unit": "2 drops", "ingredient": "Peach bitters" },
       { "special": "2 Fresh mint leaves" }
     ],
     "garnish": "Mint leaves",
@@ -831,7 +850,12 @@
         "ingredient": "Whiskey",
         "label": "Irish whiskey"
       },
-      { "unit": "cl", "amount": 9, "ingredient": "Hot coffee" },
+      {
+        "unit": "cl",
+        "amount": 9,
+        "ingredient": "Coffee",
+        "label": "Hot coffee"
+      },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" },
       { "special": "1 teaspoon of brown sugar" }
     ],
@@ -845,8 +869,8 @@
     "ingredients": [
       { "unit": "cl", "amount": 5, "ingredient": "Cognac" },
       { "unit": "cl", "amount": 1, "ingredient": "Absinthe" },
-      { "special": "1 sugar cube" },
-      { "special": "2 dashes Peychaud’s bitters" }
+      { "amount": "2 dashes", "ingredient": "Peychaud’s bitters" },
+      { "special": "1 sugar cube" }
     ],
     "garnish": "Lemon twist",
     "preparation": "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Note: The original recipe changed after the American Civil War, rye whiskey substituted cognac as it became hard to obtain."
@@ -864,7 +888,7 @@
         "ingredient": "Vermouth",
         "label": "Red vermouth"
       },
-      { "special": "A splash of soda water" }
+      { "amount": "A splash", "ingredient": "Soda water" }
     ],
     "garnish": "Half an orange slice",
     "preparation": "Build into old fashioned glass filled with ice cubes. Add a splash of soda water."
@@ -892,7 +916,7 @@
         "ingredient": "Syrup",
         "label": "Grenadine"
       },
-      { "special": "1 dash Angostura bitters" }
+      { "ingredient": "Angostura bitters", "amount": "1 dash" }
     ],
     "garnish": "Pineapple slice and a cherry",
     "preparation": "Shake with ice cubes. Strain into highball glass."
@@ -936,7 +960,8 @@
         "ingredient": "Syrup",
         "label": "Sugar syrup"
       },
-      { "unit": "cl", "amount": 6, "ingredient": "Soda water" }
+      { "unit": "cl", "amount": 6, "ingredient": "Soda water" },
+      { "ingredient": "Angostura bitters", "amount": "1 dash" }
     ],
     "garnish": "Lemon slice and a cherry",
     "preparation": "Build into highball glass filled with ice. Stir gently. Add a dash of Angostura bitters. (Note: Use Old Tom Gin for Tom Collins)"
@@ -1027,7 +1052,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 9, "ingredient": "Champagne" },
       { "unit": "cl", "amount": 1, "ingredient": "Cognac" },
-      { "special": "2 dashes Angostura Bitters" },
+      { "ingredient": "Angostura bitters", "amount": "2 dashes" },
       { "special": "1 sugar cube" }
     ],
     "garnish": "Orange slice and a cherry",
@@ -1098,9 +1123,9 @@
       },
       { "unit": "cl", "amount": 6, "ingredient": "Cream" },
       { "amount": 1, "ingredient": "Egg white" },
+      { "ingredient": "Soda water" },
       { "special": "3 dashes Orange flower water" },
-      { "special": "2 drops Vanilla extract" },
-      { "special": "Soda water" }
+      { "special": "2 drops Vanilla extract" }
     ],
     "preparation": "Pour all ingredients (except soda) in a mixing glass, dry shake (no ice) for two minutes, add ice and hard shake for another minute. Strain into a highball glass without ice, top with soda."
   },
@@ -1123,7 +1148,8 @@
         "amount": 1,
         "ingredient": "Syrup",
         "label": "Sugar syrup"
-      }
+      },
+      { "ingredient": "Sparkling Wine" }
     ],
     "garnish": "Lemon slice and a blackberry",
     "preparation": "Shake the ingredients and pour into highball glass. Top with Sparkling wine."
@@ -1215,7 +1241,7 @@
         "ingredient": "Cherry liqueur",
         "label": "Maraschino"
       },
-      { "unit": "cl", "amount": 1, "ingredient": "Orange Bitters" },
+      { "unit": "cl", "amount": 1, "ingredient": "Orange bitters" },
       { "unit": "cl", "amount": 1, "ingredient": "Lemon juice" }
     ],
     "garnish": "Lemon twist and a cherry",
@@ -1247,10 +1273,10 @@
       { "unit": "cl", "amount": 7, "ingredient": "Tomato juice" },
       { "unit": "cl", "amount": 3, "ingredient": "Orange juice" },
       { "unit": "cl", "amount": 1, "ingredient": "Lime juice" },
+      { "amount": "Few drops", "ingredient": "Worcestershire Sauce" },
       { "special": "1 teaspoon clear honey" },
       { "special": "Half slice onion finely chopped" },
       { "special": "Few slices fresh red hot chili peppers" },
-      { "special": "Few drops Worcestershire sauce" },
       { "special": "Salt" }
     ],
     "garnish": "Lime wedge and a green or red chili",

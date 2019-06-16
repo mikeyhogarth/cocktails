@@ -3,6 +3,10 @@
     "abv": 40,
     "taste": null
   },
+  "Angostura bitters": {
+    "abv": 44,
+    "taste": "bitter"
+  },
   "Aperol": {
     "abv": 11,
     "taste": "bitter"
@@ -39,6 +43,10 @@
   "Coconut milk": {
     "abv": 0,
     "taste": "sweet"
+  },
+  "Coffee": {
+    "abv": 0,
+    "taste": "bitter"
   },
   "Coffee liqueur": {
     "abv": 20,
@@ -130,10 +138,6 @@
     "abv": 0,
     "taste": "sour"
   },
-  "Hot coffee": {
-    "abv": 0,
-    "taste": "bitter"
-  },
   "Kirsch": {
     "abv": 40,
     "taste": null
@@ -154,13 +158,17 @@
     "abv": 0,
     "taste": "sour"
   },
-  "Orange Bitters": {
+  "Orange bitters": {
     "abv": 40,
     "taste": null
   },
   "Orange juice": {
     "abv": 0,
     "taste": "sweet"
+  },
+  "Peach bitters": {
+    "abv": 0,
+    "taste": "fruity"
   },
   "Peach puree": {
     "abv": 0,
@@ -169,6 +177,10 @@
   "Peach schnapps": {
     "abv": 40,
     "taste": "sweet"
+  },
+  "Peychaud’s bitters": {
+    "abv": 35,
+    "taste": "woody"
   },
   "Pineapple juice": {
     "abv": 0,
@@ -192,6 +204,10 @@
   },
   "Soda water": {
     "abv": 0,
+    "taste": null
+  },
+  "Sparkling Wine": {
+    "abv": 12,
     "taste": null
   },
   "Syrup": {
@@ -224,6 +240,10 @@
   },
   "White rum": {
     "abv": 40,
+    "taste": null
+  },
+  "Worcestershire Sauce": {
+    "abv": 0,
     "taste": null
   }
 }

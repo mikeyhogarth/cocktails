@@ -5,7 +5,7 @@ describe("makeableFrom rule", () => {
   it("returns cocktails makeable from the passed-in ingredients", () => {
     const filter = {
       rule: "makeableFrom",
-      ingredients: ["Cognac", "Champagne"]
+      ingredients: ["Cognac", "Champagne", "Angostura bitters"]
     };
 
     const results = applyFilter(cocktails, filter);
@@ -16,7 +16,12 @@ describe("makeableFrom rule", () => {
   it("allows for rogue ingredients", () => {
     const filter = {
       rule: "makeableFrom",
-      ingredients: ["Cognac", "Champagne", "Somethign else"]
+      ingredients: [
+        "Cognac",
+        "Champagne",
+        "Angostura bitters",
+        "Somethign else"
+      ]
     };
 
     const results = applyFilter(cocktails, filter);
@@ -38,7 +43,7 @@ describe("mustInclude rule", () => {
   it("returns cocktails that include the passed in ingredients", async () => {
     const filter = {
       rule: "mustInclude",
-      ingredients: ["Gin", "Cherry liqueur", "Orange Bitters", "Lemon juice"]
+      ingredients: ["Gin", "Cherry liqueur", "Orange bitters", "Lemon juice"]
     };
     const results = applyFilter(cocktails, filter);
     expect(results.length).toEqual(1);
@@ -68,9 +73,10 @@ describe("canInclude rule", () => {
       ingredients: ["Cola", "Cream liqueur"]
     };
     const results = applyFilter(cocktails, filter);
-    expect(results.length).toEqual(2);
-    expect(results[0]).toHaveProperty("name", "Cuba Libre");
-    expect(results[1]).toHaveProperty("name", "B52");
+    expect(results.length).toEqual(3);
+    expect(results[0]).toHaveProperty("name", "Long Island Iced Tea");
+    expect(results[1]).toHaveProperty("name", "Cuba Libre");
+    expect(results[2]).toHaveProperty("name", "B52");
   });
 });
 
@@ -100,12 +106,12 @@ describe("mustNotInclude rule", () => {
 
 describe("combining filters", () => {
   it("allows you to combine filters", async () => {
-    // this one should return 5 results.
+    // this one should return 2 results.
     const filter1 = {
       rule: "makeableFrom",
       ingredients: ["Campari", "Vermouth", "Gin"]
     };
-    expect(applyFilter(cocktails, filter1).length).toEqual(5);
+    expect(applyFilter(cocktails, filter1).length).toEqual(2);
 
     // This one should return 7 results
     const filter2 = {
@@ -114,11 +120,11 @@ describe("combining filters", () => {
     };
     expect(applyFilter(cocktails, filter2).length).toEqual(7);
 
-    // if you combine them though, you should only get 4 results
+    // if you combine them though, you should only get 2 results
     // which will be everything from filter 1 that contains vermouth -
-    // so that excludes the "Derby" which does not have vermouth in it.
+    // so that excludes the "Derby", for example, which does not have vermouth in it.
     const combinedResults = applyFilters(cocktails, [filter1, filter2]);
-    expect(combinedResults.length).toEqual(4);
+    expect(combinedResults.length).toEqual(2);
   });
 });
 

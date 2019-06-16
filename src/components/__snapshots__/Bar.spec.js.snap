@@ -43,6 +43,20 @@ exports[`does not explode when rendered 1`] = `
         <span
           className="MuiChip-label"
         >
+          Angostura bitters
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
           Aperol
         </span>
       </div>
@@ -156,6 +170,20 @@ exports[`does not explode when rendered 1`] = `
           className="MuiChip-label"
         >
           Coconut milk
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Coffee
         </span>
       </div>
       <div
@@ -463,20 +491,6 @@ exports[`does not explode when rendered 1`] = `
         <span
           className="MuiChip-label"
         >
-          Hot coffee
-        </span>
-      </div>
-      <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          className="MuiChip-label"
-        >
           Kirsch
         </span>
       </div>
@@ -547,7 +561,7 @@ exports[`does not explode when rendered 1`] = `
         <span
           className="MuiChip-label"
         >
-          Orange Bitters
+          Orange bitters
         </span>
       </div>
       <div
@@ -562,6 +576,20 @@ exports[`does not explode when rendered 1`] = `
           className="MuiChip-label"
         >
           Orange juice
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Peach bitters
         </span>
       </div>
       <div
@@ -590,6 +618,20 @@ exports[`does not explode when rendered 1`] = `
           className="MuiChip-label"
         >
           Peach schnapps
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Peychaud’s bitters
         </span>
       </div>
       <div
@@ -674,6 +716,20 @@ exports[`does not explode when rendered 1`] = `
           className="MuiChip-label"
         >
           Soda water
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Sparkling Wine
         </span>
       </div>
       <div
@@ -786,6 +842,20 @@ exports[`does not explode when rendered 1`] = `
           className="MuiChip-label"
         >
           White rum
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Worcestershire Sauce
         </span>
       </div>
     </div>
@@ -934,6 +1004,65 @@ exports[`does not explode when rendered 1`] = `
                 >
                   <div>
                     <span>
+                      Syrup
+                    </span>
+                    <button
+                      aria-label="Add"
+                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                      disabled={false}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={0}
+                      type="button"
+                    >
+                      <span
+                        className="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </th>
+                <td
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  21
+                </td>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
+                  scope="row"
+                >
+                  <div>
+                    <span>
                       Gin
                     </span>
                     <button
@@ -1040,65 +1169,6 @@ exports[`does not explode when rendered 1`] = `
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   18
-                </td>
-              </tr>
-              <tr
-                className="MuiTableRow-root"
-              >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
-                  scope="row"
-                >
-                  <div>
-                    <span>
-                      Syrup
-                    </span>
-                    <button
-                      aria-label="Add"
-                      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
-                      disabled={false}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onKeyUp={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchMove={[Function]}
-                      onTouchStart={[Function]}
-                      tabIndex={0}
-                      type="button"
-                    >
-                      <span
-                        className="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                </th>
-                <td
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  17
                 </td>
               </tr>
               <tr
