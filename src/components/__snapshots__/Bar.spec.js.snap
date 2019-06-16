@@ -19,6 +19,59 @@ exports[`does not explode when rendered 1`] = `
     </p>
     <div>
       <div
+        className="MuiFormControl-root MuiTextField-root IngredientPicker-searchField-61 MuiFormControl-marginNormal"
+      >
+        <label
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+          data-shrink={true}
+          htmlFor="standard-search"
+        >
+          Filter ingredients
+        </label>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid={false}
+            className="MuiInputBase-input MuiInput-input MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch MuiInputBase-inputAdornedStart"
+            disabled={false}
+            id="standard-search"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="search"
+          />
+        </div>
+      </div>
+      <br
+        style={
+          Object {
+            "clear": "both",
+          }
+        }
+      />
+      <div
         className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -868,7 +921,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root MakeableCocktails-title-194 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root MakeableCocktails-title-261 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Makeable Cocktails
           </h3>
@@ -878,7 +931,7 @@ exports[`does not explode when rendered 1`] = `
             These are the cocktails you can make...
           </p>
           <ul
-            className="MuiList-root MakeableCocktails-list-195 MuiList-padding"
+            className="MuiList-root MakeableCocktails-list-262 MuiList-padding"
           />
         </div>
       </div>
@@ -887,7 +940,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root CocktailGauge-title-200 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root CocktailGauge-title-267 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Cocktail Gauge
           </h3>
@@ -897,7 +950,7 @@ exports[`does not explode when rendered 1`] = `
             How many cocktails can you make with what's in your bar?
           </p>
           <svg
-            className="CircularProgressbar CocktailGauge-progressBar-201"
+            className="CircularProgressbar CocktailGauge-progressBar-268"
             data-test-id="CircularProgressbar"
             viewBox="0 0 100 100"
           >
@@ -957,7 +1010,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root PopularIngredients-title-202 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root PopularIngredients-title-269 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Popular Ingredients
           </h3>
@@ -999,7 +1052,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1058,7 +1111,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1117,7 +1170,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1176,7 +1229,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1235,7 +1288,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-203 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
