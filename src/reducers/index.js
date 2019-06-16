@@ -18,10 +18,11 @@ const defaultState = {
     ingredients: []
   },
   filterOptions: {
+    activeFilters: [],
+    editingFilter: null,
     ingredients: [],
     ingredientsRule: "mustInclude",
     barOnly: false,
-    veganOnly: false,
     categories: [],
     glasses: []
   },
@@ -56,6 +57,7 @@ export default function(state = initialState, action) {
           ...action.payload
         }
       };
+
     case "SET_BAR":
       return { ...state, bar: [...action.payload] };
     case "TOGGLE_PRIDE":

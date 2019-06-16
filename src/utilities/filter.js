@@ -61,28 +61,36 @@ export function filtersFromUserOptions(
   const filters = [];
 
   // the option about whether to include all/some ingredients
-  filters.push({
-    rule: userFilterOptions.ingredientsRule,
-    ingredients: userFilterOptions.ingredients
-  });
+  if (userFilterOptions.activeFilters.includes("byIngredient")) {
+    filters.push({
+      rule: userFilterOptions.ingredientsRule,
+      ingredients: userFilterOptions.ingredients
+    });
+  }
 
   // the option as to whether to only show stuff that is makeable from the bar
-  if (userFilterOptions.barOnly)
+  if (userFilterOptions.activeFilters.includes("barOnly"))
     filters.push({ rule: "makeableFrom", ingredients: bar });
 
   // the option as to whether to only show stuff that is makeable from the bar
-  if (userFilterOptions.veganOnly)
+  if (userFilterOptions.activeFilters.includes("veganOnly"))
     filters.push({ ingredients: nonVeganIngredients, rule: "mustNotInclude" });
 
   // the category option
-  if (userFilterOptions.categories.length)
+  if (
+    userFilterOptions.activeFilters.includes("byCategory") &&
+    userFilterOptions.categories.length
+  )
     filters.push({
       rule: "inCategory",
       categories: userFilterOptions.categories
     });
 
   // the glasses option
-  if (userFilterOptions.glasses.length)
+  if (
+    userFilterOptions.activeFilters.includes("byGlass") &&
+    userFilterOptions.glasses.length
+  )
     filters.push({
       rule: "inGlass",
       glasses: userFilterOptions.glasses
