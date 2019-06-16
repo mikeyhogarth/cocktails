@@ -690,8 +690,7 @@
       {
         "unit": "cl",
         "amount": 2.5,
-        "ingredient": "Citron Vodka",
-        "label": "Citron Vodka"
+        "ingredient": "Citron Vodka"
       },
       { "unit": "cl", "amount": 2, "ingredient": "Triple Sec" },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" }
@@ -1178,8 +1177,7 @@
       {
         "unit": "cl",
         "amount": 4,
-        "ingredient": "Citron Vodka",
-        "label": "Citron Vodka"
+        "ingredient": "Citron Vodka"
       },
       {
         "unit": "cl",
