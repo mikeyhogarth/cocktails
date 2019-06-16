@@ -100,7 +100,6 @@
     "abv": 12,
     "taste": null
   },
-
   "Egg white": {
     "abv": 0,
     "taste": null,
@@ -197,6 +196,10 @@
   },
   "Soda water": {
     "abv": 0,
+    "taste": null
+  },
+  "Sparkling Wine": {
+    "abv": 12,
     "taste": null
   },
   "Syrup": {
