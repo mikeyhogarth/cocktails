@@ -1099,9 +1099,9 @@
       },
       { "unit": "cl", "amount": 6, "ingredient": "Cream" },
       { "amount": 1, "ingredient": "Egg white" },
+      { "ingredient": "Soda water" },
       { "special": "3 dashes Orange flower water" },
-      { "special": "2 drops Vanilla extract" },
-      { "special": "Soda water" }
+      { "special": "2 drops Vanilla extract" }
     ],
     "preparation": "Pour all ingredients (except soda) in a mixing glass, dry shake (no ice) for two minutes, add ice and hard shake for another minute. Strain into a highball glass without ice, top with soda."
   },
