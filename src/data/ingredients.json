@@ -40,6 +40,10 @@
     "abv": 30,
     "taste": null
   },
+  "Citron vodka": {
+    "abv": 40,
+    "taste": null
+  },
   "Coconut milk": {
     "abv": 0,
     "taste": "sweet"
