@@ -3,6 +3,10 @@
     "abv": 40,
     "taste": null
   },
+  "Angostura Bitters": {
+    "abv": 44,
+    "taste": "bitter"
+  },
   "Aperol": {
     "abv": 11,
     "taste": "bitter"
@@ -39,6 +43,10 @@
   "Coconut milk": {
     "abv": 0,
     "taste": "sweet"
+  },
+  "Coffee": {
+    "abv": 0,
+    "taste": "bitter"
   },
   "Coffee liqueur": {
     "abv": 20,
@@ -129,10 +137,6 @@
   "Grapefruit juice": {
     "abv": 0,
     "taste": "sour"
-  },
-  "Hot coffee": {
-    "abv": 0,
-    "taste": "bitter"
   },
   "Kirsch": {
     "abv": 40,

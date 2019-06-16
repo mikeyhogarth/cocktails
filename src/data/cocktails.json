@@ -75,7 +75,7 @@
         "ingredient": "Whiskey",
         "label": "Bourbon or rye whiskey"
       },
-      { "special": "2 dashes Angostura Bitters" },
+      { "ingredient": "Angostura Bitters", "amount": "2 dashes" },
       { "special": "1 sugar cube" },
       { "special": "Few dashes plain water" }
     ],
@@ -101,8 +101,12 @@
         "label": "Dry vermouth"
       },
       { "amount": "1/4 bar spoon", "ingredient": "Absinthe" },
-      { "special": "1/2 bar spoon Maraschino" },
-      { "special": "3 dashes Orange Bitters" }
+      {
+        "amount": "1/2 bar spoon",
+        "ingredient": "Cherry liqueur",
+        "label": "Maraschino"
+      },
+      { "amount": "3 dashes", "ingredient": "Orange Bitters" }
     ],
     "garnish": "Cherry and lemon twist",
     "preparation": "Stir all ingredients with ice and strain into cocktail glass."
@@ -119,10 +123,10 @@
         "ingredient": "White rum",
         "label": "White Cuban Rum"
       },
+      { "ingredient": "Soda water" },
       { "unit": "cl", "amount": 3, "ingredient": "Lime juice" },
       { "special": "6 Mint sprigs" },
-      { "special": "2 teaspoons white sugar" },
-      { "special": "Soda water" }
+      { "special": "2 teaspoons white sugar" }
     ],
     "garnish": "Mint leaves and lemon slice",
     "preparation": "Muddle mint springs with sugar and lime juice. Add splash of soda water and fill glass with cracked ice. Pour rum and top with soda water. Serve with straw."
@@ -162,7 +166,7 @@
         "ingredient": "Syrup",
         "label": "Sugar syrup"
       },
-      { "special": "3 to 4 dashes Angostura bitters" }
+      { "ingredient": "Angostura Bitters", "amount": "3 to 4 dashes" }
     ],
     "garnish": "Pineapple slice and a cherry",
     "preparation": "Pour all ingredients, except the bitters, into shaker filled with ice. Shake. Pour into large glass, filled with ice. Add Angostura bitters, “on top”."
@@ -220,7 +224,7 @@
         "ingredient": "Syrup",
         "label": "Gomme syrup"
       },
-      { "special": "1 dash of Cola" }
+      { "ingredient": "Cola", "amount": "1 dash" }
     ],
     "garnish": "Lemon twist",
     "preparation": "Add all ingredients into highball glass filled with ice. Stir gently. Serve with straw."
@@ -337,7 +341,7 @@
         "ingredient": "Vermouth",
         "label": "Red vermouth"
       },
-      { "special": "1 dash Angostura Bitters" }
+      { "ingredient": "Angostura Bitters", "amount": "1 dash" }
     ],
     "garnish": "Cherry",
     "preparation": "Stir in mixing glass with ice cubes. Strain into chilled cocktail glass."
@@ -388,9 +392,13 @@
         "label": "Kahlúa"
       },
       {
-        "special": "Sugar syrup (according to individual preference of sweetness)"
+        "ingredient": "Coffee",
+        "amount": "1 shot",
+        "label": "Espresso coffee"
       },
-      { "special": "1 short strong Espresso" }
+      {
+        "special": "Sugar syrup (according to individual preference of sweetness)"
+      }
     ],
     "preparation": "Shake and strain into a chilled cocktail glass."
   },
@@ -832,7 +840,12 @@
         "ingredient": "Whiskey",
         "label": "Irish whiskey"
       },
-      { "unit": "cl", "amount": 9, "ingredient": "Hot coffee" },
+      {
+        "unit": "cl",
+        "amount": 9,
+        "ingredient": "Coffee",
+        "label": "Hot coffee"
+      },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" },
       { "special": "1 teaspoon of brown sugar" }
     ],
@@ -893,7 +906,7 @@
         "ingredient": "Syrup",
         "label": "Grenadine"
       },
-      { "special": "1 dash Angostura bitters" }
+      { "ingredient": "Angostura Bitters", "amount": "1 dash" }
     ],
     "garnish": "Pineapple slice and a cherry",
     "preparation": "Shake with ice cubes. Strain into highball glass."
@@ -937,7 +950,8 @@
         "ingredient": "Syrup",
         "label": "Sugar syrup"
       },
-      { "unit": "cl", "amount": 6, "ingredient": "Soda water" }
+      { "unit": "cl", "amount": 6, "ingredient": "Soda water" },
+      { "ingredient": "Angostura Bitters", "amount": "1 dash" }
     ],
     "garnish": "Lemon slice and a cherry",
     "preparation": "Build into highball glass filled with ice. Stir gently. Add a dash of Angostura bitters. (Note: Use Old Tom Gin for Tom Collins)"
@@ -1028,7 +1042,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 9, "ingredient": "Champagne" },
       { "unit": "cl", "amount": 1, "ingredient": "Cognac" },
-      { "special": "2 dashes Angostura Bitters" },
+      { "ingredient": "Angostura Bitters", "amount": "2 dashes" },
       { "special": "1 sugar cube" }
     ],
     "garnish": "Orange slice and a cherry",
