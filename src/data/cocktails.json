@@ -100,8 +100,8 @@
         "ingredient": "Vermouth",
         "label": "Dry vermouth"
       },
+      { "amount": "1/4 bar spoon", "ingredient": "Absinthe" },
       { "special": "1/2 bar spoon Maraschino" },
-      { "special": "1/4 bar spoon Absinthe" },
       { "special": "3 dashes Orange Bitters" }
     ],
     "garnish": "Cherry and lemon twist",
@@ -790,8 +790,8 @@
     "ingredients": [
       { "unit": "cl", "amount": 5, "ingredient": "Gin" },
       { "unit": "cl", "amount": 3, "ingredient": "Orange juice" },
-      { "special": "2 drops Absinthe" },
-      { "special": "2 drops Grenadine" }
+      { "amount": "2 drops", "ingredient": "Absinthe" },
+      { "amount": "2 drops", "ingredient": "Syrup", "label": "Grenadine" }
     ],
     "preparation": "Shake and strain into a chilled cocktail glass."
   },
