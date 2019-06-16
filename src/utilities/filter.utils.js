@@ -22,10 +22,10 @@ export function labelFor(filterRule) {
   return filterLabelLookup[filterRule && filterRule.toString()];
 }
 
-export function isEditable(filterRule) {
-  return !!dialogFor(filterRule);
-}
-
 export function dialogFor(filterRule) {
   return filterComponentMap[filterRule && filterRule.toString()];
+}
+
+export function isEditable(filterRule) {
+  return !!dialogFor(filterRule);
 }

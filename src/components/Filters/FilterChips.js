@@ -12,34 +12,31 @@ const styles = theme => ({
   }
 });
 
-function labelFor(activeFilter, filterOptions) {
-  switch (activeFilter) {
-    case "veganOnly":
-      return "Vegan";
-    case "barOnly":
-      return "Makeable from Bar";
-    case "byIngredient":
-      if (!filterOptions.ingredients.length) {
-        return "Ingredients: all";
-      }
-      return `Ingredients (${
-        filterOptions.ingredientsRule === "mustInclude" ? "all" : "any"
-      }):
+const chipContent = {
+  veganOnly: () => "Vegan",
+  barOnly: () => "Makeable from Bar",
+  byIngredient: filterOptions => {
+    if (!filterOptions.ingredients.length) {
+      return "Ingredients: all";
+    }
+    return `Ingredients (${
+      filterOptions.ingredientsRule === "mustInclude" ? "all" : "any"
+    }):
       ${filterOptions.ingredients.join(", ")}`;
-    case "byGlass":
-      return `Glasses: ${
-        filterOptions.glasses.length ? filterOptions.glasses.join(", ") : "all"
-      }`;
-    case "byCategory":
-      return `Categories: ${
-        filterOptions.categories.length
-          ? filterOptions.categories.join(", ")
-          : "all"
-      }`;
-    default:
-      return activeFilter;
+  },
+  byGlass: filterOptions => {
+    return `Glasses: ${
+      filterOptions.glasses.length ? filterOptions.glasses.join(", ") : "all"
+    }`;
+  },
+  byCategory: filterOptions => {
+    return `Categories: ${
+      filterOptions.categories.length
+        ? filterOptions.categories.join(", ")
+        : "all"
+    }`;
   }
-}
+};
 
 const FilterChips = ({
   classes,
@@ -54,7 +51,7 @@ const FilterChips = ({
         return (
           <Chip
             key={activeFilter}
-            label={labelFor(activeFilter, filterOptions)}
+            label={chipContent[activeFilter.toString()](filterOptions)}
             onClick={() => setEditingFilter(activeFilter)}
             onDelete={() =>
               updateFilter({
