@@ -76,7 +76,7 @@ function App({ pride, classes }) {
               >
                 <CocktailIcon />
                 <Typography className={classes.mainTitle} component="h1">
-                  <Hidden xsDown>Cocktail Browser</Hidden>
+                  <Hidden xsDown>IBA Cocktail Browser</Hidden>
                 </Typography>
               </Button>
             </div>
