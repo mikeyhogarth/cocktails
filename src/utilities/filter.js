@@ -1,6 +1,7 @@
 import compact from "lodash/compact";
 import isArray from "lodash/isArray";
 import {
+  nameIncludes,
   canInclude,
   mustInclude,
   mustNotInclude,
@@ -21,6 +22,8 @@ export function applyFilter(cocktails, filter) {
     );
 
     switch (filter.rule) {
+      case "nameIncludes":
+        return nameIncludes(cocktail.name, filter.text);
       case "mustNotInclude":
         return mustNotInclude(filter.ingredients, cocktailIngredients);
       case "makeableFrom":
@@ -52,13 +55,22 @@ export function applyFilters(cocktails, filters = []) {
     [...cocktails]
   );
 }
+
 // builds an array of filters based on the users current filter options.
+// TODO: This should probably be in filter.utils.
 export function filtersFromUserOptions(
   userFilterOptions,
   bar,
   nonVeganIngredients
 ) {
   const filters = [];
+
+  if (userFilterOptions.nameFilter) {
+    filters.push({
+      rule: "nameIncludes",
+      text: userFilterOptions.nameFilter
+    });
+  }
 
   // the option about whether to include all/some ingredients
   if (userFilterOptions.activeFilters.includes("byIngredient")) {
