@@ -243,8 +243,7 @@
       {
         "unit": "cl",
         "amount": 1.5,
-        "ingredient": "Syrup",
-        "label": "Raspberry syrup"
+        "ingredient": "Raspberry syrup"
       },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
       {
