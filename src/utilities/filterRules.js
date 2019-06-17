@@ -8,6 +8,10 @@ import { arrayContainsArray } from "./util";
  *
  */
 
+export function nameIncludes(cocktailName, searchText) {
+  return cocktailName.toLowerCase().includes(searchText.toLowerCase());
+}
+
 // cocktail will be returned if it includes all of the ingredients
 // in the filter - NONE can be missing.
 export function makeableFrom(filterIngredients, cocktailIngredients) {
