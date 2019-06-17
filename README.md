@@ -7,7 +7,7 @@
 This provides a user interface for browsing and filtering the [IBA cocktails list](https://en.wikipedia.org/wiki/List_of_IBA_official_cocktails). Features include;
 
 - Browse all 77 IBA cocktails
-- A representation of your bar
+- Maintain your bar to describe what you have at home.
 - Filter by ingredient, category, glass, vegan or "makeable from your bar"
 - Integration with [TheCocktailDB](https://www.thecocktaildb.com/) for enrichment/cocktail images
 - Persistence (local browser storage only)
