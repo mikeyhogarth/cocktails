@@ -202,6 +202,10 @@
     "abv": 20,
     "taste": "sweet"
   },
+  "Raspberry syrup": {
+    "abv": 0,
+    "taste": "sweet"
+  },
   "Red Port": {
     "abv": 20,
     "taste": null
