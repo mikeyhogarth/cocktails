@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/mikeyhogarth/cocktails.svg?branch=master)](https://travis-ci.org/mikeyhogarth/cocktails)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/561bedec36224121a246675b673b872f)](https://www.codacy.com/app/mikeyhogarth/cocktails?utm_source=github.com&utm_medium=referral&utm_content=mikeyhogarth/cocktails&utm_campaign=Badge_Grade)
 
-This provides a user interface for browsing and filtering the IBA cocktails list. Features include;
+This provides a user interface for browsing and filtering the [IBA cocktails list](https://en.wikipedia.org/wiki/List_of_IBA_official_cocktails). Features include;
 
 - Browse all 77 IBA cocktails
 - A representation of your bar
