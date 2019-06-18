@@ -1,5 +1,8 @@
 import React from "react";
-
+import { removeOrAddItemFromArray } from "../utilities/util";
+import { updateFavourites } from "../actions";
+import { connect } from "react-redux";
+import { isFavouriteSelector } from "../selectors";
 import {
   Card,
   CardHeader,
@@ -9,12 +12,16 @@ import {
   Button,
   Typography
 } from "@material-ui/core";
-import LocalBar from "@material-ui/icons/LocalBar";
+import CocktailIcon from "@material-ui/icons/LocalBar";
+import UnFavouriteIcon from "@material-ui/icons/Favorite";
+import FavouriteIcon from "@material-ui/icons/FavoriteBorder";
+
 import Redo from "@material-ui/icons/Redo";
 
 import { withStyles } from "@material-ui/core/styles";
 import Ingredient from "./IngredientDetail";
 import { Link } from "react-router-dom";
+import { bindActionCreators } from "../../../../Library/Caches/typescript/3.5/node_modules/redux";
 
 const styles = theme => ({
   circle: {
@@ -59,7 +66,13 @@ const styles = theme => ({
   }
 });
 
-const CocktailItem = ({ cocktail, classes }) => (
+const CocktailItem = ({
+  cocktail,
+  classes,
+  favourite,
+  favourites,
+  updateFavourites
+}) => (
   <Card className={classes.card}>
     <CardActionArea
       className={classes.cardMain}
@@ -100,7 +113,7 @@ const CocktailItem = ({ cocktail, classes }) => (
         <br />
         {cocktail.glass && (
           <Typography component="p" color="textSecondary">
-            <LocalBar fontSize="inherit" />
+            <CocktailIcon fontSize="inherit" />
             &nbsp;
             {cocktail.glass}
           </Typography>
@@ -117,6 +130,18 @@ const CocktailItem = ({ cocktail, classes }) => (
 
     <CardActions className={classes.actions}>
       <Button
+        className={classes.button}
+        size="large"
+        color="primary"
+        onClick={() => {
+          updateFavourites(removeOrAddItemFromArray(cocktail.slug, favourites));
+        }}
+      >
+        {favourite ? <UnFavouriteIcon /> : <FavouriteIcon />}
+        Favourite
+      </Button>
+
+      <Button
         component={Link}
         to={`/cocktails/${cocktail.slug}`}
         className={classes.button}
@@ -129,4 +154,16 @@ const CocktailItem = ({ cocktail, classes }) => (
   </Card>
 );
 
-export default withStyles(styles)(CocktailItem);
+const mapStateToProps = (state, ownProps) => ({
+  favourite: isFavouriteSelector(state, ownProps),
+  favourites: state.favourites
+});
+
+const mapDispatchToProps = dispatch => ({
+  updateFavourites: bindActionCreators(updateFavourites, dispatch)
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withStyles(styles)(CocktailItem));

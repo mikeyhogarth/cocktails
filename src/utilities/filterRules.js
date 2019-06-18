@@ -46,3 +46,7 @@ export function inGlass(glasses, cocktail) {
 export function inCategory(categories, cocktail) {
   return categories.includes(cocktail.category);
 }
+
+export function isFavourite(favourites, cocktail) {
+  return favourites.includes(cocktail.slug);
+}

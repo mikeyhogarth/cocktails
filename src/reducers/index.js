@@ -28,6 +28,7 @@ const defaultState = {
     glasses: []
   },
   bar: [],
+  favourites: [],
   settings: {
     theme: "light",
     color: "indigo",
@@ -49,6 +50,12 @@ export default function(state = initialState, action) {
 
     case "LOAD_INGREDIENTS":
       return { ...state, db: { ...state.db, ingredients: action.payload } };
+
+    case "UPDATE_FAVOURITES":
+      return {
+        ...state,
+        favourites: action.payload
+      };
 
     case "UPDATE_FILTER":
       return {
