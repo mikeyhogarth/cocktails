@@ -67,7 +67,7 @@ const filterMenuOptions = [
 
 const CocktailFilter = ({
   filteredCocktails,
-  filterOptions: { activeFilters },
+  filterOptions: { activeFilters, nameFilter },
   updateFilter,
   setEditingFilter,
   classes
@@ -106,6 +106,7 @@ const CocktailFilter = ({
       <TextField
         label="Filter by name"
         type="search"
+        defaultValue={nameFilter}
         placeholder="Start typing cocktail name..."
         className={classes.searchField}
         margin="normal"
