@@ -15,6 +15,7 @@ const filterLabelLookup = {
   byCategory: "By Category...",
   byGlass: "By Glass...",
   veganOnly: "Vegan",
+  favouritesOnly: "Favourites",
   barOnly: "Makeable from Bar"
 };
 

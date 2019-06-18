@@ -9,17 +9,24 @@ This provides a user interface for browsing and filtering the [IBA cocktails lis
 - Browse all 77 IBA cocktails
 - Maintain your bar to describe what you have at home.
 - Filter by ingredient, category, glass, vegan or "makeable from your bar"
+- Ability to "favourite" cocktails
 - Integration with [TheCocktailDB](https://www.thecocktaildb.com/) for enrichment/cocktail images
 - Persistence (local browser storage only)
 - Configurable color schemes
 
-This is a small pet-project I started working on shortly after the release of React Hooks, just to try them out.
+This is a small pet-project and a _work in progress_.
+
+# Inspiration / Tech stuff
+
+I wanted a pet project to play with React/Redux at home, my wife's getting into cocktails and noticed that there isn't really a slick, simple and elegant cocktail browser out there. The aim is for this to become that browser!
+
+# Credits
 
 Cocktail list and ingredient data was originally seeded from https://github.com/teijo/iba-cocktails
 
-Hosted over at netlify: https://elated-shockley-96a155.netlify.com
+Application is hosted over at netlify - _awesome_ service: https://elated-shockley-96a155.netlify.com
 
-## Local Usage
+## Tech stuff / Local Usage
 
 You'll need `nodejs`/`npm` installed. Clone the repo, then;
 

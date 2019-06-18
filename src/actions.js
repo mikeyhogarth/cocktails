@@ -20,6 +20,10 @@ export function setEditingFilter(payload) {
   return { type: "SET_EDITING_FILTER", payload };
 }
 
+export function updateFavourites(payload) {
+  return { type: "UPDATE_FAVOURITES", payload };
+}
+
 export function addToBar(payload) {
   return { type: "ADD_TO_BAR", payload };
 }

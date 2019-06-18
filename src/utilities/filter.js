@@ -2,6 +2,7 @@ import compact from "lodash/compact";
 import isArray from "lodash/isArray";
 import {
   nameIncludes,
+  isFavourite,
   canInclude,
   mustInclude,
   mustNotInclude,
@@ -36,6 +37,8 @@ export function applyFilter(cocktails, filter) {
         return inGlass(filter.glasses, cocktail);
       case "inCategory":
         return inCategory(filter.categories, cocktail);
+      case "isFavourite":
+        return isFavourite(filter.favourites, cocktail);
       default:
         return true;
     }
@@ -61,7 +64,8 @@ export function applyFilters(cocktails, filters = []) {
 export function filtersFromUserOptions(
   userFilterOptions,
   bar,
-  nonVeganIngredients
+  nonVeganIngredients,
+  favourites
 ) {
   const filters = [];
 
@@ -98,6 +102,9 @@ export function filtersFromUserOptions(
       categories: userFilterOptions.categories
     });
 
+  if (userFilterOptions.activeFilters.includes("favouritesOnly")) {
+    filters.push({ rule: "isFavourite", favourites });
+  }
   // the glasses option
   if (
     userFilterOptions.activeFilters.includes("byGlass") &&

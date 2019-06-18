@@ -13,6 +13,7 @@ const styles = theme => ({
 });
 
 const chipContent = {
+  favouritesOnly: () => "Favourites",
   veganOnly: () => "Vegan",
   barOnly: () => "Makeable from Bar",
   byIngredient: filterOptions => {

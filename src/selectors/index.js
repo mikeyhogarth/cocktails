@@ -1,5 +1,5 @@
 import { createSelector } from "reselect";
-import { pickBy, uniq, compact, keys } from "lodash";
+import { get, pickBy, uniq, compact, keys } from "lodash";
 
 import {
   applyFilters,
@@ -13,7 +13,30 @@ const allCocktailsSelector = state => state.db.cocktails;
 const allIngredientsSelector = state => state.db.ingredients;
 const barSelector = state => state.bar;
 const filterOptionsSelector = state => state.filterOptions;
-const currentSlugSelector = (_, props) => props.match.params.slug;
+const favouritesSelector = state => state.favourites;
+
+const currentSlugFromUrlSelector = (_, props) =>
+  get(props, "match.params.slug");
+
+const currentSlugFromCocktailPropSelector = (_, props) =>
+  get(props, "cocktail.slug");
+
+// figures out the cocktail in question from either the page URL
+// or, if that doesn't exist, it looks for a "cocktail" prop and
+// gets the slug from that.
+const currentSlugSelector = createSelector(
+  currentSlugFromUrlSelector,
+  currentSlugFromCocktailPropSelector,
+  (urlSlug, cocktailPropSlug) => urlSlug || cocktailPropSlug
+);
+
+// isFavouriteSelector
+// Derives whether the current cocktail is a favourite
+export const isFavouriteSelector = createSelector(
+  favouritesSelector,
+  currentSlugSelector,
+  (favourites, cocktailSlug) => favourites.includes(cocktailSlug)
+);
 
 const nonVeganIngredientsSelector = createSelector(
   allIngredientsSelector,
@@ -26,8 +49,14 @@ const filtersSelector = createSelector(
   filterOptionsSelector,
   barSelector,
   nonVeganIngredientsSelector,
-  (filterOptions, bar, nonVeganIngredientsSelector) =>
-    filtersFromUserOptions(filterOptions, bar, nonVeganIngredientsSelector)
+  favouritesSelector,
+  (filterOptions, bar, nonVeganIngredientsSelector, favourites) =>
+    filtersFromUserOptions(
+      filterOptions,
+      bar,
+      nonVeganIngredientsSelector,
+      favourites
+    )
 );
 
 export const currentCocktailSelector = createSelector(
