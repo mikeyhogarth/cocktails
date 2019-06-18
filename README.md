@@ -16,11 +16,11 @@ This provides a user interface for browsing and filtering the [IBA cocktails lis
 
 This is a small pet-project and a _work in progress_.
 
-# Inspiration / Tech stuff
+## Inspiration
 
 I wanted a pet project to play with React/Redux at home, my wife's getting into cocktails and noticed that there isn't really a slick, simple and elegant cocktail browser out there. The aim is for this to become that browser!
 
-# Credits
+## Credits
 
 Cocktail list and ingredient data was originally seeded from https://github.com/teijo/iba-cocktails
 
