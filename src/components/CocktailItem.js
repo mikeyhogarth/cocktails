@@ -21,7 +21,7 @@ import Redo from "@material-ui/icons/Redo";
 import { withStyles } from "@material-ui/core/styles";
 import Ingredient from "./IngredientDetail";
 import { Link } from "react-router-dom";
-import { bindActionCreators } from "../../../../Library/Caches/typescript/3.5/node_modules/redux";
+import { bindActionCreators } from "react-redux";
 
 const styles = theme => ({
   circle: {
