@@ -487,8 +487,7 @@
     "category": "Sparkling Cocktail",
     "ingredients": [
       { "unit": "cl", "amount": 10, "ingredient": "Prosecco" },
-      { "unit": "cl", "amount": 5, "ingredient": "Peach puree" },
-      { "ingredient": "Sparkling Wine" }
+      { "unit": "cl", "amount": 5, "ingredient": "Peach puree" }
     ],
     "preparation": "Pour peach puree into chilled glass and add sparkling wine. Stir gently. Variations: Puccini (fresh mandarin juice), Rossini (fresh strawberry puree), Tintoretto (fresh pomegranate juice)"
   },
