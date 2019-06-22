@@ -60,7 +60,7 @@ const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
             <CocktailVariantList cocktail={cocktail} />
           </div>
         </Grid>
-        <Grid item md={6} xs={0}>
+        <Grid item md={6} xs={false}>
           <Fade in={!!image}>
             <div
               style={{
