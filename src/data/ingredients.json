@@ -158,6 +158,10 @@
     "abv": 0,
     "taste": "sour"
   },
+  "Mint": {
+    "abv": 0,
+    "taste": null
+  },
   "Olive juice": {
     "abv": 0,
     "taste": "sour"

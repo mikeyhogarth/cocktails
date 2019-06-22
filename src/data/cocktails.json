@@ -129,7 +129,7 @@
       },
       { "ingredient": "Soda water" },
       { "unit": "cl", "amount": 3, "ingredient": "Lime juice" },
-      { "special": "6 Mint sprigs" },
+      { "ingredient": "Mint", "amount": "6", "label": "Mint sprigs" },
       { "special": "2 teaspoons white sugar" }
     ],
     "garnish": "Mint leaves and lemon slice",
@@ -780,7 +780,7 @@
         "label": "Prosecco",
         "amount": "Top up with"
       },
-      { "special": "1 dash Lime juice" }
+      { "amount": "1 dash", "ingredient": "Lime juice" }
     ]
   },
   {
@@ -818,7 +818,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 6, "ingredient": "Gin" },
       { "unit": "2 drops", "ingredient": "Peach bitters" },
-      { "special": "2 Fresh mint leaves" }
+      { "amount": "2", "ingredient": "Mint", "label": "Fresh mint leaves" }
     ],
     "garnish": "Mint leaves",
     "preparation": "Stir in mixing glass with ice cubes. Strain into a cocktail glass."
@@ -991,11 +991,11 @@
         "ingredient": "Whiskey",
         "label": "Bourbon whiskey"
       },
-      { "special": "4 fresh mint sprigs" },
+      { "amount": "4", "ingredient": "Mint", "label": "Fresh mint sprigs" },
       { "special": "1 teaspoon powdered sugar" },
       { "special": "2 teaspoons water" }
     ],
-    "garnish": "Mint spring",
+    "garnish": "Mint sprig",
     "preparation": "In a highball glass gently muddle the mint, sugar and water. Fill the glass with cracked ice, add Bourbon and stir well until the glass is frost."
   },
   {
