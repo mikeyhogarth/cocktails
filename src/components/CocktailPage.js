@@ -48,7 +48,7 @@ const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
       <Box
         component="div"
         className={classes.mobileImage}
-        display={{ xs: "block", sm: "none" }}
+        display={{ xs: "block", md: "none" }}
         style={{ backgroundImage: `url(${image})` }}
       />
       <Grid container className={classes.root}>

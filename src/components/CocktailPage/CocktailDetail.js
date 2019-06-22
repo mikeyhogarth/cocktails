@@ -11,6 +11,17 @@ const styles = theme => ({
   },
   cocktailDetailPaper: {
     padding: theme.spacing(2)
+  },
+  cocktailTitle: {
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "3rem"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "4rem"
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "5rem"
+    }
   }
 });
 
@@ -28,7 +39,9 @@ const CocktailPage = ({ cocktail, classes }) => {
 
   return (
     <>
-      <Typography variant="h1">{name}</Typography>
+      <Typography className={classes.cocktailTitle} variant="h1">
+        {name}
+      </Typography>
 
       <div className={classes.definitions}>
         <Definition title="Category" description={category} />
