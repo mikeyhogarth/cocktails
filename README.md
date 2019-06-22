@@ -43,4 +43,5 @@ Take the labels "Help Wanted" or "Good first issue" as an open invitation to pic
 
 - Assign yourself to a ticket if you're working on it.
 - We're not doing versioning yet so don't worry about bumping versions/changelogs.
+- We've got [Snapshot Testing](https://jestjs.io/docs/en/snapshot-testing) going on in this app, remember to update them if you change the views.
 - Don't check in `package-lock` unless `package.json` has changed.
