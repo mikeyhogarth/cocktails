@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// Hook for getting the vertical scroll position
 function useScroll() {
   const [scrollPos, setScrollPos] = useState(0);
 

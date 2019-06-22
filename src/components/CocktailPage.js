@@ -1,48 +1,48 @@
 import React from "react";
+import useScrollTop from "../hooks/useScrollTop";
 import { connect } from "react-redux";
-import { Paper, Fade, Box, Grid, Typography } from "@material-ui/core";
+import { Fade, Box, Grid, Divider } from "@material-ui/core";
 import { currentCocktailSelector } from "../selectors";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
 import CocktailDetail from "./CocktailPage/CocktailDetail";
+import CocktailVariantList from "./CocktailPage/CocktailVariantList";
 
-const styles = theme => {
-  //debugger;
-  return {
-    root: {
-      display: "flex",
-      alignItems: "stretch",
-      height: "100vh"
-    },
-    cocktailDetail: {
-      height: "100vh",
-      overflow: "scroll"
-    },
-    cocktailDetailContent: {
-      padding: theme.spacing(3, 5)
-    },
-    cocktailImage: {
-      height: "100%",
-      backgroundColor: theme.palette.grey[400],
-      backgroundRepeatY: "no-repeat",
-      backgroundSize: "cover",
-      height: "100vh"
-    },
-    mobileImage: {
-      height: "20vh",
-      backgroundPosition: "center"
-    }
-  };
-};
+const styles = theme => ({
+  root: {
+    height: "50vh"
+  },
+  divider: {
+    margin: theme.spacing(3, 5)
+  },
+  cocktailDetail: {
+    overflow: "auto",
+    height: "90vh"
+  },
+  cocktailDetailContent: {
+    padding: theme.spacing(3, 5)
+  },
+  cocktailImage: {
+    ...theme.mixins.toolbar,
+    backgroundColor: theme.palette.grey[400],
+    backgroundRepeatY: "no-repeat",
+    backgroundSize: "cover",
+    height: "90vh"
+  },
+  mobileImage: {
+    height: "20vh",
+    backgroundPosition: "center"
+  }
+});
 
 const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
+  useScrollTop();
+
   if (!cocktail) return <span>Cocktail Not Found</span>;
 
   enrichCocktail(cocktail);
-
-  const { name, enrichment } = cocktail;
-  const image = enrichment && enrichment.image;
+  const image = cocktail.enrichment && cocktail.enrichment.image;
 
   return (
     <>
@@ -56,6 +56,8 @@ const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
         <Grid className={classes.cocktailDetail} item md={6} xs={12}>
           <div className={classes.cocktailDetailContent}>
             <CocktailDetail cocktail={cocktail} />
+            <Divider className={classes.divider} />
+            <CocktailVariantList cocktail={cocktail} />
           </div>
         </Grid>
         <Grid item md={6} xs={0}>
