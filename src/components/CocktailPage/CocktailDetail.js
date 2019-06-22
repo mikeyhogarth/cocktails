@@ -24,7 +24,7 @@ const CocktailPage = ({ cocktail, classes }) => {
 
   return (
     <>
-      <Typography variant="h3" gutterBottom>
+      <Typography variant="h1" gutterBottom>
         {name}
       </Typography>
       <Typography component="ul" gutterBottom>
