@@ -5,7 +5,7 @@ describe("makeableFrom rule", () => {
   it("returns cocktails makeable from the passed-in ingredients", () => {
     const filter = {
       rule: "makeableFrom",
-      ingredients: ["Cognac", "Champagne", "Angostura bitters"]
+      ingredients: ["Cognac", "Champagne", "Angostura bitters", "Sugar"]
     };
 
     const results = applyFilter(cocktails, filter);
@@ -20,6 +20,7 @@ describe("makeableFrom rule", () => {
         "Cognac",
         "Champagne",
         "Angostura bitters",
+        "Sugar",
         "Somethign else"
       ]
     };

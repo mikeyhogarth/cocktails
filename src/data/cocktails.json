@@ -80,7 +80,7 @@
         "label": "Bourbon or rye whiskey"
       },
       { "ingredient": "Angostura bitters", "amount": "2 dashes" },
-      { "special": "1 sugar cube" },
+      { "ingredient": "Sugar", "amount": "1", "label": "Sugar cube" },
       { "special": "Few dashes plain water" }
     ],
     "garnish": "Orange slice and cherry",
@@ -129,8 +129,8 @@
       },
       { "ingredient": "Soda water" },
       { "unit": "cl", "amount": 3, "ingredient": "Lime juice" },
-      { "special": "6 Mint sprigs" },
-      { "special": "2 teaspoons white sugar" }
+      { "ingredient": "Mint", "amount": "6", "label": "Mint sprigs" },
+      { "ingredient": "Sugar", "amount": "2 teaspoons", "label": "White sugar" }
     ],
     "garnish": "Mint leaves and lemon slice",
     "preparation": "Muddle mint springs with sugar and lime juice. Add splash of soda water and fill glass with cracked ice. Pour rum and top with soda water. Serve with straw."
@@ -780,7 +780,7 @@
         "label": "Prosecco",
         "amount": "Top up with"
       },
-      { "special": "1 dash Lime juice" }
+      { "amount": "1 dash", "ingredient": "Lime juice" }
     ]
   },
   {
@@ -818,7 +818,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 6, "ingredient": "Gin" },
       { "unit": "2 drops", "ingredient": "Peach bitters" },
-      { "special": "2 Fresh mint leaves" }
+      { "amount": "2", "ingredient": "Mint", "label": "Fresh mint leaves" }
     ],
     "garnish": "Mint leaves",
     "preparation": "Stir in mixing glass with ice cubes. Strain into a cocktail glass."
@@ -854,7 +854,7 @@
         "label": "Hot coffee"
       },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" },
-      { "special": "1 teaspoon of brown sugar" }
+      { "ingredient": "Sugar", "label": "Brown sugar", "amount": "1 teaspoon" }
     ],
     "preparation": "Warm the Irish whiskey over a burner. Pour into the glass (for hot drink) hot coffee, and add a teaspoon of sugar. Float Cream on top."
   },
@@ -867,7 +867,7 @@
       { "unit": "cl", "amount": 5, "ingredient": "Cognac" },
       { "unit": "cl", "amount": 1, "ingredient": "Absinthe" },
       { "amount": "2 dashes", "ingredient": "Peychaud’s bitters" },
-      { "special": "1 sugar cube" }
+      { "ingredient": "Sugar", "amount": "1", "label": "Sugar cube" }
     ],
     "garnish": "Lemon twist",
     "preparation": "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Note: The original recipe changed after the American Civil War, rye whiskey substituted cognac as it became hard to obtain."
@@ -937,7 +937,7 @@
       { "unit": "cl", "amount": 4.5, "ingredient": "Vodka" },
       { "unit": "cl", "amount": 12, "ingredient": "Ginger beer" },
       { "unit": "cl", "amount": 0.5, "ingredient": "Lime juice" },
-      { "special": "1 slice lime in a highball glass" }
+      { "ingredient": "Lime", "amount": "1 slice" }
     ],
     "garnish": "Lime slice",
     "preparation": "Combine the vodka and ginger beer. Add lime juice."
@@ -991,11 +991,15 @@
         "ingredient": "Whiskey",
         "label": "Bourbon whiskey"
       },
-      { "special": "4 fresh mint sprigs" },
-      { "special": "1 teaspoon powdered sugar" },
+      { "amount": "4", "ingredient": "Mint", "label": "Fresh mint sprigs" },
+      {
+        "amount": "1 teaspoon",
+        "label": "powdered sugar",
+        "ingredient": "Sugar"
+      },
       { "special": "2 teaspoons water" }
     ],
-    "garnish": "Mint spring",
+    "garnish": "Mint sprig",
     "preparation": "In a highball glass gently muddle the mint, sugar and water. Fill the glass with cracked ice, add Bourbon and stir well until the glass is frost."
   },
   {
@@ -1006,7 +1010,7 @@
     "ingredients": [
       { "unit": "cl", "amount": 4.5, "ingredient": "Tequila" },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lime juice" },
-      { "special": "2 bar spoons of Agave nectar" }
+      { "amount": "2 bar spoons", "ingredient": "Agave nectar" }
     ],
     "preparation": "Shake and strain into a chilled cocktail glass."
   },
@@ -1050,7 +1054,7 @@
       { "unit": "cl", "amount": 9, "ingredient": "Champagne" },
       { "unit": "cl", "amount": 1, "ingredient": "Cognac" },
       { "ingredient": "Angostura bitters", "amount": "2 dashes" },
-      { "special": "1 sugar cube" }
+      { "ingredient": "Sugar", "amount": "1", "label": "Sugar cube" }
     ],
     "garnish": "Orange slice and a cherry",
     "preparation": "Add dash of Angostura bitter onto sugar cube and drop it into champagne flute. Add cognac followed by pouring gently chilled champagne."
@@ -1121,8 +1125,9 @@
       { "unit": "cl", "amount": 6, "ingredient": "Cream" },
       { "amount": 1, "ingredient": "Egg white" },
       { "ingredient": "Soda water" },
-      { "special": "3 dashes Orange flower water" },
-      { "special": "2 drops Vanilla extract" }
+
+      { "amount": "3 dashes", "ingredient": "Orange flower water" },
+      { "amount": "2 drops", "ingredient": "Vanilla extract" }
     ],
     "preparation": "Pour all ingredients (except soda) in a mixing glass, dry shake (no ice) for two minutes, add ice and hard shake for another minute. Strain into a highball glass without ice, top with soda."
   },
@@ -1250,8 +1255,12 @@
     "category": "All Day Cocktail",
     "ingredients": [
       { "unit": "cl", "amount": 5, "ingredient": "Cachaca" },
-      { "special": "half fresh lime cut into 4 wedges" },
-      { "special": "2 teaspoon sugar" }
+      { "ingredient": "Sugar", "amount": "2 teaspoons" },
+      {
+        "ingredient": "Lime",
+        "amount": "half",
+        "label": "Fresh lime cut into 4 wedges"
+      }
     ],
     "preparation": "Place lime and sugar in old fashion glass and muddle. Fill glass with ice and Cachaca (note:Caipiroska- use Vodka instead of Cachaca)."
   },
@@ -1270,7 +1279,7 @@
       { "unit": "cl", "amount": 3, "ingredient": "Orange juice" },
       { "unit": "cl", "amount": 1, "ingredient": "Lime juice" },
       { "amount": "Few drops", "ingredient": "Worcestershire Sauce" },
-      { "special": "1 teaspoon clear honey" },
+      { "amount": "1 teaspoon", "ingredient": "Honey", "label": "Clear honey" },
       { "special": "Half slice onion finely chopped" },
       { "special": "Few slices fresh red hot chili peppers" },
       { "special": "Salt" }
