@@ -1,58 +1,77 @@
 import React from "react";
+import useScrollTop from "../hooks/useScrollTop";
 import { connect } from "react-redux";
-import { Paper, CircularProgress, Grid } from "@material-ui/core";
+import { Fade, Box, Grid, Divider } from "@material-ui/core";
 import { currentCocktailSelector } from "../selectors";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
 import CocktailDetail from "./CocktailPage/CocktailDetail";
 import CocktailVariantList from "./CocktailPage/CocktailVariantList";
-import CocktailImage from "./CocktailPage/CocktailImage";
 
 const styles = theme => ({
-  paper: {
-    padding: "1em"
-  },
   root: {
-    ...theme.mixins.gutters,
-    justifyContent: "center"
+    height: "50vh"
   },
-  progress: {
-    width: "100%"
+  divider: {
+    margin: theme.spacing(3, 5)
+  },
+  cocktailDetail: {
+    overflow: "auto",
+    height: "90vh"
+  },
+  cocktailDetailContent: {
+    padding: theme.spacing(3, 5)
+  },
+  cocktailImage: {
+    ...theme.mixins.toolbar,
+    backgroundColor: theme.palette.grey[400],
+    backgroundRepeatY: "no-repeat",
+    backgroundSize: "cover",
+    height: "90vh"
+  },
+  mobileImage: {
+    height: "20vh",
+    backgroundPosition: "center"
   }
 });
 
-const CocktailPage = ({ cocktail, enrichCocktail, classes, match }) => {
+const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
+  useScrollTop();
+
   if (!cocktail) return <span>Cocktail Not Found</span>;
 
   enrichCocktail(cocktail);
-
-  const { name, enrichment, enriching, enriched } = cocktail;
+  const image = cocktail.enrichment && cocktail.enrichment.image;
 
   return (
-    <div className={classes.root}>
-      <Paper className={classes.paper} square>
-        <Grid container className={classes.innerContainer} spacing={10}>
-          <Grid item md={8} xs={12}>
+    <>
+      <Box
+        component="div"
+        className={classes.mobileImage}
+        display={{ xs: "block", sm: "none" }}
+        style={{ backgroundImage: `url(${image})` }}
+      />
+      <Grid container className={classes.root}>
+        <Grid className={classes.cocktailDetail} item md={6} xs={12}>
+          <div className={classes.cocktailDetailContent}>
             <CocktailDetail cocktail={cocktail} />
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <div style={{ textAlign: "center" }}>
-              {enriching && (
-                <CircularProgress size="50%" className={classes.progress} />
-              )}
-              {enriched && enrichment.image && (
-                <div style={{ marginRight: "1em" }}>
-                  <CocktailImage image={enrichment.image} name={name} />
-                </div>
-              )}
-            </div>
-          </Grid>
+            <Divider className={classes.divider} />
+            <CocktailVariantList cocktail={cocktail} />
+          </div>
         </Grid>
-        <br />
-        <CocktailVariantList cocktail={cocktail} />
-      </Paper>
-    </div>
+        <Grid item md={6} xs={false}>
+          <Fade in={!!image}>
+            <div
+              style={{
+                backgroundImage: `url(${image})`
+              }}
+              className={classes.cocktailImage}
+            />
+          </Fade>
+        </Grid>
+      </Grid>
+    </>
   );
 };
 

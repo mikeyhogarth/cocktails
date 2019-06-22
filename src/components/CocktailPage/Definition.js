@@ -1,18 +1,15 @@
 import React from "react";
+import { Chip } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
 
 const styles = theme => ({
-  dt: { fontWeight: "bold" },
-  dd: { marginLeft: 0, marginBottom: ".5em", marginRight: "1em" }
+  chip: { marginRight: theme.spacing(0.5) }
 });
 
 const Definition = ({ title, description, classes }) => {
   if (!description) return null;
   return (
-    <>
-      <dt className={classes.dt}>{title}</dt>
-      <dd className={classes.dd}>{description}</dd>
-    </>
+    <Chip color="secondary" label={description} className={classes.chip} />
   );
 };
 

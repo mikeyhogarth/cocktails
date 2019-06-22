@@ -1,15 +1,11 @@
 import React from "react";
-import { Typography, GridList } from "@material-ui/core";
+import { Typography, List, Divider, Paper } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import CocktailVariant from "./CocktailVariant";
 
-const styles = theme => ({
-  gridList: {
-    justifyContent: "center"
-  }
-});
+const styles = theme => ({});
 
-const CocktailPage = ({ cocktail, classes }) => {
+const CocktailVariantList = ({ cocktail, classes }) => {
   const { enrichment, enriched } = cocktail;
 
   if (!enriched || !enrichment.variants || !enrichment.variants.length)
@@ -21,13 +17,20 @@ const CocktailPage = ({ cocktail, classes }) => {
         Variants
       </Typography>
 
-      <GridList className={classes.gridList}>
-        {enrichment.variants.map(variant => {
-          return <CocktailVariant key={variant.name} cocktail={variant} />;
-        })}
-      </GridList>
+      <Paper>
+        <List className={classes.list}>
+          {enrichment.variants.map((variant, idx) => {
+            return (
+              <>
+                <CocktailVariant cocktail={variant} key={variant.name} />
+                {idx !== enrichment.variants.length - 1 && <Divider />}
+              </>
+            );
+          })}
+        </List>
+      </Paper>
     </>
   );
 };
 
-export default withStyles(styles)(CocktailPage);
+export default withStyles(styles)(CocktailVariantList);
