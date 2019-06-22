@@ -3,6 +3,10 @@
     "abv": 40,
     "taste": null
   },
+  "Agave nectar": {
+    "abv": 0,
+    "taste": "sweet"
+  },
   "Angostura bitters": {
     "abv": 44,
     "taste": "bitter"
@@ -142,6 +146,11 @@
     "abv": 0,
     "taste": "sour"
   },
+  "Honey": {
+    "abv": 0,
+    "taste": "sweet",
+    "vegan": false
+  },
   "Kirsch": {
     "abv": 40,
     "taste": null
@@ -153,6 +162,10 @@
   "Lillet Blonde": {
     "abv": 15,
     "taste": null
+  },
+  "Lime": {
+    "abv": 0,
+    "taste": "sour"
   },
   "Lime juice": {
     "abv": 0,
@@ -168,6 +181,10 @@
   },
   "Orange bitters": {
     "abv": 40,
+    "taste": null
+  },
+  "Orange flower water": {
+    "abv": 0,
     "taste": null
   },
   "Orange juice": {
@@ -222,6 +239,10 @@
     "abv": 12,
     "taste": null
   },
+  "Sugar": {
+    "abv": 0,
+    "taste": "sweet"
+  },
   "Syrup": {
     "abv": 0,
     "taste": "sweet"
@@ -236,6 +257,10 @@
   },
   "Triple Sec": {
     "abv": 40,
+    "taste": "sweet"
+  },
+  "Vanilla extract": {
+    "abv": 0,
     "taste": "sweet"
   },
   "Vermouth": {
