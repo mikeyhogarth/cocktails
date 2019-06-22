@@ -9,16 +9,15 @@ import { enrichCocktail } from "../actions";
 import CocktailDetail from "./CocktailPage/CocktailDetail";
 import CocktailVariantList from "./CocktailPage/CocktailVariantList";
 
+const fullHeight = "92vh";
+
 const styles = theme => ({
-  root: {
-    height: "50vh"
-  },
   divider: {
     margin: theme.spacing(3, 5)
   },
   cocktailDetail: {
     overflow: "auto",
-    height: "90vh"
+    height: fullHeight
   },
   cocktailDetailContent: {
     padding: theme.spacing(3, 5)
@@ -28,7 +27,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.grey[400],
     backgroundRepeatY: "no-repeat",
     backgroundSize: "cover",
-    height: "90vh"
+    height: fullHeight
   },
   mobileImage: {
     height: "20vh",
