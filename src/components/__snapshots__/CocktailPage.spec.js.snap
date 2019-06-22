@@ -20,7 +20,7 @@ Array [
         className="CocktailPage-cocktailDetailContent-3"
       >
         <h1
-          className="MuiTypography-root MuiTypography-h1"
+          className="MuiTypography-root CocktailPage-cocktailTitle-113 MuiTypography-h1"
         >
           Vesper
         </h1>
@@ -28,7 +28,7 @@ Array [
           className="CocktailPage-definitions-111"
         >
           <div
-            className="MuiChip-root Definition-chip-143 MuiChip-colorSecondary"
+            className="MuiChip-root Definition-chip-144 MuiChip-colorSecondary"
             onKeyDown={[Function]}
             onKeyUp={[Function]}
           >
@@ -39,7 +39,7 @@ Array [
             </span>
           </div>
           <div
-            className="MuiChip-root Definition-chip-143 MuiChip-colorSecondary"
+            className="MuiChip-root Definition-chip-144 MuiChip-colorSecondary"
             onKeyDown={[Function]}
             onKeyUp={[Function]}
           >
@@ -50,7 +50,7 @@ Array [
             </span>
           </div>
           <div
-            className="MuiChip-root Definition-chip-143 MuiChip-colorSecondary"
+            className="MuiChip-root Definition-chip-144 MuiChip-colorSecondary"
             onKeyDown={[Function]}
             onKeyUp={[Function]}
           >
@@ -75,7 +75,7 @@ Array [
                  
                 <strong
                   aria-describedby={null}
-                  className="Connect(IngredientDetail)-tooltip-201"
+                  className="Connect(IngredientDetail)-tooltip-202"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onMouseLeave={[Function]}
@@ -96,7 +96,7 @@ Array [
                  
                 <strong
                   aria-describedby={null}
-                  className="Connect(IngredientDetail)-tooltip-201"
+                  className="Connect(IngredientDetail)-tooltip-202"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onMouseLeave={[Function]}
@@ -117,7 +117,7 @@ Array [
                  
                 <strong
                   aria-describedby={null}
-                  className="Connect(IngredientDetail)-tooltip-201"
+                  className="Connect(IngredientDetail)-tooltip-202"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onMouseLeave={[Function]}
