@@ -937,7 +937,7 @@
       { "unit": "cl", "amount": 4.5, "ingredient": "Vodka" },
       { "unit": "cl", "amount": 12, "ingredient": "Ginger beer" },
       { "unit": "cl", "amount": 0.5, "ingredient": "Lime juice" },
-      { "ingredient": "lime", "amount": "1 slice" }
+      { "ingredient": "Lime", "amount": "1 slice" }
     ],
     "garnish": "Lime slice",
     "preparation": "Combine the vodka and ginger beer. Add lime juice."
