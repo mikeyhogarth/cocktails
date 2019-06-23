@@ -17,7 +17,9 @@ const styles = theme => ({
   },
   cocktailDetail: {
     overflow: "auto",
-    height: fullHeight
+    [theme.breakpoints.up("sm")]: {
+      height: fullHeight
+    }
   },
   cocktailDetailContent: {
     padding: theme.spacing(3, 5)
@@ -27,7 +29,9 @@ const styles = theme => ({
     backgroundColor: theme.palette.grey[400],
     backgroundRepeatY: "no-repeat",
     backgroundSize: "cover",
-    height: fullHeight
+    [theme.breakpoints.up("xs")]: {
+      height: fullHeight
+    }
   },
   mobileImage: {
     height: "20vh",
