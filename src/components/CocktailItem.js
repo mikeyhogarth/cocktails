@@ -10,12 +10,14 @@ import {
   CardActions,
   CardActionArea,
   Button,
-  Typography
+  Typography,
+  Avatar
 } from "@material-ui/core";
 import CocktailIcon from "@material-ui/icons/LocalBar";
 import UnFavouriteIcon from "@material-ui/icons/Favorite";
 import FavouriteIcon from "@material-ui/icons/FavoriteBorder";
 import VeganIcon from "@material-ui/icons/FilterVintage";
+
 import Redo from "@material-ui/icons/Redo";
 
 import { withStyles } from "@material-ui/core/styles";
@@ -24,11 +26,8 @@ import { Link } from "react-router-dom";
 import { bindActionCreators } from "redux";
 
 const styles = theme => ({
-  circle: {
-    width: theme.spacing(3),
-    height: theme.spacing(3),
-    display: "inline-block",
-    float: "right"
+  ingredientList: {
+    paddingLeft: theme.spacing(2)
   },
   card: {
     width: theme.spacing(40),
@@ -80,27 +79,28 @@ const CocktailItem = ({
       to={`/cocktails/${cocktail.slug}`}
     >
       <CardHeader
-        title={
-          <h1 className={classes.title}>
-            {cocktail.name}
-            {cocktail.colors.map(color => (
-              <i
-                key={color}
-                className={classes.circle}
-                style={{ background: color }}
-              />
-            ))}
-          </h1>
+        title={<h1 className={classes.title}>{cocktail.name}</h1>}
+        avatar={
+          <Avatar
+            style={{
+              backgroundColor: cocktail.colors[0],
+              background: `linear-gradient(${cocktail.colors.join(",")})`
+            }}
+            aria-label="Recipe"
+            className={classes.avatar}
+          >
+            <CocktailIcon />
+          </Avatar>
         }
         subheader={
           <span className={classes.subHeader}>{cocktail.category}</span>
         }
       />
-      <CardContent>
-        <ul>
+      <CardContent className={classes.cardContent}>
+        <ul className={classes.ingredientList}>
           {cocktail.ingredients.map((item, idx) => (
             <li key={idx}>
-              <Typography className={classes.ingredients}>
+              <Typography>
                 <Ingredient item={item} />
               </Typography>
             </li>

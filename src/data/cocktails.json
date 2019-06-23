@@ -492,7 +492,7 @@
   {
     "iba": true,
     "name": "Aviation",
-    "colors": "#f9f7e8",
+    "colors": "#68517B",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
@@ -704,7 +704,7 @@
   {
     "iba": true,
     "name": "Alexander",
-    "colors": ["#f8f2e4"],
+    "colors": ["#B39684"],
     "glass": "martini",
     "ingredients": [
       { "unit": "cl", "amount": 3, "ingredient": "Cognac" },
