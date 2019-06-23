@@ -33,7 +33,7 @@ const filterConfig = {
     label: "By Ingredient...",
     buildFilter: ({ ingredientsRule, ingredients }) => ({
       rule: ingredientsRule,
-      ingredients: ingredients
+      ingredients
     })
   },
   byCategory: {
