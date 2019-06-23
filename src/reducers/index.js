@@ -39,8 +39,19 @@ const defaultState = {
 };
 
 // Parts of the initial state will be from our persistence layer.
+
 const persistedState = loadPersistedState();
-const initialState = { ...defaultState, ...persistedState };
+const initialState = {
+  ...defaultState,
+  filterOptions: {
+    ...defaultState.filterOptions,
+    ...(persistedState ? persistedState.filterOptions : null)
+  },
+  settings: {
+    ...defaultState.settings,
+    ...(persistedState ? persistedState.settings : null)
+  }
+};
 
 /**
  * Main reducer
