@@ -21,10 +21,10 @@ const CocktailVariantList = ({ cocktail, classes }) => {
         <List className={classes.list}>
           {enrichment.variants.map((variant, idx) => {
             return (
-              <>
-                <CocktailVariant cocktail={variant} key={variant.name} />
+              <React.Fragment key={variant.name}>
+                <CocktailVariant cocktail={variant} />
                 {idx !== enrichment.variants.length - 1 && <Divider />}
-              </>
+              </React.Fragment>
             );
           })}
         </List>

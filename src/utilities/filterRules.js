@@ -12,6 +12,11 @@ export function nameIncludes(cocktailName, searchText) {
   return cocktailName.toLowerCase().includes(searchText.toLowerCase());
 }
 
+// cocktail will be returned if the passed-in property is truthy
+export function mustHaveTruthyProperty(cocktail, property) {
+  return !!cocktail[property.toString()];
+}
+
 // cocktail will be returned if it includes all of the ingredients
 // in the filter - NONE can be missing.
 export function makeableFrom(filterIngredients, cocktailIngredients) {
