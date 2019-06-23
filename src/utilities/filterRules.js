@@ -45,11 +45,11 @@ export function mustNotInclude(filterIngredients, cocktailIngredients) {
 }
 
 export function inGlass(glasses, cocktail) {
-  return glasses.includes(cocktail.glass);
+  return glasses.length === 0 || glasses.includes(cocktail.glass);
 }
 
 export function inCategory(categories, cocktail) {
-  return categories.includes(cocktail.category);
+  return categories.length === 0 || categories.includes(cocktail.category);
 }
 
 export function isFavourite(favourites, cocktail) {

@@ -8,8 +8,9 @@ import {
   TextField,
   InputAdornment
 } from "@material-ui/core";
+import { getRules } from "../filterConfig";
 import { removeOrAddItemFromArray } from "../utilities/util";
-import { labelFor } from "../utilities/filter.utils";
+import { labelFor } from "../filterConfig";
 import { FilterChips, FilterDialog } from "./Filters";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
@@ -53,18 +54,6 @@ const styles = theme => ({
     width: 300
   }
 });
-
-// This probably isn't the right place for this variable - we should
-// have a list of filter rules stored somewhere centrally.
-const filterMenuOptions = [
-  { rule: "byIngredient" },
-  { rule: "byCategory" },
-  { rule: "byGlass" },
-  { rule: "barOnly" },
-  { rule: "favouritesOnly" },
-  { rule: "veganOnly" },
-  { rule: "ibaOnly" }
-];
 
 const CocktailFilter = ({
   filteredCocktails,
@@ -138,14 +127,14 @@ const CocktailFilter = ({
         open={Boolean(anchorEl)}
         onClose={closeFilterMenu}
       >
-        {filterMenuOptions.map((menuOption, idx) => {
+        {getRules().map((menuOption, idx) => {
           return (
             <MenuItem
-              disabled={activeFilters.includes(menuOption.rule)}
+              disabled={activeFilters.includes(menuOption)}
               key={idx}
-              onClick={() => addFilter(menuOption.rule)}
+              onClick={() => addFilter(menuOption)}
             >
-              {labelFor(menuOption.rule)}
+              {labelFor(menuOption)}
             </MenuItem>
           );
         })}
