@@ -3,14 +3,20 @@ import { Tooltip } from "@material-ui/core";
 import { connect } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
 import compact from "lodash/compact";
-
+import { createMeasurementString } from "../utilities/cocktail.utils";
 const styles = {
   tooltip: {
     cursor: "pointer"
   }
 };
 
-const IngredientDetail = ({ item, allIngredients, classes }) => {
+const IngredientDetail = ({
+  item,
+  units,
+  useLingo,
+  allIngredients,
+  classes
+}) => {
   if (item.special) return <span>{item.special}</span>;
 
   const { taste, abv, vegan } = allIngredients[item.ingredient] || {};
@@ -22,7 +28,9 @@ const IngredientDetail = ({ item, allIngredients, classes }) => {
 
   return (
     <span>
-      {item.amount} {item.unit}{" "}
+      {item.unit === "cl"
+        ? createMeasurementString(item.amount, units, useLingo)
+        : item.amount}{" "}
       <Tooltip
         className={classes.tooltip}
         title={compact(toolTipContent).join(", ")}
@@ -35,7 +43,9 @@ const IngredientDetail = ({ item, allIngredients, classes }) => {
 };
 
 const mapStateToProps = state => ({
-  allIngredients: state.db.ingredients
+  allIngredients: state.db.ingredients,
+  units: state.settings.units,
+  useLingo: state.settings.lingo
 });
 
 export default withStyles(styles)(connect(mapStateToProps)(IngredientDetail));

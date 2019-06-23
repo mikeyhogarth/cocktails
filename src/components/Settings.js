@@ -13,7 +13,7 @@ import {
 } from "@material-ui/core";
 
 import { bindActionCreators } from "redux";
-import { updateSettings, togglePride } from "../actions";
+import { updateSettings, togglePride, toggleLingo } from "../actions";
 import { connect } from "react-redux";
 import { colors } from "../theme";
 import capitalize from "lodash/capitalize";
@@ -30,7 +30,13 @@ const styles = theme => ({
   }
 });
 
-const Settings = ({ classes, settings, updateSettings, togglePride }) => (
+const Settings = ({
+  classes,
+  settings,
+  updateSettings,
+  togglePride,
+  toggleLingo
+}) => (
   <div className={classes.root}>
     <Paper className={classes.content}>
       <Typography variant="h2" gutterBottom>
@@ -83,6 +89,44 @@ const Settings = ({ classes, settings, updateSettings, togglePride }) => (
         </RadioGroup>
       </FormControl>
 
+      <FormControl component="fieldset">
+        <FormLabel component="legend">Units</FormLabel>
+        <RadioGroup
+          aria-label="Units"
+          name="units"
+          value={settings.units}
+          onChange={event => {
+            updateSettings({ units: event.target.value });
+          }}
+        >
+          {["cl", "ml", "oz", "parts"].map(unit => {
+            return (
+              <FormControlLabel
+                value={unit}
+                key={unit}
+                control={<Radio />}
+                label={unit}
+              />
+            );
+          })}
+        </RadioGroup>
+
+        <br />
+        <FormLabel component="legend">Lingo</FormLabel>
+        <FormControlLabel
+          control={
+            <Switch
+              checked={settings.lingo}
+              onChange={e => {
+                toggleLingo();
+              }}
+              value={settings.lingo}
+            />
+          }
+          label={<Typography component="span">Use Cocktail Lingo</Typography>}
+        />
+      </FormControl>
+
       <FormControl>
         <FormLabel component="legend">Pride!</FormLabel>
 
@@ -109,7 +153,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   updateSettings: bindActionCreators(updateSettings, dispatch),
-  togglePride: bindActionCreators(togglePride, dispatch)
+  togglePride: bindActionCreators(togglePride, dispatch),
+  toggleLingo: bindActionCreators(toggleLingo, dispatch)
 });
 
 export default connect(

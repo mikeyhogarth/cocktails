@@ -1,4 +1,4 @@
-import { countIngredients } from "./cocktail.utils";
+import { countIngredients, convertMeasurementFromCl } from "./cocktail.utils";
 
 describe("countIngredients", () => {
   it("returns a list showing ingredient coutns based on passed-in cocktails", () => {
@@ -36,5 +36,25 @@ describe("countIngredients", () => {
       { name: "Campari", count: 1 },
       { name: "Orange Juice", count: 1 }
     ]);
+  });
+});
+
+describe("convertMeasurementFromCl", () => {
+  describe("when unit is cl or parts", () => {
+    it("does nothing - these are already the units we passed in", () => {
+      expect(convertMeasurementFromCl(1, "cl")).toEqual(1);
+      expect(convertMeasurementFromCl(1, "parts")).toEqual(1);
+    });
+  });
+  describe("when unit is ml", () => {
+    it("performs the conversion", () => {
+      expect(convertMeasurementFromCl(1, "ml")).toEqual(10);
+    });
+  });
+
+  describe("when unit is oz", () => {
+    it("performs the conversion", () => {
+      expect(convertMeasurementFromCl(1, "oz")).toEqual(0.5);
+    });
   });
 });

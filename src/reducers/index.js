@@ -32,7 +32,9 @@ const defaultState = {
   settings: {
     theme: "light",
     color: "indigo",
-    pride: false
+    units: "cl",
+    pride: false,
+    lingo: false
   }
 };
 
@@ -82,6 +84,14 @@ export default function(state = initialState, action) {
         settings: {
           ...state.settings,
           pride: !state.settings.pride
+        }
+      };
+    case "TOGGLE_LINGO":
+      return {
+        ...state,
+        settings: {
+          ...state.settings,
+          lingo: !state.settings.lingo
         }
       };
     case "UPDATE_SETTINGS":
