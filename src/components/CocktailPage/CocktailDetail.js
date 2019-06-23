@@ -32,6 +32,7 @@ const CocktailPage = ({ cocktail, classes }) => {
     preparation,
     category,
     glass,
+    vegan,
     garnish,
     enrichment,
     enriched
@@ -47,6 +48,7 @@ const CocktailPage = ({ cocktail, classes }) => {
         <Definition title="Category" description={category} />
         <Definition title="Glass" description={glass} />
         <Definition title="Garnish" description={garnish} />
+        <Definition title="Vegan" description={vegan ? "Vegan" : "Non-vegan"} />
         {enriched && enrichment.ibaCategory && (
           <Definition
             title="IBA Category"
@@ -67,9 +69,7 @@ const CocktailPage = ({ cocktail, classes }) => {
           </>
         </Typography>
         <br />
-        <Typography component="p" gutters>
-          {preparation}
-        </Typography>
+        <Typography component="p">{preparation}</Typography>
       </Paper>
     </>
   );

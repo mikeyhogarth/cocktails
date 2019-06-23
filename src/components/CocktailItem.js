@@ -15,7 +15,7 @@ import {
 import CocktailIcon from "@material-ui/icons/LocalBar";
 import UnFavouriteIcon from "@material-ui/icons/Favorite";
 import FavouriteIcon from "@material-ui/icons/FavoriteBorder";
-
+import VeganIcon from "@material-ui/icons/FilterVintage";
 import Redo from "@material-ui/icons/Redo";
 
 import { withStyles } from "@material-ui/core/styles";
@@ -125,6 +125,12 @@ const CocktailItem = ({
             {cocktail.garnish}
           </Typography>
         )}
+
+        <Typography component="p" color="textSecondary">
+          <VeganIcon fontSize="inherit" />
+          &nbsp;
+          {cocktail.vegan ? "Vegan" : "Non-vegan"}
+        </Typography>
       </CardContent>
     </CardActionArea>
 

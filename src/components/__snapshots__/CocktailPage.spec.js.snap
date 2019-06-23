@@ -60,6 +60,17 @@ Array [
               Lemon twist
             </span>
           </div>
+          <div
+            className="MuiChip-root Definition-chip-144 MuiChip-colorSecondary"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+          >
+            <span
+              className="MuiChip-label"
+            >
+              Vegan
+            </span>
+          </div>
         </div>
         <div
           className="MuiPaper-root MuiPaper-elevation1 CocktailPage-cocktailDetailPaper-112 MuiPaper-rounded"
@@ -134,7 +145,6 @@ Array [
           <br />
           <p
             className="MuiTypography-root MuiTypography-body1"
-            gutters={true}
           >
             Shake and strain into a chilled cocktail glass.
           </p>

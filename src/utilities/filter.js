@@ -7,6 +7,7 @@ import {
   mustInclude,
   mustNotInclude,
   makeableFrom,
+  mustHaveTruthyProperty,
   inGlass,
   inCategory
 } from "./filterRules";
@@ -39,6 +40,8 @@ export function applyFilter(cocktails, filter) {
         return inCategory(filter.categories, cocktail);
       case "isFavourite":
         return isFavourite(filter.favourites, cocktail);
+      case "mustHaveTruthyProperty":
+        return mustHaveTruthyProperty(cocktail, filter.property);
       default:
         return true;
     }
@@ -61,12 +64,7 @@ export function applyFilters(cocktails, filters = []) {
 
 // builds an array of filters based on the users current filter options.
 // TODO: This should probably be in filter.utils.
-export function filtersFromUserOptions(
-  userFilterOptions,
-  bar,
-  nonVeganIngredients,
-  favourites
-) {
+export function filtersFromUserOptions(userFilterOptions, bar, favourites) {
   const filters = [];
 
   if (userFilterOptions.nameFilter) {
@@ -90,7 +88,7 @@ export function filtersFromUserOptions(
 
   // the option as to whether to only show stuff that is makeable from the bar
   if (userFilterOptions.activeFilters.includes("veganOnly"))
-    filters.push({ ingredients: nonVeganIngredients, rule: "mustNotInclude" });
+    filters.push({ rule: "mustHaveTruthyProperty", property: "vegan" });
 
   // the category option
   if (
