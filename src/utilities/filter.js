@@ -1,5 +1,6 @@
 import compact from "lodash/compact";
 import isArray from "lodash/isArray";
+import { buildFilter } from "../filterConfig";
 import {
   nameIncludes,
   isFavourite,
@@ -62,46 +63,11 @@ export function applyFilters(cocktails, filters = []) {
   );
 }
 
-const userOptionToFilterMap = {
-  byIngredient: ({ ingredientsRule, ingredients }) => ({
-    rule: ingredientsRule,
-    ingredients: ingredients
-  }),
-
-  barOnly: (_, { bar }) => ({
-    rule: "makeableFrom",
-    ingredients: bar
-  }),
-
-  ibaOnly: () => ({
-    rule: "mustHaveTruthyProperty",
-    property: "iba"
-  }),
-
-  veganOnly: () => ({
-    rule: "mustHaveTruthyProperty",
-    property: "vegan"
-  }),
-
-  byCategory: ({ categories }) => ({
-    rule: "inCategory",
-    categories
-  }),
-  favouritesOnly: (_, { favourites }) => ({
-    rule: "isFavourite",
-    favourites
-  }),
-  byGlass: ({ glasses }) => ({
-    rule: "inGlass",
-    glasses
-  })
-};
-
 // builds an array of filters based on the users current filter options.
 export function filtersFromUserOptions(userFilterOptions, bar, favourites) {
   // Build initial filters based on the current "activeFilters"
   const filters = userFilterOptions.activeFilters.map(filterRule => {
-    return userOptionToFilterMap[filterRule.toString()](userFilterOptions, {
+    return buildFilter(filterRule)(userFilterOptions, {
       bar,
       favourites
     });

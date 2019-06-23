@@ -1,6 +1,6 @@
 import uniq from "lodash/uniq";
 import { loadPersistedState } from "../utilities/persistence";
-import { isEditable } from "../filterConfig";
+import { hasDialog } from "../filterConfig";
 
 // return a new cocktailDB with the named cocktail updated. This is a
 // convinience method for several of the reducer functions below.
@@ -71,7 +71,7 @@ export default function(state = initialState, action) {
         filterOptions: {
           ...state.filterOptions,
           editingFilter:
-            action.payload && isEditable(action.payload) ? action.payload : null
+            action.payload && hasDialog(action.payload) ? action.payload : null
         }
       };
     case "SET_BAR":
