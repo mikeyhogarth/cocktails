@@ -43,6 +43,7 @@ const defaultState = {
 const persistedState = loadPersistedState();
 const initialState = {
   ...defaultState,
+  ...persistedState,
   filterOptions: {
     ...defaultState.filterOptions,
     ...(persistedState ? persistedState.filterOptions : null)
