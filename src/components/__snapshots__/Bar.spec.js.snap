@@ -1183,7 +1183,7 @@ exports[`does not explode when rendered 1`] = `
                 >
                   <div>
                     <span>
-                      Syrup
+                      Gin
                     </span>
                     <button
                       aria-label="Add"
@@ -1242,7 +1242,7 @@ exports[`does not explode when rendered 1`] = `
                 >
                   <div>
                     <span>
-                      Gin
+                      Syrup
                     </span>
                     <button
                       aria-label="Add"
@@ -1288,7 +1288,7 @@ exports[`does not explode when rendered 1`] = `
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
-                  19
+                  20
                 </td>
               </tr>
               <tr
@@ -1406,7 +1406,7 @@ exports[`does not explode when rendered 1`] = `
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
-                  16
+                  17
                 </td>
               </tr>
               <tr
@@ -1465,7 +1465,7 @@ exports[`does not explode when rendered 1`] = `
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
-                  15
+                  16
                 </td>
               </tr>
             </tbody>

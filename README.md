@@ -1,12 +1,12 @@
-# IBA Cocktails Browser
+# Cocktails Browser
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4aecd7d0-e759-4866-8717-b4b09f8cbb16/deploy-status)](https://app.netlify.com/sites/elated-shockley-96a155/deploys)
 [![Build Status](https://travis-ci.org/mikeyhogarth/cocktails.svg?branch=master)](https://travis-ci.org/mikeyhogarth/cocktails)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/561bedec36224121a246675b673b872f)](https://www.codacy.com/app/mikeyhogarth/cocktails?utm_source=github.com&utm_medium=referral&utm_content=mikeyhogarth/cocktails&utm_campaign=Badge_Grade)
 
-This provides a user interface for browsing and filtering the [IBA cocktails list](https://en.wikipedia.org/wiki/List_of_IBA_official_cocktails). Features include;
+This provides a user interface for browsing and filtering the [IBA cocktails list](https://en.wikipedia.org/wiki/List_of_IBA_official_cocktails) (and a couple of other popular drinks). Features include;
 
-- Browse all 77 IBA cocktails
+- Browse all 77 IBA cocktails, plus a few non-IBA drinks.
 - Maintain your bar to describe what you have at home.
 - Filter by ingredient, category, glass, vegan or "makeable from your bar"
 - Ability to "favourite" cocktails

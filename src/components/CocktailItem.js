@@ -31,7 +31,7 @@ const styles = theme => ({
     float: "right"
   },
   card: {
-    width: "25em",
+    width: theme.spacing(40),
     margin: theme.spacing(1),
     display: "flex",
     flexDirection: "column",
@@ -111,6 +111,13 @@ const CocktailItem = ({
           {cocktail.preparation}
         </Typography>
         <br />
+
+        {!cocktail.iba && (
+          <Typography component="p" color="textSecondary">
+            Non-IBA
+          </Typography>
+        )}
+
         {cocktail.glass && (
           <Typography component="p" color="textSecondary">
             <CocktailIcon fontSize="inherit" />
