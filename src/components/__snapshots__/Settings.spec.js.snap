@@ -828,7 +828,7 @@ exports[`does not explode when rendered 1`] = `
       <legend
         className="MuiFormLabel-root"
       >
-        Lingo
+        Pro-mode
       </legend>
       <label
         className="MuiFormControlLabel-root"
@@ -877,7 +877,7 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiTypography-root MuiTypography-body1"
           >
-            Use Cocktail Lingo
+            Use Bartender Lingo
           </span>
         </span>
       </label>

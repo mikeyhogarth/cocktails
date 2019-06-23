@@ -112,7 +112,7 @@ const Settings = ({
         </RadioGroup>
 
         <br />
-        <FormLabel component="legend">Lingo</FormLabel>
+        <FormLabel component="legend">Pro-mode</FormLabel>
         <FormControlLabel
           control={
             <Switch
@@ -123,7 +123,7 @@ const Settings = ({
               value={settings.lingo}
             />
           }
-          label={<Typography component="span">Use Cocktail Lingo</Typography>}
+          label={<Typography component="span">Use Bartender Lingo</Typography>}
         />
       </FormControl>
 
