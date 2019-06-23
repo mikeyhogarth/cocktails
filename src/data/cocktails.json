@@ -821,12 +821,12 @@
       },
       { "unit": "cl", "amount": 1.5, "ingredient": "Galliano" },
       { "unit": "cl", "amount": 6, "ingredient": "Pineapple juice" },
+      { "amount": "1 dash", "ingredient": "Lime juice" },
       {
         "ingredient": "Sparkling Wine",
         "label": "Prosecco",
         "amount": "Top up with"
-      },
-      { "amount": "1 dash", "ingredient": "Lime juice" }
+      }
     ]
   },
   {
