@@ -62,59 +62,59 @@ export function applyFilters(cocktails, filters = []) {
   );
 }
 
+const userOptionToFilterMap = {
+  byIngredient: ({ ingredientsRule, ingredients }) => ({
+    rule: ingredientsRule,
+    ingredients: ingredients
+  }),
+
+  barOnly: (_, { bar }) => ({
+    rule: "makeableFrom",
+    ingredients: bar
+  }),
+
+  ibaOnly: () => ({
+    rule: "mustHaveTruthyProperty",
+    property: "iba"
+  }),
+
+  veganOnly: () => ({
+    rule: "mustHaveTruthyProperty",
+    property: "vegan"
+  }),
+
+  byCategory: ({ categories }) => ({
+    rule: "inCategory",
+    categories
+  }),
+  favouritesOnly: (_, { favourites }) => ({
+    rule: "isFavourite",
+    favourites
+  }),
+  byGlass: ({ glasses }) => ({
+    rule: "inGlass",
+    glasses
+  })
+};
+
 // builds an array of filters based on the users current filter options.
 export function filtersFromUserOptions(userFilterOptions, bar, favourites) {
-  const filters = [];
+  // Build initial filters based on the current "activeFilters"
+  const filters = userFilterOptions.activeFilters.map(filterRule => {
+    return userOptionToFilterMap[filterRule.toString()](userFilterOptions, {
+      bar,
+      favourites
+    });
+  });
 
+  // Add in the special "Name filter", which is a filter but not in the
+  // typical sense (so, it's not on the menu for example)
   if (userFilterOptions.nameFilter) {
     filters.push({
       rule: "nameIncludes",
       text: userFilterOptions.nameFilter
     });
   }
-
-  // the option about whether to include all/some ingredients
-  if (userFilterOptions.activeFilters.includes("byIngredient")) {
-    filters.push({
-      rule: userFilterOptions.ingredientsRule,
-      ingredients: userFilterOptions.ingredients
-    });
-  }
-
-  // the option as to whether to only show stuff that is makeable from the bar
-  if (userFilterOptions.activeFilters.includes("barOnly"))
-    filters.push({ rule: "makeableFrom", ingredients: bar });
-
-  // the option as to whether to only show iba cocktails
-  if (userFilterOptions.activeFilters.includes("ibaOnly"))
-    filters.push({ rule: "mustHaveTruthyProperty", property: "iba" });
-
-  // the option as to whether to only show stuff that is vegan
-  if (userFilterOptions.activeFilters.includes("veganOnly"))
-    filters.push({ rule: "mustHaveTruthyProperty", property: "vegan" });
-
-  // the category option
-  if (
-    userFilterOptions.activeFilters.includes("byCategory") &&
-    userFilterOptions.categories.length
-  )
-    filters.push({
-      rule: "inCategory",
-      categories: userFilterOptions.categories
-    });
-
-  if (userFilterOptions.activeFilters.includes("favouritesOnly")) {
-    filters.push({ rule: "isFavourite", favourites });
-  }
-  // the glasses option
-  if (
-    userFilterOptions.activeFilters.includes("byGlass") &&
-    userFilterOptions.glasses.length
-  )
-    filters.push({
-      rule: "inGlass",
-      glasses: userFilterOptions.glasses
-    });
 
   return filters;
 }
