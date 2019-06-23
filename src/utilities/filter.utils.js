@@ -14,9 +14,10 @@ const filterLabelLookup = {
   byIngredient: "By Ingredient...",
   byCategory: "By Category...",
   byGlass: "By Glass...",
-  veganOnly: "Vegan",
-  favouritesOnly: "Favourites",
-  barOnly: "Makeable from Bar"
+  barOnly: "Makeable from Bar",
+  veganOnly: "Vegan only",
+  ibaOnly: "IBA only",
+  favouritesOnly: "Favourites only"
 };
 
 export function labelFor(filterRule) {

@@ -86,7 +86,11 @@ export function filtersFromUserOptions(userFilterOptions, bar, favourites) {
   if (userFilterOptions.activeFilters.includes("barOnly"))
     filters.push({ rule: "makeableFrom", ingredients: bar });
 
-  // the option as to whether to only show stuff that is makeable from the bar
+  // the option as to whether to only show iba cocktails
+  if (userFilterOptions.activeFilters.includes("ibaOnly"))
+    filters.push({ rule: "mustHaveTruthyProperty", property: "iba" });
+
+  // the option as to whether to only show stuff that is vegan
   if (userFilterOptions.activeFilters.includes("veganOnly"))
     filters.push({ rule: "mustHaveTruthyProperty", property: "vegan" });
 

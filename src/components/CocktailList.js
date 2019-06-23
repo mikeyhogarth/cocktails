@@ -20,7 +20,7 @@ const CocktailList = ({ classes, cocktails = [] }) => (
   <div>
     <div className={classes.content}>
       {cocktails.length > 0 && (
-        <GridList spacing={0} className={classes.gridList}>
+        <GridList className={classes.gridList}>
           {cocktails.map(cocktail => (
             <CocktailItem key={cocktail.name} cocktail={cocktail} />
           ))}

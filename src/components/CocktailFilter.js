@@ -60,9 +60,10 @@ const filterMenuOptions = [
   { rule: "byIngredient" },
   { rule: "byCategory" },
   { rule: "byGlass" },
-  { rule: "veganOnly" },
   { rule: "barOnly" },
-  { rule: "favouritesOnly" }
+  { rule: "favouritesOnly" },
+  { rule: "veganOnly" },
+  { rule: "ibaOnly" }
 ];
 
 const CocktailFilter = ({

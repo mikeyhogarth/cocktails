@@ -15,6 +15,7 @@ const styles = theme => ({
 const chipContent = {
   favouritesOnly: () => "Favourites",
   veganOnly: () => "Vegan",
+  ibaOnly: () => "IBA",
   barOnly: () => "Makeable from Bar",
   byIngredient: filterOptions => {
     if (!filterOptions.ingredients.length) {
