@@ -63,7 +63,6 @@ export function applyFilters(cocktails, filters = []) {
 }
 
 // builds an array of filters based on the users current filter options.
-// TODO: This should probably be in filter.utils.
 export function filtersFromUserOptions(userFilterOptions, bar, favourites) {
   const filters = [];
 

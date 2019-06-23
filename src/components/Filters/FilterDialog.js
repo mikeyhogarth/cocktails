@@ -13,7 +13,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { updateFilter, setEditingFilter } from "../../actions";
 import CloseIcon from "@material-ui/icons/Close";
-import { dialogFor, labelFor } from "../../utilities/filter.utils";
+import { dialogFor, labelFor } from "../../filterConfig";
 
 const styles = theme => ({
   closeButton: {

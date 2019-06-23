@@ -1,6 +1,6 @@
 import uniq from "lodash/uniq";
 import { loadPersistedState } from "../utilities/persistence";
-import { isEditable } from "../utilities/filter.utils";
+import { isEditable } from "../filterConfig";
 
 // return a new cocktailDB with the named cocktail updated. This is a
 // convinience method for several of the reducer functions below.
