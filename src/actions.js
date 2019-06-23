@@ -36,6 +36,10 @@ export function togglePride() {
   return { type: "TOGGLE_PRIDE" };
 }
 
+export function toggleLingo() {
+  return { type: "TOGGLE_LINGO" };
+}
+
 function startEnrichCocktail(cocktailName) {
   return { type: "START_ENRICH_COCKTAIL", payload: cocktailName };
 }
