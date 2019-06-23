@@ -106,10 +106,7 @@ const CocktailItem = ({
             </li>
           ))}
         </ul>
-        <br />
-        <Typography component="p" className={classes.prep}>
-          {cocktail.preparation}
-        </Typography>
+
         <br />
 
         {!cocktail.iba && (
