@@ -18,7 +18,7 @@ This is a small pet-project and a _work in progress_.
 
 ## Inspiration
 
-I wanted a pet project to play with React/Redux at home, my wife's getting into cocktails and noticed that there isn't really a slick, simple and elegant cocktail browser out there. The aim is for this to become that browser!
+I wanted a pet project to play with React/Redux at home, my wife's getting into cocktails and noticed that there isn't really a decent tool out there for browsing cocktails - this application aims to fill that gap.
 
 ## Credits
 
