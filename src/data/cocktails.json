@@ -888,7 +888,7 @@
   {
     "iba": true,
     "name": "Irish Coffee",
-    "colors": ["#1E0A05", "#603309", "#E6D9D1"],
+    "colors": ["#E6D9D1", "#603309", "#1E0A05"],
     "glass": "hot-drink",
     "category": "Hot Drink",
     "ingredients": [
