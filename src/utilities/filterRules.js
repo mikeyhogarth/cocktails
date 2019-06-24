@@ -47,8 +47,7 @@ export function canInclude(cocktail, { ingredients }) {
 // cocktail will be returned if it contains NONE of the ingredients
 // from the filter.
 export function mustNotInclude(cocktail, { ingredients }) {
-  const cocktailIngredients = getIngredientKeys(cocktail);
-  return !canInclude(ingredients, cocktailIngredients);
+  return !canInclude(cocktail, { ingredients });
 }
 
 export function inGlass(cocktail, { glasses }) {
