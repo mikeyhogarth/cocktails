@@ -64,21 +64,22 @@ export function applyFilters(cocktails, filters = []) {
 }
 
 // builds an array of filters based on the users current filter options.
-export function filtersFromUserOptions(userFilterOptions, bar, favourites) {
+export function filtersFromUserOptions(state) {
+  const { filterOptions, ...otherState } = state;
+
   // Build initial filters based on the current "activeFilters"
-  const filters = userFilterOptions.activeFilters.map(filterRule => {
-    return buildFilter(filterRule)(userFilterOptions, {
-      bar,
-      favourites
-    });
+  const filters = filterOptions.activeFilters.map(filterRule => {
+    return buildFilter(filterRule)(filterOptions, otherState);
   });
 
   // Add in the special "Name filter", which is a filter but not in the
   // typical sense (so, it's not on the menu for example)
-  if (userFilterOptions.nameFilter) {
+  if (filterOptions.nameFilter) {
     filters.push({
       rule: "nameIncludes",
-      text: userFilterOptions.nameFilter
+      filterOptions: {
+        searchText: filterOptions.nameFilter
+      }
     });
   }
 
