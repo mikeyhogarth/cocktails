@@ -14,11 +14,7 @@ This provides a user interface for browsing and filtering the [IBA cocktails lis
 - Persistence (local browser storage only)
 - Configurable color schemes
 
-This is a small pet-project and a _work in progress_.
-
-## Inspiration
-
-I wanted a pet project to play with React/Redux at home, my wife's getting into cocktails and noticed that there isn't really a decent tool out there for browsing cocktails - this application aims to fill that gap.
+This is a small pet-project and a _work in progress_. It is built entirely using React hooks.
 
 ## Credits
 
@@ -45,3 +41,4 @@ Take the labels "Help Wanted" or "Good first issue" as an open invitation to pic
 - We're not doing versioning yet so don't worry about bumping versions/changelogs.
 - We've got [Snapshot Testing](https://jestjs.io/docs/en/snapshot-testing) going on in this app, remember to update them if you change the views.
 - Don't check in `package-lock` unless `package.json` has changed.
+- This is a function-component-only project.
