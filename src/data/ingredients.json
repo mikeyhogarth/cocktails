@@ -23,6 +23,10 @@
     "abv": 40,
     "taste": null
   },
+  "Blue Curaçao": {
+    "abv": 40,
+    "taste": "sweet"
+  },
   "Cachaca": {
     "abv": 40,
     "taste": null

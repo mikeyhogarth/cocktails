@@ -1434,5 +1434,19 @@
     ],
     "garnish": null,
     "preparation": "Shake and pour over ice."
+  },
+  {
+    "iba": false,
+    "name": "Bluebird",
+    "colors": "#66B7EC",
+    "glass": "martini",
+    "category": "All Day Cocktail",
+    "ingredients": [
+      { "ingredient": "Gin", "unit": "cl", "amount": 4 },
+      { "ingredient": "Blue Curaçao", "unit": "cl", "amount": 3 },
+      { "ingredient": "Angostura bitters", "amount": "2 dashes" }
+    ],
+    "garnish": "Twist of lemon and a cherry",
+    "preparation": "Stir with crushed ice and strain. Alternatively you could use half Blue Curaçao and half Triple Sec."
   }
 ]
