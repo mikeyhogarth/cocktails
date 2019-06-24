@@ -704,7 +704,7 @@
   },
   {
     "iba": true,
-    "name": "Alexander",
+    "name": "Brandy Alexander",
     "colors": ["#B39684"],
     "glass": "martini",
     "ingredients": [
@@ -717,7 +717,7 @@
       },
       { "unit": "cl", "amount": 3, "ingredient": "Cream" }
     ],
-    "preparation": "Shake and strain into a chilled cocktail glass. Sprinkle with fresh ground nutmeg."
+    "preparation": "Shake and strain into a chilled cocktail glass. Sprinkle with fresh ground nutmeg. The IBA simply refers to this drink as an 'Alexander'"
   },
   {
     "iba": true,
