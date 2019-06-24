@@ -1,17 +1,7 @@
 import compact from "lodash/compact";
 import isArray from "lodash/isArray";
 import { buildFilter } from "../filterConfig";
-import {
-  nameIncludes,
-  isFavourite,
-  canInclude,
-  mustInclude,
-  mustNotInclude,
-  makeableFrom,
-  mustHaveTruthyProperty,
-  inGlass,
-  inCategory
-} from "./filterRules";
+import * as rules from "./filterRules";
 
 /**
  * Apply a single filter to a set of cocktails
@@ -20,32 +10,7 @@ import {
  */
 export function applyFilter(cocktails, filter) {
   return cocktails.filter(cocktail => {
-    const cocktailIngredients = compact(
-      cocktail.ingredients.map(i => i.ingredient)
-    );
-
-    switch (filter.rule) {
-      case "nameIncludes":
-        return nameIncludes(cocktail.name, filter.text);
-      case "mustNotInclude":
-        return mustNotInclude(filter.ingredients, cocktailIngredients);
-      case "makeableFrom":
-        return makeableFrom(filter.ingredients, cocktailIngredients);
-      case "canInclude":
-        return canInclude(filter.ingredients, cocktailIngredients);
-      case "mustInclude":
-        return mustInclude(filter.ingredients, cocktailIngredients);
-      case "inGlass":
-        return inGlass(filter.glasses, cocktail);
-      case "inCategory":
-        return inCategory(filter.categories, cocktail);
-      case "isFavourite":
-        return isFavourite(filter.favourites, cocktail);
-      case "mustHaveTruthyProperty":
-        return mustHaveTruthyProperty(cocktail, filter.property);
-      default:
-        return true;
-    }
+    return rules[filter.rule.toString()](cocktail, filter);
   });
 }
 
@@ -77,9 +42,7 @@ export function filtersFromUserOptions(state) {
   if (filterOptions.nameFilter) {
     filters.push({
       rule: "nameIncludes",
-      filterOptions: {
-        searchText: filterOptions.nameFilter
-      }
+      searchText: filterOptions.nameFilter
     });
   }
 
