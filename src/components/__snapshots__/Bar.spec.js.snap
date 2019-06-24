@@ -166,6 +166,20 @@ exports[`does not explode when rendered 1`] = `
         <span
           className="MuiChip-label"
         >
+          Blue Curaçao
+        </span>
+      </div>
+      <div
+        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
           Cachaca
         </span>
       </div>
@@ -1229,7 +1243,7 @@ exports[`does not explode when rendered 1`] = `
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
-                  20
+                  21
                 </td>
               </tr>
               <tr
