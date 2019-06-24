@@ -142,7 +142,7 @@ describe("filtersFromUserOptions", () => {
 
     const bar = ["gin", "vodka"];
 
-    expect(filtersFromUserOptions(filterOptions, bar)).toEqual([
+    expect(filtersFromUserOptions({ filterOptions, bar })).toEqual([
       { ingredients: ["whiskey"], rule: "mustInclude" },
       { ingredients: ["gin", "vodka"], rule: "makeableFrom" }
     ]);

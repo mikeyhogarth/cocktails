@@ -15,6 +15,17 @@
  * dialogComponent: (optional) Dialog associated with filter
  * buildFilter: Function for constructing a filter from user options
  *
+ * the `buildFilter` function of each filter config entry will be
+ * passed two arguments;
+ *
+ * - the user filter options
+ * - the rest of the state
+ *
+ * it should  return an object representing the filter rule to apply.
+ * At the very least this needs to specify a "rule" property - this
+ * will be used to determine which function to  call in `filterRules`
+ * in order to actually apply the filter.
+ *
  */
 import { keys, get } from "lodash";
 

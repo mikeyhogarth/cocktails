@@ -1,4 +1,4 @@
-import map from "lodash/map";
+import { map, compact } from "lodash";
 
 // Given a list of cocktails, this returns the counts of the ingredients
 // "appearances" in the list (e.g. Gin: 4, Brandy: 2...)
@@ -16,6 +16,10 @@ export function countIngredients(cocktails = []) {
   return map(counts, (count, name) => {
     return { count, name };
   }).sort((a, b) => (a.count < b.count ? 1 : -1));
+}
+
+export function getIngredientKeys(cocktail) {
+  return compact(cocktail.ingredients.map(i => i.ingredient));
 }
 
 // We store all ingredient quantities in cl. This function converts

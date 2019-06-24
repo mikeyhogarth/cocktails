@@ -11,7 +11,6 @@ import {
 // rather than accessing state directly?
 const allCocktailsSelector = state => state.db.cocktails;
 const barSelector = state => state.bar;
-const filterOptionsSelector = state => state.filterOptions;
 const favouritesSelector = state => state.favourites;
 
 const currentSlugFromUrlSelector = (_, props) =>
@@ -39,13 +38,7 @@ export const isFavouriteSelector = createSelector(
 
 // filtersSelector
 // Derives the currently applied filters
-const filtersSelector = createSelector(
-  filterOptionsSelector,
-  barSelector,
-  favouritesSelector,
-  (filterOptions, bar, favourites) =>
-    filtersFromUserOptions(filterOptions, bar, favourites)
-);
+const filtersSelector = state => filtersFromUserOptions(state);
 
 export const currentCocktailSelector = createSelector(
   allCocktailsSelector,
