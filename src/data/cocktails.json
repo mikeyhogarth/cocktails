@@ -503,9 +503,10 @@
         "ingredient": "Cherry liqueur",
         "label": "Maraschino"
       },
-      { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" }
+      { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
+      { "special": "(Optional) 1 shot crème de violette." }
     ],
-    "preparation": "Shake and strain into a chilled cocktail glass."
+    "preparation": "Shake and strain into a chilled cocktail glass. The IBA recipe omits the commonly included crème de violette which gives the drink a distinctive purple color."
   },
   {
     "iba": true,
@@ -875,7 +876,7 @@
   {
     "iba": true,
     "name": "Sidecar",
-    "colors": "#A87A2C",
+    "colors": "#C7A65F",
     "glass": "martini",
     "category": "All Day Cocktail",
     "ingredients": [
