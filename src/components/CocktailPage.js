@@ -1,7 +1,7 @@
 import React from "react";
 import useScrollTop from "../hooks/useScrollTop";
 import { connect } from "react-redux";
-import { Fade, Box, Grid, Divider } from "@material-ui/core";
+import { Fade, Box, Grid } from "@material-ui/core";
 import { currentCocktailSelector } from "../selectors";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
@@ -12,9 +12,6 @@ import CocktailVariantList from "./CocktailPage/CocktailVariantList";
 const fullHeight = "92vh";
 
 const styles = theme => ({
-  divider: {
-    margin: theme.spacing(3, 5)
-  },
   cocktailDetail: {
     overflow: "auto",
     [theme.breakpoints.up("sm")]: {
@@ -22,7 +19,7 @@ const styles = theme => ({
     }
   },
   cocktailDetailContent: {
-    padding: theme.spacing(3, 5)
+    padding: theme.spacing(2)
   },
   cocktailImage: {
     ...theme.mixins.toolbar,
@@ -59,7 +56,6 @@ const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
         <Grid className={classes.cocktailDetail} item md={6} xs={12}>
           <div className={classes.cocktailDetailContent}>
             <CocktailDetail cocktail={cocktail} />
-            <Divider className={classes.divider} />
             <CocktailVariantList cocktail={cocktail} />
           </div>
         </Grid>

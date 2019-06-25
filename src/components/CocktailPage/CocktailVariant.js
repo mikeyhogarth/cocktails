@@ -10,7 +10,13 @@ import { withStyles } from "@material-ui/core/styles";
 const styles = theme => ({
   listItem: {
     backgroundColor: theme.palette.background.paper
-  }
+  },
+  ingredients: {
+    display: "block",
+    fontStyle: "italic",
+    marginBottom: theme.spacing(1)
+  },
+  preparation: {}
 });
 
 const CocktailVariant = ({
@@ -21,7 +27,16 @@ const CocktailVariant = ({
     <ListItemAvatar>
       <Avatar alt="Remy Sharp" src={image} />
     </ListItemAvatar>
-    <ListItemText primary={name} secondary={ingredients.join(" - ")} />
+    <ListItemText
+      primary={name}
+      secondary={
+        <span>
+          <span className={classes.ingredients}>{ingredients.join(" - ")}</span>
+
+          <span className={classes.preparation}>{preparation}</span>
+        </span>
+      }
+    />
   </ListItem>
 );
 

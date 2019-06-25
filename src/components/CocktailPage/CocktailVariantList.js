@@ -3,7 +3,11 @@ import { Typography, List, Divider, Paper } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import CocktailVariant from "./CocktailVariant";
 
-const styles = theme => ({});
+const styles = theme => ({
+  divider: {
+    margin: theme.spacing(3, 0)
+  }
+});
 
 const CocktailVariantList = ({ cocktail, classes }) => {
   const { enrichment, enriched } = cocktail;
@@ -13,7 +17,9 @@ const CocktailVariantList = ({ cocktail, classes }) => {
 
   return (
     <>
-      <Typography variant="h4" gutterBottom>
+      <Divider className={classes.divider} />
+
+      <Typography variant="h5" gutterBottom>
         Variants
       </Typography>
 
