@@ -20,6 +20,8 @@ This is a small pet-project and a _work in progress_. It is built entirely using
 
 Cocktail list and ingredient data was originally seeded from https://github.com/teijo/iba-cocktails
 
+Enrichment and images provided by the amazing [CocktailDB](https://www.thecocktaildb.com/) 
+
 Application is hosted over at netlify - _awesome_ service: https://elated-shockley-96a155.netlify.com
 
 ## Tech stuff / Local Usage
