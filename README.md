@@ -16,7 +16,7 @@ This provides a user interface for browsing and filtering the [IBA cocktails lis
 - See measurements in either parts, ml, cl or oz
 - Pro-mode! Have measurements replaced with 'bartender lingo' such as 'Jigger' and 'Pony'
 
-This is a small pet-project and a _work in progress_. It is built entirely using React hooks.
+This is a small pet-project and a _work in progress_. It is built entirely using functional components and react hooks.
 
 ## Credits
 

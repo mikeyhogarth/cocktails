@@ -142,7 +142,7 @@ const CocktailItem = ({
       <Button
         className={classes.button}
         size="large"
-        color="primary"
+        color="secondary"
         onClick={() => {
           updateFavourites(removeOrAddItemFromArray(cocktail.slug, favourites));
         }}
@@ -156,7 +156,7 @@ const CocktailItem = ({
         to={`/cocktails/${cocktail.slug}`}
         className={classes.button}
         size="large"
-        color="primary"
+        color="secondary"
       >
         Learn More
       </Button>

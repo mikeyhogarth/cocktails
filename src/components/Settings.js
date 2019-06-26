@@ -20,12 +20,15 @@ import keys from "lodash/keys";
 
 const styles = theme => ({
   content: {
-    marginBottom: "1em",
-    padding: "1em 2em"
+    marginBottom: theme.spacing(1),
+    padding: theme.spacing(1, 2)
   },
   root: {
     ...theme.mixins.gutters,
     justifyContent: "center"
+  },
+  formLabel: {
+    marginTop: theme.spacing(2)
   }
 });
 
@@ -42,7 +45,9 @@ const Settings = ({
         Settings
       </Typography>
 
-      <FormLabel component="legend">Color</FormLabel>
+      <FormLabel className={classes.formLabel} component="legend">
+        Color
+      </FormLabel>
       <RadioGroup
         row
         aria-label="Color"
@@ -64,7 +69,9 @@ const Settings = ({
         })}
       </RadioGroup>
 
-      <FormLabel component="legend">Theme</FormLabel>
+      <FormLabel className={classes.formLabel} component="legend">
+        Theme
+      </FormLabel>
       <RadioGroup
         row
         aria-label="Theme"
@@ -86,7 +93,9 @@ const Settings = ({
         })}
       </RadioGroup>
 
-      <FormLabel component="legend">Units</FormLabel>
+      <FormLabel className={classes.formLabel} component="legend">
+        Units
+      </FormLabel>
       <RadioGroup
         row
         aria-label="Units"
@@ -108,8 +117,9 @@ const Settings = ({
         })}
       </RadioGroup>
 
-      <br />
-      <FormLabel component="legend">Pro-mode</FormLabel>
+      <FormLabel className={classes.formLabel} component="legend">
+        Pro-mode
+      </FormLabel>
       <FormControlLabel
         control={
           <Switch
@@ -123,7 +133,9 @@ const Settings = ({
         label={<Typography component="span">Use Bartender Lingo</Typography>}
       />
 
-      <FormLabel component="legend">Pride!</FormLabel>
+      <FormLabel className={classes.formLabel} component="legend">
+        Pride!
+      </FormLabel>
 
       <FormControlLabel
         control={

@@ -8,8 +8,7 @@ import BadMood from "@material-ui/icons/MoodBad";
 const styles = theme => {
   return {
     content: {
-      paddingTop: "1em",
-      paddingBottom: "1em"
+      padding: theme.spacing(1)
     },
     gridList: {
       justifyContent: "center"
