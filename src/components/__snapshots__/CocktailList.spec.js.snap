@@ -6,18 +6,11 @@ exports[`does not explode when rendered 1`] = `
     className="CocktailList-content-1"
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-      style={
-        Object {
-          "fontSize": "2em",
-          "padding": "1em",
-          "textAlign": "center",
-        }
-      }
+      className="MuiPaper-root MuiPaper-elevation1 CocktailList-noResults-3 MuiPaper-rounded"
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root"
+        className="MuiSvgIcon-root CocktailList-noResutlsIcon-4"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
