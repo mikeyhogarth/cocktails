@@ -13,6 +13,8 @@ This provides a user interface for browsing and filtering the [IBA cocktails lis
 - Integration with [TheCocktailDB](https://www.thecocktaildb.com/) for enrichment/cocktail images
 - Persistence (local browser storage only)
 - Configurable color schemes
+- See measurements in either parts, ml, cl or oz
+- Pro-mode! Have measurements replaced with 'bartender lingo' such as 'Jigger' and 'Pony'
 
 This is a small pet-project and a _work in progress_. It is built entirely using React hooks.
 
@@ -20,22 +22,24 @@ This is a small pet-project and a _work in progress_. It is built entirely using
 
 Cocktail list and ingredient data was originally seeded from https://github.com/teijo/iba-cocktails
 
-Enrichment and images provided by the amazing [CocktailDB](https://www.thecocktaildb.com/) 
+Enrichment and images provided by the amazing [CocktailDB](https://www.thecocktaildb.com/)
 
 Application is hosted over at netlify - _awesome_ service: https://elated-shockley-96a155.netlify.com
 
 ## Tech stuff / Local Usage
 
-You'll need `nodejs`/`npm` installed. Clone the repo, then;
+If you want to run this locally you'll need `nodejs`/`npm` installed. Clone the repo, then;
 
 ```
 npm install
 npm start
 ```
 
-All the data is in two JSON files, so there's no server or database to worry about.
+All the data is in two JSON files (see `src/data`), so there's no server or database to worry about.
 
 ## Contributing
+
+If you have a comment about one of the recipes / a data related issue, feel free to raise an issue and label it 'data'.
 
 Take the labels "Help Wanted" or "Good first issue" as an open invitation to pick tickets up if you want to, but if they don't have those labels then please get in touch to discuss any change before contributing.
 
