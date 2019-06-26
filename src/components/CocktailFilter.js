@@ -64,14 +64,13 @@ const CocktailFilter = ({
 }) => {
   const [anchorEl, setAnchorEl] = useState(null);
 
-  // TODO: Probably a nicer way of doing this / nicer place to store this
   const updateNameFilter = useMemo(
     () =>
       debounce(searchText => {
         updateFilter({
           nameFilter: searchText
         });
-      }, 400),
+      }, 100),
     [updateFilter]
   );
 
