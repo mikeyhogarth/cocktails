@@ -37,6 +37,7 @@ const FilterDialog = ({
   return (
     <Dialog
       open={!!editingFilter}
+      fullWidth={true}
       onClose={handleCloseDialog}
       aria-labelledby="simple-dialog-title"
     >
