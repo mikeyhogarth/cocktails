@@ -42,7 +42,7 @@ All the data is in two JSON files (see `src/data`), so there's no server or data
 
 ## Contributing
 
-If you have a comment about one of the recipes / a data related issue, feel free to raise an issue and label it 'data'.
+If you have a comment about one of the recipes / a data related issue, feel free to raise an issue and label it 'data'. It's just an unfortunate fact of life that cocktail recipes will vary and what some people think is good, others will not, but we're happy to correct blatant mistakes.
 
 Take the labels "Help Wanted" or "Good first issue" as an open invitation to pick tickets up if you want to, but if they don't have those labels then please get in touch to discuss any change before contributing.
 
