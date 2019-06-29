@@ -60,17 +60,6 @@ Array [
               Lemon twist
             </span>
           </div>
-          <div
-            className="MuiChip-root Definition-chip-143 MuiChip-colorSecondary"
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-          >
-            <span
-              className="MuiChip-label"
-            >
-              Vegan
-            </span>
-          </div>
         </div>
         <div
           className="MuiPaper-root MuiPaper-elevation1 CocktailPage-cocktailDetailPaper-111 MuiPaper-rounded"
