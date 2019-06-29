@@ -1,6 +1,4 @@
-import uniq from "lodash/uniq";
-import remove from "lodash/remove";
-
+// if arg 1 contains all items in arg 2, return true.
 export function arrayContainsArray(superset, subset) {
   return subset.every(function(value) {
     return superset.indexOf(value) >= 0;
@@ -10,9 +8,8 @@ export function arrayContainsArray(superset, subset) {
 // if item is in array, removes it. Otherwise adds it.
 export function removeOrAddItemFromArray(item, array) {
   if (array.includes(item)) {
-    remove(array, i => i === item);
-    return [...array];
+    return array.filter(i => i !== item);
   } else {
-    return uniq([...array, item]);
+    return [...new Set([...array, item])];
   }
 }
