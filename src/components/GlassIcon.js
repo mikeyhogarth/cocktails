@@ -1,6 +1,17 @@
 import React from "react";
 import SvgIcon from "@material-ui/core/SvgIcon";
 import { ReactComponent as Martini } from "../images/glasses/Martini.svg";
+
+// Glass SVGs
+// Note that currently not all of these are completed, these are just placeholders
+// for if someone at some point makes some real SVGs. Note that there are
+// a few constraints on the SVG format for material UI's SVG icon;
+//
+// https://material-ui.com/style/icons/#svg-icons
+//
+// * SVG elements should be scaled for a 24x24px viewport.
+// * The first child should be a 'path' element.
+//
 import { ReactComponent as OldFashioned } from "../images/glasses/OldFashioned.svg";
 import { ReactComponent as Collins } from "../images/glasses/Collins.svg";
 import { ReactComponent as Highball } from "../images/glasses/Highball.svg";
