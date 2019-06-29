@@ -45,10 +45,6 @@ exports[`does not explode when rendered 1`] = `
               <path
                 d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
               />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
             </svg>
           </div>
           <input
@@ -1061,7 +1057,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root MakeableCocktails-title-261 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root MakeableCocktails-title-262 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Makeable Cocktails
           </h3>
@@ -1071,7 +1067,7 @@ exports[`does not explode when rendered 1`] = `
             These are the cocktails you can make...
           </p>
           <ul
-            className="MuiList-root MakeableCocktails-list-262 MuiList-padding"
+            className="MuiList-root MakeableCocktails-list-263 MuiList-padding"
           />
         </div>
       </div>
@@ -1080,7 +1076,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root CocktailGauge-title-267 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root CocktailGauge-title-268 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Cocktail Gauge
           </h3>
@@ -1090,7 +1086,7 @@ exports[`does not explode when rendered 1`] = `
             How many cocktails can you make with what's in your bar?
           </p>
           <svg
-            className="CircularProgressbar CocktailGauge-progressBar-268"
+            className="CircularProgressbar CocktailGauge-progressBar-269"
             data-test-id="CircularProgressbar"
             viewBox="0 0 100 100"
           >
@@ -1150,7 +1146,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root PopularIngredients-title-269 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root PopularIngredients-title-270 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Popular Ingredients
           </h3>
@@ -1192,7 +1188,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1205,6 +1201,7 @@ exports[`does not explode when rendered 1`] = `
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
+                      onDragLeave={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1229,10 +1226,6 @@ exports[`does not explode when rendered 1`] = `
                         >
                           <path
                             d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
                           />
                         </svg>
                       </span>
@@ -1251,7 +1244,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1264,6 +1257,7 @@ exports[`does not explode when rendered 1`] = `
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
+                      onDragLeave={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1288,10 +1282,6 @@ exports[`does not explode when rendered 1`] = `
                         >
                           <path
                             d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
                           />
                         </svg>
                       </span>
@@ -1310,7 +1300,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1323,6 +1313,7 @@ exports[`does not explode when rendered 1`] = `
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
+                      onDragLeave={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1347,10 +1338,6 @@ exports[`does not explode when rendered 1`] = `
                         >
                           <path
                             d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
                           />
                         </svg>
                       </span>
@@ -1369,7 +1356,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1382,6 +1369,7 @@ exports[`does not explode when rendered 1`] = `
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
+                      onDragLeave={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1406,10 +1394,6 @@ exports[`does not explode when rendered 1`] = `
                         >
                           <path
                             d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
                           />
                         </svg>
                       </span>
@@ -1428,7 +1412,7 @@ exports[`does not explode when rendered 1`] = `
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-270 MuiTableCell-body"
+                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
                   scope="row"
                 >
                   <div>
@@ -1441,6 +1425,7 @@ exports[`does not explode when rendered 1`] = `
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}
+                      onDragLeave={[Function]}
                       onFocus={[Function]}
                       onKeyDown={[Function]}
                       onKeyUp={[Function]}
@@ -1465,10 +1450,6 @@ exports[`does not explode when rendered 1`] = `
                         >
                           <path
                             d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
                           />
                         </svg>
                       </span>
