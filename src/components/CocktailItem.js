@@ -13,7 +13,7 @@ import {
   Typography,
   Avatar
 } from "@material-ui/core";
-import CocktailIcon from "@material-ui/icons/LocalBar";
+import GlassIcon from "./GlassIcon";
 import UnFavouriteIcon from "@material-ui/icons/Favorite";
 import FavouriteIcon from "@material-ui/icons/FavoriteBorder";
 import VeganIcon from "@material-ui/icons/FilterVintage";
@@ -89,7 +89,7 @@ const CocktailItem = ({
             aria-label="Recipe"
             className={classes.avatar}
           >
-            <CocktailIcon />
+            <GlassIcon glass={cocktail.glass} />
           </Avatar>
         }
         subheader={
@@ -117,7 +117,7 @@ const CocktailItem = ({
 
         {cocktail.glass && (
           <Typography component="p" color="textSecondary">
-            <CocktailIcon fontSize="inherit" />
+            <GlassIcon glass={cocktail.glass} fontSize="inherit" />
             &nbsp;
             {cocktail.glass}
           </Typography>
@@ -130,11 +130,12 @@ const CocktailItem = ({
           </Typography>
         )}
 
-        <Typography component="p" color="textSecondary">
-          <VeganIcon fontSize="inherit" />
-          &nbsp;
-          {cocktail.vegan ? "Vegan" : "Non-vegan"}
-        </Typography>
+        {!cocktail.vegan && (
+          <Typography component="p" color="textSecondary">
+            <VeganIcon fontSize="inherit" />
+            &nbsp; Non-vegan
+          </Typography>
+        )}
       </CardContent>
     </CardActionArea>
 

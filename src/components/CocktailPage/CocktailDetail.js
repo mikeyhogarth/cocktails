@@ -48,7 +48,8 @@ const CocktailPage = ({ cocktail, classes }) => {
         <Definition title="Category" description={category} />
         <Definition title="Glass" description={glass} />
         <Definition title="Garnish" description={garnish} />
-        <Definition title="Vegan" description={vegan ? "Vegan" : "Non-vegan"} />
+        {!vegan && <Definition title="Vegan" description={"Non-vegan"} />}
+
         {enriched && enrichment.ibaCategory && (
           <Definition
             title="IBA Category"

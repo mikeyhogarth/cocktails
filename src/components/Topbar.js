@@ -1,6 +1,6 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
-import CocktailIcon from "@material-ui/icons/LocalBar";
+import GlassIcon from "./GlassIcon";
 import DrinkIcon from "@material-ui/icons/LocalDrink";
 import SearchIcon from "@material-ui/icons/Search";
 import SettingsIcon from "@material-ui/icons/Settings";
@@ -64,7 +64,7 @@ const Topbar = ({ pride, classes }) => {
             to="/cocktails"
             color="inherit"
           >
-            <CocktailIcon />
+            <GlassIcon type="martini" />
             <Typography className={classes.mainTitle} component="h1">
               <Hidden xsDown>Cocktail Browser</Hidden>
             </Typography>
