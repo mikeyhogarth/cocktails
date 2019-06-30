@@ -63,19 +63,18 @@ function finishEnrichCocktail(cocktailName, enrichment) {
 }
 
 export function enrichCocktail(cocktail) {
-  return (dispatch, getState) => {
+  return async dispatch => {
     // don't re-enrich: this action only does something if a
     // cocktail has not already been enriched.
     const { enriched, enriching, enrichmentFailed } = cocktail;
     if (enriching || enriched || enrichmentFailed) return;
 
     dispatch(startEnrichCocktail(cocktail.name));
-    fetchCocktailEnrichment(cocktail)
-      .then(enrichment => {
-        dispatch(finishEnrichCocktail(cocktail.name, enrichment));
-      })
-      .catch(err => {
-        dispatch(failEnrichCocktail(cocktail.name, err));
-      });
+    try {
+      const enrichment = await fetchCocktailEnrichment(cocktail);
+      dispatch(finishEnrichCocktail(cocktail.name, enrichment));
+    } catch (err) {
+      dispatch(failEnrichCocktail(cocktail.name, err.message));
+    }
   };
 }

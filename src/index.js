@@ -5,11 +5,14 @@ import { loadDatabase } from "./utilities/db.utils";
 import { Provider } from "react-redux";
 import store from "./store";
 
-loadDatabase(store).then(() => {
+async function start() {
+  await loadDatabase(store);
   ReactDOM.render(
     <Provider store={store}>
       <App />
     </Provider>,
     document.getElementById("root")
   );
-});
+}
+
+start();

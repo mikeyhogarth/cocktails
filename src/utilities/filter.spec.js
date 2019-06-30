@@ -77,7 +77,7 @@ describe("canInclude rule", () => {
     expect(results.length).toEqual(3);
     expect(results[0]).toHaveProperty("name", "Long Island Iced Tea");
     expect(results[1]).toHaveProperty("name", "Cuba Libre");
-    expect(results[2]).toHaveProperty("name", "B52");
+    expect(results[2]).toHaveProperty("name", "B-52");
   });
 });
 
