@@ -1,5 +1,7 @@
 import cocktails from "../data/cocktails.json";
 import ingredients from "../data/ingredients.json";
+import glasses from "../data/glasses.json";
+
 import { isArray } from "lodash";
 
 export function fetchCocktails() {
@@ -27,4 +29,8 @@ export function fetchCocktails() {
 
 export function fetchIngredients() {
   return Promise.resolve(ingredients);
+}
+
+export function fetchGlasses() {
+  return Promise.resolve(glasses);
 }

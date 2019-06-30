@@ -1,0 +1,13 @@
+{
+  "martini": { "name": "Martini" },
+  "old-fashioned": { "name": "Old Fashioned" },
+  "collins": { "name": "Collins" },
+  "highball": { "name": "Highball" },
+  "champagne-flute": { "name": "Champagne Flute" },
+  "margarita": { "name": "Margarita" },
+  "champagne-tulip": { "name": "Champagne Tulip" },
+  "hurricane": { "name": "Hurricane" },
+  "shot": { "name": "Shot" },
+  "hot-drink": { "name": "Hot-drink Mug" },
+  "white-wine": { "name": "White Wine" }
+}

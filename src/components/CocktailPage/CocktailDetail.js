@@ -1,8 +1,10 @@
 import React from "react";
 import { Typography, Paper } from "@material-ui/core";
+import { allGlassesSelector } from "../../selectors";
 import IngredientDetail from "../IngredientDetail";
 import Definition from "./Definition";
 import { withStyles } from "@material-ui/core/styles";
+import { connect } from "react-redux";
 
 const styles = theme => ({
   definitions: {
@@ -25,7 +27,7 @@ const styles = theme => ({
   }
 });
 
-const CocktailPage = ({ cocktail, classes }) => {
+const CocktailPage = ({ cocktail, allGlasses, classes }) => {
   const {
     name,
     ingredients,
@@ -46,7 +48,10 @@ const CocktailPage = ({ cocktail, classes }) => {
 
       <div className={classes.definitions}>
         <Definition title="Category" description={category} />
-        <Definition title="Glass" description={glass} />
+        <Definition
+          title="Glass"
+          description={allGlasses[glass.toString()].name}
+        />
         <Definition title="Garnish" description={garnish} />
         {!vegan && <Definition title="Vegan" description={"Non-vegan"} />}
 
@@ -76,4 +81,8 @@ const CocktailPage = ({ cocktail, classes }) => {
   );
 };
 
-export default withStyles(styles)(CocktailPage);
+const mapStateToProps = state => ({
+  allGlasses: allGlassesSelector(state)
+});
+
+export default connect(mapStateToProps)(withStyles(styles)(CocktailPage));

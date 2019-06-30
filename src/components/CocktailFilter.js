@@ -16,7 +16,6 @@ import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { updateFilter, setEditingFilter } from "../actions";
-import { allGlassesSelector, allCategoriesSelector } from "../selectors";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import SearchIcon from "@material-ui/icons/Search";
 import { filteredCocktailsSelector } from "../selectors";
@@ -151,9 +150,7 @@ const CocktailFilter = ({
 
 const mapStateToProps = state => ({
   filterOptions: state.filterOptions,
-  filteredCocktails: filteredCocktailsSelector(state),
-  allGlasses: allGlassesSelector(state),
-  allCategories: allCategoriesSelector(state)
+  filteredCocktails: filteredCocktailsSelector(state)
 });
 
 const mapDispatchToProps = dispatch => ({
