@@ -601,6 +601,7 @@
   {
     "iba": true,
     "name": "B52",
+    "searchTerm": "B-52",
     "colors": ["#F39F00", "#E7D3B3", "#401110"],
     "glass": "shot",
     "category": "After Dinner Cocktail",
@@ -721,7 +722,7 @@
   },
   {
     "iba": true,
-    "name": "Lemon Drop Martini",
+    "name": "Lemon Drop",
     "colors": "#C4B686",
     "glass": "martini",
     "category": "All Day Cocktail",
@@ -1163,6 +1164,7 @@
   {
     "iba": true,
     "name": "Dark 'n' Stormy",
+    "searchTerm": "Dark and Stormy",
     "colors": ["#CF612A", "#860F00", "#D1C112"],
     "glass": "highball",
     "category": "Longdrink",
@@ -1176,6 +1178,7 @@
   {
     "iba": true,
     "name": "Ramos Fizz",
+    "searchTerm": "Royal Gin Fizz",
     "colors": "#D9CAA6",
     "glass": "highball",
     "category": "Longdrink",
