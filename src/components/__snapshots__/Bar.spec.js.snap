@@ -2,10 +2,10 @@
 
 exports[`does not explode when rendered 1`] = `
 <div
-  className="EditBar-root-2"
+  className="Bar-root-2"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 EditBar-explanation-1 MuiPaper-rounded"
+    className="MuiPaper-root MuiPaper-elevation1 Bar-explanation-1 MuiPaper-rounded"
   >
     <h2
       className="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
@@ -1050,7 +1050,7 @@ exports[`does not explode when rendered 1`] = `
     </div>
     <br />
     <div
-      className="MuiGrid-root EditBar-root-2 MuiGrid-container"
+      className="MuiGrid-root Bar-root-2 MuiGrid-container"
     >
       <div
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3"

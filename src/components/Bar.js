@@ -19,7 +19,7 @@ const styles = theme => ({
   }
 });
 
-const EditBar = ({ classes, bar, makeableCocktails, setBar }) => {
+const Bar = ({ classes, bar, setBar }) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
@@ -67,4 +67,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withStyles(styles)(EditBar));
+)(withStyles(styles)(Bar));

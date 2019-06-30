@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { MemoryRouter } from "react-router";
 import { noop } from "lodash";
 import cocktails from "../data/cocktails.json";
+import { loadDatabase } from "../utilities/db.utils";
 
 beforeAll(() => {
   // jsdom does not implement scrollTo so we need to mock it.
@@ -18,7 +19,9 @@ afterAll(() => {
   delete window.scrollToMemo;
 });
 
-it("does not explode when rendered", () => {
+it("does not explode when rendered", async () => {
+  await loadDatabase(store);
+
   const tree = renderer.create(
     <Provider store={store}>
       <MemoryRouter>
