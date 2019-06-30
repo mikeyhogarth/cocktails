@@ -38,7 +38,7 @@ npm install
 npm start
 ```
 
-All the data is in two JSON files (see `src/data`), so there's no server or database to worry about.
+All the data is in JSON files (see `src/data`), so there's no server or database to worry about.
 
 ## Contributing
 
