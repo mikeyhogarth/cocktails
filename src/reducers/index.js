@@ -1,16 +1,6 @@
 import produce from "immer";
 import { loadPersistedState } from "../utilities/persistence";
 import { hasDialog } from "../filterConfig";
-// return a new cocktailDB with the named cocktail updated. This is a
-// convinience method for several of the reducer functions below.
-function updateCocktailInDB(cocktailDb, cocktailName, newAttributes) {
-  return cocktailDb.map(cocktail => {
-    if (cocktail.name === cocktailName) {
-      return { ...cocktail, ...newAttributes };
-    }
-    return cocktail;
-  });
-}
 
 const defaultState = {
   db: {
@@ -94,18 +84,13 @@ export default (state = initialState, action) =>
         draft.bar = new Set([...draft.bar, action.payload]);
         break;
       case "START_ENRICH_COCKTAIL":
-        draft.db.cocktails = updateCocktailInDB(
-          draft.db.cocktails,
-          action.payload,
-          {
-            enriching: true
-          }
-        );
+        draft.db.cocktails.find(
+          c => c.name === action.payload
+        ).enriching = true;
         break;
       case "FAIL_ENRICH_COCKTAIL":
-        draft.db.cocktails = updateCocktailInDB(
-          draft.db.cocktails,
-          action.payload.cocktailName,
+        Object.assign(
+          draft.db.cocktails.find(c => c.name === action.payload.cocktailName),
           {
             enriching: false,
             enrichmentFailed: true,
@@ -113,11 +98,9 @@ export default (state = initialState, action) =>
           }
         );
         break;
-
       case "FINISH_ENRICH_COCKTAIL":
-        draft.db.cocktails = updateCocktailInDB(
-          draft.db.cocktails,
-          action.payload.cocktailName,
+        Object.assign(
+          draft.db.cocktails.find(c => c.name === action.payload.cocktailName),
           {
             enriching: false,
             enriched: true,
