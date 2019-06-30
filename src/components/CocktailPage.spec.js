@@ -7,13 +7,13 @@ import { MemoryRouter } from "react-router";
 import { noop } from "lodash";
 import cocktails from "../data/cocktails.json";
 
-beforeEach(() => {
+beforeAll(() => {
   // jsdom does not implement scrollTo so we need to mock it.
   window.scrollToMemo = window.scrollTo;
   window.scrollTo = noop;
 });
 
-afterEach(() => {
+afterAll(() => {
   window.scrollTo = window.scrollToMemo;
   delete window.scrollToMemo;
 });
