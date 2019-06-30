@@ -600,8 +600,7 @@
   },
   {
     "iba": true,
-    "name": "B52",
-    "searchTerm": "B-52",
+    "name": "B-52",
     "colors": ["#F39F00", "#E7D3B3", "#401110"],
     "glass": "shot",
     "category": "After Dinner Cocktail",
