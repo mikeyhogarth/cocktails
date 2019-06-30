@@ -5,9 +5,11 @@ import store from "../store";
 import { Provider } from "react-redux";
 import { loadDatabase } from "../utilities/db.utils";
 
-it("does not explode when rendered", async () => {
+beforeAll(async () => {
   await loadDatabase(store);
+});
 
+it("does not explode when rendered", async () => {
   const tree = renderer.create(
     <Provider store={store}>
       <Bar />

@@ -8,6 +8,10 @@ import { noop } from "lodash";
 import cocktails from "../data/cocktails.json";
 import { loadDatabase } from "../utilities/db.utils";
 
+beforeAll(async () => {
+  await loadDatabase(store);
+});
+
 beforeAll(() => {
   // jsdom does not implement scrollTo so we need to mock it.
   window.scrollToMemo = window.scrollTo;
