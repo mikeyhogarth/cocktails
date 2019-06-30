@@ -45,9 +45,12 @@ const persistedState = loadPersistedState();
 const initialState = produce({ ...defaultState, ...persistedState }, draft => {
   draft.filterOptions = {
     ...draft.filterOptions,
-    ...persistedState.filterOptions
+    ...(persistedState ? persistedState.filterOptions : null)
   };
-  draft.settings = { ...draft.settings, ...persistedState.settings };
+  draft.settings = {
+    ...draft.settings,
+    ...(persistedState ? persistedState.settings : null)
+  };
 });
 
 /**
