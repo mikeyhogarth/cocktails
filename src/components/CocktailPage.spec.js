@@ -7,11 +7,18 @@ import { MemoryRouter } from "react-router";
 import { noop } from "lodash";
 import cocktails from "../data/cocktails.json";
 
-it("does not explode when rendered", () => {
+beforeEach(() => {
   // jsdom does not implement scrollTo so we need to mock it.
-  const jsdomAlert = window.scrollTo;
+  window.scrollToMemo = window.scrollTo;
   window.scrollTo = noop;
+});
 
+afterEach(() => {
+  window.scrollTo = window.scrollToMemo;
+  delete window.scrollToMemo;
+});
+
+it("does not explode when rendered", () => {
   const tree = renderer.create(
     <Provider store={store}>
       <MemoryRouter>
@@ -20,6 +27,5 @@ it("does not explode when rendered", () => {
     </Provider>
   );
 
-  window.scrollTo = jsdomAlert;
   expect(tree).toMatchSnapshot();
 });
