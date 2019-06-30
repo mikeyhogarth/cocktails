@@ -8,6 +8,10 @@ export function loadIngredients(payload) {
   return { type: "LOAD_INGREDIENTS", payload };
 }
 
+export function loadGlasses(payload) {
+  return { type: "LOAD_GLASSES", payload };
+}
+
 export function updateFilter(payload) {
   return { type: "UPDATE_FILTER", payload };
 }

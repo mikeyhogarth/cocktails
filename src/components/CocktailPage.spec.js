@@ -6,11 +6,25 @@ import { Provider } from "react-redux";
 import { MemoryRouter } from "react-router";
 import { noop } from "lodash";
 import cocktails from "../data/cocktails.json";
+import { loadDatabase } from "../utilities/db.utils";
 
-it("does not explode when rendered", () => {
+beforeAll(async () => {
+  await loadDatabase(store);
+});
+
+beforeAll(() => {
   // jsdom does not implement scrollTo so we need to mock it.
-  const jsdomAlert = window.scrollTo;
+  window.scrollToMemo = window.scrollTo;
   window.scrollTo = noop;
+});
+
+afterAll(() => {
+  window.scrollTo = window.scrollToMemo;
+  delete window.scrollToMemo;
+});
+
+it("does not explode when rendered", async () => {
+  await loadDatabase(store);
 
   const tree = renderer.create(
     <Provider store={store}>
@@ -20,6 +34,5 @@ it("does not explode when rendered", () => {
     </Provider>
   );
 
-  window.scrollTo = jsdomAlert;
   expect(tree).toMatchSnapshot();
 });

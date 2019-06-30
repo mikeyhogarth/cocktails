@@ -2,7 +2,7 @@ import React from "react";
 import { removeOrAddItemFromArray } from "../utilities/util";
 import { updateFavourites } from "../actions";
 import { connect } from "react-redux";
-import { isFavouriteSelector } from "../selectors";
+import { isFavouriteSelector, allGlassesSelector } from "../selectors";
 import {
   Card,
   CardHeader,
@@ -68,106 +68,114 @@ const styles = theme => ({
 const CocktailItem = ({
   cocktail,
   classes,
+  allGlasses,
   favourite,
   favourites,
   updateFavourites
-}) => (
-  <Card className={classes.card}>
-    <CardActionArea
-      className={classes.cardMain}
-      component={Link}
-      to={`/cocktails/${cocktail.slug}`}
-    >
-      <CardHeader
-        title={<h1 className={classes.title}>{cocktail.name}</h1>}
-        avatar={
-          <Avatar
-            style={{
-              backgroundColor: cocktail.colors[0],
-              background: `linear-gradient(${cocktail.colors.join(",")})`
-            }}
-            aria-label="Recipe"
-            className={classes.avatar}
-          >
-            <GlassIcon glass={cocktail.glass} />
-          </Avatar>
-        }
-        subheader={
-          <span className={classes.subHeader}>{cocktail.category}</span>
-        }
-      />
-      <CardContent className={classes.cardContent}>
-        <ul className={classes.ingredientList}>
-          {cocktail.ingredients.map((item, idx) => (
-            <li key={idx}>
-              <Typography>
-                <Ingredient item={item} />
-              </Typography>
-            </li>
-          ))}
-        </ul>
+}) => {
+  if (!cocktail) return null;
 
-        <br />
-
-        {!cocktail.iba && (
-          <Typography component="p" color="textSecondary">
-            Non-IBA
-          </Typography>
-        )}
-
-        {cocktail.glass && (
-          <Typography component="p" color="textSecondary">
-            <GlassIcon glass={cocktail.glass} fontSize="inherit" />
-            &nbsp;
-            {cocktail.glass}
-          </Typography>
-        )}
-        {cocktail.garnish && (
-          <Typography component="p" color="textSecondary">
-            <Redo fontSize="inherit" />
-            &nbsp;
-            {cocktail.garnish}
-          </Typography>
-        )}
-
-        {!cocktail.vegan && (
-          <Typography component="p" color="textSecondary">
-            <VeganIcon fontSize="inherit" />
-            &nbsp; Non-vegan
-          </Typography>
-        )}
-      </CardContent>
-    </CardActionArea>
-
-    <CardActions className={classes.actions}>
-      <Button
-        className={classes.button}
-        size="large"
-        color="secondary"
-        onClick={() => {
-          updateFavourites(removeOrAddItemFromArray(cocktail.slug, favourites));
-        }}
-      >
-        {favourite ? <UnFavouriteIcon /> : <FavouriteIcon />}
-        Favourite
-      </Button>
-
-      <Button
+  return (
+    <Card className={classes.card}>
+      <CardActionArea
+        className={classes.cardMain}
         component={Link}
         to={`/cocktails/${cocktail.slug}`}
-        className={classes.button}
-        size="large"
-        color="secondary"
       >
-        Learn More
-      </Button>
-    </CardActions>
-  </Card>
-);
+        <CardHeader
+          title={<h1 className={classes.title}>{cocktail.name}</h1>}
+          avatar={
+            <Avatar
+              style={{
+                backgroundColor: cocktail.colors[0],
+                background: `linear-gradient(${cocktail.colors.join(",")})`
+              }}
+              aria-label="Recipe"
+              className={classes.avatar}
+            >
+              <GlassIcon glass={cocktail.glass} />
+            </Avatar>
+          }
+          subheader={
+            <span className={classes.subHeader}>{cocktail.category}</span>
+          }
+        />
+        <CardContent className={classes.cardContent}>
+          <ul className={classes.ingredientList}>
+            {cocktail.ingredients.map((item, idx) => (
+              <li key={idx}>
+                <Typography>
+                  <Ingredient item={item} />
+                </Typography>
+              </li>
+            ))}
+          </ul>
+
+          <br />
+
+          {!cocktail.iba && (
+            <Typography component="p" color="textSecondary">
+              Non-IBA
+            </Typography>
+          )}
+
+          {cocktail.glass && (
+            <Typography component="p" color="textSecondary">
+              <GlassIcon glass={cocktail.glass} fontSize="inherit" />
+              &nbsp;
+              {allGlasses[cocktail.glass.toString()].name}
+            </Typography>
+          )}
+          {cocktail.garnish && (
+            <Typography component="p" color="textSecondary">
+              <Redo fontSize="inherit" />
+              &nbsp;
+              {cocktail.garnish}
+            </Typography>
+          )}
+
+          {!cocktail.vegan && (
+            <Typography component="p" color="textSecondary">
+              <VeganIcon fontSize="inherit" />
+              &nbsp; Non-vegan
+            </Typography>
+          )}
+        </CardContent>
+      </CardActionArea>
+
+      <CardActions className={classes.actions}>
+        <Button
+          className={classes.button}
+          size="large"
+          color="secondary"
+          onClick={() => {
+            updateFavourites(
+              removeOrAddItemFromArray(cocktail.slug, favourites)
+            );
+          }}
+        >
+          {favourite ? <UnFavouriteIcon /> : <FavouriteIcon />}
+          Favourite
+        </Button>
+
+        <Button
+          component={Link}
+          to={`/cocktails/${cocktail.slug}`}
+          className={classes.button}
+          size="large"
+          color="secondary"
+        >
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+  );
+};
 
 const mapStateToProps = (state, ownProps) => ({
   favourite: isFavouriteSelector(state, ownProps),
-  favourites: state.favourites
+  favourites: state.favourites,
+  allGlasses: allGlassesSelector(state)
 });
 
 const mapDispatchToProps = dispatch => ({

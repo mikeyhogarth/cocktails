@@ -1,7 +1,6 @@
 import appReducer from "./reducers";
 import { createStore, applyMiddleware, compose } from "redux";
-import { fetchCocktails, fetchIngredients } from "./services/cocktail.service";
-import { loadCocktails, loadIngredients } from "./actions";
+
 import {
   persistCurrentState,
   supportsPersistence
@@ -28,13 +27,5 @@ if (supportsPersistence()) {
     })
   );
 }
-
-fetchCocktails().then(function(response) {
-  store.dispatch(loadCocktails(response));
-});
-
-fetchIngredients().then(function(response) {
-  store.dispatch(loadIngredients(response));
-});
 
 export default store;

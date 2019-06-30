@@ -16,7 +16,8 @@ function updateCocktailInDB(cocktailDb, cocktailName, newAttributes) {
 const defaultState = {
   db: {
     cocktails: [],
-    ingredients: []
+    ingredients: [],
+    glasses: []
   },
   filterOptions: {
     activeFilters: [],
@@ -64,6 +65,9 @@ export default function(state = initialState, action) {
 
     case "LOAD_INGREDIENTS":
       return { ...state, db: { ...state.db, ingredients: action.payload } };
+
+    case "LOAD_GLASSES":
+      return { ...state, db: { ...state.db, glasses: action.payload } };
 
     case "UPDATE_FAVOURITES":
       return {

@@ -10,6 +10,7 @@ import {
 // TODO: Use these in the `mapStateToProps` functions accross application
 // rather than accessing state directly?
 const allCocktailsSelector = state => state.db.cocktails;
+export const allGlassesSelector = state => state.db.glasses;
 const barSelector = state => state.bar;
 const favouritesSelector = state => state.favourites;
 
@@ -65,13 +66,6 @@ export const makeableCocktailsSelector = createSelector(
       rule: "makeableFrom",
       ingredients: bar
     })
-);
-
-// allGlassesSelector
-// Derives an array of all the glass types
-export const allGlassesSelector = createSelector(
-  allCocktailsSelector,
-  cocktails => compact(uniq(cocktails.map(c => c.glass)))
 );
 
 // allCategoriesSelector
