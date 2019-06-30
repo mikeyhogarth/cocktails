@@ -10,7 +10,7 @@ const defaultState = {
   },
   filterOptions: {
     activeFilters: [],
-    editingFilter: null,
+    activeDialog: null,
     ingredients: [],
     ingredientsRule: "mustInclude",
     barOnly: false,
@@ -64,9 +64,12 @@ export default (state = initialState, action) =>
       case "UPDATE_FILTER":
         draft.filterOptions = { ...draft.filterOptions, ...action.payload };
         break;
-      case "SET_EDITING_FILTER":
-        draft.filterOptions.editingFilter =
+      case "ACTIVATE_FILTER_DIALOG":
+        draft.filterOptions.activeDialog =
           action.payload && hasDialog(action.payload) ? action.payload : null;
+        break;
+      case "CLOSE_FILTER_DIALOG":
+        draft.filterOptions.activeDialog = null;
         break;
       case "SET_BAR":
         draft.bar = action.payload;

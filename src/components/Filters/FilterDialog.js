@@ -11,7 +11,7 @@ import {
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { updateFilter, setEditingFilter } from "../../actions";
+import { updateFilter, closeFilterDialog } from "../../actions";
 import CloseIcon from "@material-ui/icons/Close";
 import { dialogFor, labelFor } from "../../filterConfig";
 
@@ -26,17 +26,17 @@ const styles = theme => ({
 
 const FilterDialog = ({
   classes,
-  setEditingFilter,
-  filterOptions: { editingFilter }
+  closeFilterDialog,
+  filterOptions: { activeDialog }
 }) => {
   function handleCloseDialog() {
-    setEditingFilter(null);
+    closeFilterDialog();
   }
-  const DialogContentComponent = dialogFor(editingFilter);
+  const DialogContentComponent = dialogFor(activeDialog);
 
   return (
     <Dialog
-      open={!!editingFilter}
+      open={!!activeDialog}
       fullWidth={true}
       onClose={handleCloseDialog}
       aria-labelledby="simple-dialog-title"
@@ -50,7 +50,7 @@ const FilterDialog = ({
           >
             <CloseIcon />
           </IconButton>
-          {labelFor(editingFilter)}
+          {labelFor(activeDialog)}
         </DialogTitle>
         {DialogContentComponent && <DialogContentComponent />}
         <DialogActions>
@@ -69,7 +69,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   updateFilter: bindActionCreators(updateFilter, dispatch),
-  setEditingFilter: bindActionCreators(setEditingFilter, dispatch)
+  closeFilterDialog: bindActionCreators(closeFilterDialog, dispatch)
 });
 
 export default connect(

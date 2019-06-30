@@ -15,7 +15,7 @@ import { FilterChips, FilterDialog } from "./Filters";
 import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { updateFilter, setEditingFilter } from "../actions";
+import { updateFilter, activateFilterDialog } from "../actions";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import SearchIcon from "@material-ui/icons/Search";
 import { filteredCocktailsSelector } from "../selectors";
@@ -58,7 +58,7 @@ const CocktailFilter = ({
   filteredCocktails,
   filterOptions: { activeFilters, nameFilter },
   updateFilter,
-  setEditingFilter,
+  activateFilterDialog,
   classes
 }) => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -85,7 +85,7 @@ const CocktailFilter = ({
     updateFilter({
       activeFilters: removeOrAddItemFromArray(filter, activeFilters)
     });
-    setEditingFilter(filter);
+    activateFilterDialog(filter);
     closeFilterMenu();
   }
 
@@ -155,7 +155,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   updateFilter: bindActionCreators(updateFilter, dispatch),
-  setEditingFilter: bindActionCreators(setEditingFilter, dispatch)
+  activateFilterDialog: bindActionCreators(activateFilterDialog, dispatch)
 });
 
 export default connect(

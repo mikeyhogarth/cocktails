@@ -20,8 +20,12 @@ export function setBar(payload) {
   return { type: "SET_BAR", payload };
 }
 
-export function setEditingFilter(payload) {
-  return { type: "SET_EDITING_FILTER", payload };
+export function activateFilterDialog(payload) {
+  return { type: "ACTIVATE_FILTER_DIALOG", payload };
+}
+
+export function closeFilterDialog() {
+  return { type: "CLOSE_FILTER_DIALOG" };
 }
 
 export function updateFavourites(payload) {
