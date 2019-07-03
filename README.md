@@ -48,7 +48,7 @@ If you have a comment about one of the recipes / a data related issue, feel free
 Take the labels "Help Wanted" or "Good first issue" as an open invitation to pick tickets up if you want to, but if they don't have those labels then please get in touch to discuss any change before contributing.
 
 - Assign yourself to a ticket if you're working on it.
-- Use the standard forking/PR approach (I am pretty open to helping new developers with PRs if so don't let unfamiliarity deter you!)
+- If there's not already an open ticket, but you have a suggestion, please raise as an issue and discuss prior to doing any work.
 - We're not doing versioning yet so don't worry about bumping versions/changelogs.
 - We've got [Snapshot Testing](https://jestjs.io/docs/en/snapshot-testing) going on in this app, remember to update them if you change the views.
 - Don't check in `package-lock` unless `package.json` has changed.
