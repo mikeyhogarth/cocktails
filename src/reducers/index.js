@@ -2,10 +2,7 @@ import produce from "immer";
 import { loadPersistedState } from "../utilities/persistence";
 import { hasDialog } from "../filterConfig";
 
-import { LOAD_COCKTAILS, LOAD_INGREDIENTS, LOAD_GLASSES, UPDATE_FILTER,
-  ACTIVATE_FILTER_DIALOG, CLOSE_FILTER_DIALOG, SET_BAR, UPDATE_FAVOURITES,
-  ADD_TO_BAR, UPDATE_SETTINGS, TOGGLE_PRIDE, TOGGLE_LINGO, START_ENRICH_COCKTAIL,
-  FAIL_ENRICH_COCKTAIL, FINISH_ENRICH_COCKTAIL } from "../actionTypes";
+import * as actionTypes from "../actionTypes";
 
 const defaultState = {
   db: {
@@ -54,49 +51,49 @@ const initialState = produce({ ...defaultState, ...persistedState }, draft => {
 export default (state = initialState, action) =>
   produce(state, draft => {
     switch (action.type) {
-      case LOAD_COCKTAILS:
+      case actionTypes.LOAD_COCKTAILS:
         draft.db.cocktails = action.payload;
         break;
-      case LOAD_INGREDIENTS:
+      case actionTypes.LOAD_INGREDIENTS:
         draft.db.ingredients = action.payload;
         break;
-      case LOAD_GLASSES:
+      case actionTypes.LOAD_GLASSES:
         draft.db.glasses = action.payload;
         break;
-      case UPDATE_FAVOURITES:
+      case actionTypes.UPDATE_FAVOURITES:
         draft.favourites = action.payload;
         break;
-      case UPDATE_FILTER:
+      case actionTypes.UPDATE_FILTER:
         draft.filterOptions = { ...draft.filterOptions, ...action.payload };
         break;
-      case ACTIVATE_FILTER_DIALOG:
+      case actionTypes.ACTIVATE_FILTER_DIALOG:
         draft.filterOptions.activeDialog =
           action.payload && hasDialog(action.payload) ? action.payload : null;
         break;
-      case CLOSE_FILTER_DIALOG:
+      case actionTypes.CLOSE_FILTER_DIALOG:
         draft.filterOptions.activeDialog = null;
         break;
-      case SET_BAR:
+      case actionTypes.SET_BAR:
         draft.bar = action.payload;
         break;
-      case TOGGLE_PRIDE:
+      case actionTypes.TOGGLE_PRIDE:
         draft.settings.pride = !draft.settings.pride;
         break;
-      case TOGGLE_LINGO:
+      case actionTypes.TOGGLE_LINGO:
         draft.settings.lingo = !draft.settings.lingo;
         break;
-      case UPDATE_SETTINGS:
+      case actionTypes.UPDATE_SETTINGS:
         draft.settings = { ...draft.settings, ...action.payload };
         break;
-      case ADD_TO_BAR:
+      case actionTypes.ADD_TO_BAR:
         draft.bar = new Set([...draft.bar, action.payload]);
         break;
-      case START_ENRICH_COCKTAIL:
+      case actionTypes.START_ENRICH_COCKTAIL:
         draft.db.cocktails.find(
           c => c.name === action.payload
         ).enriching = true;
         break;
-      case FAIL_ENRICH_COCKTAIL:
+      case actionTypes.FAIL_ENRICH_COCKTAIL:
         Object.assign(
           draft.db.cocktails.find(c => c.name === action.payload.cocktailName),
           {
@@ -106,7 +103,7 @@ export default (state = initialState, action) =>
           }
         );
         break;
-      case FINISH_ENRICH_COCKTAIL:
+      case actionTypes.FINISH_ENRICH_COCKTAIL:
         Object.assign(
           draft.db.cocktails.find(c => c.name === action.payload.cocktailName),
           {
