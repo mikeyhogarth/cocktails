@@ -659,8 +659,7 @@
   },
   {
     "iba": true,
-    "name": "God Mother",
-    "searchTerm": "godmother",
+    "name": "Godmother",
     "colors": "#C3660B",
     "glass": "old-fashioned",
     "ingredients": [
@@ -1229,8 +1228,7 @@
   },
   {
     "iba": true,
-    "name": "God Father",
-    "searchTerm": "godfather",
+    "name": "Godfather",
     "colors": "#B77F27",
     "glass": "old-fashioned",
     "ingredients": [
