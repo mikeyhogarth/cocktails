@@ -7,6 +7,8 @@
 
 ![Screenshot](/public/Screenshot.png?raw=true)
 
+Deployed at https://iba-cocktails.netlify.com/
+
 This provides a user interface for browsing and filtering the [IBA cocktails list](https://en.wikipedia.org/wiki/List_of_IBA_official_cocktails) (and a couple of other popular drinks). Features include;
 
 - Browse all 77 IBA cocktails, plus a few non-IBA drinks.
@@ -28,7 +30,7 @@ Cocktail list and ingredient data was originally seeded from https://github.com/
 
 Enrichment and images provided by the amazing [CocktailDB](https://www.thecocktaildb.com/)
 
-Application is hosted over at netlify - _awesome_ service: https://elated-shockley-96a155.netlify.com
+Application is hosted over at [netlify](https://www.netlify.com/) - _awesome_ service
 
 ## Tech stuff / Local Usage
 
