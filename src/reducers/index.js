@@ -86,7 +86,7 @@ export default (state = initialState, action) =>
         draft.settings = { ...draft.settings, ...action.payload };
         break;
       case actionTypes.ADD_TO_BAR:
-        draft.bar = new Set([...draft.bar, action.payload]);
+        draft.bar = [...new Set([...draft.bar, action.payload])];
         break;
       case actionTypes.START_ENRICH_COCKTAIL:
         draft.db.cocktails.find(
