@@ -3,7 +3,7 @@
 exports[`does not explode when rendered 1`] = `
 Array [
   <div
-    className="MuiBox-root MuiBox-root-6 CocktailPage-mobileImage-4"
+    className="MuiBox-root MuiBox-root-5 CocktailPage-mobileImage-4"
     style={
       Object {
         "backgroundImage": "url(undefined)",
@@ -20,15 +20,15 @@ Array [
         className="CocktailPage-cocktailDetailContent-2"
       >
         <h1
-          className="MuiTypography-root CocktailPage-cocktailTitle-112 MuiTypography-h1"
+          className="MuiTypography-root CocktailPage-cocktailTitle-8 MuiTypography-h1"
         >
           Vesper
         </h1>
         <div
-          className="CocktailPage-definitions-110"
+          className="CocktailPage-definitions-6"
         >
           <div
-            className="MuiChip-root Definition-chip-143 MuiChip-colorSecondary"
+            className="MuiChip-root Definition-chip-9 MuiChip-colorSecondary"
             onKeyDown={[Function]}
             onKeyUp={[Function]}
           >
@@ -39,7 +39,7 @@ Array [
             </span>
           </div>
           <div
-            className="MuiChip-root Definition-chip-143 MuiChip-colorSecondary"
+            className="MuiChip-root Definition-chip-9 MuiChip-colorSecondary"
             onKeyDown={[Function]}
             onKeyUp={[Function]}
           >
@@ -50,7 +50,7 @@ Array [
             </span>
           </div>
           <div
-            className="MuiChip-root Definition-chip-143 MuiChip-colorSecondary"
+            className="MuiChip-root Definition-chip-9 MuiChip-colorSecondary"
             onKeyDown={[Function]}
             onKeyUp={[Function]}
           >
@@ -62,7 +62,7 @@ Array [
           </div>
         </div>
         <div
-          className="MuiPaper-root MuiPaper-elevation1 CocktailPage-cocktailDetailPaper-111 MuiPaper-rounded"
+          className="MuiPaper-root CocktailPage-cocktailDetailPaper-7 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <ul
             className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
@@ -73,7 +73,7 @@ Array [
                  
                 <strong
                   aria-describedby={null}
-                  className="Connect(IngredientDetail)-tooltip-201"
+                  className="Connect(IngredientDetail)-tooltip-10"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onMouseLeave={[Function]}
@@ -92,7 +92,7 @@ Array [
                  
                 <strong
                   aria-describedby={null}
-                  className="Connect(IngredientDetail)-tooltip-201"
+                  className="Connect(IngredientDetail)-tooltip-10"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onMouseLeave={[Function]}
@@ -111,7 +111,7 @@ Array [
                  
                 <strong
                   aria-describedby={null}
-                  className="Connect(IngredientDetail)-tooltip-201"
+                  className="Connect(IngredientDetail)-tooltip-10"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onMouseLeave={[Function]}

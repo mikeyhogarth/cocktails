@@ -5,7 +5,7 @@ exports[`does not explode when rendered 1`] = `
   className="Bar-root-2"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 Bar-explanation-1 MuiPaper-rounded"
+    className="MuiPaper-root Bar-explanation-1 MuiPaper-elevation1 MuiPaper-rounded"
   >
     <h2
       className="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
@@ -19,12 +19,13 @@ exports[`does not explode when rendered 1`] = `
     </p>
     <div>
       <div
-        className="MuiFormControl-root MuiTextField-root IngredientPicker-searchField-61 MuiFormControl-marginNormal"
+        className="MuiFormControl-root MuiTextField-root IngredientPicker-searchField-4 MuiFormControl-marginNormal"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
           data-shrink={true}
           htmlFor="standard-search"
+          id="standard-search-label"
         >
           Filter ingredients
         </label>
@@ -36,10 +37,9 @@ exports[`does not explode when rendered 1`] = `
             className="MuiInputAdornment-root MuiInputAdornment-positionStart"
           >
             <svg
-              aria-hidden="true"
+              aria-hidden={true}
               className="MuiSvgIcon-root"
               focusable="false"
-              role="presentation"
               viewBox="0 0 24 24"
             >
               <path
@@ -49,9 +49,11 @@ exports[`does not explode when rendered 1`] = `
           </div>
           <input
             aria-invalid={false}
-            className="MuiInputBase-input MuiInput-input MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch MuiInputBase-inputAdornedStart"
+            autoFocus={false}
+            className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch"
             disabled={false}
             id="standard-search"
+            onAnimationStart={[Function]}
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -68,10 +70,19 @@ exports[`does not explode when rendered 1`] = `
         }
       />
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -82,10 +93,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -96,10 +116,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -110,10 +139,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -124,10 +162,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -138,10 +185,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -152,10 +208,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -166,10 +231,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -180,10 +254,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -194,10 +277,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -208,10 +300,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -222,10 +323,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -236,10 +346,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -250,10 +369,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -264,10 +392,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -278,10 +415,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -292,10 +438,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -306,10 +461,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -320,10 +484,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -334,10 +507,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -348,10 +530,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -362,10 +553,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -376,10 +576,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -390,10 +599,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -404,10 +622,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -418,10 +645,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -432,10 +668,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -446,10 +691,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -460,10 +714,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -474,10 +737,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -488,10 +760,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -502,10 +783,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -516,10 +806,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -530,10 +829,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -544,10 +852,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -558,10 +875,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -572,10 +898,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -586,10 +921,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -600,10 +944,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -614,10 +967,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -628,10 +990,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -642,10 +1013,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -656,10 +1036,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -670,10 +1059,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -684,10 +1082,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -698,10 +1105,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -712,10 +1128,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -726,10 +1151,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -740,10 +1174,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -754,10 +1197,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -768,10 +1220,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -782,10 +1243,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -796,10 +1266,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -810,10 +1289,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -824,10 +1312,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -838,10 +1335,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -852,10 +1358,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -866,10 +1381,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -880,10 +1404,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -894,10 +1427,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -908,10 +1450,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -922,10 +1473,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -936,10 +1496,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -950,10 +1519,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -964,10 +1542,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -978,10 +1565,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -992,10 +1588,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -1006,10 +1611,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -1020,10 +1634,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -1034,10 +1657,19 @@ exports[`does not explode when rendered 1`] = `
         </span>
       </div>
       <div
-        className="MuiChip-root IngredientPicker-chip-60 MuiChip-clickable"
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
         onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
         onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
         role="button"
         tabIndex={0}
       >
@@ -1057,7 +1689,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root MakeableCocktails-title-262 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root MakeableCocktails-title-5 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Makeable Cocktails
           </h3>
@@ -1067,7 +1699,7 @@ exports[`does not explode when rendered 1`] = `
             These are the cocktails you can make...
           </p>
           <ul
-            className="MuiList-root MakeableCocktails-list-263 MuiList-padding"
+            className="MuiList-root MakeableCocktails-list-6 MuiList-padding"
           />
         </div>
       </div>
@@ -1076,7 +1708,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root CocktailGauge-title-268 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root CocktailGauge-title-7 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Cocktail Gauge
           </h3>
@@ -1086,7 +1718,7 @@ exports[`does not explode when rendered 1`] = `
             How many cocktails can you make with what's in your bar?
           </p>
           <svg
-            className="CircularProgressbar CocktailGauge-progressBar-269"
+            className="CircularProgressbar CocktailGauge-progressBar-8"
             data-test-id="CircularProgressbar"
             viewBox="0 0 100 100"
           >
@@ -1146,7 +1778,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <div>
           <h3
-            className="MuiTypography-root PopularIngredients-title-270 MuiTypography-h3 MuiTypography-gutterBottom"
+            className="MuiTypography-root PopularIngredients-title-9 MuiTypography-h3 MuiTypography-gutterBottom"
           >
             Popular Ingredients
           </h3>
@@ -1157,12 +1789,15 @@ exports[`does not explode when rendered 1`] = `
           </p>
           <table
             className="MuiTable-root"
+            role={null}
           >
             <thead
               className="MuiTableHead-root"
+              role={null}
             >
               <tr
                 className="MuiTableRow-root MuiTableRow-head"
+                role={null}
               >
                 <th
                   aria-sort={null}
@@ -1182,13 +1817,16 @@ exports[`does not explode when rendered 1`] = `
             </thead>
             <tbody
               className="MuiTableBody-root"
+              role={null}
             >
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
+                  className="MuiTableCell-root MuiTableCell-body PopularIngredients-cocktailNameContainer-10"
+                  role="cell"
                   scope="row"
                 >
                   <div>
@@ -1218,10 +1856,9 @@ exports[`does not explode when rendered 1`] = `
                         className="MuiIconButton-label"
                       >
                         <svg
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="MuiSvgIcon-root"
                           focusable="false"
-                          role="presentation"
                           viewBox="0 0 24 24"
                         >
                           <path
@@ -1241,10 +1878,12 @@ exports[`does not explode when rendered 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
+                  className="MuiTableCell-root MuiTableCell-body PopularIngredients-cocktailNameContainer-10"
+                  role="cell"
                   scope="row"
                 >
                   <div>
@@ -1274,10 +1913,9 @@ exports[`does not explode when rendered 1`] = `
                         className="MuiIconButton-label"
                       >
                         <svg
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="MuiSvgIcon-root"
                           focusable="false"
-                          role="presentation"
                           viewBox="0 0 24 24"
                         >
                           <path
@@ -1297,10 +1935,12 @@ exports[`does not explode when rendered 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
+                  className="MuiTableCell-root MuiTableCell-body PopularIngredients-cocktailNameContainer-10"
+                  role="cell"
                   scope="row"
                 >
                   <div>
@@ -1330,10 +1970,9 @@ exports[`does not explode when rendered 1`] = `
                         className="MuiIconButton-label"
                       >
                         <svg
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="MuiSvgIcon-root"
                           focusable="false"
-                          role="presentation"
                           viewBox="0 0 24 24"
                         >
                           <path
@@ -1353,10 +1992,12 @@ exports[`does not explode when rendered 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
+                  className="MuiTableCell-root MuiTableCell-body PopularIngredients-cocktailNameContainer-10"
+                  role="cell"
                   scope="row"
                 >
                   <div>
@@ -1386,10 +2027,9 @@ exports[`does not explode when rendered 1`] = `
                         className="MuiIconButton-label"
                       >
                         <svg
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="MuiSvgIcon-root"
                           focusable="false"
-                          role="presentation"
                           viewBox="0 0 24 24"
                         >
                           <path
@@ -1409,10 +2049,12 @@ exports[`does not explode when rendered 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
-                  className="MuiTableCell-root PopularIngredients-cocktailNameContainer-271 MuiTableCell-body"
+                  className="MuiTableCell-root MuiTableCell-body PopularIngredients-cocktailNameContainer-10"
+                  role="cell"
                   scope="row"
                 >
                   <div>
@@ -1442,10 +2084,9 @@ exports[`does not explode when rendered 1`] = `
                         className="MuiIconButton-label"
                       >
                         <svg
-                          aria-hidden="true"
+                          aria-hidden={true}
                           className="MuiSvgIcon-root"
                           focusable="false"
-                          role="presentation"
                           viewBox="0 0 24 24"
                         >
                           <path
