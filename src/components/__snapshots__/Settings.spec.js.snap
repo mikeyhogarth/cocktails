@@ -5,7 +5,7 @@ exports[`does not explode when rendered 1`] = `
   className="Settings-root-2"
 >
   <div
-    className="MuiPaper-root MuiPaper-elevation1 Settings-content-1 MuiPaper-rounded"
+    className="MuiPaper-root Settings-content-1 MuiPaper-elevation1 MuiPaper-rounded"
   >
     <h2
       className="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
@@ -27,7 +27,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-5 Mui-checked MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -44,14 +44,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={true}
+              className="PrivateSwitchBase-input-7"
+              name="color"
+              onChange={[Function]}
+              type="radio"
+              value="indigo"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97 PrivateRadioButtonIcon-checked-99"
+              className="PrivateRadioButtonIcon-root-8 PrivateRadioButtonIcon-checked-10"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -59,10 +66,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -70,14 +76,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={true}
-              className="PrivateSwitchBase-input-84"
-              name="color"
-              onChange={[Function]}
-              type="radio"
-              value="indigo"
-            />
           </span>
         </span>
         <span
@@ -91,7 +89,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -108,14 +106,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="color"
+              onChange={[Function]}
+              type="radio"
+              value="red"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -123,10 +128,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -134,14 +138,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="color"
-              onChange={[Function]}
-              type="radio"
-              value="red"
-            />
           </span>
         </span>
         <span
@@ -155,7 +151,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -172,14 +168,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="color"
+              onChange={[Function]}
+              type="radio"
+              value="teal"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -187,10 +190,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -198,14 +200,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="color"
-              onChange={[Function]}
-              type="radio"
-              value="teal"
-            />
           </span>
         </span>
         <span
@@ -219,7 +213,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -236,14 +230,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="color"
+              onChange={[Function]}
+              type="radio"
+              value="brown"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -251,10 +252,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -262,14 +262,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="color"
-              onChange={[Function]}
-              type="radio"
-              value="brown"
-            />
           </span>
         </span>
         <span
@@ -283,7 +275,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -300,14 +292,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="color"
+              onChange={[Function]}
+              type="radio"
+              value="pink"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -315,10 +314,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -326,14 +324,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="color"
-              onChange={[Function]}
-              type="radio"
-              value="pink"
-            />
           </span>
         </span>
         <span
@@ -347,7 +337,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -364,14 +354,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="color"
+              onChange={[Function]}
+              type="radio"
+              value="purple"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -379,10 +376,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -390,14 +386,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="color"
-              onChange={[Function]}
-              type="radio"
-              value="purple"
-            />
           </span>
         </span>
         <span
@@ -422,7 +410,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-5 Mui-checked MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -439,14 +427,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={true}
+              className="PrivateSwitchBase-input-7"
+              name="theme"
+              onChange={[Function]}
+              type="radio"
+              value="light"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97 PrivateRadioButtonIcon-checked-99"
+              className="PrivateRadioButtonIcon-root-8 PrivateRadioButtonIcon-checked-10"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -454,10 +449,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -465,14 +459,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={true}
-              className="PrivateSwitchBase-input-84"
-              name="theme"
-              onChange={[Function]}
-              type="radio"
-              value="light"
-            />
           </span>
         </span>
         <span
@@ -486,7 +472,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -503,14 +489,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="theme"
+              onChange={[Function]}
+              type="radio"
+              value="dark"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -518,10 +511,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -529,14 +521,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="theme"
-              onChange={[Function]}
-              type="radio"
-              value="dark"
-            />
           </span>
         </span>
         <span
@@ -561,7 +545,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-5 Mui-checked MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -578,14 +562,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={true}
+              className="PrivateSwitchBase-input-7"
+              name="units"
+              onChange={[Function]}
+              type="radio"
+              value="cl"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97 PrivateRadioButtonIcon-checked-99"
+              className="PrivateRadioButtonIcon-root-8 PrivateRadioButtonIcon-checked-10"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -593,10 +584,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -604,14 +594,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={true}
-              className="PrivateSwitchBase-input-84"
-              name="units"
-              onChange={[Function]}
-              type="radio"
-              value="cl"
-            />
           </span>
         </span>
         <span
@@ -625,7 +607,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -642,14 +624,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="units"
+              onChange={[Function]}
+              type="radio"
+              value="ml"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -657,10 +646,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -668,14 +656,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="units"
-              onChange={[Function]}
-              type="radio"
-              value="ml"
-            />
           </span>
         </span>
         <span
@@ -689,7 +669,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -706,14 +686,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="units"
+              onChange={[Function]}
+              type="radio"
+              value="oz"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -721,10 +708,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -732,14 +718,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="units"
-              onChange={[Function]}
-              type="radio"
-              value="oz"
-            />
           </span>
         </span>
         <span
@@ -753,7 +731,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -770,14 +748,21 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-7"
+              name="units"
+              onChange={[Function]}
+              type="radio"
+              value="parts"
+            />
             <div
-              className="PrivateRadioButtonIcon-root-97"
+              className="PrivateRadioButtonIcon-root-8"
             >
               <svg
-                aria-hidden="true"
+                aria-hidden={true}
                 className="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -785,10 +770,9 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
               <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-9"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -796,14 +780,6 @@ exports[`does not explode when rendered 1`] = `
                 />
               </svg>
             </div>
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-84"
-              name="units"
-              onChange={[Function]}
-              type="radio"
-              value="parts"
-            />
           </span>
         </span>
         <span
@@ -826,7 +802,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiSwitch-switchBase MuiSwitch-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -843,15 +819,15 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
-            <span
-              className="MuiSwitch-thumb"
-            />
             <input
               checked={false}
-              className="PrivateSwitchBase-input-84 MuiSwitch-input"
+              className="PrivateSwitchBase-input-7 MuiSwitch-input"
               onChange={[Function]}
               type="checkbox"
               value={false}
+            />
+            <span
+              className="MuiSwitch-thumb"
             />
           </span>
         </span>
@@ -882,7 +858,7 @@ exports[`does not explode when rendered 1`] = `
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiSwitch-switchBase MuiSwitch-colorSecondary"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -899,15 +875,15 @@ exports[`does not explode when rendered 1`] = `
           <span
             className="MuiIconButton-label"
           >
-            <span
-              className="MuiSwitch-thumb"
-            />
             <input
               checked={false}
-              className="PrivateSwitchBase-input-84 MuiSwitch-input"
+              className="PrivateSwitchBase-input-7 MuiSwitch-input"
               onChange={[Function]}
               type="checkbox"
               value={false}
+            />
+            <span
+              className="MuiSwitch-thumb"
             />
           </span>
         </span>
