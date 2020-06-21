@@ -14,7 +14,10 @@ export function fetchCocktails() {
       cocktail.vegan = !cocktail.ingredients
         .filter(i => i.ingredient)
         .some(function(i) {
-          return ingredients[i.ingredient].vegan === false;
+          return (
+            ingredients[i.ingredient] &&
+            ingredients[i.ingredient].vegan === false
+          );
         });
 
       // force colors to be an array
