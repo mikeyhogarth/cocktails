@@ -504,7 +504,7 @@
         "label": "Maraschino"
       },
       { "unit": "cl", "amount": 1.5, "ingredient": "Lemon juice" },
-      { "unit": "shot", "amount": 1, "ingredient": "Crème de violette" }
+      { "amount": "1 shot", "ingredient": "Crème de violette" }
     ],
     "preparation": "Shake and strain into a chilled cocktail glass. The IBA recipe omits the commonly included crème de violette which gives the drink a distinctive purple color."
   },
