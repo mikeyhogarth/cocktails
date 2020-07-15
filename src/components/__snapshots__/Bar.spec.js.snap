@@ -618,6 +618,29 @@ exports[`does not explode when rendered 1`] = `
         <span
           className="MuiChip-label"
         >
+          Crème de violette
+        </span>
+      </div>
+      <div
+        className="MuiButtonBase-root MuiChip-root IngredientPicker-chip-3 MuiChip-clickable"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
           Cream liqueur
         </span>
       </div>
