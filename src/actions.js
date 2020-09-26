@@ -55,7 +55,10 @@ function startEnrichCocktail(cocktailName) {
 }
 
 function failEnrichCocktail(cocktailName, error) {
-  return { type: actionTypes.FAIL_ENRICH_COCKTAIL, payload: { cocktailName, error } };
+  return {
+    type: actionTypes.FAIL_ENRICH_COCKTAIL,
+    payload: { cocktailName, error }
+  };
 }
 
 function finishEnrichCocktail(cocktailName, enrichment) {

@@ -8,10 +8,10 @@ export function fetchCocktails() {
   return Promise.resolve(
     cocktails.map(cocktail => {
       // calculate the slug
-      cocktail.slug = cocktail.name.toLowerCase().replace(/ /, "-");
+      const slug = cocktail.name.toLowerCase().replace(/ /, "-");
 
       // calculate if the cocktail is vegan
-      cocktail.vegan = !cocktail.ingredients
+      const vegan = !cocktail.ingredients
         .filter(i => i.ingredient)
         .some(function(i) {
           return (
@@ -21,11 +21,11 @@ export function fetchCocktails() {
         });
 
       // force colors to be an array
-      cocktail.colors = isArray(cocktail.colors)
+      const colors = isArray(cocktail.colors)
         ? cocktail.colors
         : [cocktail.colors];
 
-      return cocktail;
+      return { ...cocktail, slug, vegan, colors };
     })
   );
 }

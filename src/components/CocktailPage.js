@@ -3,7 +3,7 @@ import useScrollTop from "../hooks/useScrollTop";
 import { connect } from "react-redux";
 import { Fade, Box, Grid } from "@material-ui/core";
 import { currentCocktailSelector } from "../selectors";
-import { withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { enrichCocktail } from "../actions";
 import CocktailDetail from "./CocktailPage/CocktailDetail";
@@ -11,7 +11,7 @@ import CocktailVariantList from "./CocktailPage/CocktailVariantList";
 
 const fullHeight = "92vh";
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   cocktailDetail: {
     overflow: "auto",
     [theme.breakpoints.up("sm")]: {
@@ -34,13 +34,16 @@ const styles = theme => ({
     height: "20vh",
     backgroundPosition: "center"
   }
-});
+}));
 
-const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
+export const CocktailPage = ({ cocktail, enrichCocktail }) => {
+  const classes = useStyles();
   useScrollTop();
   useEffect(() => {
     enrichCocktail(cocktail);
   }, [enrichCocktail, cocktail]);
+
+  if (!cocktail) return <span>Cocktail not found</span>;
 
   const image = cocktail.enrichment && cocktail.enrichment.image;
 
@@ -85,4 +88,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withStyles(styles)(CocktailPage));
+)(CocktailPage);
