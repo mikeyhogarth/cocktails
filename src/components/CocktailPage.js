@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import useScrollTop from "../hooks/useScrollTop";
 import { connect } from "react-redux";
 import { Fade, Box, Grid } from "@material-ui/core";
@@ -38,10 +38,10 @@ const styles = theme => ({
 
 const CocktailPage = ({ cocktail, enrichCocktail, classes }) => {
   useScrollTop();
+  useEffect(() => {
+    enrichCocktail(cocktail);
+  }, [enrichCocktail, cocktail]);
 
-  if (!cocktail) return <span>Cocktail Not Found</span>;
-
-  enrichCocktail(cocktail);
   const image = cocktail.enrichment && cocktail.enrichment.image;
 
   return (
