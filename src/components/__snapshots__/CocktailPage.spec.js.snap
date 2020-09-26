@@ -3,7 +3,7 @@
 exports[`does not explode when rendered 1`] = `
 Array [
   <div
-    className="MuiBox-root MuiBox-root-5 CocktailPage-mobileImage-4"
+    className="MuiBox-root MuiBox-root-5 makeStyles-mobileImage-4"
     style={
       Object {
         "backgroundImage": "url(undefined)",
@@ -14,10 +14,10 @@ Array [
     className="MuiGrid-root MuiGrid-container"
   >
     <div
-      className="MuiGrid-root CocktailPage-cocktailDetail-1 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
+      className="MuiGrid-root makeStyles-cocktailDetail-1 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
     >
       <div
-        className="CocktailPage-cocktailDetailContent-2"
+        className="makeStyles-cocktailDetailContent-2"
       >
         <h1
           className="MuiTypography-root CocktailPage-cocktailTitle-8 MuiTypography-h1"
@@ -58,6 +58,17 @@ Array [
               className="MuiChip-label"
             >
               Lemon twist
+            </span>
+          </div>
+          <div
+            className="MuiChip-root Definition-chip-9 MuiChip-colorSecondary"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+          >
+            <span
+              className="MuiChip-label"
+            >
+              Non-vegan
             </span>
           </div>
         </div>
@@ -138,7 +149,7 @@ Array [
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6"
     >
       <div
-        className="CocktailPage-cocktailImage-3"
+        className="makeStyles-cocktailImage-3"
         style={
           Object {
             "backgroundImage": "url(undefined)",
