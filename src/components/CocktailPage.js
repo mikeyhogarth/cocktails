@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import useScrollTop from "../hooks/useScrollTop";
+import useEnrichCocktail from "../hooks/useEnrichCocktail";
 import { connect } from "react-redux";
 import { Fade, Box, Grid } from "@material-ui/core";
 import { currentCocktailSelector } from "../selectors";
 import { makeStyles } from "@material-ui/core/styles";
-import { bindActionCreators } from "redux";
-import { enrichCocktail } from "../actions";
 import CocktailDetail from "./CocktailPage/CocktailDetail";
 import CocktailVariantList from "./CocktailPage/CocktailVariantList";
 
@@ -36,12 +35,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export const CocktailPage = ({ cocktail, enrichCocktail }) => {
+export const CocktailPage = ({ cocktail }) => {
   const classes = useStyles();
   useScrollTop();
-  useEffect(() => {
-    enrichCocktail(cocktail);
-  }, [enrichCocktail, cocktail]);
+  useEnrichCocktail(cocktail);
 
   if (!cocktail) return <span>Cocktail not found</span>;
 
@@ -81,11 +78,4 @@ const mapStateToProps = (state, ownProps) => ({
   cocktail: currentCocktailSelector(state, ownProps)
 });
 
-const mapDispatchToProps = dispatch => ({
-  enrichCocktail: bindActionCreators(enrichCocktail, dispatch)
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CocktailPage);
+export default connect(mapStateToProps)(CocktailPage);
