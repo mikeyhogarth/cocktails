@@ -6,7 +6,8 @@ Array [
     className="MuiBox-root MuiBox-root-5 makeStyles-mobileImage-4"
     style={
       Object {
-        "backgroundImage": "url(undefined)",
+        "opacity": 0,
+        "visibility": "hidden",
       }
     }
   />,
@@ -58,17 +59,6 @@ Array [
               className="MuiChip-label"
             >
               Lemon twist
-            </span>
-          </div>
-          <div
-            className="MuiChip-root Definition-chip-9 MuiChip-colorSecondary"
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-          >
-            <span
-              className="MuiChip-label"
-            >
-              Non-vegan
             </span>
           </div>
         </div>
@@ -152,7 +142,6 @@ Array [
         className="makeStyles-cocktailImage-3"
         style={
           Object {
-            "backgroundImage": "url(undefined)",
             "opacity": 0,
             "visibility": "hidden",
           }

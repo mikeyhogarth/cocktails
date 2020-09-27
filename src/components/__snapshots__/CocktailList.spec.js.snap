@@ -3,14 +3,14 @@
 exports[`does not explode when rendered 1`] = `
 <div>
   <div
-    className="CocktailList-content-1"
+    className="Connect(CocktailList)-content-1"
   >
     <div
-      className="MuiPaper-root CocktailList-noResults-3 MuiPaper-elevation1 MuiPaper-rounded"
+      className="MuiPaper-root Connect(CocktailList)-noResults-2 MuiPaper-elevation1 MuiPaper-rounded"
     >
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root CocktailList-noResutlsIcon-4"
+        className="MuiSvgIcon-root Connect(CocktailList)-noResutlsIcon-3"
         focusable="false"
         viewBox="0 0 24 24"
       >

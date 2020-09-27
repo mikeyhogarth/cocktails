@@ -70,6 +70,30 @@ const Settings = ({
       </RadioGroup>
 
       <FormLabel className={classes.formLabel} component="legend">
+        Browser mode
+      </FormLabel>
+      <RadioGroup
+        row
+        aria-label="BrowserMode"
+        name="browserMode"
+        value={settings.browserMode}
+        onChange={event => {
+          updateSettings({ browserMode: event.target.value });
+        }}
+      >
+        {["card", "table"].map(browserMode => {
+          return (
+            <FormControlLabel
+              value={browserMode}
+              key={browserMode}
+              control={<Radio />}
+              label={capitalize(browserMode)}
+            />
+          );
+        })}
+      </RadioGroup>
+
+      <FormLabel className={classes.formLabel} component="legend">
         Theme
       </FormLabel>
       <RadioGroup
