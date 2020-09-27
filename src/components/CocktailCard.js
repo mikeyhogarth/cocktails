@@ -1,21 +1,18 @@
 import React from "react";
-import { removeOrAddItemFromArray } from "../utilities/util";
 import { updateFavourites } from "../actions";
 import { connect } from "react-redux";
 import { isFavouriteSelector, allGlassesSelector } from "../selectors";
+import CocktailAvatar from "./CocktailAvatar";
 import {
   Card,
   CardHeader,
   CardContent,
   CardActions,
   CardActionArea,
-  Button,
-  Typography,
-  Avatar
+  Typography
 } from "@material-ui/core";
+import CocktailActions from "./CocktailActions";
 import GlassIcon from "./GlassIcon";
-import UnFavouriteIcon from "@material-ui/icons/Favorite";
-import FavouriteIcon from "@material-ui/icons/FavoriteBorder";
 import VeganIcon from "@material-ui/icons/FilterVintage";
 
 import Redo from "@material-ui/icons/Redo";
@@ -43,11 +40,6 @@ const styles = theme => ({
     alignSelf: "flex-end",
     flexGrow: 1
   },
-
-  cardContent: {},
-  button: {
-    padding: theme.spacing(0.5, 1)
-  },
   title: {
     fontSize: 20,
     marginTop: 0,
@@ -65,7 +57,7 @@ const styles = theme => ({
   }
 });
 
-const CocktailItem = ({
+const CocktailCard = ({
   cocktail,
   classes,
   allGlasses,
@@ -84,18 +76,7 @@ const CocktailItem = ({
       >
         <CardHeader
           title={<h1 className={classes.title}>{cocktail.name}</h1>}
-          avatar={
-            <Avatar
-              style={{
-                backgroundColor: cocktail.colors[0],
-                background: `linear-gradient(${cocktail.colors.join(",")})`
-              }}
-              aria-label="Recipe"
-              className={classes.avatar}
-            >
-              <GlassIcon glass={cocktail.glass} />
-            </Avatar>
-          }
+          avatar={<CocktailAvatar cocktail={cocktail} />}
           subheader={
             <span className={classes.subHeader}>{cocktail.category}</span>
           }
@@ -144,29 +125,7 @@ const CocktailItem = ({
       </CardActionArea>
 
       <CardActions className={classes.actions}>
-        <Button
-          className={classes.button}
-          size="large"
-          color="secondary"
-          onClick={() => {
-            updateFavourites(
-              removeOrAddItemFromArray(cocktail.slug, favourites)
-            );
-          }}
-        >
-          {favourite ? <UnFavouriteIcon /> : <FavouriteIcon />}
-          Favourite
-        </Button>
-
-        <Button
-          component={Link}
-          to={`/cocktails/${cocktail.slug}`}
-          className={classes.button}
-          size="large"
-          color="secondary"
-        >
-          Learn More
-        </Button>
+        <CocktailActions cocktail={cocktail} />
       </CardActions>
     </Card>
   );
@@ -185,4 +144,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withStyles(styles)(CocktailItem));
+)(withStyles(styles)(CocktailCard));

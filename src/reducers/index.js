@@ -24,6 +24,7 @@ const defaultState = {
   settings: {
     theme: "light",
     color: "indigo",
+    browserMode: "card",
     units: "cl",
     pride: false,
     lingo: false
