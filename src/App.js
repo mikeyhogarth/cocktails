@@ -16,8 +16,8 @@ function App() {
           // Routes
         }
         <Route exact path={["/", "/cocktails"]} component={CocktailBrowser} />
-        <Route path="/my-bar" component={Bar} />
         <Route path={"/cocktails/:slug"} component={CocktailPage} />
+        <Route path="/my-bar" component={Bar} />
         <Route path="/settings" component={Settings} />
       </Router>
     </Theme>

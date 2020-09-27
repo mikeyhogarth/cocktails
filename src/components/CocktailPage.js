@@ -46,12 +46,14 @@ export const CocktailPage = ({ cocktail }) => {
 
   return (
     <>
-      <Box
-        component="div"
-        className={classes.mobileImage}
-        display={{ xs: "block", md: "none" }}
-        style={{ backgroundImage: `url(${image})` }}
-      />
+      <Fade in={!!image}>
+        <Box
+          component="div"
+          className={classes.mobileImage}
+          display={{ xs: "block", md: "none" }}
+          style={image && { backgroundImage: `url(${image})` }}
+        />
+      </Fade>
       <Grid container className={classes.root}>
         <Grid className={classes.cocktailDetail} item md={6} xs={12}>
           <div className={classes.cocktailDetailContent}>
@@ -62,9 +64,11 @@ export const CocktailPage = ({ cocktail }) => {
         <Grid item md={6} xs={false}>
           <Fade in={!!image}>
             <div
-              style={{
-                backgroundImage: `url(${image})`
-              }}
+              style={
+                image && {
+                  backgroundImage: `url(${image})`
+                }
+              }
               className={classes.cocktailImage}
             />
           </Fade>
