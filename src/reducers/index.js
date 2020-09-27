@@ -36,11 +36,8 @@ const defaultState = {
 const persistedState = loadPersistedState();
 
 const initialState = produce({ ...defaultState, ...persistedState }, draft => {
-  draft.filterOptions = {
-    ...draft.filterOptions,
-    ...(persistedState ? persistedState.filterOptions : null)
-  };
   draft.settings = {
+    ...defaultState.settings,
     ...draft.settings,
     ...(persistedState ? persistedState.settings : null)
   };
