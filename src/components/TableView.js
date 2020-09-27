@@ -36,7 +36,7 @@ const TableView = ({ classes, displayedCocktails }) => {
           <TableRow>
             <TableCell>Appearance</TableCell>
             {columns.map(column => (
-              <ConditionalHidden key={column.name} hidden={column.hideOnXS}>
+              <ConditionalHidden key={column.name} hideOnXS={column.hideOnXS}>
                 <TableCell>{capitalize(column.name)}</TableCell>
               </ConditionalHidden>
             ))}
@@ -51,13 +51,16 @@ const TableView = ({ classes, displayedCocktails }) => {
               </TableCell>
               {columns.map(column => {
                 return (
-                  <ConditionalHidden key={column.name} hidden={column.hideOnXS}>
+                  <ConditionalHidden
+                    key={column.name}
+                    hideOnXS={column.hideOnXS}
+                  >
                     <TableCell>{cocktail[column.name]}</TableCell>
                   </ConditionalHidden>
                 );
               })}
               <TableCell align="right">
-                <CocktailActions cocktail={cocktail} />
+                <CocktailActions cocktail={cocktail} hideLabelOnXS={true} />
               </TableCell>
             </TableRow>
           ))}

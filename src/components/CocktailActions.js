@@ -9,6 +9,7 @@ import FavouriteIcon from "@material-ui/icons/FavoriteBorder";
 import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import { bindActionCreators } from "redux";
+import ConditionalHidden from "./ConditionalHidden";
 
 const styles = theme => ({
   button: {
@@ -20,7 +21,8 @@ const CocktailActions = ({
   updateFavourites,
   classes,
   cocktail,
-  favourites
+  favourites,
+  hideLabelOnXS = false
 }) => {
   return (
     <>
@@ -37,7 +39,9 @@ const CocktailActions = ({
         ) : (
           <FavouriteIcon />
         )}
-        Favourite
+        <ConditionalHidden hideOnXS={hideLabelOnXS}>
+          Favourite
+        </ConditionalHidden>
       </Button>
       <Button
         component={Link}
@@ -46,7 +50,10 @@ const CocktailActions = ({
         size="large"
         color="secondary"
       >
-        <ReadMoreIcon /> Learn More
+        <ReadMoreIcon />
+        <ConditionalHidden hideOnXS={hideLabelOnXS}>
+          Learn More
+        </ConditionalHidden>
       </Button>
     </>
   );
