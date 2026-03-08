@@ -1,0 +1,173 @@
+{
+  "Absinthe": [
+    "Absinthe",
+    "Pernod Absinthe",
+    "Lucid Absinthe",
+    "La Fée Absinthe"
+  ],
+  "Agave nectar": ["Agave nectar", "Agave syrup", "Blue agave nectar"],
+  "Angostura bitters": ["Angostura bitters", "Angostura aromatic bitters"],
+  "Aperol": ["Aperol"],
+  "Apricot brandy": [
+    "Apricot brandy",
+    "Bols Apricot Brandy",
+    "Hiram Walker Apricot Brandy"
+  ],
+  "Blackberry liqueur": ["Blackberry liqueur", "Chambord", "Crème de Mûre"],
+  "Blue Curaçao": ["Blue Curaçao", "Blue Curacao", "Bols Blue Curaçao"],
+  "Cachaca": ["Cachaca", "Cachaça", "Leblon Cachaça", "Novo Fogo Cachaça"],
+  "Calvados": ["Calvados", "Boulard Calvados", "Pierre Huet Calvados"],
+  "Campari": ["Campari"],
+  "Champagne": [
+    "Champagne",
+    "Brut Champagne",
+    "Moët & Chandon",
+    "Veuve Clicquot"
+  ],
+  "Cherry liqueur": [
+    "Cherry liqueur",
+    "Cherry Heering",
+    "Maraschino liqueur",
+    "Luxardo Maraschino"
+  ],
+  "Citron Vodka": [
+    "Citron Vodka",
+    "Absolut Citron",
+    "Grey Goose Citron",
+    "Ketel One Citroen"
+  ],
+  "Coconut milk": ["Coconut milk", "Coconut cream"],
+  "Coffee": ["Coffee", "Espresso", "Cold brew coffee"],
+  "Coffee liqueur": ["Coffee liqueur", "Kahlúa", "Tia Maria", "Mr. Black"],
+  "Cognac": ["Cognac", "Hennessy VS", "Rémy Martin VSOP", "Courvoisier VS"],
+  "Cola": ["Cola", "Coca-Cola", "Pepsi"],
+  "Cranberry juice": ["Cranberry juice", "Ocean Spray cranberry juice"],
+  "Cream": ["Cream", "Heavy cream", "Double cream", "Whipping cream"],
+  "Cream liqueur": ["Cream liqueur", "Baileys Irish Cream", "Baileys"],
+  "Crème de violette": ["Crème de violette", "Parfait Amour"],
+  "Crème de Cacao": [
+    "Crème de Cacao",
+    "White crème de cacao",
+    "Dark crème de cacao",
+    "Bols Crème de Cacao"
+  ],
+  "Crème de Cassis": ["Crème de Cassis", "Cassis", "Bols Crème de Cassis"],
+  "Crème de Menthe": [
+    "Crème de Menthe",
+    "White crème de menthe",
+    "Green crème de menthe"
+  ],
+  "DOM Bénédictine": ["DOM Bénédictine", "Bénédictine", "Benedictine"],
+  "Dark rum": [
+    "Dark rum",
+    "Goslings Black Seal",
+    "Mount Gay Eclipse",
+    "Appleton Estate"
+  ],
+  "DiSaronno": [
+    "DiSaronno",
+    "Disaronno Amaretto",
+    "Amaretto di Saronno",
+    "Amaretto"
+  ],
+  "Drambuie": ["Drambuie"],
+  "Dry White Wine": ["Dry White Wine", "Sauvignon Blanc", "Pinot Grigio"],
+  "Galliano": ["Galliano", "Galliano Vanilla"],
+  "Gin": [
+    "Gin",
+    "London Dry Gin",
+    "Gordon's Gin",
+    "Tanqueray",
+    "Bombay Sapphire",
+    "Hendrick's Gin",
+    "Beefeater",
+    "Bloom London Dry Gin",
+    "Kaiza 5"
+  ],
+  "Ginger Ale": ["Ginger Ale", "Canada Dry", "Fever-Tree Ginger Ale"],
+  "Ginger beer": [
+    "Ginger beer",
+    "Fever-Tree Ginger Beer",
+    "Bundaberg Ginger Beer"
+  ],
+  "Grapefruit juice": ["Grapefruit juice", "Fresh grapefruit juice"],
+  "Honey": ["Honey", "Honey syrup"],
+  "Kirsch": ["Kirsch", "Kirschwasser"],
+  "Lemon juice": ["Lemon juice", "Fresh lemon juice"],
+  "Lillet Blonde": ["Lillet Blonde", "Lillet Blanc", "Lillet"],
+  "Lime juice": ["Lime juice", "Fresh lime juice"],
+  "Olive juice": ["Olive juice", "Olive brine"],
+  "Orange bitters": [
+    "Orange bitters",
+    "Regan's Orange Bitters",
+    "Fee Brothers Orange Bitters"
+  ],
+  "Orange flower water": ["Orange flower water", "Orange blossom water"],
+  "Orange juice": ["Orange juice", "Fresh orange juice"],
+  "Peach bitters": ["Peach bitters", "Fee Brothers Peach Bitters"],
+  "Peach puree": ["Peach puree", "Peach purée", "Frozen peach puree"],
+  "Peach schnapps": [
+    "Peach schnapps",
+    "DeKuyper Peach Schnapps",
+    "Archers Peach Schnapps"
+  ],
+  "Peychaud's bitters": ["Peychaud's bitters", "Peychaud's aromatic bitters"],
+  "Pineapple juice": ["Pineapple juice", "Fresh pineapple juice"],
+  "Pisco": ["Pisco", "BarSol Pisco", "Capel Pisco"],
+  "Prosecco": ["Prosecco", "Cava"],
+  "Raspberry liqueur": [
+    "Raspberry liqueur",
+    "Chambord raspberry liqueur",
+    "Framboise"
+  ],
+  "Raspberry syrup": ["Raspberry syrup", "Framboise syrup"],
+  "Red Port": ["Red Port", "Ruby Port", "Tawny Port", "Sandeman Port"],
+  "Soda water": ["Soda water", "Club soda", "Sparkling water"],
+  "Sparkling Wine": ["Sparkling Wine", "Prosecco", "Cava", "Crémant"],
+  "Sugar": ["Sugar", "Caster sugar", "White sugar"],
+  "Syrup": ["Syrup", "Simple syrup", "Sugar syrup", "Gomme syrup"],
+  "Tequila": [
+    "Tequila",
+    "Blanco tequila",
+    "Reposado tequila",
+    "Jose Cuervo",
+    "Patron Silver",
+    "El Jimador"
+  ],
+  "Tomato juice": ["Tomato juice", "V8 tomato juice"],
+  "Triple Sec": ["Triple Sec", "Cointreau", "Grand Marnier", "Bols Triple Sec"],
+  "Vanilla extract": ["Vanilla extract", "Vanilla essence"],
+  "Vermouth": [
+    "Vermouth",
+    "Dry vermouth",
+    "Sweet vermouth",
+    "Noilly Prat",
+    "Martini Dry",
+    "Martini Rosso"
+  ],
+  "Vodka": [
+    "Vodka",
+    "Tito's Vodka",
+    "Grey Goose",
+    "Absolut Vodka",
+    "Belvedere",
+    "Ketel One",
+    "Smirnoff"
+  ],
+  "Whiskey": [
+    "Whiskey",
+    "Bourbon",
+    "Scotch whisky",
+    "Jack Daniel's",
+    "Jameson",
+    "Maker's Mark",
+    "Buffalo Trace"
+  ],
+  "White rum": [
+    "White rum",
+    "Bacardi White",
+    "Havana Club 3",
+    "Plantation 3 Stars"
+  ],
+  "Worcestershire Sauce": ["Worcestershire Sauce", "Lea & Perrins"]
+}

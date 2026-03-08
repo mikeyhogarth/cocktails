@@ -15,11 +15,11 @@ export function countIngredients(cocktails = []) {
 
   return map(counts, (count, name) => {
     return { count, name };
-  }).sort((a, b) => (a.count < b.count ? 1 : -1));
+  }).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 }
 
 export function getIngredientKeys(cocktail) {
-  return compact(cocktail.ingredients.map(i => i.ingredient));
+  return compact(cocktail.ingredients.map((i) => i.ingredient));
 }
 
 // We store all ingredient quantities in cl. This function converts

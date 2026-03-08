@@ -4,15 +4,15 @@ import { get, uniq, compact } from "lodash";
 import {
   applyFilters,
   applyFilter,
-  filtersFromUserOptions
+  filtersFromUserOptions,
 } from "../utilities/filter";
 
 // TODO: Use these in the `mapStateToProps` functions accross application
 // rather than accessing state directly?
-const allCocktailsSelector = state => state.db.cocktails;
-export const allGlassesSelector = state => state.db.glasses;
-const barSelector = state => state.bar;
-const favouritesSelector = state => state.favourites;
+const allCocktailsSelector = (state) => state.db.cocktails;
+export const allGlassesSelector = (state) => state.db.glasses;
+const barSelector = (state) => state.bar;
+const favouritesSelector = (state) => state.favourites;
 
 const currentSlugFromUrlSelector = (_, props) =>
   get(props, "match.params.slug");
@@ -26,7 +26,7 @@ const currentSlugFromCocktailPropSelector = (_, props) =>
 const currentSlugSelector = createSelector(
   currentSlugFromUrlSelector,
   currentSlugFromCocktailPropSelector,
-  (urlSlug, cocktailPropSlug) => urlSlug || cocktailPropSlug
+  (urlSlug, cocktailPropSlug) => urlSlug || cocktailPropSlug,
 );
 
 // isFavouriteSelector
@@ -34,17 +34,17 @@ const currentSlugSelector = createSelector(
 export const isFavouriteSelector = createSelector(
   favouritesSelector,
   currentSlugSelector,
-  (favourites, cocktailSlug) => favourites.includes(cocktailSlug)
+  (favourites, cocktailSlug) => favourites.includes(cocktailSlug),
 );
 
 // filtersSelector
 // Derives the currently applied filters
-const filtersSelector = state => filtersFromUserOptions(state);
+const filtersSelector = (state) => filtersFromUserOptions(state);
 
 export const currentCocktailSelector = createSelector(
   allCocktailsSelector,
   currentSlugSelector,
-  (cocktails, slug) => cocktails.find(c => c.slug === slug)
+  (cocktails, slug) => cocktails.find((c) => c.slug === slug),
 );
 
 // filteredCocktailsSelector
@@ -53,7 +53,7 @@ export const filteredCocktailsSelector = createSelector(
   allCocktailsSelector,
   filtersSelector,
   (cocktails, filter) =>
-    applyFilters(cocktails, filter).sort((a, b) => (a.name > b.name ? 1 : -1))
+    applyFilters(cocktails, filter).sort((a, b) => (a.name > b.name ? 1 : -1)),
 );
 
 // makeableCocktailsSelector
@@ -64,13 +64,15 @@ export const makeableCocktailsSelector = createSelector(
   (cocktails, bar) =>
     applyFilter(cocktails, {
       rule: "makeableFrom",
-      ingredients: bar
-    })
+      ingredients: bar.map((item) =>
+        typeof item === "string" ? item : item.type || item.ingredient,
+      ),
+    }),
 );
 
 // allCategoriesSelector
 // Derives an array of all the categories
 export const allCategoriesSelector = createSelector(
   allCocktailsSelector,
-  cocktails => compact(uniq(cocktails.map(c => c.category)))
+  (cocktails) => compact(uniq(cocktails.map((c) => c.category))),
 );

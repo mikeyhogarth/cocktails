@@ -8,7 +8,7 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  IconButton
+  IconButton,
 } from "@material-ui/core";
 
 import AddIcon from "@material-ui/icons/Add";
@@ -16,21 +16,24 @@ import { withStyles } from "@material-ui/core/styles";
 import { bindActionCreators } from "redux";
 import { addToBar } from "../../actions";
 
-const styles = theme => ({
+const styles = (theme) => ({
   title: {
     fontSize: 25,
-    margin: theme.spacing(1, 0)
+    margin: theme.spacing(1, 0),
   },
 
   cocktailNameContainer: {
-    display: "flex"
-  }
+    display: "flex",
+  },
 });
 
 const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
   const counts = countIngredients(allCocktails)
-    .filter(i => {
-      return bar.includes(i.name) === false;
+    .filter((i) => {
+      return !bar.some(
+        (item) =>
+          (typeof item === "string" ? item : item.ingredient) === i.name,
+      );
     })
     .slice(0, 5);
 
@@ -50,7 +53,7 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {counts.map(row => (
+          {counts.map((row) => (
             <TableRow key={row.name}>
               <TableCell
                 className={classes.cocktailNameContainer}
@@ -77,16 +80,16 @@ const PopularIngredients = ({ allCocktails, bar, addToBar, classes }) => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   bar: state.bar,
-  allCocktails: state.db.cocktails
+  allCocktails: state.db.cocktails,
 });
 
-const mapDispatchToProps = dispatch => ({
-  addToBar: bindActionCreators(addToBar, dispatch)
+const mapDispatchToProps = (dispatch) => ({
+  addToBar: bindActionCreators(addToBar, dispatch),
 });
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(withStyles(styles)(PopularIngredients));

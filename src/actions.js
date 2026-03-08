@@ -57,7 +57,7 @@ function startEnrichCocktail(cocktailName) {
 function failEnrichCocktail(cocktailName, error) {
   return {
     type: actionTypes.FAIL_ENRICH_COCKTAIL,
-    payload: { cocktailName, error }
+    payload: { cocktailName, error },
   };
 }
 
@@ -66,13 +66,40 @@ function finishEnrichCocktail(cocktailName, enrichment) {
     type: actionTypes.FINISH_ENRICH_COCKTAIL,
     payload: {
       cocktailName,
-      enrichment
-    }
+      enrichment,
+    },
+  };
+}
+
+export function robotConnected() {
+  return { type: actionTypes.ROBOT_CONNECTED };
+}
+
+export function robotDisconnected() {
+  return { type: actionTypes.ROBOT_DISCONNECTED };
+}
+
+export function robotStateChanged(robotState) {
+  return { type: actionTypes.ROBOT_STATE_CHANGED, payload: robotState };
+}
+
+export function robotConfigLoaded(config) {
+  return { type: actionTypes.ROBOT_CONFIG_LOADED, payload: config };
+}
+
+export function robotJobUpdated(jobId) {
+  return { type: actionTypes.ROBOT_JOB_UPDATED, payload: jobId };
+}
+
+export function robotBarSynced(barEntries, unresolvedLiquids) {
+  return {
+    type: actionTypes.ROBOT_BAR_SYNCED,
+    payload: { barEntries, unresolvedLiquids },
   };
 }
 
 export function enrichCocktail(cocktail) {
-  return async dispatch => {
+  return async (dispatch) => {
     // don't re-enrich: this action only does something if a
     // cocktail has not already been enriched.
     const { enriched, enriching, enrichmentFailed } = cocktail;

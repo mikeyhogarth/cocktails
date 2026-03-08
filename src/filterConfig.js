@@ -32,7 +32,7 @@ import { keys, get } from "lodash";
 import {
   GlassFilterDialog,
   CategoryFilterDialog,
-  IngredientFilterDialog
+  IngredientFilterDialog,
 } from "./components/Filters";
 
 /**
@@ -44,53 +44,56 @@ const filterConfig = {
     label: "By Ingredient...",
     buildFilter: ({ ingredientsRule, ingredients }) => ({
       rule: ingredientsRule,
-      ingredients
-    })
+      ingredients,
+    }),
   },
   byCategory: {
     dialogComponent: CategoryFilterDialog,
     label: "By Category...",
     buildFilter: ({ categories }) => ({
       rule: "inCategory",
-      categories
-    })
+      categories,
+    }),
   },
   byGlass: {
     dialogComponent: GlassFilterDialog,
     label: "By Glass...",
     buildFilter: ({ glasses }) => ({
       rule: "inGlass",
-      glasses
-    })
+      glasses,
+    }),
   },
   barOnly: {
     label: "Makeable from Bar",
     buildFilter: (_, { bar }) => ({
       rule: "makeableFrom",
-      ingredients: bar
-    })
+      // Extract effective ingredient names: type takes priority over ingredient name
+      ingredients: bar.map((item) =>
+        typeof item === "string" ? item : item.type || item.ingredient,
+      ),
+    }),
   },
   favouritesOnly: {
     label: "Favourites only",
     buildFilter: (_, { favourites }) => ({
       rule: "isFavourite",
-      favourites
-    })
+      favourites,
+    }),
   },
   veganOnly: {
     label: "Vegan only",
     buildFilter: () => ({
       rule: "mustHaveTruthyProperty",
-      property: "vegan"
-    })
+      property: "vegan",
+    }),
   },
   ibaOnly: {
     label: "IBA only",
     buildFilter: () => ({
       rule: "mustHaveTruthyProperty",
-      property: "iba"
-    })
-  }
+      property: "iba",
+    }),
+  },
 };
 
 function getFilterConfig(filterRule) {

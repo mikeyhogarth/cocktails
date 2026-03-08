@@ -9,17 +9,22 @@ import { bindActionCreators } from "redux";
 import { setBar } from "../actions";
 import { connect } from "react-redux";
 
-const styles = theme => ({
+const styles = (theme) => ({
   explanation: {
-    padding: theme.spacing(1, 2)
+    padding: theme.spacing(1, 2),
   },
   root: {
     ...theme.mixins.gutters,
-    justifyContent: "center"
-  }
+    justifyContent: "center",
+  },
 });
 
 const Bar = ({ classes, bar, setBar }) => {
+  // Derive string names for IngredientPicker (works with string[] only)
+  const selectedNames = bar
+    .filter((item) => item && item.source !== "robot")
+    .map((item) => (typeof item === "string" ? item : item.ingredient));
+
   return (
     <div className={classes.root}>
       <Paper className={classes.explanation}>
@@ -32,8 +37,8 @@ const Bar = ({ classes, bar, setBar }) => {
         </Typography>
 
         <IngredientPicker
-          selectedIngredients={bar}
-          onIngredientsChange={selectedIngredients => {
+          selectedIngredients={selectedNames}
+          onIngredientsChange={(selectedIngredients) => {
             setBar(selectedIngredients);
           }}
         />
@@ -55,16 +60,16 @@ const Bar = ({ classes, bar, setBar }) => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   bar: state.bar,
-  allCocktails: state.db.cocktails
+  allCocktails: state.db.cocktails,
 });
 
-const mapDispatchToProps = dispatch => ({
-  setBar: bindActionCreators(setBar, dispatch)
+const mapDispatchToProps = (dispatch) => ({
+  setBar: bindActionCreators(setBar, dispatch),
 });
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(withStyles(styles)(Bar));

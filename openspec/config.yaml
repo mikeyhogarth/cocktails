@@ -1,0 +1,154 @@
+project:
+  name: Cocktails Browser
+  description: >
+    A Progressive Web App for browsing and filtering the official IBA cocktail
+    list (~80 cocktails). Supports ingredient-based filtering, a personal bar
+    inventory, favourites, configurable measurement units, and TheCocktailDB enrichment.
+  version: 0.1.0
+  license: GPL-3.0-only
+  url: https://iba-cocktails.netlify.com/
+  repo: https://github.com/mikeyhogarth/cocktails
+  platform: web (PWA)
+
+tech:
+  runtime: Node.js
+  framework: React 16 (functional components + hooks only)
+  state_management: Redux + redux-thunk + immer + reselect
+  ui_library: Material UI v4
+  routing: react-router-dom v5
+  persistence: localStorage (no backend, no database)
+  enrichment: TheCocktailDB API (images and extra metadata)
+  testing: Jest + react-test-renderer (snapshot tests)
+  formatting: Prettier (enforced via husky pre-commit hook)
+
+data:
+  source: static JSON files in src/data/
+  files:
+    - path: src/data/cocktails.json
+      description: All cocktail recipes (80 total, 77 IBA + extras)
+      schema:
+        name: string
+        iba: boolean
+        colors: string (hex)
+        glass: string (enum)
+        category: string (enum)
+        ingredients:
+          - ingredient: string
+            amount: number
+            unit: string (cl | oz | ml | parts | dash | etc.)
+        garnish: string (optional)
+        preparation: string
+        vegan: boolean (optional)
+    - path: src/data/ingredients.json
+      description: Ingredient metadata keyed by ingredient name
+      schema:
+        "<IngredientName>":
+          abv: number (optional)
+          taste: string (optional)
+    - path: src/data/glasses.json
+      description: Glass type definitions
+
+enumerations:
+  categories:
+    - After Dinner Cocktail
+    - All Day Cocktail
+    - Before Dinner Cocktail
+    - Hot Drink
+    - Longdrink
+    - Sparkling Cocktail
+  glasses:
+    - champagne-flute
+    - champagne-tulip
+    - collins
+    - highball
+    - hot-drink
+    - hurricane
+    - margarita
+    - martini
+    - old-fashioned
+    - shot
+    - white-wine
+
+features:
+  filters:
+    - id: byIngredient
+      label: By Ingredient...
+      has_dialog: true
+    - id: byCategory
+      label: By Category...
+      has_dialog: true
+    - id: byGlass
+      label: By Glass...
+      has_dialog: true
+    - id: barOnly
+      label: Makeable from Bar
+    - id: favouritesOnly
+      label: Favourites only
+    - id: veganOnly
+      label: Vegan only
+    - id: ibaOnly
+      label: IBA only
+  measurement_units:
+    - parts
+    - ml
+    - cl
+    - oz
+    - pro (bartender lingo: Jigger, Pony, etc.)
+  views:
+    - card (default)
+    - table
+  settings:
+    - color_scheme (configurable themes)
+    - measurement_unit
+    - pro_mode
+
+components:
+  key:
+    - CocktailBrowser: main browse/filter view
+    - CocktailList / CocktailCard / CardView / TableView: list display layers
+    - CocktailPage: cocktail detail page (with partial QR code — hardcoded vesper.png only; full per-cocktail QR not yet implemented)
+    - Bar: personal bar ingredient management
+    - Filters (GlassFilterDialog / CategoryFilterDialog / IngredientFilterDialog): filter dialogs
+    - CocktailFilter: filter integration logic
+    - Settings: app settings panel
+    - Topbar: navigation bar
+    - IngredientPicker / IngredientDetail: ingredient UI
+  hooks:
+    - useEnrichCocktail: fetches TheCocktailDB enrichment data
+    - useScroll / useScrollTop: scroll utilities
+
+conventions:
+  - Function components only (no class components)
+  - Snapshot tests must be updated intentionally when views change (npm test -- -u)
+  - Test files co-located as *.spec.js alongside components
+  - No package-lock.json commits unless package.json changed
+  - Semantic versioning
+  - CHANGELOG follows keepachangelog.com/en/1.1.0 format
+  - Prettier enforced via husky pre-commit hook; do not bypass
+
+commands:
+  dev: npm start
+  test: npm test
+  test_update_snapshots: npm test -- -u
+  build: npm run build
+
+session:
+  start:
+    - Read claude-progress.txt
+    - Read git log --oneline -10
+    - Work on exactly ONE task
+  end:
+    - Update README.md if relevant (follow makeareadme.com best practices)
+    - git commit with descriptive message
+    - Update claude-progress.txt
+    - Document relevant changes in CLAUDE.md and openspec/config.yaml
+    - Update TODO.md to reflect changes
+    - Document changes in CHANGELOG.md
+
+known_issues:
+  - src/components/CocktailPage/CocktailDetail.js renders a hardcoded QR code (vesper.png) for all cocktails; per-cocktail QR codes are not implemented
+  - src/components/CocktailPage/CocktailDetail.js.new is an uncommitted draft exploring a "Make it so" button with an external API call; not production code
+
+assets:
+  - path: src/images/QR/
+    description: QR code images for cocktail detail pages (currently only vesper.png present)
