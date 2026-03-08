@@ -6,18 +6,18 @@
 
 ## Session Start
 
-1. Read `claude-progress.txt`
+1. Read `claude-progress.txt` (create it if missing)
 2. Read `git log --oneline -10`
 3. Work on exactly ONE task
 
 ## Session End
 
 1. Update README.md if relevant. follow https://www.makeareadme.com/ best practices
-1. `git commit` with descriptive message
 1. Update `claude-progress.txt`
 1. Document relevant changes in `CLAUDE.md` and `openspec/config.yaml`
 1. Update `TODO.md` to reflect the changes
 1. Document changes in CHANGELOG.md in the format of @https://keepachangelog.com/en/1.1.0/
+1. `git commit` with descriptive message
 
 ---
 
