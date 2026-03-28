@@ -115,4 +115,4 @@ const mainReducer = (state = initialState, action) =>
     }
   });
 
-export default maimReducer;
+export default mainReducer;
