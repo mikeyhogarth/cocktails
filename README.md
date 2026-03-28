@@ -7,7 +7,7 @@
 
 ![Screenshot](/public/Screenshot.png?raw=true)
 
-Deployed at https://iba-cocktails.netlify.com/
+Deployed at https://iba-cocktails.netlify.app/
 
 This provides a user interface for browsing and filtering the [IBA cocktails list](https://en.wikipedia.org/wiki/List_of_IBA_official_cocktails) (and a couple of other popular drinks). Features include;
 
