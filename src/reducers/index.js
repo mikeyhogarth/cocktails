@@ -46,7 +46,7 @@ const initialState = produce({ ...defaultState, ...persistedState }, draft => {
 /**
  * Main reducer
  */
-export default (state = initialState, action) =>
+const mainReducer = (state = initialState, action) =>
   produce(state, draft => {
     switch (action.type) {
       case actionTypes.LOAD_COCKTAILS:
@@ -114,3 +114,5 @@ export default (state = initialState, action) =>
       default:
     }
   });
+
+export default maimReducer;
