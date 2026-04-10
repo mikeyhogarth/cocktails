@@ -8,7 +8,7 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "immer": "^9.0.21",
-    "lodash": "^4.17.23",
+    "lodash": "^4.18.1",
     "pluralize": "^8.0.0",
     "react": "^16.14.0",
     "react-circular-progressbar": "^2.2.0",
